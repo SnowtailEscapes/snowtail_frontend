@@ -1,0 +1,31 @@
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background-color:#fb923c;
+    color: #fff;
+    border-radius: 200% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .5s ease, transform 1.5s ease; 
+    transform: translateY(-100vh); /* Initial position */
+    display: none;
+  }
+  a{
+    border-radius: 100% !important;
+
+  }
+  .scroll-to-top-button.show {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+  }
+  
+  .scroll-to-top-button i {
+    font-size: 20px;
+  }
+  

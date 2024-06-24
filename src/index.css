@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  padding: 1rem 5rem;
+}
+
+* {
+  font-family: Cambria, sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+  overflow: scroll;
+}
+/* body::-webkit-scrollbar {
+  display: none; 
+} */
+*{
+  scroll-behavior: smooth !important;
+}
