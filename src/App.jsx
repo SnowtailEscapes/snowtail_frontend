@@ -51,6 +51,9 @@ import AllInternational from "./components/InternationalCards/AllInternational.j
 import TermsAndConditions from "./components/TermsAndCondition.jsx";
 import Almaty from "./International/Almaty.jsx";
 
+
+import Test from "./getApi/Test.jsx";
+
 function App() {
   return (
     <>
@@ -157,6 +160,13 @@ function App() {
 
           {/* Nepal */}
           <Route path="/Nepal" element={<Nepal />} />
+
+
+
+
+
+          {/* test */}
+          <Route path="/test" element={<Test />} />
         </Routes>
       </Router>
     </>
