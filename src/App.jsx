@@ -52,7 +52,7 @@ import TermsAndConditions from "./components/TermsAndCondition.jsx";
 import Almaty from "./International/Almaty.jsx";
 
 
-import Test from "./getApi/Test.jsx";
+import Test from "./getApi/ItineraryTest.jsx";
 
 function App() {
   return (
