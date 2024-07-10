@@ -8,7 +8,7 @@ import paw from "../../assets/paw-solid.svg";
 import location from "../../assets/map-location-dot-solid.svg";
 import PropTypes from "prop-types";
 
-const Common = ({ place , title , location1 , time}) => {
+const Common = ({ place , title , location1 , time , rating , reviews}) => {
   useEffect(() => {
     Aos.init({
       duration: 1200,
@@ -31,8 +31,8 @@ const Common = ({ place , title , location1 , time}) => {
         </div>
         <div className={a.right}>
           <h4>Excellent</h4>
-          <h6>4.8/5</h6>
-          <p>(146 reviews)</p>
+          <h6>{Number(rating) / 10}/5</h6>
+          <p>({reviews} reviews)</p>
         </div>
       </div>
       <div className={a.left2} >
@@ -109,8 +109,8 @@ Common.propTypes = {
   title: PropTypes.string.isRequired,
   location1: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
-
-
+  rating: PropTypes.number.isRequired,
+  reviews: PropTypes.number.isRequired
 };
 
 export default Common;
