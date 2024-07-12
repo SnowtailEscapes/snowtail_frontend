@@ -1,8 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit'
-import itineraryReducer from "./slice/itinerarySlice"
+import { configureStore } from '@reduxjs/toolkit';
+import currencyReducer from './slice/currencySlice';
+import itineraryReducer from './slice/itinerarySlice';
 
 export const store = configureStore({
   reducer: {
-    itinerary : itineraryReducer,
+    currency: currencyReducer,
+    itinerary: itineraryReducer,
   },
-})
+});

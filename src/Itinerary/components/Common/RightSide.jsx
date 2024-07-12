@@ -5,6 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import PropTypes from "prop-types";
 import Contact3 from "../../../components/Contact3";
+import CurrencyConverter from "../../../getApi/CurrencyConverter";
 
 const RightSide = ({
   standard_cut,
@@ -73,9 +74,9 @@ const RightSide = ({
               <h5 className="border-bottom">Price</h5>
               <div className={styles.tour_package_bar_price}>
                 <h6>
-                  <del>{standard_cut}</del>
+                  <del><CurrencyConverter price={standard_cut}/></del>
                 </h6>
-                <h3>{standard_current}</h3>
+                <h3><CurrencyConverter price={standard_current}/></h3>
               </div>
             </div>
           </div>
@@ -133,9 +134,9 @@ const RightSide = ({
               <h5>Price</h5>
               <div className={styles.tour_package_bar_price}>
                 <h6>
-                  <del>{deluxe_cut}</del>
+                  <del><CurrencyConverter price={deluxe_cut}/></del>
                 </h6>
-                <h3>{deluxe_current}</h3>
+                <h3><CurrencyConverter price={deluxe_current}/></h3>
               </div>
             </div>
           </div>
@@ -193,9 +194,9 @@ const RightSide = ({
               <h6>Price</h6>
               <div className={styles.tour_package_bar_price}>
                 <h6>
-                  <del>{super_deluxe_cut}</del>
+                  <del><CurrencyConverter price={super_deluxe_cut}/></del>
                 </h6>
-                <h3>{super_deluxe_current}</h3>
+                <h3><CurrencyConverter price={super_deluxe_current}/></h3>
               </div>
             </div>
           </div>
@@ -252,12 +253,12 @@ const RightSide = ({
 };
 
 RightSide.propTypes = {
-  standard_cut: PropTypes.string.isRequired,
-  standard_current: PropTypes.string.isRequired,
-  deluxe_cut: PropTypes.string.isRequired,
-  super_deluxe_cut: PropTypes.string.isRequired,
-  deluxe_current: PropTypes.string.isRequired,
-  super_deluxe_current: PropTypes.string.isRequired,
+  standard_cut: PropTypes.number.isRequired,
+  standard_current: PropTypes.number.isRequired,
+  deluxe_cut: PropTypes.number.isRequired,
+  super_deluxe_cut: PropTypes.number.isRequired,
+  deluxe_current: PropTypes.number.isRequired,
+  super_deluxe_current: PropTypes.number.isRequired,
 };
 
 export default RightSide;

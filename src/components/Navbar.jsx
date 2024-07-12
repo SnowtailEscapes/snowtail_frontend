@@ -5,13 +5,13 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Countdown from "./Countdown";
 import { useEffect, useState } from "react";
+import CurrencyDropdown from "../getApi/CurrencyDropdown";
 
 const styles = {
-  background: 'rgba(16, 15, 15, 0.5)',
-  boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
-  backdropFilter: 'blur(2.5px)',
-  WebkitBackdropFilter: 'blur(2.5px)',
-
+  background: "rgba(16, 15, 15, 0.5)",
+  boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
+  backdropFilter: "blur(2.5px)",
+  WebkitBackdropFilter: "blur(2.5px)",
 };
 
 const Navbar = () => {
@@ -46,28 +46,41 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="w-full grid grid-cols-12 z-10  bg-color1 items-center text-white md:h-8 justify-center">
-        <p className="text-center md:text-md text-sm md:col-span-6 col-span-12">
-          <span className="font-bold">Monsoon Sale</span> up to{" "}
-          <span className="font-bold">40% OFF</span> on your trip
-        </p>
+     <div className="w-full grid grid-cols-12 z-10 bg-color1 items-center text-white md:h-12 justify-center">
+  <div className="col-span-12 md:col-span-4 flex justify-center md:justify-start">
+    <p className="text-center md:text-left md:text-md text-sm">
+      <span className="font-bold">Monsoon Sale</span> up to{" "}
+      <span className="font-bold">40% OFF</span> on your trip
+    </p>
+  </div>
 
-        {width >= 737 && (
-          <>
-          <div className="divider divider-horizontal divider-warning"></div>
-            <div className="col-span-5">
-              <Countdown duration={3 * 24 * 60 * 60 * 1000} />
-            </div>
-          </>
-        )}
-
-        <img src={stick} width={90} height={90} className="moving-div" alt="moving-div"/>
+  {width >= 737 && (
+    <>
+      <div className="divider divider-horizontal divider-warning col-span-1"></div>
+      <div className="col-span-4 flex justify-center">
+        <Countdown duration={3 * 24 * 60 * 60 * 1000} />
       </div>
+      <div className="divider divider-horizontal divider-warning col-span-1"></div>
+    </>
+  )}
+
+  <div className="col-span-12 md:col-span-2 flex justify-center">
+    <CurrencyDropdown />
+  </div>
+
+  <div className="col-span-12 md:col-span-1 flex justify-center">
+    <img
+      src={stick}
+      width={60}
+      height={60}
+      className="moving-div"
+      alt="moving-div"
+    />
+  </div>
+</div>
 
       <div
-        className={
-          isHomePage ? "text-white navbar" : "text-white navbar"
-        }
+        className={isHomePage ? "text-white navbar" : "text-white navbar"}
         style={styles}
       >
         <div className="navbar-start lg:navbar-start">
