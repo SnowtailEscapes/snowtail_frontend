@@ -64,9 +64,9 @@ export default function Budget() {
                 title="Manali | A Himalayan Heaven"
                 duration="4 Days and 3 Nights"
                 rating="4.8/5"
-                cut_price="INR 69,099"
-                curr_price="₹ 59,099"
-                save="SAVE INR 10,000"
+                cut_price="INR 22,399"
+              curr_price="₹ 15,999"
+              save="SAVE INR 6,400"
                 direct="/Manali3n4d"
                 image={manali}
               />
@@ -136,9 +136,9 @@ export default function Budget() {
               title="Mussoorie & Rishikesh |  A Journey to the Queen of Hills"
               duration="4 Days and 3 Nights"
               rating="4.8/5"
-              cut_price="INR 22,399"
-              curr_price="₹ 15,999"
-              save="SAVE INR 6,400"
+              cut_price="INR 23,799"
+              curr_price="₹ 16,999"
+              save="SAVE INR 6,800"
               direct="/Uttrakhand"
               image={uttrakhand}
             />
@@ -147,9 +147,9 @@ export default function Budget() {
               title="Manali | A Himalayan Heaven"
               duration="4 Days and 3 Nights"
               rating="4.8/5"
-              cut_price="INR 69,099"
-              curr_price="₹ 59,099"
-              save="SAVE INR 10,000"
+              cut_price="INR 22,399"
+              curr_price="₹ 15,999"
+              save="SAVE INR 6,400"
               direct="/Manali3n4d"
               image={manali}
             />

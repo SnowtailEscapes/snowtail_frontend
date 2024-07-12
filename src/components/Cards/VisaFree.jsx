@@ -39,9 +39,9 @@ export default function VisaFree() {
                 title="Nepal"
                 duration="4 Days and 3 Nights"
                 rating="4.8/5"
-                cut_price="INR 64,699"
-                curr_price="₹ 54,699"
-                save="SAVE INR 10,000"
+                cut_price="INR 39,500"
+                curr_price="₹ 33,999"
+                save="SAVE INR 5,501"
                 direct="/Nepal"
                 image={nepal}
               />
@@ -86,9 +86,9 @@ export default function VisaFree() {
                 title="Almaty "
                 duration="6 Days and 5 Nights"
                 rating="4.8/5"
-                cut_price="INR 69,099"
-                curr_price="₹ 59,099"
-                save="SAVE INR 10,000"
+                cut_price="INR 41,699"
+              curr_price="₹ 34,699"
+              save="SAVE INR 7,000"
                 direct="/Almaty"
                 image={almaty}
               />
@@ -133,9 +133,9 @@ export default function VisaFree() {
               title="Nepal"
               duration="4 Days and 3 Nights"
               rating="4.8/5"
-              cut_price="INR 64,699"
-              curr_price="₹ 54,699"
-              save="SAVE INR 10,000"
+              cut_price="INR 39,500"
+                curr_price="₹ 33,999"
+                save="SAVE INR 5,501"
               direct="/Nepal"
               image={nepal}
             />
@@ -166,9 +166,9 @@ export default function VisaFree() {
               title="Almaty "
               duration="6 Days and 5 Nights"
               rating="4.8/5"
-              cut_price="INR 69,099"
-              curr_price="₹ 59,099"
-              save="SAVE INR 10,000"
+              cut_price="INR 41,699"
+              curr_price="₹ 34,699"
+              save="SAVE INR 7,000"
               direct="/Almaty"
               image={almaty}
             />

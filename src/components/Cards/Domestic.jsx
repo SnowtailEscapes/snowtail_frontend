@@ -77,9 +77,9 @@ export default function Domestic() {
                 title="Gangtok & Darjeeling | The Abode of Clouds"
                 duration="6 Days and 5 Nights"
                 rating="4.8/5"
-                cut_price="INR 69,099"
-                curr_price="₹ 59,099"
-                save="SAVE INR 10,000"
+                cut_price="INR 50,199"
+                curr_price="₹ 35,799"
+                save="SAVE INR 14,400"
                 direct="/Sikkim5n6d"
                 image={sikkim}
               />
@@ -158,9 +158,9 @@ export default function Domestic() {
               title="Gangtok & Darjeeling | The Abode of Clouds"
               duration="6 Days and 5 Nights"
               rating="4.8/5"
-              cut_price="INR 69,099"
-              curr_price="₹ 59,099"
-              save="SAVE INR 10,000"
+              cut_price="INR 50,199"
+                curr_price="₹ 35,799"
+                save="SAVE INR 14,400"
               direct="/Sikkim5n6d"
               image={sikkim}
             />
