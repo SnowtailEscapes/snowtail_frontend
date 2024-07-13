@@ -32,21 +32,28 @@ const International = ({ to, title, location, price, duration, image }) => {
             <h2 className="text-2xl font-bold mb-2">{title}</h2>
             <p className="text-gray-600 mb-4">{location}</p>
             <div className="flex space-x-2 mb-4">
-              <span className="bg-green-100 text-green-600 px-3 py-1 rounded-full text-xs">All meals</span>
-              <span className="bg-green-100 text-green-600 px-3 py-1 rounded-full text-xs">3 star resort</span>
-              <span className="bg-green-100 text-green-600 px-3 py-1 rounded-full text-xs">Major sightseeing</span>
+              <span className="bg-green-100 text-green-600 px-3 py-1 rounded-full text-xs">
+                All meals
+              </span>
+              <span className="bg-green-100 text-green-600 px-3 py-1 rounded-full text-xs">
+                3 star resort
+              </span>
+              <span className="bg-green-100 text-green-600 px-3 py-1 rounded-full text-xs">
+                Major sightseeing
+              </span>
             </div>
             <div className="flex justify-between items-center">
               <h3 className="text-xl font-semibold">Price</h3>
-              <h3 className="text-2xl text-color1 flex-nowrap">
-              <CurrencyConverter price={price} /> per person
+              <h3 className="text-2xl text-color1 flex-nowrap flex">
+                <CurrencyConverter price={price} />
+                <p>/person</p>
               </h3>
             </div>
           </div>
           <div className="mt-4">
             <Link to={to}>
               <button className="btn bg-color1 text-white text-nowrap w-full py-2 rounded-lg">
-               Explore 
+                Explore
               </button>
             </Link>
           </div>
@@ -54,7 +61,7 @@ const International = ({ to, title, location, price, duration, image }) => {
       </div>
     </div>
   );
-}
+};
 
 International.propTypes = {
   title: PropTypes.string.isRequired,
@@ -63,7 +70,6 @@ International.propTypes = {
   price: PropTypes.number.isRequired,
   duration: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-
 };
 
 export default International;

@@ -69,7 +69,9 @@ const Card = ({
           alt="Tag"
           loading="lazy"
         />
-        <p className="save"><CurrencyConverter price={save} /></p>
+        <p className="save">
+          <CurrencyConverter price={save} />
+        </p>
       </div>
       <div className="flex flex-col pt-2 gap-y-1">
         <div className="flex flex-row justify-between">
@@ -84,14 +86,15 @@ const Card = ({
           MONSOON SALE!
         </button>
         <div className="flex flex-row justify-around">
-          <p className="text-xs">
-            <CurrencyConverter price={curr_price} /> per person
+          <p className="text-xs flex">
+            <CurrencyConverter price={curr_price} /> <p>/person</p>
           </p>
           <p className="text-xs cut text-green-300">
             <CurrencyConverter price={cut_price} />
           </p>
-          <p className="discount text-xs bg-green-100 p-1">
-            Save<CurrencyConverter price={save} />
+          <p className="discount text-xs bg-green-100 p-1 flex gap-1">
+            <p>Save</p>
+            <CurrencyConverter price={save} />
           </p>
         </div>
         <div className="flex flex-row">

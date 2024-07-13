@@ -26,11 +26,10 @@ const RightSide = ({
     setShowContactForm(!showContactForm);
   };
 
-  
   return (
     <>
       <div className={styles.tour_right}>
-        <div className={styles.right1} >
+        <div className={styles.right1}>
           <div className={styles.top}>
             <div className={styles.tour_details_right_box_heading}>
               <h3>Standard Package</h3>
@@ -74,9 +73,14 @@ const RightSide = ({
               <h5 className="border-bottom">Price</h5>
               <div className={styles.tour_package_bar_price}>
                 <h6>
-                  <del><CurrencyConverter price={standard_cut}/></del>
+                  <del>
+                    <CurrencyConverter price={standard_cut} />
+                  </del>
                 </h6>
-                <h3><CurrencyConverter price={standard_current}/></h3>
+                <h3 className="flex gap-2">
+                  <CurrencyConverter price={standard_current} /> 
+                  <p>per person</p>
+                </h3>
               </div>
             </div>
           </div>
@@ -134,9 +138,14 @@ const RightSide = ({
               <h5>Price</h5>
               <div className={styles.tour_package_bar_price}>
                 <h6>
-                  <del><CurrencyConverter price={deluxe_cut}/></del>
+                  <del>
+                    <CurrencyConverter price={deluxe_cut} />
+                  </del>
                 </h6>
-                <h3><CurrencyConverter price={deluxe_current}/></h3>
+                <h3 className="flex gap-2">
+                  <CurrencyConverter price={deluxe_current} />
+                  <p>per person</p>
+                </h3>
               </div>
             </div>
           </div>
@@ -150,7 +159,7 @@ const RightSide = ({
           </div>
         </div>
 
-        <div className={styles.right1} >
+        <div className={styles.right1}>
           <div className={styles.top}>
             <div className={styles.tour_details_right_box_heading}>
               <h3 className={styles.super_deluxe}>Super Deluxe Package</h3>
@@ -194,9 +203,14 @@ const RightSide = ({
               <h6>Price</h6>
               <div className={styles.tour_package_bar_price}>
                 <h6>
-                  <del><CurrencyConverter price={super_deluxe_cut}/></del>
+                  <del>
+                    <CurrencyConverter price={super_deluxe_cut} />
+                  </del>
                 </h6>
-                <h3><CurrencyConverter price={super_deluxe_current}/></h3>
+                <h3 className="flex gap-2">
+                  <CurrencyConverter price={super_deluxe_current} />
+                  <p>per person</p>
+                </h3>
               </div>
             </div>
           </div>
@@ -210,7 +224,7 @@ const RightSide = ({
           </div>
         </div>
 
-        <div className={styles.right1} >
+        <div className={styles.right1}>
           <div className={styles.top}>
             <div className={styles.tour_details_right_box_heading}>
               <h3>Why choose us</h3>

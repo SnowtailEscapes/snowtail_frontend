@@ -39,8 +39,9 @@ const International = ({ to, title, location, price, duration, image }) => {
             </div>
             <div className="flex justify-between items-center">
               <h3 className="text-xl font-semibold">Price</h3>
-              <h3 className="text-2xl text-color1">
-              <CurrencyConverter price={price} />
+              <h3 className="text-2xl text-color1 flex-nowrap flex">
+                <CurrencyConverter price={price} />
+                <p>/person</p>
               </h3>
             </div>
           </div>

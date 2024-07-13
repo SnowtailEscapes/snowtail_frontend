@@ -1,76 +1,49 @@
+import React, { useState } from "react";
 
-import React, { useEffect, useState } from "react";
-import axios from 'axios';
+const SearchBox = () => {
+  const [itineraries, setItineraries] = useState([]);
 
-export default function SearchBox() {
-  const [search, setSearch] = useState("");
-  const [results, setResults] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [isError, setIsError] = useState(false);
-
-  useEffect(() => {
-    const fetchItineraries = async () => {
-      setIsLoading(true);
-      setIsError(false);
+  async function handleSearch(key) {
+    if (key.length > 1) {
       try {
-        const response = await axios.get(`/api/itinerary/${search}`);
-        setResults(response.data.itineraries);
-      } catch (err) {
-        console.error('Error searching itineraries:', err);
-        setIsError(true);
-      } finally {
-        setIsLoading(false);
+        let result = await fetch("http://localhost:5000/api/itineraries/" + key);
+        result = await result.json();
+        
+        if (result.itineraries && Array.isArray(result.itineraries)) {
+          setItineraries(result.itineraries);
+        } else {
+          setItineraries([]);
+        }
+
+        console.log(result);
+      } catch (error) {
+        console.error("Error fetching itineraries:", error);
+        setItineraries([]);
       }
-    };
-
-    if (search.trim() !== "") {
-      fetchItineraries();
     } else {
-      setResults([]);
+      setItineraries([]);
     }
-  }, [search]);
-
-  const handleSearch = async (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-    setIsError(false);
-    try {
-      const response = await axios.get(`/api/itineraries/${search}`);
-      setResults(response.data);
-    } catch (err) {
-      console.error('Error searching itineraries:', err);
-      setIsError(true);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  }
 
   return (
-    <>
-      <form onSubmit={handleSearch} className="flex justify-center text-center m-5 p-5 gap-5">
-        <input
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          type="text"
-          placeholder="Search for destination"
-          className="input input-bordered input-primary w-full max-w-xs"
-        />
-        <button type="submit" className="btn btn-accent">
-          Search
-        </button>
-      </form>
-
-      {isLoading && <p>Loading...</p>}
-      {isError && <p>Error loading itineraries.</p>}
-      {results.length > 0 ? (
-        <div className="itinerary-list">
-          {results.map((itinerary, index) => (
-            <h2 key={index}>{itinerary.title}</h2>
-          ))}
-        </div>
+    <div>
+      <input
+        onChange={(e) => handleSearch(e.target.value)}
+        type="text"
+        placeholder="Type here"
+        className="input input-bordered input-secondary w-full max-w-xs"
+      />
+      {itineraries.length > 0 ? (
+        itineraries.map((item) => (
+          <div key={item._id}>
+            {item.title}
+          </div>
+        ))
       ) : (
-        search && !isLoading && !isError && <p>No itineraries match your search.</p>
+        <p>No itineraries found</p>
       )}
-    </>
+    </div>
   );
-}
+};
+
+export default SearchBox;
