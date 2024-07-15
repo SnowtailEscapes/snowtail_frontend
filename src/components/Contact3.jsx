@@ -297,6 +297,7 @@ const Contact = ({ isVisible, onClose }) => {
 
   const sendEmail = async (e) => {
     e.preventDefault();
+    toast.info("Sending message...");
 
     const emailData = {
       name,
