@@ -298,6 +298,7 @@ export default function Contact2() {
 
   const sendEmail = async (e) => {
     e.preventDefault();
+    toast.info("Sending message...");
 
     const emailData = {
       name,

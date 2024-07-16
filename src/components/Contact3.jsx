@@ -267,19 +267,19 @@ Modal.setAppElement("#root"); // Set the root element for accessibility
 const Contact = ({ isVisible, onClose }) => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [styles, setStyles] = useState(getStyles());
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [isd, setISD] = useState("");
-  const [date, setDate] = useState("");
-  const [place, setPlace] = useState("");
-  const [packages, setPackages] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [isd, setISD] = useState('');
+  const [date, setDate] = useState('');
+  const [place, setPlace] = useState('');
+  const [packages, setPackages] = useState('');
+  const [isSending, setIsSending] = useState(false);
 
-  () => {
+  useEffect(() => {
     setPackages(window.location.pathname);
-  };
-  console.log(window.location.pathname);
-
+  }, []);
+  
   useEffect(() => {
     setIsOpen(isVisible);
   }, [isVisible]);
@@ -289,14 +289,16 @@ const Contact = ({ isVisible, onClose }) => {
       setStyles(getStyles());
     };
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   const sendEmail = async (e) => {
     e.preventDefault();
+    setIsSending(true);
+    toast.info('Sending message...');
 
     const emailData = {
       name,
@@ -314,28 +316,31 @@ const Contact = ({ isVisible, onClose }) => {
         emailData
       );
 
+      setIsSending(false);
+
       if (response.status === 200) {
-        toast.success("Message Sent");
+        toast.success('Message Sent');
         setIsOpen(false);
         onClose(); // Close modal on successful submission
         resetForm();
       } else {
-        toast.error("Message not sent");
+        toast.error('Message not sent');
       }
     } catch (error) {
-      console.error("Failed to send email:", error);
-      toast.error("Failed to send message");
+      setIsSending(false);
+      console.error('Failed to send email:', error);
+      toast.error('Failed to send message');
     }
   };
 
   const resetForm = () => {
-    setName("");
-    setEmail("");
-    setPhone("");
-    setISD("");
-    setDate("");
-    setPackages("");
-    setPlace("");
+    setName('');
+    setEmail('');
+    setPhone('');
+    setISD('');
+    setDate('');
+    setPackages('');
+    setPlace('');
   };
 
   return (
@@ -386,7 +391,7 @@ const Contact = ({ isVisible, onClose }) => {
           </div>
           <div
             className="md:p-4 p-2 bg-white flex flex-col items-center justify-center md:w-2/3 w-full"
-            style={{ fontSize: "13px" }}
+            style={{ fontSize: '13px' }}
           >
             <form
               onSubmit={sendEmail}
@@ -425,7 +430,6 @@ const Contact = ({ isVisible, onClose }) => {
                   className="input input-bordered input-primary w-full grid-cols-10"
                 />
               </div>
-
               <input
                 type="email"
                 placeholder="Email"
@@ -434,7 +438,6 @@ const Contact = ({ isVisible, onClose }) => {
                 className="input input-bordered input-primary w-full"
               />
               <label>Travel Date?</label>
-
               <input
                 type="date"
                 placeholder="Date"
@@ -442,29 +445,25 @@ const Contact = ({ isVisible, onClose }) => {
                 onChange={(e) => setDate(e.target.value)}
                 className="input input-bordered input-primary w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
-
               <div className="flex flex-col md:flex-row gap-2 items-center">
-                <label className="md:w-1/2 text-[15px]">
-                  Hotel Accomodation
-                </label>
+                <label className="md:w-1/2 text-[15px]">Hotel Accommodation</label>
                 <select
                   className="select select-primary md:w-1/2 grid-cols-1 w-full"
                   value={packages}
                   onChange={(e) => setPackages(e.target.value)}
                 >
-                  <option value="3 star">standard rooms</option>
-                  <option value="4 star">deluxe rooms</option>
-                  <option value="5 star">super deluxe rooms</option>
+                  <option value="3 star">Standard rooms</option>
+                  <option value="4 star">Deluxe rooms</option>
+                  <option value="5 star">Super deluxe rooms</option>
                 </select>
               </div>
-
-              <button type="submit" className="btn btn-primary w-full">
-                Send Message
+              <button type="submit" className="btn btn-primary w-full" disabled={isSending}>
+                {isSending ? 'Sending...' : 'Send Message'}
               </button>
               <p className="text-color1 text-[13px]">
                 You would get a callback from an expert.
                 <br />
-                We dont share your data with other parties
+                We don't share your data with other parties.
               </p>
             </form>
           </div>
@@ -473,6 +472,9 @@ const Contact = ({ isVisible, onClose }) => {
     </>
   );
 };
+
+
+
 
 Contact.propTypes = {
   isVisible: PropTypes.bool.isRequired,
