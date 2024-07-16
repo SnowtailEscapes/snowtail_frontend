@@ -36,8 +36,14 @@ const Card = ({
     dispatch(fetchCurrencyRates());
   }, [dispatch]);
 
+
+  const numericRating = parseFloat(rating);
+  
+
+  const ratingOutOfFive = Math.round((numericRating / 10) * 10) / 10;
+
   return (
-    <div className="lg:w-1/3 md:1/2 w-11/12 carousel-item flex flex-col relative border border-slate-100 rounded-lg">
+    <div className="lg:w-1/3 md:1/2 w-11/12 p-2 carousel-item flex flex-col relative border border-slate-100 rounded-lg">
       <div
         className="relative text-center"
         style={{ width: "100%", paddingBottom: "100%" }}
@@ -56,29 +62,32 @@ const Card = ({
           />
         </Link>
       </div>
-      <div
-        className={`${
-          hover && "scale-105"
-        } top-5 bg-color1 absolute flex flex-row md:gap-2 p-1`}
-      >
-        <img
-          className="tag"
-          src={tag}
-          width={5}
-          height={5}
-          alt="Tag"
-          loading="lazy"
-        />
-        <p className="save">
-          <CurrencyConverter price={save} />
-        </p>
-      </div>
+      {save && (
+        <div
+          className={`${
+            hover && "scale-105"
+          } top-5 bg-color1 absolute flex flex-row md:gap-2 p-1`}
+        >
+          <img
+            className="tag"
+            src={tag}
+            width={5}
+            height={5}
+            alt="Tag"
+            loading="lazy"
+          />
+          <p className="save">
+            <CurrencyConverter price={save} />
+          </p>
+        </div>
+      )}
+
       <div className="flex flex-col pt-2 gap-y-1">
         <div className="flex flex-row justify-between">
           <p className="text-sm text-green-500">{duration}</p>
           <p className="text-sm text-green-500 flex flex-row">
             <img src={star} width={20} alt="Star" loading="lazy" />
-            <span>{rating}</span>
+            <span>{ratingOutOfFive}</span>
           </p>
         </div>
         <div className="light">{title}</div>
