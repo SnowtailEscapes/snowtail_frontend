@@ -32,7 +32,7 @@ const SearchResults = () => {
                 duration={item.duration}
                 rating={item.rating}
                 curr_price={item.prices.three_star}
-                direct={item._direct}
+                direct={item.direct}
                 key={item._id}
               />
             ))}

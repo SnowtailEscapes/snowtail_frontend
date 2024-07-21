@@ -36,9 +36,7 @@ const Card = ({
     dispatch(fetchCurrencyRates());
   }, [dispatch]);
 
-
   const numericRating = parseFloat(rating);
-  
 
   const ratingOutOfFive = Math.round((numericRating / 10) * 10) / 10;
 
@@ -98,13 +96,18 @@ const Card = ({
           <p className="text-xs flex">
             <CurrencyConverter price={curr_price} /> <p>/person</p>
           </p>
-          <p className="text-xs cut text-green-300">
-            <CurrencyConverter price={cut_price} />
-          </p>
-          <p className="discount text-xs bg-green-100 p-1 flex gap-1">
-            <p>Save</p>
-            <CurrencyConverter price={save} />
-          </p>
+          {cut_price && (
+            <p className="text-xs cut text-green-300">
+              <CurrencyConverter price={cut_price} />
+            </p>
+          )}
+
+          {save && (
+            <p className="discount text-xs bg-green-100 p-1 flex gap-1">
+              <p>Save</p>
+              <CurrencyConverter price={save} />
+            </p>
+          )}
         </div>
         <div className="flex flex-row">
           <button
