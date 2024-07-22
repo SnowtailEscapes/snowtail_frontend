@@ -294,7 +294,7 @@ const Contact = ({ isVisible, onClose }) => {
 
   const sendEmail = async (e) => {
     e.preventDefault();
-    toast.info("Sending message...");
+    alert("Your message will be sent shortly, you can close the form. Thank you!")
 
     const emailData = {
       name,
