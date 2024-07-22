@@ -16,26 +16,28 @@ const SearchResults = () => {
       <Navbar />
       <div className="lg:m-10 lg:p-4 m-4 p-2">
         {itineraries.length > 0 ? (
-          <h1 className="text-2xl font-bold mb-6 text-center">
-            Packages
-          </h1>
+          <h1 className="text-2xl font-bold mb-6 text-center">Packages</h1>
         ) : (
           <h1 className="text-2xl font-bold mb-6 text-center">
             No Packages found for {searchText}
           </h1>
         )}
-        <div className="flex lg:flex-row flex-col gap-2">
-          {itineraries.length > 0 &&
-            itineraries.map((item) => (
-              <Card
-                title={item.title}
-                duration={item.duration}
-                rating={item.rating}
-                curr_price={item.prices.three_star}
-                direct={item.direct}
-                key={item._id}
-              />
-            ))}
+        <div className="flex">
+            {itineraries.length > 0 &&
+              itineraries.map((item) => (
+                <Card
+                  title={item.title}
+                  duration={item.duration}
+                  rating={item.rating}
+                  curr_price={item.prices.three_star}
+                  cut_price={item.cut_price}
+                  save={item.save}
+                  direct={item.direct}
+                  image={item.image}
+                  key={item._id}
+                />
+              ))}
+
         </div>
       </div>
       <Footer />
