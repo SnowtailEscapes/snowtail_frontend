@@ -6,6 +6,7 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 import Helmet from "react-helmet";
 import initializeGA from './utils/initializeGA';
 import RouteChangeTracker from './utils/RouteChangeTracker';
+import initializeClarity from './utils/initializeClarity';
 
 // International
 import Thailand5d4n from "./International/Thailand5d4n";
@@ -56,6 +57,7 @@ import Almaty from "./International/Almaty.jsx";
 function App() {
   useEffect(() => {
     initializeGA();
+    initializeClarity();
   }, []);
   return (
     <>
