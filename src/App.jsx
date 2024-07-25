@@ -4,6 +4,8 @@ import Home from "./Pages/Home";
 import About from "./components/About";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Helmet from "react-helmet";
+import initializeGA from './utils/initializeGA';
+import RouteChangeTracker from './utils/RouteChangeTracker';
 
 // International
 import Thailand5d4n from "./International/Thailand5d4n";
@@ -62,6 +64,7 @@ function App() {
         />
       </Helmet>
       <Router>
+      <RouteChangeTracker />
         <Routes>
           {/* COMMON SECTIONS */}
           <Route path="/" element={<Home />} />
