@@ -54,6 +54,9 @@ import TermsAndConditions from "./components/TermsAndCondition.jsx";
 import Almaty from "./International/Almaty.jsx";
 
 function App() {
+  useEffect(() => {
+    initializeGA();
+  }, []);
   return (
     <>
       <Helmet>
