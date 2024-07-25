@@ -56,9 +56,20 @@ import CurrencyConverter from "./getApi/CurrencyConverter.jsx";
 import SearchBox from "./getApi/searchBox.jsx";
 import SearchResults from "./getApi/SearchResults.jsx";
 
+const RouteChangeTracker = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.send({ hitType: 'pageview', page: location.pathname + location.search });
+  }, [location]);
+
+  return null;
+};
 
 function App() {
-
+  useEffect(() => {
+    initializeGA();
+  }, []);
   return (
     <>
       <Helmet>
@@ -70,6 +81,7 @@ function App() {
       </Helmet>
      
         <Router>
+        <RouteChangeTracker />
           <Routes>
             {/* COMMON SECTIONS */}
             <Route path="/currency" element={<CurrencyConverter/>}/>
