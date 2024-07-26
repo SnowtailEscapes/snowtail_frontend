@@ -31,14 +31,15 @@ export default function Domestic() {
       </h2>
       {isLargeScreen && (
         <>
-          <div className="carousel p-10 pb-0 rounded-box relative w-full">
+          <div className="carousel p-10 pb-0  relative w-full">
             <div
               id="Domestic1"
               className="carousel-item w-full flex justify-center gap-5 ml-14"
             >
               <Card
-                title="Kashmir | Adventure Meet Serenity"
-                duration="6 Days and 5 Nights"
+                name="Kashmir"
+                title="Adventure Meet Serenity"
+                duration="6 Days & 5 Nights"
                 rating="4.8/5"
                 cut_price="INR 28,700"
                 curr_price="₹ 26,700"
@@ -48,8 +49,9 @@ export default function Domestic() {
               />
 
               <Card
-                title="Kashmir | Experience Paradise On Earth"
-                duration="4 Days and 3 Nights"
+                name="Kashmir"
+                title="Experience Paradise On Earth"
+                duration="4 Days & 3 Nights"
                 rating="4.8/5"
                 image={Kashmir2}
                 cut_price="INR 25,900"
@@ -59,8 +61,9 @@ export default function Domestic() {
               />
 
               <Card
-                title="Ladakh | Thrilling Leh Ladakh"
-                duration="6 Days and 5 Nights"
+                name="Ladakh"
+                title="Thrilling Leh Ladakh"
+                duration="6 Days & 5 Nights"
                 rating="4.8/5"
                 cut_price="INR 41,999"
                 curr_price="₹ 29,999"
@@ -74,8 +77,9 @@ export default function Domestic() {
               className="carousel-item w-full flex justify-center gap-5 ml-14"
             >
               <Card
-                title="Gangtok & Darjeeling | The Abode of Clouds"
-                duration="6 Days and 5 Nights"
+                name="Gangtok & Darjeeling"
+                title="The Abode of Clouds"
+                duration="6 Days & 5 Nights"
                 rating="4.8/5"
                 cut_price="INR 50,199"
                 curr_price="₹ 35,799"
@@ -85,8 +89,9 @@ export default function Domestic() {
               />
 
               <Card
-                title="Himachal Pradesh | Sleep In Natures Lap"
-                duration="6 Days and 5 Nights"
+                name="Himachal Pradesh"
+                title="Sleep In Natures Lap"
+                duration="6 Days & 5 Nights"
                 rating="4.8/5"
                 cut_price="INR 28,700"
                 curr_price="₹ 26,700"
@@ -96,8 +101,9 @@ export default function Domestic() {
               />
 
               <Card
-                title="Andaman | A Journey to Serenity"
-                duration="5 Days and 4 Nights"
+                name='Andaman'
+                title="A Journey to Serenity"
+                duration="5 Days & 4 Nights"
                 rating="4.8/5"
                 cut_price="INR 44,799"
                 curr_price="₹ 31,988"
@@ -122,8 +128,9 @@ export default function Domestic() {
           <>
           <div className="carousel p-4 rounded-box flex justify-between items-center space-x-10 md:space-x-5">
             <Card
-              title="Kashmir | Adventure Meet Serenity"
-              duration="6 Days and 5 Nights"
+              name="Kashmir"
+              title="Adventure Meet Serenity"
+              duration="6 Days & 5 Nights"
               rating="4.8/5"
               cut_price="INR 28,700"
               curr_price="₹ 26,700"
@@ -133,8 +140,9 @@ export default function Domestic() {
             />
 
             <Card
-              title="Kashmir | Experience Paradise On Earth"
-              duration="4 Days and 3 Nights"
+              name="Kashmir"
+              title="Experience Paradise On Earth"
+              duration="4 Days & 3 Nights"
               rating="4.8/5"
               image={Kashmir2}
               cut_price="INR 25,900"
@@ -144,8 +152,9 @@ export default function Domestic() {
             />
 
             <Card
-              title="Ladakh | Thrilling Leh Ladakh"
-              duration="6 Days and 5 Nights"
+              name="Ladakh"
+              title="Thrilling Leh Ladakh"
+              duration="6 Days & 5 Nights"
               rating="4.8/5"
               cut_price="INR 41,999"
               curr_price="₹ 29,999"
@@ -155,8 +164,9 @@ export default function Domestic() {
             />
 
             <Card
-              title="Gangtok & Darjeeling | The Abode of Clouds"
-              duration="6 Days and 5 Nights"
+              name="Gangtok & Darjeeling"
+              title="The Abode of Clouds"
+              duration="6 Days & 5 Nights"
               rating="4.8/5"
               cut_price="INR 50,199"
                 curr_price="₹ 35,799"
@@ -166,8 +176,9 @@ export default function Domestic() {
             />
 
             <Card
-              title="Himachal Pradesh | Sleep In Natures Lap"
-              duration="6 Days and 5 Nights"
+              name="Himachal Pradesh"
+              title="Sleep In Natures Lap"
+              duration="6 Days & 5 Nights"
               rating="4.8/5"
               cut_price="INR 28,700"
               curr_price="₹ 26,700"
@@ -177,8 +188,9 @@ export default function Domestic() {
             />
 
             <Card
-              title="Andaman | A Journey to Serenity"
-              duration="5 Days and 4 Nights"
+              name="Andaman"
+              title="A Journey to Serenity"
+              duration="5 Days & 4 Nights"
               rating="4.8/5"
               cut_price="INR 44,799"
               curr_price="₹ 31,988"

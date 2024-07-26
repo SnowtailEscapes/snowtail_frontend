@@ -28,41 +28,44 @@ export default function International() {
       <h2 className="font-extrabold text-3xl">Popular International Tours</h2>
       {isLargeScreen && (
         <>
-          <div className="carousel pb-0 rounded-box relative w-full">
+          <div className="carousel p-10 pb-0 relative w-full">
             <div
               id="International1"
-              className="carousel-item w-full flex justify-center md:gap-5 ml-14"
+              className="carousel-item w-full flex justify-center gap-5 ml-14"
             >
               <Card
-                title="Thailand | Experience Jewels of Thailand"
-                duration="9 Days and 8 Nights"
+                name="Thailand"
+                title="Experience Jewels of Thailand"
+                duration="9 Days & 8 Nights"
                 rating="4.8/5"
-                cut_price="INR 69,099"
-                curr_price="₹ 59,099"
-                save="SAVE INR 10,000"
+                cut_price="₹69,099"
+                curr_price="₹59,099"
+                save="SAVE ₹10,000"
                 direct="/Thailand9d8n"
                 image={Thailand8n9ds}
               />
 
               <Card
-                title="Bali | Enchanting Bali Escape with Gili Island"
-                duration="8 Days and 7 Nights"
+                name="Bali"
+                title="Enchanting Bali Escape with Gili Island"
+                duration="8 Days & 7 Nights"
                 rating="4.8/5"
-                cut_price="INR 64,699"
+                cut_price="₹64,699"
                 curr_price="₹54,699"
-                save="SAVE INR 10,000"
+                save="SAVE ₹10,000"
                 direct="/Bali8d7n"
                 image={bali7n8ds}
               />
 
               <Card
-                title="Singapore | A Journey of Cultural Marvels"
-                duration="7 Days and 6 Nights"
+                name="Singapore"
+                title="A Journey of Cultural Marvels"
+                duration="7 Days & 6 Nights"
                 rating="4.8/5"
-                cut_price="INR 63,900"
+                cut_price="₹63,900"
                 curr_price="₹56,699"
                 direct="/Singapore6n7d"
-                save="SAVE INR 7201"
+                save="SAVE ₹7201"
                 image={singapore6n7ds}
               />
             </div>
@@ -70,34 +73,27 @@ export default function International() {
               id="International2"
               className="carousel-item w-full flex justify-center gap-5 ml-14"
             >
+             
               <Card
-                title="Singapore | A Journey of Cultural Marvels"
-                duration="7 Days and 6 Nights"
+                name="Dubai"
+                title="A Journey of Luxury and Wonder"
+                duration="6 Days & 5 Nights"
                 rating="4.8/5"
-                cut_price="INR 63,900"
-                curr_price="₹56,699"
-                direct="/Singapore6n7d"
-                save="SAVE INR 7201"
-                image={singapore6n7ds}
-              />
-              <Card
-                title="Dubai | A Journey of Luxury and Wonder"
-                duration="6 Days and 5 Nights"
-                rating="4.8/5"
-                cut_price="INR 69,500"
-                curr_price="₹ 58,899"
-                save="SAVE INR 10,601"
+                cut_price="₹69,500"
+                curr_price="₹58,899"
+                save="SAVE ₹10,601"
                 direct="/Dubai5n6d"
                 image={dubai5n6d}
               />
 
               <Card
-                title="Almaty |  Heart in Mountains "
-                duration="9 Days and 8 Nights"
+                name="Almaty"
+                title="Heart in Mountains"
+                duration="9 Days & 8 Nights"
                 rating="4.8/5"
-                cut_price="INR 41,699"
-              curr_price="₹ 34,699"
-              save="SAVE INR 7,000"
+                cut_price="₹41,699"
+              curr_price="₹34,699"
+              save="SAVE ₹7,000"
                 direct="/Almaty"
                 image={almaty}
               />
@@ -118,56 +114,61 @@ export default function International() {
           <>
           <div className="carousel p-4 rounded-box flex justify-between items-center space-x-10 md:space-x-5">
             <Card
-              title="Thailand | Experience Jewels of Thailand"
-              duration="9 Days and 8 Nights"
+              name="Thailand"
+              title="Experience Jewels of Thailand"
+              duration="9 Days & 8 Nights"
               rating="4.8/5"
-              cut_price="INR 69,099"
-              curr_price="₹ 59,099"
-              save="SAVE INR 10,000"
+              cut_price="₹69,099"
+              curr_price="₹59,099"
+              save="SAVE ₹10,000"
               direct="/Thailand9d8n"
               image={Thailand8n9ds}
             />
 
             <Card
-              title="Bali | Enchanting Bali Escape with Gili Island"
-              duration="8 Days and 7 Nights"
+              name="Bali"
+              title="Enchanting Bali Escape with Gili Island"
+              duration="8 Days & 7 Nights"
               rating="4.8/5"
-              cut_price="INR 64,699"
+              cut_price="₹64,699"
               curr_price="₹54,699"
-              save="SAVE INR 10,000"
+              save="SAVE ₹10,000"
               direct="/Bali8d7n"
               image={bali7n8ds}
             />
 
             <Card
-              title="Singapore | A Journey of Cultural Marvels"
-              duration="7 Days and 6 Nights"
+              name='Singapore'
+              title="A Journey of Cultural Marvels"
+              duration="7 Days & 6 Nights"
               rating="4.8/5"
-              cut_price="INR 63,900"
+              cut_price="₹63,900"
               curr_price="₹56,699"
               direct="/Singapore6n7d"
-              save="SAVE INR 7201"
+              save="SAVE ₹7201"
               image={singapore6n7ds}
             />
 
-            <Card
-              title="Dubai | A Journey of Luxury and Wonder"
-              duration="6 Days and 5 Nights"
+            <Card 
+              name="Dubai"
+              title="A Journey of Luxury and Wonder"
+              duration="6 Days & 5 Nights"
               rating="4.8/5"
-              cut_price="INR 69,500"
-              curr_price="₹ 58,899"
-              save="SAVE INR 10,601"
+              cut_price="₹69,500"
+              curr_price="₹58,899"
+              save="SAVE ₹10,601"
               direct="/Dubai5n6d"
               image={dubai5n6d}
             />
 
             <Card
-              title="Almaty |  Heart in Mountains "
-              duration="9 Days and 8 Nights"
+              name='Almaty'
+              title="Heart in Mountains "
+              duration="9 Days & 8 Nights"
               rating="4.8/5"
-              cut_price="INR 41,699"
-              curr_price="₹ 34,699"
-              save="SAVE INR 7,000"
+              cut_price="₹41,699"
+              curr_price="₹34,699"
+              save="SAVE ₹7,000"
               direct="/Almaty"
               image={almaty}
             />

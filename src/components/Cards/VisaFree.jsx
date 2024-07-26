@@ -30,14 +30,14 @@ export default function VisaFree() {
       </h2>
       {isLargeScreen && (
         <>
-          <div className="carousel pb-0 rounded-box relative w-full">
+          <div className="carousel p-10 pb-0  relative w-full">
             <div
               id="VisaFree1"
               className="carousel-item w-full flex justify-center md:gap-5 ml-14"
             >
               <Card
-                title="Nepal"
-                duration="4 Days and 3 Nights"
+                name="Nepal"
+                duration="4 Days & 3 Nights"
                 rating="4.8/5"
                 cut_price="INR 39,500"
                 curr_price="₹ 33,999"
@@ -47,8 +47,8 @@ export default function VisaFree() {
               />
 
               <Card
-                title="Malaysia"
-                duration="7 Days and 6 Nights"
+                name="Malaysia"
+                duration="7 Days & 6 Nights"
                 rating="4.8/5"
                 cut_price="INR 39,500"
                 curr_price="₹ 33,999"
@@ -58,8 +58,8 @@ export default function VisaFree() {
               />
 
               <Card
-                title="Thailand"
-                duration="6 Days and 5 Nights"
+                name="Thailand"
+                duration="6 Days & 5 Nights"
                 rating="4.8/5"
                 cut_price="INR 36,999"
                 curr_price="₹ 29,999"
@@ -73,18 +73,8 @@ export default function VisaFree() {
               className="carousel-item w-full flex justify-center gap-5 ml-14"
             >
               <Card
-                title="Thailand"
-                duration="6 Days and 5 Nights"
-                rating="4.8/5"
-                cut_price="INR 36,999"
-                curr_price="₹ 29,999"
-                save="SAVE INR 7,000"
-                direct="/Thailand6d5n"
-                image={Thailand5n6ds}
-              />
-              <Card
-                title="Almaty "
-                duration="6 Days and 5 Nights"
+                name="Almaty "
+                duration="6 Days & 5 Nights"
                 rating="4.8/5"
                 cut_price="INR 41,699"
               curr_price="₹ 34,699"
@@ -94,8 +84,8 @@ export default function VisaFree() {
               />
 
               <Card
-                title="Sri Lanka | Jewel Of Indian Ocean"
-                duration="7 Days and 6 Nights"
+                name="Sri Lanka | Jewel Of Indian Ocean"
+                duration="7 Days & 6 Nights"
                 rating="4.8/5"
                 cut_price="INR 44,500"
                 curr_price="₹ 38,699"
@@ -120,7 +110,7 @@ export default function VisaFree() {
           <>
           <div className="carousel p-4 rounded-box flex justify-between items-center space-x-10 md:space-x-5">
             {/* <Card
-          title="Bhutan"
+          name="Bhutan"
           duration="6 Days and 5 Nights"
           rating="4.8/5"
           cut_price="INR 69,099"
@@ -130,8 +120,8 @@ export default function VisaFree() {
         /> */}
 
             <Card
-              title="Nepal"
-              duration="4 Days and 3 Nights"
+              name="Nepal"
+              duration="4 Days & 3 Nights"
               rating="4.8/5"
               cut_price="INR 39,500"
                 curr_price="₹ 33,999"
@@ -141,8 +131,8 @@ export default function VisaFree() {
             />
 
             <Card
-              title="Malaysia"
-              duration="7 Days and 6 Nights"
+              name="Malaysia"
+              duration="7 Days & 6 Nights"
               rating="4.8/5"
               cut_price="INR 39,500"
               curr_price="₹ 33,999"
@@ -152,8 +142,8 @@ export default function VisaFree() {
             />
 
             <Card
-              title="Thailand"
-              duration="6 Days and 5 Nights"
+              name="Thailand"
+              duration="6 Days & 5 Nights"
               rating="4.8/5"
               cut_price="INR 36,999"
               curr_price="₹ 29,999"
@@ -163,8 +153,8 @@ export default function VisaFree() {
             />
 
             <Card
-              title="Almaty "
-              duration="6 Days and 5 Nights"
+              name="Almaty "
+              duration="6 Days & 5 Nights"
               rating="4.8/5"
               cut_price="INR 41,699"
               curr_price="₹ 34,699"
@@ -174,8 +164,8 @@ export default function VisaFree() {
             />
 
             <Card
-              title="Sri Lanka | Jewel Of Indian Ocean"
-              duration="7 Days and 6 Nights"
+              name="Sri Lanka | Jewel Of Indian Ocean"
+              duration="7 Days & 6 Nights"
               rating="4.8/5"
               cut_price="INR 44,500"
               curr_price="₹ 38,699"
@@ -185,7 +175,7 @@ export default function VisaFree() {
             />
 
             {/* <Card
-          title="Qatar"
+          name="Qatar"
           duration="7 Days and 6 Nights"
           rating="4.8/5"
           cut_price="INR 69,099"

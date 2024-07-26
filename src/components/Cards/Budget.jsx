@@ -34,14 +34,15 @@ export default function Budget() {
       <h2 className=" md:text-3xl text-2xl font-extrabold">Budget Tours</h2>
       {isLargeScreen && (
         <>
-          <div className="carousel p-10 pb-0 rounded-box relative w-full">
+          <div className="carousel p-10 pb-0  relative w-full">
             <div
               id="Budget1"
               className="carousel-item w-full flex justify-center gap-5 ml-14"
             >
               <Card
-                title="Kasol | Land of Creamy Flavors"
-                duration="3 Days and 2 Nights"
+                name="Kasol"
+                title="Land of Creamy Flavors"
+                duration="3 Days & 2 Nights"
                 rating="4.8/5"
                 cut_price="INR 15,399"
                 curr_price="₹ 10,999"
@@ -51,8 +52,9 @@ export default function Budget() {
               />
 
               <Card
-                title="Mussoorie & Rishikesh |  A Journey to the Queen of Hills"
-                duration="4 Days and 3 Nights"
+                name="Mussoorie & Rishikesh"
+                title="A Journey to the Queen of Hills"
+                duration="4 Days & 3 Nights"
                 rating="4.8/5"
                 cut_price="INR 22,399"
                 curr_price="₹ 15,999"
@@ -61,8 +63,9 @@ export default function Budget() {
                 image={uttrakhand}
               />
               <Card
-                title="Manali | A Himalayan Heaven"
-                duration="4 Days and 3 Nights"
+                name="Manali"
+                title="A Himalayan Heaven"
+                duration="4 Days & 3 Nights"
                 rating="4.8/5"
                 cut_price="INR 22,399"
               curr_price="₹ 15,999"
@@ -77,8 +80,9 @@ export default function Budget() {
               className="carousel-item w-full flex justify-center gap-5 ml-14"
             >
               <Card
-                title="Gujarat | Monument of Pride"
-                duration="4 Days and 3 Nights"
+                name="Gujarat"
+                title="Monument of Pride"
+                duration="4 Days & 3 Nights"
                 rating="4.8/5"
                 cut_price="INR 23,199"
                 curr_price="₹ 16,499"
@@ -87,8 +91,9 @@ export default function Budget() {
                 image={gujarat}
               />
               <Card
-                title="Bangkok & Pattaya | A Vibrant Thai Adventure"
-                duration="5 Days and 4 Nights"
+                name="Bangkok & Pattaya"
+                title="A Vibrant Thai Adventure"
+                duration="5 Days & 4 Nights"
                 rating="4.8/5"
                 cut_price="INR 25,699"
                 curr_price="₹ 19,999"
@@ -97,8 +102,9 @@ export default function Budget() {
                 image={thailand4n5dS}
               />
               <Card
-                title="Phuket & Krabi | Experience Best of Southern Thailand"
-                duration="6 Days and 5 Nights"
+                name="Phuket & Krabi"
+                title="Experience Best of Southern Thailand"
+                duration="6 Days & 5 Nights"
                 rating="4.8/5"
                 cut_price="INR 36,999"
                 curr_price="₹ 29,999"
@@ -122,8 +128,9 @@ export default function Budget() {
         <>
           <div className="carousel p-4 rounded-box flex justify-between items-center space-x-10 md:space-x-5">
             <Card
-              title="Kasol | Land of Creamy Flavors"
-              duration="3 Days and 2 Nights"
+              name="Kasol"
+              title="Land of Creamy Flavors"
+              duration="3 Days & 2 Nights"
               rating="4.8/5"
               cut_price="INR 15,399"
               curr_price="₹ 10,999"
@@ -133,8 +140,9 @@ export default function Budget() {
             />
 
             <Card
-              title="Mussoorie & Rishikesh |  A Journey to the Queen of Hills"
-              duration="4 Days and 3 Nights"
+              name="Mussoorie & Rishikesh"
+              title="A Journey to the Queen of Hills"
+              duration="4 Days & 3 Nights"
               rating="4.8/5"
               cut_price="INR 23,799"
               curr_price="₹ 16,999"
@@ -144,8 +152,9 @@ export default function Budget() {
             />
 
             <Card
-              title="Manali | A Himalayan Heaven"
-              duration="4 Days and 3 Nights"
+              name="Manali"
+              title="A Himalayan Heaven"
+              duration="4 Days & 3 Nights"
               rating="4.8/5"
               cut_price="INR 22,399"
               curr_price="₹ 15,999"
@@ -155,8 +164,9 @@ export default function Budget() {
             />
 
             <Card
-              title="Gujarat | Monument of Pride"
-              duration="4 Days and 3 Nights"
+              name='Gujarat'
+              title="Monument of Pride"
+              duration="4 Days & 3 Nights"
               rating="4.8/5"
               cut_price="INR 23,199"
               curr_price="₹ 16,499"
@@ -165,9 +175,10 @@ export default function Budget() {
               image={gujarat}
             />
 
-            <Card
-              title="Bangkok & Pattaya | A Vibrant Thai Adventure"
-              duration="5 Days and 4 Nights"
+            <Card 
+              name="Bangkok & Pattaya"
+              title="A Vibrant Thai Adventure"
+              duration="5 Days & 4 Nights"
               rating="4.8/5"
               cut_price="INR 25,699"
               curr_price="₹ 19,999"
@@ -177,8 +188,9 @@ export default function Budget() {
             />
 
             <Card
-              title="Phuket & Krabi | Experience Best of Southern Thailand"
-              duration="6 Days and 5 Nights"
+              name="Phuket & Krabi"
+              title="Experience Best of Southern Thailand"
+              duration="6 Days & 5 Nights"
               rating="4.8/5"
               cut_price="INR 36,999"
               curr_price="₹ 29,999"

@@ -7,11 +7,9 @@ import Countdown from "./Countdown";
 import { useEffect, useState } from "react";
 
 const styles = {
-  background: 'rgba(16, 15, 15, 0.5)',
   boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
   backdropFilter: 'blur(2.5px)',
   WebkitBackdropFilter: 'blur(2.5px)',
-
 };
 
 const Navbar = () => {
@@ -46,7 +44,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="w-full grid grid-cols-12 z-10  bg-color1 items-center text-white md:h-8 justify-center">
+      {/* <div className="w-full grid grid-cols-12 z-10  bg-color1 items-center text-white md:h-8 justify-center">
         <p className="text-center md:text-md text-sm md:col-span-6 col-span-12">
           <span className="font-bold">Monsoon Sale</span> up to{" "}
           <span className="font-bold">40% OFF</span> on your trip
@@ -62,11 +60,11 @@ const Navbar = () => {
         )}
 
         <img src={stick} width={90} height={90} className="moving-div" alt="moving-div"/>
-      </div>
+      </div> */}
 
       <div
         className={
-          isHomePage ? "text-white navbar" : "text-white navbar"
+          isHomePage ? "text-white navbar bg-color1" : "text-white navbar bg-color1"
         }
         style={styles}
       >

@@ -15,7 +15,7 @@ export default function TopSection() {
     <>
       <div className="home">
         <Navbar />
-        <picture>
+        {/* <picture>
           <source
             srcSet={`${Image} 1x, ${Image} 2x`}
             media="(max-width: 767px)"
@@ -39,9 +39,9 @@ export default function TopSection() {
             loading="lazy"
             
           />
-        </picture>
+        </picture> */}
       </div>
-      <InfiniteScrolling />
+      {/* <InfiniteScrolling /> */}
       <div className="flex flex-col gap-10 ">
         <International />
         <Domestic />
