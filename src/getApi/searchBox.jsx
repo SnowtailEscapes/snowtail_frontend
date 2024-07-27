@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import  TypeAnimation  from "react-type-animation"
+import  {TypeAnimation}  from "react-type-animation"
 
 const SearchBox = () => {
   const [itineraries, setItineraries] = useState([]);
