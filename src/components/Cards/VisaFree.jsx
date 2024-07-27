@@ -25,7 +25,7 @@ export default function VisaFree() {
   }, []);
   return (
     <div className="md:pl-20 md:pr-20 pl-4 pt-10">
-      <h2 className="text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
+      <h2 className="text-black1 march font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
         Visa Free Countries from India
       </h2>
       {isLargeScreen && (

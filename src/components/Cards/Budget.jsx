@@ -31,10 +31,10 @@ export default function Budget() {
 
   return (
     <div className="md:pl-20 md:pr-20 pl-4 pt-10">
-      <h2 className=" lg:text-[2.5rem] md:text-[2rem] text-[1.5rem] font-extrabold text-black1">Budget Tours</h2>
+      <h2 className=" lg:text-[2.5rem] md:text-[2rem] text-[1.5rem] font-extrabold text-black1 march">Budget Tours</h2>
       {isLargeScreen && (
         <>
-          <div className="carousel p-10 pb-0  relative w-full">
+          <div className="carousel p-10 pb-0  relative w-full" >
             <div
               id="Budget1"
               className="carousel-item w-full flex justify-center gap-5 ml-14"

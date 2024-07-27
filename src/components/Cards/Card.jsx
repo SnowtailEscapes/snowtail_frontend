@@ -80,7 +80,7 @@ const Card = ({
           </p>
         </div>
         <div className="flex flex-col">
-          <h2 className="text-[1.5rem] bold text-dark-accent font-bold font-arimo">
+          <h2 className="boston text-[1.5rem] bold text-dark-accent font-bold font-arimo ">
             {name}
           </h2>
           <h3 className="text-base text-black1 font-semibold">{title}</h3>
