@@ -107,12 +107,12 @@ const Card = ({
           </p>
         </div>
 
-        <div className="flex flex-row">
+        <div className="flex flex-row gap-3">
           <button
             className="btn btn-outline border-main-brand border-2 w-1/5"
             onClick={toggleContactForm}
           >
-            <img src={phone} width={20} alt="Phone" loading="lazy" />
+            <img src={phone} width={40} alt="Phone" loading="lazy" />
           </button>
           <button
             className="btn bg-main-brand rounded-md text-white w-4/5 text-[15px] font-bold"

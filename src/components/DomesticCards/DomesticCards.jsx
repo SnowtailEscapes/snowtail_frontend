@@ -21,8 +21,8 @@ const International = ({ to, title, location, price, duration, image }) => {
             <li className={a.disc}>Domestic Tour</li>
           </ul>
           <div>
-            <h2 className="text-2xl font-bold mb-2">{title}</h2>
-            <p className="text-gray-600 mb-4">{location}</p>
+            <h2 className={`text-[1.5rem] font-bold mb-2 font-arimo`}>{title}</h2>
+            <p className={`text-gray-600 mb-4 ${a.boston}`}>{location}</p>
             <div className="flex space-x-2 mb-4">
               <span className="bg-green-100 text-green-600 px-3 py-1 rounded-full text-xs">All meals</span>
               <span className="bg-green-100 text-green-600 px-3 py-1 rounded-full text-xs">3 star resort</span>

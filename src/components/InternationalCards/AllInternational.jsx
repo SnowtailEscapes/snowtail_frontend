@@ -41,7 +41,7 @@ export default function AllInternational() {
       </div>
       <div className="flex justify-center">
         <div className="mt-12 p-5">
-          <h1 className="text-4xl font-semibold text-center">
+          <h1 className="text-[2.5rem] march font-semibold text-center">
             International Tour Adventures
           </h1>
 
