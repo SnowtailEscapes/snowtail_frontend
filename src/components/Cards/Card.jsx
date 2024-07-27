@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import tag from "../../assets/tag.webp";
 import "../../styles/Card.css";
-import star from "../../assets/star.webp";
+import star from "../../assets/star2.png";
+import percent from "../../assets/percent.png";
 import phone from "../../assets/phone.webp";
 import { Link } from "react-router-dom";
 import Contact from "../Contact";
-import CurrencyConverter from "../../getApi/CurrencyConverter";
-import { useDispatch } from "react-redux";
-import { fetchCurrencyRates } from "../../redux/slice/currencySlice";
 
 const Card = ({
   title,
@@ -19,10 +17,10 @@ const Card = ({
   save,
   direct,
   image,
+  name,
 }) => {
   const [showContactForm, setShowContactForm] = useState(false);
   const [hover, setHover] = useState(false);
-  const dispatch = useDispatch();
 
   const toggleContactForm = () => {
     setShowContactForm(!showContactForm);
@@ -32,19 +30,11 @@ const Card = ({
     setHover(!hover);
   };
 
-  useEffect(() => {
-    dispatch(fetchCurrencyRates());
-  }, [dispatch]);
-
-  const numericRating = parseFloat(rating);
-
-  const ratingOutOfFive = Math.round((numericRating / 10) * 10) / 10;
-
   return (
-    <div className="lg:w-1/3 md:1/2 w-11/12 p-2 carousel-item flex flex-col relative border border-slate-100 rounded-lg">
+    <div className="lg:w-1/3 md:1/2 w-11/12 carousel-item flex flex-col relative rounded-2xl">
       <div
         className="relative text-center"
-        style={{ width: "100%", paddingBottom: "100%" }}
+        style={{ width: "100%", paddingBottom: "60%" }} // 5:3 aspect ratio
       >
         <Link to={direct}>
           <img
@@ -60,64 +50,72 @@ const Card = ({
           />
         </Link>
       </div>
-      {save && (
-        <div
-          className={`${
-            hover && "scale-105"
-          } top-5 bg-color1 absolute flex flex-row md:gap-2 p-1`}
-        >
-          <img
-            className="tag"
-            src={tag}
-            width={5}
-            height={5}
-            alt="Tag"
-            loading="lazy"
-          />
-          <p className="save">
-            <CurrencyConverter price={save} />
-          </p>
-        </div>
-      )}
-
+      <div
+        className={`${
+          hover && "scale-105"
+        } top-5 bg-main-brand absolute flex flex-row md:gap-2 p-1`}
+      >
+        {/* <img
+          className="tag"
+          src={tag}
+          width={5}
+          height={5}
+          alt="Tag"
+          loading="lazy"
+        /> */}
+        <p className="save">{save}</p>
+      </div>
       <div className="flex flex-col pt-2 gap-y-1">
         <div className="flex flex-row justify-between">
-          <p className="text-sm text-green-500">{duration}</p>
-          <p className="text-sm text-green-500 flex flex-row">
-            <img src={star} width={20} alt="Star" loading="lazy" />
-            <span>{ratingOutOfFive}</span>
+          <p className="text-[13px] text-main-brand font-bold">{duration}</p>
+          <p className="text-main-brand text-[13px] flex flex-row font-bold">
+            <img
+              src={star}
+              width={20}
+              alt="Star"
+              loading="lazy"
+              color="text-main-brand"
+            />
+            <span>{rating}</span>
           </p>
         </div>
-        <div className="light">{title}</div>
-        <button className="btn text-white btn-xs w-1/3 text-xs rounded-xl discount bg-gradient-to-r from-color1 to-red-500 text-nowrap">
-          MONSOON SALE!
-        </button>
-        <div className="flex flex-row justify-around">
-          <p className="text-xs flex">
-            <CurrencyConverter price={curr_price} /> <p>/person</p>
-          </p>
-          {cut_price && (
-            <p className="text-xs cut text-green-300">
-              <CurrencyConverter price={cut_price} />
-            </p>
-          )}
+        <div className="flex flex-col">
+          <h2 className="text-[1.5rem] bold text-dark-accent font-bold font-arimo">
+            {name}
+          </h2>
+          <h3 className="text-base text-black1 font-semibold">{title}</h3>
+        </div>
 
-          {save && (
-            <p className="discount text-xs bg-green-100 p-1 flex gap-1">
-              <p>Save</p>
-              <CurrencyConverter price={save} />
-            </p>
-          )}
+        <div className="flex flex-row justify-between items-center">
+          <h4 className="text-[13px] cut font-bold font-ligh2">{cut_price}/per</h4>
+          <h4 className="text-base text-main-brand font-bold font-light2">
+            {curr_price}
+            <span className="text-base text-main-brand text-bold">/per</span>
+          </h4>
+          {/* <p className="discount text-xs bg-green-100 p-1">{save}</p> */}
         </div>
+        <div className="text-[13px] flex flex-row font-bold">
+          <img
+            src={percent}
+            width={20}
+            alt="Star"
+            loading="lazy"
+            color="text-main-brand"
+          />
+          <p className="text-center w-1/3 text-xs rounded-xl discount text-nowrap text-ligh-accent text-[13px] font-light">
+            Special Monsoon Deal
+          </p>
+        </div>
+
         <div className="flex flex-row">
           <button
-            className="btn btn-outline border-color1 border-2 w-1/5 "
+            className="btn btn-outline border-main-brand border-2 w-1/5"
             onClick={toggleContactForm}
           >
             <img src={phone} width={20} alt="Phone" loading="lazy" />
           </button>
           <button
-            className="btn bg-color1 rounded-md text-white w-4/5"
+            className="btn bg-main-brand rounded-md text-white w-4/5 text-[15px] font-bold"
             onClick={toggleContactForm}
           >
             Request Callback
@@ -135,11 +133,12 @@ const Card = ({
 };
 
 Card.propTypes = {
+  name: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   duration: PropTypes.string.isRequired,
   rating: PropTypes.string.isRequired,
-  cut_price: PropTypes.number.isRequired,
-  curr_price: PropTypes.number.isRequired,
+  cut_price: PropTypes.string.isRequired,
+  curr_price: PropTypes.string.isRequired,
   save: PropTypes.string.isRequired,
   direct: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
