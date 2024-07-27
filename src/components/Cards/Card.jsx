@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import tag from "../../assets/tag.webp";
 import "../../styles/Card.css";
-import star from "../../assets/star.webp";
+import star from "../../assets/star2.png";
+import percent from "../../assets/percent.png";
 import phone from "../../assets/phone.webp";
 import { Link } from "react-router-dom";
 import Contact from "../Contact";
@@ -52,51 +53,69 @@ const Card = ({
       <div
         className={`${
           hover && "scale-105"
-        } top-5 bg-color1 absolute flex flex-row md:gap-2 p-1`}
+        } top-5 bg-main-brand absolute flex flex-row md:gap-2 p-1`}
       >
-        <img
+        {/* <img
           className="tag"
           src={tag}
           width={5}
           height={5}
           alt="Tag"
           loading="lazy"
-        />
+        /> */}
         <p className="save">{save}</p>
       </div>
       <div className="flex flex-col pt-2 gap-y-1">
         <div className="flex flex-row justify-between">
-          <p className="text-sm text-color1">{duration}</p>
-          <p className="text-sm text-color1 flex flex-row">
-            <img src={star} width={20} alt="Star" loading="lazy" />
+          <p className="text-[13px] text-main-brand font-bold">{duration}</p>
+          <p className="text-main-brand text-[13px] flex flex-row font-bold">
+            <img
+              src={star}
+              width={20}
+              alt="Star"
+              loading="lazy"
+              color="text-main-brand"
+            />
             <span>{rating}</span>
           </p>
         </div>
         <div className="flex flex-col">
-          <h1 className="text-xl bold text-color1">{name}</h1>
-          <p className="light">{title}</p>
+          <h2 className="text-[1.5rem] bold text-dark-accent font-bold font-arimo">
+            {name}
+          </h2>
+          <h3 className="text-base text-black1 font-semibold">{title}</h3>
         </div>
 
-        <div className="flex flex-row justify-between">
-          <p className="text-xs cut">{cut_price}/per</p>
-          <p className="text-xs text-color1">
+        <div className="flex flex-row justify-between items-center">
+          <h4 className="text-[13px] cut font-bold font-ligh2">{cut_price}/per</h4>
+          <h4 className="text-base text-main-brand font-bold font-light2">
             {curr_price}
-            <span className="text-xs">/per</span>
-          </p>
+            <span className="text-base text-main-brand text-bold">/per</span>
+          </h4>
           {/* <p className="discount text-xs bg-green-100 p-1">{save}</p> */}
         </div>
-        <div className="text-center w-1/3 text-xs rounded-xl discount text-nowrap">
-          Special Monsoon Deal
+        <div className="text-[13px] flex flex-row font-bold">
+          <img
+            src={percent}
+            width={20}
+            alt="Star"
+            loading="lazy"
+            color="text-main-brand"
+          />
+          <p className="text-center w-1/3 text-xs rounded-xl discount text-nowrap text-ligh-accent text-[13px] font-light">
+            Special Monsoon Deal
+          </p>
         </div>
+
         <div className="flex flex-row">
           <button
-            className="btn btn-outline border-color1 border-2 w-1/5"
+            className="btn btn-outline border-main-brand border-2 w-1/5"
             onClick={toggleContactForm}
           >
             <img src={phone} width={20} alt="Phone" loading="lazy" />
           </button>
           <button
-            className="btn bg-color1 rounded-md text-white w-4/5 text-xl"
+            className="btn bg-main-brand rounded-md text-white w-4/5 text-[15px] font-bold"
             onClick={toggleContactForm}
           >
             Request Callback

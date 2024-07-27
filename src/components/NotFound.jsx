@@ -8,7 +8,7 @@ export default function NotFound() {
       <div className="flex items-center space-x-10 flex-col md:flex-row">
         <img src={error} alt="Error 404" className="md:w-1/2 w-full h-auto" />
         <div className="text-center md:text-left">
-          <h1 className="text-2xl md:text-3xl text-color1">Error 404. Page Not Found!</h1>
+          <h1 className="text-2xl md:text-3xl text-main-brand">Error 404. Page Not Found!</h1>
           <h3 className="text-xl md:text-3xl mt-4">
             Go back to <Link to="/" className="text-blue-400">Home</Link>
           </h3>

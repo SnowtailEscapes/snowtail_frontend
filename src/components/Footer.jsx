@@ -14,22 +14,22 @@ export default function Footer() {
             <h1 className="text-2xl md:text-3xl">About Snowtail Escapes</h1>
             <ul className="list-none text-xs flex flex-col justify-evenly mt-4">
               <Link to="/about">
-                <li className="hover:text-color1">About us</li>
+                <li className="hover:text-main-brand">About us</li>
               </Link>
               <Link to="/privacy-policy">
-                <li className="hover:text-color1">Privacy Policy</li>
+                <li className="hover:text-main-brand">Privacy Policy</li>
               </Link>
               <Link to="/terms-conditions">
-                <li className="hover:text-color1">Terms and Conditions</li>
+                <li className="hover:text-main-brand">Terms and Conditions</li>
               </Link>
               <Link to="/">
-                <li className="hover:text-color1">Support</li>
+                <li className="hover:text-main-brand">Support</li>
               </Link>
               <Link to="/">
-                <li className="hover:text-color1">We are Hiring</li>
+                <li className="hover:text-main-brand">We are Hiring</li>
               </Link>
               <Link to="/cancellation-policy">
-                <li className="hover:text-color1">Cancellation Policy</li>
+                <li className="hover:text-main-brand">Cancellation Policy</li>
               </Link>
             </ul>
           </div>

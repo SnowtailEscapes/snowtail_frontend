@@ -25,7 +25,7 @@ export default function International() {
   }, []);
   return (
     <div className="md:pl-20 md:pr-20 pl-4 pt-10">
-      <h2 className="font-extrabold text-3xl">Popular International Tours</h2>
+      <h2 className="text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">Popular International Tours</h2>
       {isLargeScreen && (
         <>
           <div className="carousel p-10 pb-0 relative w-full">

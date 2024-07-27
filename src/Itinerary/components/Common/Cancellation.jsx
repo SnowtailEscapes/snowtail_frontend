@@ -32,7 +32,7 @@ export default function Cancellation() {
 
         {isOpen && (
           <div>
-            <p className="mb-5 text-color1 text-md">
+            <p className="mb-5 text-main-brand text-md">
               NO REFUND SHALL BE MADE WITH RESPECT TO THE INITIAL BOOKING AMOUNT FOR
               ANY CANCELLATIONS.
             </p>
@@ -77,7 +77,7 @@ export default function Cancellation() {
               </li>
             </ul>
 
-            <p className="text-color1 mt-4">
+            <p className="text-main-brand mt-4">
               PLEASE NOTE: FOR CUSTOMISED AND INTERNATIONAL TRIPS, CONNECT WITH POC
               IN ORDER TO GET EXACT CANCELLATION / RESCHEDULING CHARGES.
             </p>

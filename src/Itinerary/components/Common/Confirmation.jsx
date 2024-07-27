@@ -49,7 +49,7 @@ export default function Confirmation() {
             </li>
           </ul>
 
-          <p className="text-color1 mt-4">
+          <p className="text-main-brand mt-4">
             PLEASE NOTE: FOR CUSTOMIZED AND HOTEL-SPECIFIC TOURS, CONNECT WITH
             YOUR POC TO GET EXACT CANCELLATION/RESCHEDULING CHARGES.
           </p>

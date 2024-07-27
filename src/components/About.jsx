@@ -14,7 +14,7 @@ export default function About() {
         </h1>
         <div className=" flex flex-col">
           <div className="flex justify-evenly items-center p-10">
-            <h4 className="align-middle text-3xl md:text-5xl sofia  text-color1">
+            <h4 className="align-middle text-3xl md:text-5xl sofia  text-main-brand">
               Experience The Travel with
             </h4>
             <img

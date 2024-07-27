@@ -30,12 +30,12 @@ const International = ({ to, title, location, price, duration, image }) => {
             </div>
             <div className="flex justify-between items-center">
               <h3 className="text-xl font-semibold">Price</h3>
-              <h3 className="text-2xl text-color1">{price}</h3>
+              <h3 className="text-2xl text-main-brand">{price}</h3>
             </div>
           </div>
           <div className="mt-4">
             <Link to={to}>
-              <button className="btn bg-color1 text-white text-nowrap w-full py-2 rounded-lg">
+              <button className="btn bg-main-brand text-white text-nowrap w-full py-2 rounded-lg">
                Explore 
               </button>
             </Link>

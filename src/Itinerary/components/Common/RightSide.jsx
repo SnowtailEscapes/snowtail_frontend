@@ -81,7 +81,7 @@ const RightSide = ({
           </div>
           <div>
             <button
-              className="btn bg-color1 text-white"
+              className="btn bg-main-brand text-white"
               onClick={toggleContactForm}
             >
               Contact with an Expert
@@ -141,7 +141,7 @@ const RightSide = ({
           </div>
           <div>
             <button
-              className="btn bg-color1 text-white"
+              className="btn bg-main-brand text-white"
               onClick={toggleContactForm}
             >
               Contact with an Expert
@@ -201,7 +201,7 @@ const RightSide = ({
           </div>
           <div>
             <button
-              className="btn bg-color1 text-white"
+              className="btn bg-main-brand text-white"
               onClick={toggleContactForm}
             >
               Contact with an Expert

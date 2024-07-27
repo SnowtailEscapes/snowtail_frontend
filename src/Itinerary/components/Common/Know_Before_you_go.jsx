@@ -65,7 +65,7 @@ export default function KnowBeforeYouGo() {
                 Departure Timings: Please adhere to suggested departure timings
                 to avoid inconvenience.
               </li>
-              <li className="flex gap-4 text-[18px] leading-[25.5px] list-disc font-bold text-color1">
+              <li className="flex gap-4 text-[18px] leading-[25.5px] list-disc font-bold text-main-brand">
                 <img src={dot} width={5} alt="dot" />
                 Environment: Please do not litter and keep the environment
                 clean.
@@ -95,7 +95,7 @@ export default function KnowBeforeYouGo() {
               </li>
             </ul>
 
-            <p className="text-color1 mt-4">
+            <p className="text-main-brand mt-4">
             Enjoy your journey with SNOWTAIL ESCAPES!
             </p>
           </div>
