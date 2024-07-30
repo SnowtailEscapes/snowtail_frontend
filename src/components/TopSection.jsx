@@ -7,7 +7,6 @@ import Budget from "./Cards/Budget";
 import VisaFree from "./Cards/VisaFree";
 import Escapes from "./Escapes";
 import InfiniteScrolling from "./InfiniteScrolling";
-
 import Image from "../assets/CardImages/andaman.webp";
 import SearchBox from "../getApi/searchBox";
 
@@ -16,7 +15,7 @@ export default function TopSection() {
     <>
       <div className="home">
         <Navbar />
-        <picture>
+        {/* <picture>
           <source
             srcSet={`${Image} 1x, ${Image} 2x`}
             media="(max-width: 767px)"
@@ -40,10 +39,10 @@ export default function TopSection() {
             loading="lazy"
             
           />
-        </picture>
+        </picture> */}
       <SearchBox/>
       </div>
-      <InfiniteScrolling />
+      {/* <InfiniteScrolling /> */}
       <div className="flex flex-col gap-10 ">
         <International />
         <Domestic />
