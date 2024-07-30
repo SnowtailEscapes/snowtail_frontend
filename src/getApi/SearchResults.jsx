@@ -16,9 +16,9 @@ const SearchResults = () => {
       <Navbar />
       <div className="lg:m-10 lg:p-4 m-4 p-2">
         {itineraries.length > 0 ? (
-          <h1 className="text-2xl font-bold mb-6 text-center">Packages</h1>
+          <h1 className="text-2xl font-bold mb-6 text-center boston">Packages</h1>
         ) : (
-          <h1 className="text-2xl font-bold mb-6 text-center">
+          <h1 className="text-2xl font-bold mb-6 text-center boston">
             No Packages found for {searchText}
           </h1>
         )}
