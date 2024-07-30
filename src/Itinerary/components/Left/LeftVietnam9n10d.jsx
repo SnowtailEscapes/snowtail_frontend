@@ -55,7 +55,7 @@ export default function Left() {
             <ul>
               <li>Pick up - Noi Bai International Airport (HAN)</li>
               <li>Drop - Tan Son Nhat International Airport (SGN)</li>
-              <li>Country - Indonesia</li>
+              <li>Country - Vietnam</li>
               <li>Duration - 9N/10D</li>
               <li>Best Season - March to October</li>
               <li>Destination for- Couples/Friends/ Family</li>

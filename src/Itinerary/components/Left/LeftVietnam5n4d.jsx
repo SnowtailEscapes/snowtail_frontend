@@ -50,10 +50,10 @@ export default function Left() {
           </p>
           <div>
             <ul>
-              <li>Pick up - Ngurah Rai International Airport</li>
-              <li>Drop - Ngurah Rai International Airport</li>
-              <li>Country - Indonesia</li>
-              <li>Duration - 5N/6D</li>
+              <li>Pick up - Noi Bai International Airport (HAN)</li>
+              <li>Drop -Noi Bai International Airport (HAN)</li>
+              <li>Country - Vietnam</li>
+              <li>Duration - 4N/5D</li>
               <li>Best Season - March to October</li>
               <li>Destination for- Couples/Friends/ Family</li>
               <li>Mode of transportation- Car/traveller</li>

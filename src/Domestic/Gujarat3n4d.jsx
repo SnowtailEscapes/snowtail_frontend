@@ -40,7 +40,7 @@ export default function Rajasthan() {
         />
       </Helmet>
 
-      <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div>Loading...</div>}>
         <section className={a.section} data-aos="zoom-in">
           <ItineraryImage small={Small} large={Large} />
           <Navbar />
