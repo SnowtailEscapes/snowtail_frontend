@@ -53,6 +53,9 @@ import Domestic from "./components/DomesticCards/AllDomestic.jsx";
 import AllInternational from "./components/InternationalCards/AllInternational.jsx";
 import TermsAndConditions from "./components/TermsAndCondition.jsx";
 import Almaty from "./International/Almaty.jsx";
+import CurrencyConverter from "./getApi/CurrencyConverter.jsx";
+import SearchBox from "./getApi/searchBox.jsx";
+import SearchResults from "./getApi/SearchResults.jsx";
 
 function App() {
   useEffect(() => {
