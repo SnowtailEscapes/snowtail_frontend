@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./components/About";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Helmet from "react-helmet";
-
+import initializeGA from './utils/initializeGA';
+import RouteChangeTracker from './utils/RouteChangeTracker';
+import initializeClarity from './utils/initializeClarity';
 
 // International
 import Thailand5d4n from "./International/Thailand5d4n";
@@ -56,19 +58,11 @@ import CurrencyConverter from "./getApi/CurrencyConverter.jsx";
 import SearchBox from "./getApi/searchBox.jsx";
 import SearchResults from "./getApi/SearchResults.jsx";
 
-const RouteChangeTracker = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    ReactGA.send({ hitType: 'pageview', page: location.pathname + location.search });
-  }, [location]);
-
-  return null;
-};
 
 function App() {
   useEffect(() => {
     initializeGA();
+    initializeClarity();
   }, []);
   return (
     <>

@@ -22,7 +22,7 @@ const SearchBox = () => {
     if (key.length > 1) {
       try {
         let result = await fetch(
-          "http://localhost:5000/api/itineraries/" + key
+          `${VITE_API_SEARCH}/ + key`
         );
         result = await result.json();
 
