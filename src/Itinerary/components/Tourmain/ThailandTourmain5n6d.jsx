@@ -1,5 +1,5 @@
 import React from "react";
-import LeftThailand from "../Left/LeftThailand5n6d.jsx";
+import LeftThailand from "../Left/Left.jsx";
 import RightSide from "../Common/RightSide.jsx";
 import a from "../../styles/Tourmain.module.css";
 

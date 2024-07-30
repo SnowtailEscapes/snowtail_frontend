@@ -19,8 +19,31 @@ import Large from "../assets/LargeImages/almaty.avif";
 import Small from "../assets/CardImages/almaty.jpg";
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
+import { useDispatch , useSelector } from "react-redux";
+import { fetchItinerary } from "../redux/slice/itinerarySlice";
 
 export default function Almaty() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    Aos.init({
+      duration: 1300,
+    });
+    dispatch(fetchItinerary());
+  }, [dispatch]);
+
+  const { data: itineraries, isLoading, isError } = useSelector((state) => state.itinerary);
+
+  // Assuming itineraries is an array and we're taking the first item
+  const itinerary = Array.isArray(itineraries) && itineraries.length > 0 ? itineraries[0] : null;
+
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
+
+  if (isError || !itinerary || !itinerary.prices) {
+    return <p>Error loading itineraries.</p>;
+  }
+
   useEffect(() => {
     Aos.init({
       duration: 1300,

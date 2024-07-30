@@ -34,7 +34,7 @@ const TestItinerary = () => {
   const { data: itineraries, isLoading, isError } = useSelector((state) => state.itinerary);
 
   // Assuming itineraries is an array and we're taking the first item
-  const itinerary = Array.isArray(itineraries) && itineraries.length > 0 ? itineraries[0] : null;
+  const itinerary = Array.isArray(itineraries) && itineraries.length > 0 ? itineraries[33] : null;
 
   if (isLoading) {
     return <p>Loading...</p>;

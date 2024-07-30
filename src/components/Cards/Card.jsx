@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import tag from "../../assets/tag.webp";
 import "../../styles/Card.css";
@@ -7,6 +7,9 @@ import percent from "../../assets/percent.png";
 import phone from "../../assets/phone.webp";
 import { Link } from "react-router-dom";
 import Contact from "../Contact";
+import CurrencyConverter from "../../getApi/CurrencyConverter";
+import { useDispatch } from "react-redux";
+import { fetchCurrencyRates } from "../../redux/slice/currencySlice";
 
 const Card = ({
   title,
@@ -21,6 +24,7 @@ const Card = ({
 }) => {
   const [showContactForm, setShowContactForm] = useState(false);
   const [hover, setHover] = useState(false);
+  const dispatch = useDispatch();
 
   const toggleContactForm = () => {
     setShowContactForm(!showContactForm);
@@ -29,6 +33,14 @@ const Card = ({
   const hoverHo = () => {
     setHover(!hover);
   };
+
+  useEffect(() => {
+    dispatch(fetchCurrencyRates());
+  }, [dispatch]);
+
+  // const numericRating = parseFloat(rating);
+
+  // const ratingOutOfFive = Math.round((numericRating / 10) * 10) / 10;
 
   return (
     <div className="lg:w-1/3 md:1/2 w-11/12 carousel-item flex flex-col relative rounded-2xl">
@@ -55,14 +67,6 @@ const Card = ({
           hover && "scale-105"
         } top-5 bg-main-brand absolute flex flex-row md:gap-2 p-1`}
       >
-        {/* <img
-          className="tag"
-          src={tag}
-          width={5}
-          height={5}
-          alt="Tag"
-          loading="lazy"
-        /> */}
         <p className="save">{save}</p>
       </div>
       <div className="flex flex-col pt-2 gap-y-1">
@@ -87,12 +91,11 @@ const Card = ({
         </div>
 
         <div className="flex flex-row justify-between items-center">
-          <h4 className="text-[13px] cut font-bold font-ligh2">{cut_price}/per</h4>
+          <h4 className="text-[13px] cut font-bold font-ligh2"><CurrencyConverter price={Number(cut_price)} />/per</h4>
           <h4 className="text-base text-main-brand font-bold font-light2">
-            {curr_price}
+            <CurrencyConverter price={Number(curr_price)}/>
             <span className="text-base text-main-brand text-bold">/per</span>
           </h4>
-          {/* <p className="discount text-xs bg-green-100 p-1">{save}</p> */}
         </div>
         <div className="text-[13px] flex flex-row font-bold">
           <img
@@ -137,8 +140,8 @@ Card.propTypes = {
   title: PropTypes.string.isRequired,
   duration: PropTypes.string.isRequired,
   rating: PropTypes.string.isRequired,
-  cut_price: PropTypes.string.isRequired,
-  curr_price: PropTypes.string.isRequired,
+  cut_price: PropTypes.number.isRequired, // Changed to number
+  curr_price: PropTypes.number.isRequired, // Changed to number
   save: PropTypes.string.isRequired,
   direct: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,

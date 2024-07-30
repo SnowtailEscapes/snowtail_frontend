@@ -10,7 +10,7 @@ const CurrencyConverter = ({ price }) => {
 
   return (
     <div>
-      <p className='text-md text-nowrap'> {convertedPrice} {selectedCurrency.toUpperCase()}</p>
+      <p className='text-nowrap'> {convertedPrice} {selectedCurrency.toUpperCase()}</p>
     </div>
   );
 };
