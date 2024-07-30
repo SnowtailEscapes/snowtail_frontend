@@ -294,7 +294,7 @@ const Contact = ({ isVisible, onClose }) => {
 
   const sendEmail = async (e) => {
     e.preventDefault();
-    toast.info("Sending message...");
+    alert("Your message will be sent shortly, you can close the form. Thank you!")
 
     const emailData = {
       name,
@@ -476,7 +476,7 @@ const Contact = ({ isVisible, onClose }) => {
               <button type="submit" className="btn btn-primary w-full">
                 Send Message
               </button>
-              <p className="text-color1 text-[13px]">
+              <p className="text-main-brand text-[13px]">
                 You would get a callback from an expert.<br/>
                 We dont share your data with other parties
               </p>
