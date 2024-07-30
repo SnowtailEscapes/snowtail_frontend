@@ -93,7 +93,7 @@ const SearchBox = () => {
       />
 
       <button
-        className="bg-blue-500 text-white px-4 py-2 ml-2 rounded lg:w-1/5 w-1/4"
+        className="bg-main-brand march text-white px-4 py-2 ml-2 rounded lg:w-1/5 w-1/4"
         onClick={handleSearchButtonClick}
       >
         Search

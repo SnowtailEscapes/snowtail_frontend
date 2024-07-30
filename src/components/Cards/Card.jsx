@@ -67,7 +67,7 @@ const Card = ({
           hover && "scale-105"
         } top-5 bg-main-brand absolute flex flex-row md:gap-2 p-1`}
       >
-        <p className="save">{save}</p>
+        <p className="save flex">Save {save}</p>
       </div>
       <div className="flex flex-col pt-2 gap-y-1">
         <div className="flex flex-row justify-between">
