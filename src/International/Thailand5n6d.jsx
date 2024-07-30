@@ -40,7 +40,7 @@ export default function Thailand5n6d() {
       <Suspense fallback={<div>Loading...</div>}>
         <section className={`${a.Thailand6d5n} ${a.mobile} ${a.window}`} data-aos="zoom-in">
           <Navbar />
-          <ItineraryImage small={Thailand5n6dSmall} large={Thailand5n6dLarge} />
+          <ItineraryImage small={Thailand5n6dSmall} large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/thailand5n6d' />
         </section>
         <Tourmain />
         <Contact2 />

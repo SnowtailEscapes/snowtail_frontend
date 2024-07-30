@@ -30,7 +30,7 @@ const Left = ({itinerary}) => {
       />
 
       <div className={a.left3} data-aos="zoom-in">
-        <img src={banner} alt="rajashtan" />
+        <img src='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Banner/yluv3lm8seiggyzhsi3s' alt="Thailand" />
       </div>
 
       <div className={a.left4} data-aos="slide-right">
