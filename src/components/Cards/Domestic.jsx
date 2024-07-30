@@ -41,9 +41,9 @@ export default function Domestic() {
                 title="Adventure Meet Serenity"
                 duration="6 Days & 5 Nights"
                 rating="4.8/5"
-                cut_price="INR 28,700"
-                curr_price="₹ 26,700"
-                save="SAVE INR 2,000"
+                cut_price={28700}
+                curr_price={26700}
+                save={2000}
                 direct="/Kashmir5n6d"
                 image={Kashmir1}
               />
@@ -54,8 +54,8 @@ export default function Domestic() {
                 duration="4 Days & 3 Nights"
                 rating="4.8/5"
                 image={Kashmir2}
-                cut_price="INR 25,900"
-                curr_price="₹ 18,499"
+                cut_price={25900}
+                curr_price={18499}
                 direct="/Kashmir3n4d"
                 save="SAVE INR 7,401"
               />
@@ -65,9 +65,9 @@ export default function Domestic() {
                 title="Thrilling Leh Ladakh"
                 duration="6 Days & 5 Nights"
                 rating="4.8/5"
-                cut_price="INR 41,999"
-                curr_price="₹ 29,999"
-                save="SAVE INR 12,000"
+                cut_price={41999}
+                curr_price={29999}
+                save={12000}
                 direct="/Ladakh5n6d"
                 image={ladakh}
               />
@@ -81,9 +81,9 @@ export default function Domestic() {
                 title="The Abode of Clouds"
                 duration="6 Days & 5 Nights"
                 rating="4.8/5"
-                cut_price="INR 50,199"
-                curr_price="₹ 35,799"
-                save="SAVE INR 14,400"
+                cut_price={50199}
+                curr_price={35799}
+                save={14400}
                 direct="/Sikkim5n6d"
                 image={sikkim}
               />
@@ -93,9 +93,9 @@ export default function Domestic() {
                 title="Sleep In Natures Lap"
                 duration="6 Days & 5 Nights"
                 rating="4.8/5"
-                cut_price="INR 28,700"
-                curr_price="₹ 26,700"
-                save="SAVE INR 2,000"
+                cut_price={28700}
+                curr_price={26700}
+                save={2000}
                 direct="/Shimla5n6d"
                 image={himachal}
               />
@@ -105,9 +105,9 @@ export default function Domestic() {
                 title="A Journey to Serenity"
                 duration="5 Days & 4 Nights"
                 rating="4.8/5"
-                cut_price="INR 44,799"
-                curr_price="₹ 31,988"
-                save="SAVE INR 12,811"
+                cut_price={44799}
+                curr_price={31988}
+                save={12811}
                 direct="/Andaman"
                 image={andaman}
               />
@@ -132,9 +132,9 @@ export default function Domestic() {
               title="Adventure Meet Serenity"
               duration="6 Days & 5 Nights"
               rating="4.8/5"
-              cut_price="INR 28,700"
-              curr_price="₹ 26,700"
-              save="SAVE INR 2,000"
+              cut_price={28700}
+              curr_price={26700}
+              save={2000}
               direct="/Kashmir5n6d"
               image={Kashmir1}
             />
@@ -145,8 +145,8 @@ export default function Domestic() {
               duration="4 Days & 3 Nights"
               rating="4.8/5"
               image={Kashmir2}
-              cut_price="INR 25,900"
-              curr_price="₹ 18,499"
+              cut_price={25900}
+              curr_price={18499}
               direct="/Kashmir3n4d"
               save="SAVE INR 7,401"
             />
@@ -156,9 +156,9 @@ export default function Domestic() {
               title="Thrilling Leh Ladakh"
               duration="6 Days & 5 Nights"
               rating="4.8/5"
-              cut_price="INR 41,999"
-              curr_price="₹ 29,999"
-              save="SAVE INR 12,000"
+              cut_price={41999}
+              curr_price={29999}
+              save={12000}
               direct="/Ladakh5n6d"
               image={ladakh}
             />
@@ -168,9 +168,9 @@ export default function Domestic() {
               title="The Abode of Clouds"
               duration="6 Days & 5 Nights"
               rating="4.8/5"
-              cut_price="INR 50,199"
-                curr_price="₹ 35,799"
-                save="SAVE INR 14,400"
+              cut_price={50199}
+                curr_price={35799}
+                save={14400}
               direct="/Sikkim5n6d"
               image={sikkim}
             />
@@ -180,9 +180,9 @@ export default function Domestic() {
               title="Sleep In Natures Lap"
               duration="6 Days & 5 Nights"
               rating="4.8/5"
-              cut_price="INR 28,700"
-              curr_price="₹ 26,700"
-              save="SAVE INR 2,000"
+              cut_price={28700}
+              curr_price={26700}
+              save={2000}
               direct="/Shimla5n6d"
               image={himachal}
             />
@@ -192,9 +192,9 @@ export default function Domestic() {
               title="A Journey to Serenity"
               duration="5 Days & 4 Nights"
               rating="4.8/5"
-              cut_price="INR 44,799"
-              curr_price="₹ 31,988"
-              save="SAVE INR 12,811"
+              cut_price={44799}
+              curr_price={31988}
+              save={12811}
               direct="/Andaman"
               image={andaman}
             />
