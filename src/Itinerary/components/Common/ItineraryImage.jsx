@@ -45,7 +45,7 @@ const ItineraryImage = ({ small, large }) => {
           media="(min-width: 1024px)"
           type="image/webp"
         />
-        <source
+         <source
           srcSet={`${small} 1x, ${small} 2x`}
           media="(max-width: 767px)"
           type="image/jpg"
