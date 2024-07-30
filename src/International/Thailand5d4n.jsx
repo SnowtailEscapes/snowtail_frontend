@@ -15,6 +15,7 @@ const ScrollToTopButton = lazy(() =>
 );
 
 // Import images
+import test from "../assets/LargeImages/pataya.jpg";
 import Thailand5d4nLarge from "../assets/LargeImages/thailand4n5db.webp";
 import Thailand5d4nSmall from "../assets/CardImages/thailand4n5dS.webp";
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
@@ -47,7 +48,7 @@ export default function Thailand5d4n() {
           data-aos="zoom-in"
         >
           <Navbar />
-          <ItineraryImage small={Thailand5d4nSmall} large={Thailand5d4nLarge} />
+          <ItineraryImage small={Thailand5d4nSmall} large={test} />
         </section>
         <Tourmain />
         <Contact2 />
