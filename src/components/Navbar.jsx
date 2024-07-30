@@ -5,6 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Countdown from "./Countdown";
 import { useEffect, useState } from "react";
+import CurrencyDropdown from "../getApi/CurrencyDropdown";
 
 const styles = {
   boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
@@ -63,6 +64,7 @@ const Navbar = () => {
         <img src={stick} width={90} height={90} className="moving-div" alt="moving-div"/>
       </div> */}
 
+
       <div
         className={
           isHomePage ? "text-white navbar bg-main-brand" : "text-white navbar bg-main-brand"
@@ -73,6 +75,9 @@ const Navbar = () => {
           <Link to="/">
             <img src={logo} width={100} height={100} alt="logo" />
           </Link>
+          <div>
+            <CurrencyDropdown/>
+          </div>
         </div>
         <div className="navbar-end lg:hidden">
           <div className="dropdown">
