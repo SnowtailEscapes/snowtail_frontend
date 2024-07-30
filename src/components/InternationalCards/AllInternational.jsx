@@ -41,14 +41,14 @@ export default function AllInternational() {
       </div>
       <div className="flex justify-center">
         <div className="mt-12 p-5">
-          <h1 className="text-[2.5rem] march font-semibold text-center">
+          <h1 className="text-4xl font-semibold text-center">
             International Tour Adventures
           </h1>
 
           <International
             to="/Thailand5d4n"
             title="Explore Bangkok & Pattaya: A Vibrant Thai Adventure"
-            price="INR.19,699/person"
+            price={19699}
             location="PATTAYA & BANGKOK"
             duration="4 nights 5 days tour"
             image={thailand4n5dS}
@@ -57,7 +57,7 @@ export default function AllInternational() {
           <International
             to="/Thailand6d5n"
             title="Experience Best of Southern Thailand: Phuket and Krabi"
-            price="INR.29,699/person"
+            price={29699}
             location="PHUKET & KRABI"
             duration="5 nights 6 days tour"
             image={thailand5n6ds}
@@ -66,7 +66,7 @@ export default function AllInternational() {
           <International
             to="/Thailand9d8n"
             title="Experience Jewels of Thailand"
-            price="INR.59,099/person"
+            price={59099}
             location="PHUKET/KRABI/PATTAYA/BANGKOK"
             duration="8 nights 9 days tour"
             image={Thailand8n9ds}
@@ -75,7 +75,7 @@ export default function AllInternational() {
           <International
             to="/Bali8d7n"
             title="Enchanting Bali Escape with Gili Island"
-            price="INR.54,699/person"
+            price={54699}
             location="BALI"
             duration="7 nights 8 days tour"
             image={bali7n8ds}
@@ -83,7 +83,7 @@ export default function AllInternational() {
           <International
             to="/Bali6d5n"
             title="Luxurious 6-Day Bali Honeymoon Escape: Kuta and Ubud Delights"
-            price="INR.34,699/person"
+            price={34699}
             location="BALI"
             duration="5 nights 6 days tour"
             image={bali5n6ds}
@@ -92,7 +92,7 @@ export default function AllInternational() {
           <International
             to="/Vietnam4d5n"
             title="Escape to North Vietnam: A Journey of Cultural Marvels and Natural Wonders"
-            price="INR.37,699/person"
+            price={37699}
             location="VIETNAM"
             duration="4 nights 5 days tour"
             image={vietnam4n5d}
@@ -101,7 +101,7 @@ export default function AllInternational() {
           <International
             to="/Vietnam6n7d"
             title="Discover Vietnam: A Journey Through North & South Vietnam"
-            price="INR.57,699/person"
+            price={57699}
             location="VIETNAM"
             duration="6 nights 7 days tour"
             image={vietnam6n7d}
@@ -109,7 +109,7 @@ export default function AllInternational() {
           <International
             to="/Vietnam9n10d"
             title="Captivating Vietnam: A Journey Through Iconic Landmarks and Hidden Gems"
-            price="INR.89,699/person"
+            price={89699}
             location="VIETNAM"
             duration="9 nights 10 days tour"
             image={vietnam9n10d}
@@ -117,7 +117,7 @@ export default function AllInternational() {
           <International
             to="/Singapore4n5d"
             title="Singapore Escapes: A Journey through the Vibrant Lion City"
-            price="INR.44,699/person"
+            price={44699}
             location="SINGAPORE"
             duration="4 nights 5 days tour"
             image={singapore4n5d}
@@ -125,7 +125,7 @@ export default function AllInternational() {
           <International
             to="/Singapore6n7d"
             title="Unforgettable Singapore Adventure with Luxurious 2-Night Cruise"
-            price="INR.59,699/person"
+            price={59699}
             location="SINGAPORE"
             duration="6 nights 7 days tour"
             image={singapore6n7d}
@@ -133,7 +133,7 @@ export default function AllInternational() {
           <International
             to="/Singapore_Malaysia"
             title="Singapore & Malaysia Escapes: A Journey of Cultural Marvels"
-            price="INR.56,999/person"
+            price={56999}
             location="SINGAPORE & MALAYSIA"
             duration="6 nights 7 days tour"
             image={SM}
@@ -141,7 +141,7 @@ export default function AllInternational() {
           <International
             to="/Malaysia"
             title="Malaysian Marvels - Kuala Lumpur, Penang & Langkawi Escape"
-            price="INR.33,999/person"
+            price={33999}
             location="MALAYSIA"
             duration="6 nights 7 days tour"
             image={malaysia}
@@ -150,14 +150,14 @@ export default function AllInternational() {
             to="/Switzerland5n6d"
             title="Swiss Splendor: A Glimpse of Switzerland Escape"
             duration="5 nights 6 days tour"
-            price="INR.97,999/person"
+            price={97999}
             location="SWITZERLAND"
             image={Switzerland}
           />
           <International
             to="/France-Italy"
             title="Experience the Best of Paris & Rome"
-            price="INR.85,699"
+            price={85699}
             location="FRANCE & ITALY"
             duration="4 nights 5 days tour"
             image={France}
@@ -166,7 +166,7 @@ export default function AllInternational() {
             to="/Greece7n8d"
             title="Greece Odyssey: An 8-Day Escape"
             location="GREECE"
-            price="INR.1,39,699/person"
+            price={139699}
             duration="7 nights 8 days tour"
             image={Greece}
           />
@@ -174,7 +174,7 @@ export default function AllInternational() {
             to="/SriLanka6n7d"
             title="Sri Lanka a Jewel Of Indian Ocean"
             duration="6 nights 7 days tour"
-            price="INR.38,699/person"
+            price={38699}
             location="SRI LANKA"
             image={SriLanka}
           />
@@ -182,7 +182,7 @@ export default function AllInternational() {
             to="/Dubai3n4d"
             title="Dubai The City Of Wonders"
             location="DUBAI"
-            price="INR.25,899/person"
+            price={25899}
             duration="3 nights 4 days tour"
             image={Dubai3n4d}
           />
@@ -190,7 +190,7 @@ export default function AllInternational() {
             to="/Dubai5n6d"
             title="Experience Dubai: A Journey of Luxury and Wonder"
             location="DUBAI"
-            price="INR.58,899/person"
+            price={58899}
             duration="5 nights 6 days tour"
             image={Dubai5n6d}
           />
@@ -198,7 +198,7 @@ export default function AllInternational() {
           <International
             title="Nepal"
             duration="3 nights 4 days tour"
-            price="INR.54,699/person"
+            price={54699}
             direct="/Nepal"
             image={nepal}
             to="/Nepal"
@@ -208,7 +208,7 @@ export default function AllInternational() {
             title="Almaty |  Heart in Mountains "
             duration="9 Days and 8 Nights"
             to="/Almaty"
-            price="₹ 59,099"
+            price={59099}
             direct="/Almaty"
             image={almaty}
           />
