@@ -8,10 +8,9 @@ import { useEffect, useState } from "react";
 import CurrencyDropdown from "../getApi/CurrencyDropdown";
 
 const styles = {
-  background: "rgba(16, 15, 15, 0.5)",
-  boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
-  backdropFilter: "blur(2.5px)",
-  WebkitBackdropFilter: "blur(2.5px)",
+  boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+  backdropFilter: 'blur(2.5px)',
+  WebkitBackdropFilter: 'blur(2.5px)',
 };
 
 const Navbar = () => {
@@ -43,50 +42,42 @@ const Navbar = () => {
       progress: undefined,
       theme: "light",
     });
+    e.preventDefault();
   };
   return (
     <>
-     <div className="w-full grid grid-cols-12 z-10 bg-color1 items-center text-white md:h-12 justify-center">
-  <div className="col-span-12 md:col-span-4 flex justify-center md:justify-start">
-    <p className="text-center md:text-left md:text-md text-sm">
-      <span className="font-bold">Monsoon Sale</span> up to{" "}
-      <span className="font-bold">40% OFF</span> on your trip
-    </p>
-  </div>
+      {/* <div className="w-full grid grid-cols-12 z-10  bg-main-brand items-center text-white md:h-8 justify-center">
+        <p className="text-center md:text-md text-sm md:col-span-6 col-span-12">
+          <span className="font-bold">Monsoon Sale</span> up to{" "}
+          <span className="font-bold">40% OFF</span> on your trip
+        </p>
 
-  {width >= 737 && (
-    <>
-      <div className="divider divider-horizontal divider-warning col-span-1"></div>
-      <div className="col-span-4 flex justify-center">
-        <Countdown duration={3 * 24 * 60 * 60 * 1000} />
-      </div>
-      <div className="divider divider-horizontal divider-warning col-span-1"></div>
-    </>
-  )}
+        {width >= 737 && (
+          <>
+          <div className="divider divider-horizontal divider-warning"></div>
+            <div className="col-span-5">
+              <Countdown duration={3 * 24 * 60 * 60 * 1000} />
+            </div>
+          </>
+        )}
 
-  <div className="col-span-12 md:col-span-2 flex justify-center">
-    <CurrencyDropdown />
-  </div>
+        <img src={stick} width={90} height={90} className="moving-div" alt="moving-div"/>
+      </div> */}
 
-  <div className="col-span-12 md:col-span-1 flex justify-center">
-    <img
-      src={stick}
-      width={60}
-      height={60}
-      className="moving-div"
-      alt="moving-div"
-    />
-  </div>
-</div>
 
       <div
-        className={isHomePage ? "text-white navbar" : "text-white navbar"}
+        className={
+          isHomePage ? "text-white navbar bg-main-brand" : "text-white navbar bg-main-brand"
+        }
         style={styles}
       >
         <div className="navbar-start lg:navbar-start">
           <Link to="/">
             <img src={logo} width={100} height={100} alt="logo" />
           </Link>
+          <div>
+            <CurrencyDropdown/>
+          </div>
         </div>
         <div className="navbar-end lg:hidden">
           <div className="dropdown">
@@ -111,22 +102,22 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black dropdown-left"
             >
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" className="text-[22px] font-bold">Home</Link>
               </li>
               <li>
-                <Link to="/International">International</Link>
+                <Link to="/International" className="text-[22px] font-bold">International</Link>
               </li>
               <li>
-                <Link to="/Domestic">Domestic</Link>
+                <Link to="/Domestic" className="text-[22px] font-bold">Domestic</Link>
               </li>
               <li>
-                <Link onClick={handleClick}>Exclusive</Link>
+                <Link onClick={handleClick} className="text-[22px] font-bold">Exclusive</Link>
               </li>
               <li>
-                <Link onClick={handleClick}>Group Tours</Link>
+                <Link onClick={handleClick} className="text-[22px] font-bold">Group Tours</Link>
               </li>
               <li>
-                <Link onClick={handleClick}>Destination Weddings</Link>
+                <Link onClick={handleClick} className="text-[22px] font-bold">Destination Weddings</Link>
               </li>
             </ul>
           </div>
@@ -135,22 +126,22 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" className="text-[22px] font-bold hover:underline">Home</Link>
             </li>
             <li>
-              <Link to="/International">International</Link>
+              <Link to="/International" className="text-[22px] font-bold hover:underline">International</Link>
             </li>
             <li>
-              <Link to="/Domestic">Domestic</Link>
+              <Link to="/Domestic" className="text-[22px] font-bold hover:underline">Domestic</Link>
             </li>
             <li onClick={handleClick}>
-              <Link>Exclusive</Link>
+              <Link className="text-[22px] font-bold hover:underline">Exclusive</Link>
             </li>
             <li onClick={handleClick}>
-              <Link>Group Tours</Link>
+              <Link className="text-[22px] font-bold hover:underline">Group Tours</Link>
             </li>
             <li onClick={handleClick}>
-              <Link>Destination Weddings</Link>
+              <Link className="text-[22px] font-bold hover:underline">Destination Weddings</Link>
             </li>
           </ul>
         </div>

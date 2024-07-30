@@ -11,7 +11,7 @@ const CurrencyDropdown = () => {
   };
 
   return (
-    <div className='text-black bg-color1'>
+    <div className='text-black bg-main-brand'>
       <label htmlFor="currency-select">Select currency:</label>
       <select className='bg-color1 border-none' id="currency-select" value={selectedCurrency} onChange={handleCurrencyChange}>
         <option value="usd">USD</option>
