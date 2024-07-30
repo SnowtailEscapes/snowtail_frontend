@@ -7,8 +7,8 @@ import Budget from "./Cards/Budget";
 import VisaFree from "./Cards/VisaFree";
 import Escapes from "./Escapes";
 import InfiniteScrolling from "./InfiniteScrolling";
-
 import Image from "../assets/CardImages/andaman.webp";
+import SearchBox from "../getApi/searchBox";
 
 export default function TopSection() {
   return (
@@ -40,6 +40,7 @@ export default function TopSection() {
             
           />
         </picture> */}
+      <SearchBox/>
       </div>
       {/* <InfiniteScrolling /> */}
       <div className="flex flex-col gap-10 ">
