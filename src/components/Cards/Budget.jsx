@@ -31,10 +31,10 @@ export default function Budget() {
 
   return (
     <div className="md:pl-20 md:pr-20 pl-4 pt-10">
-      <h2 className=" lg:text-[2.5rem] md:text-[2rem] text-[1.5rem] font-extrabold text-black1 march">Budget Tours</h2>
+      <h2 className="march lg:text-[2.5rem] md:text-[2rem] text-[1.5rem] font-extrabold text-black1">Budget Tours</h2>
       {isLargeScreen && (
         <>
-          <div className="carousel p-10 pb-0  relative w-full" >
+          <div className="carousel p-10 pb-0  relative w-full">
             <div
               id="Budget1"
               className="carousel-item w-full flex justify-center gap-5 ml-14"
@@ -44,9 +44,9 @@ export default function Budget() {
                 title="Land of Creamy Flavors"
                 duration="3 Days & 2 Nights"
                 rating="4.8/5"
-                cut_price="INR 15,399"
-                curr_price="₹ 10,999"
-                save="SAVE INR 4,400"
+                cut_price={15399}
+                curr_price={10999}
+                save={4400}
                 direct="/Kasol2n3d"
                 image={Kasol}
               />
@@ -56,9 +56,9 @@ export default function Budget() {
                 title="A Journey to the Queen of Hills"
                 duration="4 Days & 3 Nights"
                 rating="4.8/5"
-                cut_price="INR 22,399"
-                curr_price="₹ 15,999"
-                save="SAVE INR 6,400"
+                cut_price={22399}
+                curr_price={15999}
+                save={6400}
                 direct="/Uttrakhand"
                 image={uttrakhand}
               />
@@ -67,9 +67,9 @@ export default function Budget() {
                 title="A Himalayan Heaven"
                 duration="4 Days & 3 Nights"
                 rating="4.8/5"
-                cut_price="INR 22,399"
-              curr_price="₹ 15,999"
-              save="SAVE INR 6,400"
+                cut_price={22399}
+              curr_price={15999}
+              save={6400}
                 direct="/Manali3n4d"
                 image={manali}
               />
@@ -84,9 +84,9 @@ export default function Budget() {
                 title="Monument of Pride"
                 duration="4 Days & 3 Nights"
                 rating="4.8/5"
-                cut_price="INR 23,199"
-                curr_price="₹ 16,499"
-                save="SAVE INR 6,700"
+                cut_price={23199}
+                curr_price={16499}
+                save={6700}
                 direct="/Gujarat3n4d"
                 image={gujarat}
               />
@@ -95,9 +95,9 @@ export default function Budget() {
                 title="A Vibrant Thai Adventure"
                 duration="5 Days & 4 Nights"
                 rating="4.8/5"
-                cut_price="INR 25,699"
-                curr_price="₹ 19,999"
-                save="SAVE INR 5,700"
+                cut_price={25699}
+                curr_price={19999}
+                save={5700}
                 direct="/Thailand5d4n"
                 image={thailand4n5dS}
               />
@@ -106,9 +106,9 @@ export default function Budget() {
                 title="Experience Best of Southern Thailand"
                 duration="6 Days & 5 Nights"
                 rating="4.8/5"
-                cut_price="INR 36,999"
-                curr_price="₹ 29,999"
-                save="SAVE INR 7,000"
+                cut_price={36999}
+                curr_price={29999}
+                save={7000}
                 direct="/Thailand6d5n"
                 image={thailand5n6ds}
               />
@@ -132,9 +132,9 @@ export default function Budget() {
               title="Land of Creamy Flavors"
               duration="3 Days & 2 Nights"
               rating="4.8/5"
-              cut_price="INR 15,399"
-              curr_price="₹ 10,999"
-              save="SAVE INR 4,400"
+              cut_price={15399}
+              curr_price={10999}
+              save={4400}
               direct="/Kasol2n3d"
               image={Kasol}
             />
@@ -144,9 +144,9 @@ export default function Budget() {
               title="A Journey to the Queen of Hills"
               duration="4 Days & 3 Nights"
               rating="4.8/5"
-              cut_price="INR 23,799"
-              curr_price="₹ 16,999"
-              save="SAVE INR 6,800"
+              cut_price={23799}
+              curr_price={16999}
+              save={6800}
               direct="/Uttrakhand"
               image={uttrakhand}
             />
@@ -156,9 +156,9 @@ export default function Budget() {
               title="A Himalayan Heaven"
               duration="4 Days & 3 Nights"
               rating="4.8/5"
-              cut_price="INR 22,399"
-              curr_price="₹ 15,999"
-              save="SAVE INR 6,400"
+              cut_price={22399}
+              curr_price={15999}
+              save={6400}
               direct="/Manali3n4d"
               image={manali}
             />
@@ -168,9 +168,9 @@ export default function Budget() {
               title="Monument of Pride"
               duration="4 Days & 3 Nights"
               rating="4.8/5"
-              cut_price="INR 23,199"
-              curr_price="₹ 16,499"
-              save="SAVE INR 6,700"
+              cut_price={23199}
+              curr_price={16499}
+              save={6700}
               direct="/Gujarat3n4d"
               image={gujarat}
             />
@@ -180,9 +180,9 @@ export default function Budget() {
               title="A Vibrant Thai Adventure"
               duration="5 Days & 4 Nights"
               rating="4.8/5"
-              cut_price="INR 25,699"
-              curr_price="₹ 19,999"
-              save="SAVE INR 5,700"
+              cut_price={25699}
+              curr_price={19999}
+              save={5700}
               direct="/Thailand5d4n"
               image={thailand4n5dS}
             />
@@ -192,9 +192,9 @@ export default function Budget() {
               title="Experience Best of Southern Thailand"
               duration="6 Days & 5 Nights"
               rating="4.8/5"
-              cut_price="INR 36,999"
-              curr_price="₹ 29,999"
-              save="SAVE INR 7,000"
+              cut_price={36999}
+              curr_price={29999}
+              save={7000}
               direct="/Thailand6d5n"
               image={thailand5n6ds}
             />
