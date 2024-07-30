@@ -22,7 +22,7 @@ const SearchBox = () => {
     if (key.length > 1) {
       try {
         let result = await fetch(
-          `${VITE_API_SEARCH}/` + 'key'
+          `${VITE_API_SEARCH}/` + key
         );
         result = await result.json();
 
