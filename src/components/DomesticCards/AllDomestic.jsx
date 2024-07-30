@@ -40,14 +40,14 @@ export default function AllInternational() {
       </div>
       <div className="flex justify-center">
         <div className="mt-12 p-5">
-          <h1 className="text-[2.5rem] font-semibold text-center march">
+          <h1 className="text-4xl font-semibold text-center">
             Domestic Tour Adventures
           </h1>
           <International
             to="/Rajasthan"
             title="The Incredible Gateway Rajasthan"
             location="RAJASTHAN"
-            price="INR.34,399/person"
+            price={34399}
             image={Rj7n8d}
             duration="7 Nights and 8 Days tour"
           />
@@ -57,7 +57,7 @@ export default function AllInternational() {
             title="Journey Of majesty"
             location="RAJASTHAN"
             duration="4 Nights and 5 Days tour"
-            price="INR.19,999/person"
+            price={19999}
             image={Rj4n5d}
           />
 
@@ -65,7 +65,7 @@ export default function AllInternational() {
             to="/Rajasthan5n6d"
             title="Explore Sand Tails"
             location="RAJASTHAN"
-            price="INR.25,899/person"
+            price={25899}
             duration="5 Nights and 6 Days tour"
             image={Rj5n6d}
           />
@@ -74,7 +74,7 @@ export default function AllInternational() {
             to="/Gujarat3n4d"
             title="Monument of pride"
             location="GUJARAT"
-            price="INR.16,499/person"
+            price={16499}
             duration="3 Nights and 4 Days tour"
             image={gujarat}
           />
@@ -83,7 +83,7 @@ export default function AllInternational() {
             to="/Gujarat4n5d"
             title="Gujarat’s Coastal Charms and Wildlife Wonders"
             location="GUJARAT"
-            price="INR.20,999/person"
+            price={20999}
             duration="4 Nights and 5 Days tour"
             image={gujarat1}
 
@@ -92,7 +92,7 @@ export default function AllInternational() {
             to="/Kashmir5n6d"
             title="Adventure meet Serenity"
             duration="5 nights and 6 days tour"
-            price="INR.26,700/person"
+            price={26700}
             location="KASHMIR"
             image={Kashmir1}
           />
@@ -100,7 +100,7 @@ export default function AllInternational() {
             to="/Kashmir3n4d"
             title="Experience Paradise On Earth"
             location="KASHMIR"
-            price="INR.18,499/person"
+            price={18499}
             image={Kashmir2}
             duration="3 nights and 4 days tour"
           />
@@ -108,14 +108,14 @@ export default function AllInternational() {
             to="/Ladakh5n6d"
             title="Thrilling Leh Ladakh"
             location="LADAKH"
-            price="INR.29,999/person"
+            price={29999}
             duration="5 nights and 6 days tour"
             image={ladakh}
           />
           <International
             to="/Sikkim5n6d"
             title="Gangtok & Darjeeling The Abode of Clouds"
-            price="INR.35,799/person"
+            price={35799}
             location="SIKKIM"
             duration="5 nights and 6 days tour"
             image={sikkim}
@@ -125,14 +125,14 @@ export default function AllInternational() {
             title="Meghalaya - Discover The Magic"
             duration="5 nights and 6 days tour"
             location="MEGHALAYA"
-            price="INR.32,799/person"
+            price={32799}
             image={meghalaya}
           />
           <International
             to="/Kerala5n6d"
             title="Experience God’s Own Country"
             location="KERALA"
-            price="INR.25,499/person"
+            price={25499}
             duration="5 nights and 6 days tour"
             image={Kerala}
           />
@@ -140,7 +140,7 @@ export default function AllInternational() {
             to="/Manali3n4d"
             title="A Himalayan Heaven"
             location="MANALI"
-            price="INR.15,999/person"
+            price={15999}
             duration="3 nights and 4 days tour"
             image={manali}
           />
@@ -149,7 +149,7 @@ export default function AllInternational() {
             title="Sleep in Nature's Lap"
             location="SHIMLA & MANALI"
             duration="5 nights and 6 days tour"
-            price="INR.24,500/person"
+            price={24500}
             image={himachal}
           />
           <International
@@ -157,21 +157,21 @@ export default function AllInternational() {
             title="Instagrammable Himachal"
             location="SHIMLA/MANALI/DHARAMSHALA/DALHOUSIE"
             image={himachal2}
-            price="INR.45,999/person"
+            price={45999}
             duration="9 nights and 10 days tour"
           />
           <International
             to="/Kasol2n3d"
             title="Land of Creamy Flavours"
             location="KASOL"
-            price="INR.10,999/person"
+            price={10999}
             duration="2 nights and 3 days tour"
             image={Kasol}
           />
           <International
             to="/Uttrakhand"
             title="Mussoorie & Rishikesh: A Journey to the Queen of Hills"
-            price="INR.16,999/person"
+            price={16999}
             location="UTTRAKHAND"
             duration="3 nights and 4 days tour"
             image={uttrakhand}
@@ -179,7 +179,7 @@ export default function AllInternational() {
           <International
             to="/Andaman"
             title="Discover Andaman: A Journey to Serenity"
-            price="INR.31,988/person"
+            price={31988}
             duration="4 nights and 5 days tour"
             location="ANDAMAN & NICOBAR"
             image={andaman}
