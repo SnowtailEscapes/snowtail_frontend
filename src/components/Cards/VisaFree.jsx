@@ -39,9 +39,9 @@ export default function VisaFree() {
                 name="Nepal"
                 duration="4 Days & 3 Nights"
                 rating="4.8/5"
-                cut_price="INR 39,500"
-                curr_price="₹ 33,999"
-                save="SAVE INR 5,501"
+                cut_price={39500}
+                curr_price={33999}
+                save={5501}
                 direct="/Nepal"
                 image={nepal}
               />
@@ -50,9 +50,9 @@ export default function VisaFree() {
                 name="Malaysia"
                 duration="7 Days & 6 Nights"
                 rating="4.8/5"
-                cut_price="INR 39,500"
-                curr_price="₹ 33,999"
-                save="SAVE INR 5,501"
+                cut_price={39500}
+                curr_price={33999}
+                save={5501}
                 direct="/Malaysia"
                 image={Malaysias}
               />
@@ -61,9 +61,9 @@ export default function VisaFree() {
                 name="Thailand"
                 duration="6 Days & 5 Nights"
                 rating="4.8/5"
-                cut_price="INR 36,999"
-                curr_price="₹ 29,999"
-                save="SAVE INR 7,000"
+                cut_price={36999}
+                curr_price={29999}
+                save={7000}
                 direct="/Thailand6d5n"
                 image={Thailand5n6ds}
               />
@@ -76,9 +76,9 @@ export default function VisaFree() {
                 name="Almaty "
                 duration="6 Days & 5 Nights"
                 rating="4.8/5"
-                cut_price="INR 41,699"
-              curr_price="₹ 34,699"
-              save="SAVE INR 7,000"
+                cut_price={41699}
+              curr_price={34699}
+              save={7000}
                 direct="/Almaty"
                 image={almaty}
               />
@@ -87,9 +87,9 @@ export default function VisaFree() {
                 name="Sri Lanka | Jewel Of Indian Ocean"
                 duration="7 Days & 6 Nights"
                 rating="4.8/5"
-                cut_price="INR 44,500"
-                curr_price="₹ 38,699"
-                save="SAVE INR 5,801"
+                cut_price={44500}
+                curr_price={38699}
+                save={5801}
                 direct="/SriLanka6n7d"
                 image={SriLanka}
               />
@@ -123,9 +123,9 @@ export default function VisaFree() {
               name="Nepal"
               duration="4 Days & 3 Nights"
               rating="4.8/5"
-              cut_price="INR 39,500"
-                curr_price="₹ 33,999"
-                save="SAVE INR 5,501"
+              cut_price={39500}
+                curr_price={33999}
+                save={5501}
               direct="/Nepal"
               image={nepal}
             />
@@ -134,9 +134,9 @@ export default function VisaFree() {
               name="Malaysia"
               duration="7 Days & 6 Nights"
               rating="4.8/5"
-              cut_price="INR 39,500"
-              curr_price="₹ 33,999"
-              save="SAVE INR 5,501"
+              cut_price={39500}
+              curr_price={33999}
+              save={5501}
               direct="/Malaysia"
               image={Malaysias}
             />
@@ -145,9 +145,9 @@ export default function VisaFree() {
               name="Thailand"
               duration="6 Days & 5 Nights"
               rating="4.8/5"
-              cut_price="INR 36,999"
-              curr_price="₹ 29,999"
-              save="SAVE INR 7,000"
+              cut_price={36999}
+              curr_price={29999}
+              save={7000}
               direct="/Thailand6d5n"
               image={Thailand5n6ds}
             />
@@ -156,9 +156,9 @@ export default function VisaFree() {
               name="Almaty "
               duration="6 Days & 5 Nights"
               rating="4.8/5"
-              cut_price="INR 41,699"
-              curr_price="₹ 34,699"
-              save="SAVE INR 7,000"
+              cut_price={41699}
+              curr_price={34699}
+              save={7000}
               direct="/Almaty"
               image={almaty}
             />
@@ -167,9 +167,9 @@ export default function VisaFree() {
               name="Sri Lanka | Jewel Of Indian Ocean"
               duration="7 Days & 6 Nights"
               rating="4.8/5"
-              cut_price="INR 44,500"
-              curr_price="₹ 38,699"
-              save="SAVE INR 5,801"
+              cut_price={44500}
+              curr_price={38699}
+              save={5801}
               direct="/SriLanka6n7d"
               image={SriLanka}
             />

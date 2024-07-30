@@ -91,8 +91,8 @@ const Card = ({
         </div>
 
         <div className="flex flex-row justify-between items-center">
-          <h4 className="text-[13px] cut font-bold font-ligh2"><CurrencyConverter price={Number(cut_price)} />/per</h4>
-          <h4 className="text-base text-main-brand font-bold font-light2">
+          <h4 className="text-[13px] cut font-bold font-ligh2 flex"><CurrencyConverter price={Number(cut_price)} />/per</h4>
+          <h4 className="text-base text-main-brand font-bold font-light2 flex">
             <CurrencyConverter price={Number(curr_price)}/>
             <span className="text-base text-main-brand text-bold">/per</span>
           </h4>

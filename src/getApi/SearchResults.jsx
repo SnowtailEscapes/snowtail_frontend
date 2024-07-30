@@ -33,7 +33,7 @@ const SearchResults = () => {
                   cut_price={item.cut_price}
                   save={item.save}
                   direct={item.direct}
-                  image={item.image}
+                  image={item.small_img}
                   key={item._id}
                 />
               ))}
