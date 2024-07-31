@@ -48,7 +48,7 @@ export default function AllInternational() {
             title="The Incredible Gateway Rajasthan"
             location="RAJASTHAN"
             price={34399}
-            image={Rj7n8d}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/sajzabk69brdin5l2i9c'
             duration="7 Nights and 8 Days tour"
           />
 

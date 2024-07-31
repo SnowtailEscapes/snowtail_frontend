@@ -49,7 +49,7 @@ export default function Switzerland5n6d() {
         >
           <ItineraryImage
             small={Switzerland5n6dSmall}
-            large={Switzerland5n6dLarge}
+            large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/gmn5t2mc8jlefqb4vbl2'
           />
         </section>
         <Tourmain />

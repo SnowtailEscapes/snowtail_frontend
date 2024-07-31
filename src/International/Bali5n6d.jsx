@@ -43,7 +43,7 @@ export default function Bali6d5n() {
 
       <Suspense fallback={<div>Loading...</div>}>
         <section className={a.section} data-aos="zoom-in">
-          <ItineraryImage small={Bali5n6dSmall} large={Bali5n6dLarge} />
+          <ItineraryImage small={Bali5n6dSmall} large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/jfuuaf2dzf9obt5oeiuy' />
           <Navbar />
         </section>
         <Tourmain />

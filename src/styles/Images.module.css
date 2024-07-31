@@ -27,6 +27,6 @@ img {
 /* Responsive styles */
 @media only screen and (max-width: 767px) {
   .section {
-    height: 40vh;
+    height: 70vh;
   }
 }

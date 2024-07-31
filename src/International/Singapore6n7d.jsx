@@ -49,7 +49,7 @@ export default function Singapore6n7d() {
         >
           <ItineraryImage
             small={Singapore6n7dSmall}
-            large={Singapore6n7dLarge}
+            large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/jlvzholzkmxa3zj5ydow'
           />
         </section>
         <Tourmain />

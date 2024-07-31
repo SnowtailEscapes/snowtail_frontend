@@ -44,7 +44,7 @@ export default function Singapore6n7d() {
       <Suspense fallback={<div>Loading...</div>}>
         <Navbar />
         <section className={`${a.section} ${a.Malaysia}`} data-aos="zoom-in">
-          <ItineraryImage small={MalaysiaSmall} large={MalaysiaLarge} />
+          <ItineraryImage small={MalaysiaSmall} large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/vcubnuaegraa1petumnu' />
         </section>
         <Tourmain />
         <Contact2 />
