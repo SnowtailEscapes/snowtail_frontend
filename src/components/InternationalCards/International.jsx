@@ -49,10 +49,10 @@ const International = ({ to, title, location, price, duration, image }) => {
               <li className={`${a.disc} font-[14px] text-main-brand`}>International Tour</li>
             </ul>
             <div>
-              <h2 className="text-[33px] font-semibold text-dark-accent mb-2 font-arimo">
+              <h2 className="text-[28px] font-semibold text-dark-accent mb-2 font-arimo">
                 {title}
               </h2>
-              <p className="text-black1 mb-2 font-ligh2 text-[22px] ">
+              <p className="text-black1 mb-2 font-ligh2 text-[20px] ">
                 {location}
               </p>
               <div className="flex space-x-2 mb-4">

@@ -59,6 +59,7 @@
     border: 1px solid #fff;
     width: 90% !important;
     margin-bottom: 1rem;
+    height: 50vh;
   }
   
   .imageContainer {
@@ -74,22 +75,5 @@
   
   .disc {
     margin-right: 10px;
-  }
-  
-  .text-color1 {
-    color: #1e40af; /* Example color */
-  }
-  
-  .bg-color1 {
-    background-color: #1e40af; /* Example color */
-  }
-  
-  .btn {
-    /* Adjust button styles */
-    background-color: #1e40af; /* Example color */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
   }
   

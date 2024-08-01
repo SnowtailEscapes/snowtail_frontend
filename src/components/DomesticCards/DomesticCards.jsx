@@ -30,6 +30,7 @@ const International = ({ to, title, location, price, duration, image }) => {
     <div className="flex justify-center">
       <div
         className={`${a.cardContainer} shadow-lg rounded-lg overflow-hidden`}
+        style={{width:'90%'}}
       >
         <div className="md:flex">
           <figure className={`${a.imageContainer} md:w-3/5`}>
@@ -46,13 +47,13 @@ const International = ({ to, title, location, price, duration, image }) => {
           <div className="p-6 md:w-2/5 flex flex-col justify-between">
             <ul className="flex text-xs text-green-500 justify-between mb-2">
               <li className={`${a.disc} font-[14px] text-main-brand`}>{duration}</li>
-              <li className={`${a.disc} font-[14px] text-main-brand`}>International Tour</li>
+              <li className={`${a.disc} font-[14px] text-main-brand`}>Domestic Tour</li>
             </ul>
             <div>
-              <h2 className="text-[33px] font-semibold text-dark-accent mb-2 font-arimo">
+              <h2 className="text-[28px] font-semibold text-dark-accent mb-2 font-arimo">
                 {title}
               </h2>
-              <p className="text-black1 mb-2 font-ligh2 text-[22px] ">
+              <p className="text-black1 mb-2 font-ligh2 text-[20px] ">
                 {location}
               </p>
               <div className="flex space-x-2 mb-4">
