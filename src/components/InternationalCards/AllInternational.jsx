@@ -27,7 +27,7 @@ import { Helmet } from "react-helmet";
 export default function AllInternational() {
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>International Tours</title>
         <meta
           name="description"
@@ -41,7 +41,7 @@ export default function AllInternational() {
       </div>
       <div className="flex justify-center">
         <div className="mt-12 p-5">
-          <h1 className="text-4xl font-semibold text-center">
+          <h1 className="text-4xl font-semibold text-center mb-4">
             International Tour Adventures
           </h1>
 
@@ -211,6 +211,24 @@ export default function AllInternational() {
             price={59099}
             direct="/Almaty"
             image={almaty}
+          />
+
+          <International
+            to="/Australia7n6d"
+            title="Best of Australia"
+            price={99999}
+            location="Sydney"
+            duration="7 nights 6 days tour"
+            image={vietnam9n10d}
+          />
+
+          <International
+            to="/Japan"
+            title="Best of Japan | From Ancient Shrines to Futuristic Skylines"
+            price={99999}
+            location="Kyoto"
+            duration="9 nights 10 days tour"
+            image={vietnam9n10d}
           />
         </div>
       </div>

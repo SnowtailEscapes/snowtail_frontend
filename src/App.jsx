@@ -10,7 +10,6 @@ import initializeClarity from './utils/initializeClarity';
 
 // International
 import Thailand5d4n from "./International/Thailand5d4n";
-
 import Thailand6d5n from "./International/Thailand5n6d";
 import Thailand9d8n from "./International/Thailand8n9d";
 import Bali6d5n from "./International/Bali5n6d";
@@ -29,6 +28,9 @@ import SriLanka6n7d from "./International/SriLanka6n7d.jsx";
 import Dubai3n4d from "./International/Dubai3n4d.jsx";
 import Dubai5n6d from "./International/Dubai5n6d.jsx";
 import Nepal from "./International/Nepal.jsx";
+import Australia from "./International/Australia7d6n.jsx";
+import Japan from "./International/Japan9n10d.jsx";
+
 
 import NotFound from "./components/NotFound.jsx";
 
@@ -182,7 +184,11 @@ function App() {
             {/* Nepal */}
             <Route path="/Nepal" element={<Nepal />} />
 
-            
+            {/* Australia */}
+            <Route path="/Australia7d6n" element={<Australia/>}/>
+
+            {/* Japan */}
+            <Route path="Japan" element={<Japan/>}/>
           </Routes>
         </Router>
       

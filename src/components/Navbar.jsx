@@ -1,4 +1,4 @@
-import logo from "../assets/newLogo.webp";
+import logo from "../../public/logo/23.svg";
 import stick from "../assets/stick.webp";
 import { useLocation, Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
@@ -8,9 +8,9 @@ import { useEffect, useState } from "react";
 import CurrencyDropdown from "../getApi/CurrencyDropdown";
 
 const styles = {
-  boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
-  backdropFilter: 'blur(2.5px)',
-  WebkitBackdropFilter: 'blur(2.5px)',
+  boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
+  backdropFilter: "blur(2.5px)",
+  WebkitBackdropFilter: "blur(2.5px)",
 };
 
 const Navbar = () => {
@@ -64,20 +64,23 @@ const Navbar = () => {
         <img src={stick} width={90} height={90} className="moving-div" alt="moving-div"/>
       </div> */}
 
-
       <div
         className={
-          isHomePage ? "text-white navbar bg-main-brand" : "text-white navbar bg-main-brand"
+          isHomePage
+            ? "text-white navbar bg-main-brand"
+            : "text-white navbar bg-main-brand"
         }
         style={styles}
       >
-        <div className="navbar-start lg:navbar-start">
+        <div className="navbar-start lg:navbar-start flex gap-5">
           <Link to="/">
-            <img src={logo} width={100} height={100} alt="logo" />
+            <img src={logo} width={140} height={140} alt="logo" />
           </Link>
-          <div>
-            <CurrencyDropdown/>
-          </div>
+          {!isHomePage && (
+            <>
+              <CurrencyDropdown />
+            </>
+          )}
         </div>
         <div className="navbar-end lg:hidden">
           <div className="dropdown">
@@ -102,22 +105,34 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black dropdown-left"
             >
               <li>
-                <Link to="/" className="text-[22px] font-bold">Home</Link>
+                <Link to="/" className="text-[22px] font-bold">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/International" className="text-[22px] font-bold">International</Link>
+                <Link to="/International" className="text-[22px] font-bold">
+                  International
+                </Link>
               </li>
               <li>
-                <Link to="/Domestic" className="text-[22px] font-bold">Domestic</Link>
+                <Link to="/Domestic" className="text-[22px] font-bold">
+                  Domestic
+                </Link>
               </li>
               <li>
-                <Link onClick={handleClick} className="text-[22px] font-bold">Exclusive</Link>
+                <Link onClick={handleClick} className="text-[22px] font-bold">
+                  Exclusive
+                </Link>
               </li>
               <li>
-                <Link onClick={handleClick} className="text-[22px] font-bold">Group Tours</Link>
+                <Link onClick={handleClick} className="text-[22px] font-bold">
+                  Group Tours
+                </Link>
               </li>
               <li>
-                <Link onClick={handleClick} className="text-[22px] font-bold">Destination Weddings</Link>
+                <Link onClick={handleClick} className="text-[22px] font-bold">
+                  Destination Weddings
+                </Link>
               </li>
             </ul>
           </div>
@@ -126,22 +141,40 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to="/" className="text-[22px] font-bold hover:underline">Home</Link>
+              <Link to="/" className="text-[22px] font-bold hover:underline">
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/International" className="text-[22px] font-bold hover:underline">International</Link>
+              <Link
+                to="/International"
+                className="text-[22px] font-bold hover:underline"
+              >
+                International
+              </Link>
             </li>
             <li>
-              <Link to="/Domestic" className="text-[22px] font-bold hover:underline">Domestic</Link>
+              <Link
+                to="/Domestic"
+                className="text-[22px] font-bold hover:underline"
+              >
+                Domestic
+              </Link>
             </li>
             <li onClick={handleClick}>
-              <Link className="text-[22px] font-bold hover:underline">Exclusive</Link>
+              <Link className="text-[22px] font-bold hover:underline">
+                Exclusive
+              </Link>
             </li>
             <li onClick={handleClick}>
-              <Link className="text-[22px] font-bold hover:underline">Group Tours</Link>
+              <Link className="text-[22px] font-bold hover:underline">
+                Group Tours
+              </Link>
             </li>
             <li onClick={handleClick}>
-              <Link className="text-[22px] font-bold hover:underline">Destination Weddings</Link>
+              <Link className="text-[22px] font-bold hover:underline">
+                Destination Weddings
+              </Link>
             </li>
           </ul>
         </div>

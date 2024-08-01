@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 // Lazy load components
 const Navbar = lazy(() => import("../components/Navbar"));
 const Tourmain = lazy(() =>
-  import("../Itinerary/components/Tourmain/Almaty")
+  import("../Itinerary/components/Tourmain/Australia7d6n")
 );
 const Contact2 = lazy(() => import("../components/Contact2"));
 const Footer = lazy(() => import("../components/Footer"));
@@ -20,8 +20,8 @@ import Small from "../assets/CardImages/almaty.jpg";
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
 
-export default function Almaty() {
-  
+export default function Australia() {
+
   useEffect(() => {
     Aos.init({
       duration: 1300,

@@ -1,4 +1,4 @@
-import LeftThailand from "../Left/LeftVietnam6n7d.jsx";
+import LeftThailand from "../Left/LeftJapan.jsx";
 import RightSide from "../Common/RightSide.jsx";
 import a from "../../styles/Tourmain.module.css";
 
@@ -8,12 +8,12 @@ export default function Tourmain() {
       <div className={a.tourmain}>
         <LeftThailand />
         <RightSide
-          standard_cut={44009}
-          standard_current={37699}
-          deluxe_cut={49999}
-          super_deluxe_cut={58900}
-          deluxe_current={42699}
-          super_deluxe_current={50399}
+          standard_cut={103966}
+          standard_current={89699}
+          deluxe_cut={135899}
+          super_deluxe_cut={155899}
+          deluxe_current={99900}
+          super_deluxe_current={119500}
         />
       </div>
     </>

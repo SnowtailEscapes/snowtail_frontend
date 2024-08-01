@@ -84,10 +84,10 @@ const Card = ({
           </p>
         </div>
         <div className="flex flex-col">
-          <h2 className="boston text-[1.5rem] bold text-dark-accent font-bold font-arimo ">
+          <h2 className=" text-[1.5rem] bold text-dark-accent font-bold font-arimo ">
             {name}
           </h2>
-          <h3 className="text-base text-black1 font-semibold">{title}</h3>
+          <h3 className="text-base boston text-black1 font-semibold">{title}</h3>
         </div>
 
         <div className="flex flex-row justify-between items-center">
@@ -142,7 +142,7 @@ Card.propTypes = {
   rating: PropTypes.string.isRequired,
   cut_price: PropTypes.number.isRequired, // Changed to number
   curr_price: PropTypes.number.isRequired, // Changed to number
-  save: PropTypes.string.isRequired,
+  save: PropTypes.number.isRequired,
   direct: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
 };

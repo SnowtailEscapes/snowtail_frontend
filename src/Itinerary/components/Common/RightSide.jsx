@@ -74,11 +74,11 @@ const RightSide = ({
               <div className={styles.tour_package_bar_price}>
                 <h6>
                   <del>
-                    <CurrencyConverter price={standard_cut} />
+                    <CurrencyConverter price={Number(standard_cut)} />
                   </del>
                 </h6>
                 <h3 className="flex gap-2">
-                  <CurrencyConverter price={standard_current} /> 
+                  <CurrencyConverter price={Number(standard_current)} /> 
                   <p>per person</p>
                 </h3>
               </div>

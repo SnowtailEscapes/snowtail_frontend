@@ -9,12 +9,12 @@ export default function Tourmain() {
       <div className={a.tourmain}>
         <LeftThailand />
         <RightSide
-          standard_cut="₹69,099"
-          standard_current=" ₹59,099 per person"
-          deluxe_cut="₹73,899"
-          super_deluxe_cut="₹ 81,899"
-          deluxe_current="₹63,899 per person"
-          super_deluxe_current="₹71,899 per person"
+          standard_cut={69099}
+          standard_current={59099}
+          deluxe_cut={73899}
+          super_deluxe_cut={81899}
+          deluxe_current={63899}
+          super_deluxe_current={71899}
         />
       </div>
     </>

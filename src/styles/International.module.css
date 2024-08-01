@@ -23,7 +23,7 @@
 @media screen and (min-width:730px) {
     .banner{
         background-image: url('../assets/banner.webp');
-        height: 65vh;
+        height: 60vh;
         background-size: cover;
         
     }
@@ -31,9 +31,7 @@
         height:60vh;
         background-size: cover;
     }
-    .disc{
-        list-style:disc;
-    }
+    
 }
 
 
@@ -51,9 +49,7 @@
         height: 30vh;
         object-fit: cover;
     }
-    .disc{
-        list-style:disc;
-    }
+    
 }
 
 
@@ -61,13 +57,13 @@
     /* Adjust these styles as per your design requirements */
     background-color: #fff;
     border: 1px solid #fff;
-    width: 100% !important;
+    width: 90% !important;
     margin-bottom: 1rem;
   }
   
   .imageContainer {
     width: 100%;
-    height: 65vh;
+    height: 50vh;
   }
   
   .img {
