@@ -87,13 +87,22 @@ const Card = ({
           <h2 className=" text-[1.5rem] bold text-dark-accent font-bold font-arimo ">
             {name}
           </h2>
-          <h3 className="text-base boston text-black1 font-semibold">{title}</h3>
+          <h3 className="text-base boston text-black1 font-semibold">
+            {title}
+          </h3>
         </div>
 
         <div className="flex flex-row justify-between items-center">
-          <h4 className="text-[13px] cut font-bold font-ligh2 flex"><CurrencyConverter price={Number(cut_price)} />/per</h4>
+          {cut_price && (
+            <>
+              <h4 className="text-[13px] cut font-bold font-ligh2 flex">
+                <CurrencyConverter price={Number(cut_price)} />
+                /per
+              </h4>
+            </>
+          )}
           <h4 className="text-base text-main-brand font-bold font-light2 flex">
-            <CurrencyConverter price={Number(curr_price)}/>
+            <CurrencyConverter price={Number(curr_price)} />
             <span className="text-base text-main-brand text-bold">/per</span>
           </h4>
         </div>

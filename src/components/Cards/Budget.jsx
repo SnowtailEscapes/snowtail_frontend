@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
-import thailand4n5dS from "../../assets/CardImages/thailand4n5dS.webp";
-import thailand5n6ds from "../../assets/CardImages/thailand5n6ds.webp";
-import Kasol from "../../assets/CardImages/kasol.avif";
-import uttrakhand from "../../assets/CardImages/uttrakhand_card.webp";
-import gujarat from "../../assets/CardImages/gujarat1.webp";
-import manali from "../../assets/CardImages/manali.webp";
+
 
 export default function Budget() {
   const [isMobileScreen, setMobileScreen] = useState(
@@ -48,7 +43,7 @@ export default function Budget() {
                 curr_price={10999}
                 save={4400}
                 direct="/Kasol2n3d"
-                image={Kasol}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/d4jj8za1frxjxgw2cs3l'
               />
 
               <Card
@@ -60,7 +55,7 @@ export default function Budget() {
                 curr_price={15999}
                 save={6400}
                 direct="/Uttrakhand"
-                image={uttrakhand}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ytd5dytykzlpy6orblbl'
               />
               <Card
                 name="Manali"
@@ -71,7 +66,7 @@ export default function Budget() {
               curr_price={15999}
               save={6400}
                 direct="/Manali3n4d"
-                image={manali}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/vorbmcxc5np6ahet04j0'
               />
             </div>
 
@@ -88,7 +83,7 @@ export default function Budget() {
                 curr_price={16499}
                 save={6700}
                 direct="/Gujarat3n4d"
-                image={gujarat}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/mddzj4dekit9a7m3jepm'
               />
               <Card
                 name="Bangkok & Pattaya"
@@ -99,7 +94,7 @@ export default function Budget() {
                 curr_price={19999}
                 save={5700}
                 direct="/Thailand5d4n"
-                image={thailand4n5dS}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/hhajk8pwfwtsd2vhgcsc'
               />
               <Card
                 name="Phuket & Krabi"
@@ -110,7 +105,7 @@ export default function Budget() {
                 curr_price={29999}
                 save={7000}
                 direct="/Thailand6d5n"
-                image={thailand5n6ds}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/thailand4n5d'
               />
             </div>
           </div>
@@ -136,7 +131,7 @@ export default function Budget() {
               curr_price={10999}
               save={4400}
               direct="/Kasol2n3d"
-              image={Kasol}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/d4jj8za1frxjxgw2cs3l'
             />
 
             <Card
@@ -148,7 +143,7 @@ export default function Budget() {
               curr_price={16999}
               save={6800}
               direct="/Uttrakhand"
-              image={uttrakhand}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ytd5dytykzlpy6orblbl'
             />
 
             <Card
@@ -160,7 +155,7 @@ export default function Budget() {
               curr_price={15999}
               save={6400}
               direct="/Manali3n4d"
-              image={manali}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/vorbmcxc5np6ahet04j0'
             />
 
             <Card
@@ -172,7 +167,7 @@ export default function Budget() {
               curr_price={16499}
               save={6700}
               direct="/Gujarat3n4d"
-              image={gujarat}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/mddzj4dekit9a7m3jepm'
             />
 
             <Card 
@@ -184,7 +179,7 @@ export default function Budget() {
               curr_price={19999}
               save={5700}
               direct="/Thailand5d4n"
-              image={thailand4n5dS}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/hhajk8pwfwtsd2vhgcsc'
             />
 
             <Card
@@ -196,7 +191,7 @@ export default function Budget() {
               curr_price={29999}
               save={7000}
               direct="/Thailand6d5n"
-              image={thailand5n6ds}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/thailand4n5d'
             />
           </div>
         </>

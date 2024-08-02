@@ -1,11 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
-import andaman from "../../assets/CardImages/andaman.webp";
-import Kashmir1 from "../../assets/CardImages/kashmir1.webp";
-import Kashmir2 from "../../assets/CardImages/kashmir2.webp";
-import ladakh from "../../assets/CardImages/ladakh_card.webp";
-import sikkim from "../../assets/CardImages/sikkim_card.webp";
-import himachal from "../../assets/CardImages/shimla5n6d.webp";
 
 export default function Domestic() {
   const [isMobileScreen, setMobileScreen] = useState(window.innerWidth > 0 && window.innerWidth < 600);
@@ -45,7 +39,7 @@ export default function Domestic() {
                 curr_price={26700}
                 save={2000}
                 direct="/Kashmir5n6d"
-                image={Kashmir1}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/e0pa63dcfd9ndpjikd6r'
               />
 
               <Card
@@ -53,7 +47,7 @@ export default function Domestic() {
                 title="Experience Paradise On Earth"
                 duration="4 Days & 3 Nights"
                 rating="4.8/5"
-                image={Kashmir2}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/io8nrf2tcetleax8jgyq'
                 cut_price={25900}
                 curr_price={18499}
                 direct="/Kashmir3n4d"
@@ -69,7 +63,7 @@ export default function Domestic() {
                 curr_price={29999}
                 save={12000}
                 direct="/Ladakh5n6d"
-                image={ladakh}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/vbqfi1hyv63r0w845akt'
               />
             </div>
             <div
@@ -85,7 +79,7 @@ export default function Domestic() {
                 curr_price={35799}
                 save={14400}
                 direct="/Sikkim5n6d"
-                image={sikkim}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ykxbiuiaflrokrrqfm8u'
               />
 
               <Card
@@ -97,7 +91,7 @@ export default function Domestic() {
                 curr_price={26700}
                 save={2000}
                 direct="/Shimla5n6d"
-                image={himachal}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ogxma6qe0ljqynhde8so'
               />
 
               <Card
@@ -109,7 +103,7 @@ export default function Domestic() {
                 curr_price={31988}
                 save={12811}
                 direct="/Andaman"
-                image={andaman}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ntxfrgqqlxssxkybgdtt'
               />
             </div>
           </div>
@@ -136,7 +130,7 @@ export default function Domestic() {
               curr_price={26700}
               save={2000}
               direct="/Kashmir5n6d"
-              image={Kashmir1}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/e0pa63dcfd9ndpjikd6r'
             />
 
             <Card
@@ -144,7 +138,7 @@ export default function Domestic() {
               title="Experience Paradise On Earth"
               duration="4 Days & 3 Nights"
               rating="4.8/5"
-              image={Kashmir2}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/io8nrf2tcetleax8jgyq'
               cut_price={25900}
               curr_price={18499}
               direct="/Kashmir3n4d"
@@ -160,7 +154,7 @@ export default function Domestic() {
               curr_price={29999}
               save={12000}
               direct="/Ladakh5n6d"
-              image={ladakh}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/vbqfi1hyv63r0w845akt'
             />
 
             <Card
@@ -172,7 +166,7 @@ export default function Domestic() {
                 curr_price={35799}
                 save={14400}
               direct="/Sikkim5n6d"
-              image={sikkim}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ykxbiuiaflrokrrqfm8u'
             />
 
             <Card
@@ -184,7 +178,7 @@ export default function Domestic() {
               curr_price={26700}
               save={2000}
               direct="/Shimla5n6d"
-              image={himachal}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ogxma6qe0ljqynhde8so'
             />
 
             <Card
@@ -196,7 +190,7 @@ export default function Domestic() {
               curr_price={31988}
               save={12811}
               direct="/Andaman"
-              image={andaman}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ntxfrgqqlxssxkybgdtt'
             />
           </div>
           </>

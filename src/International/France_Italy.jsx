@@ -40,7 +40,7 @@ export default function Singapore6n7d() {
       <Suspense fallback={<div>Loading...</div>}>
         <Navbar />
         <section className={`${a.section} ${a.France}`} data-aos="zoom-in">
-        <ItineraryImage small={FranceItalySmall} large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/hnso83ririyohsr7ayxe' />
+        <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/e12rwj5elsq3trtqmlq5' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/hnso83ririyohsr7ayxe' />
 
         </section>
         <Tourmain />

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
-import Malaysias from "../../assets/CardImages/MalaysiaS.webp";
+
 import Thailand5n6ds from "../../assets/CardImages/thailand5n6ds.webp";
 import SriLanka from "../../assets/CardImages/SriLankaS.webp";
 import almaty from "../../assets/CardImages/almaty.jpg";
-import nepal from "../../assets/CardImages/nepalS.webp";
+
 
 export default function VisaFree() {
   const [isMobileScreen, setMobileScreen] = useState(window.innerWidth > 0 && window.innerWidth < 600);
@@ -43,7 +43,7 @@ export default function VisaFree() {
                 curr_price={33999}
                 save={5501}
                 direct="/Nepal"
-                image={nepal}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/jacxgiv1rdbxkv0tgpqy'
               />
 
               <Card
@@ -54,7 +54,7 @@ export default function VisaFree() {
                 curr_price={33999}
                 save={5501}
                 direct="/Malaysia"
-                image={Malaysias}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/bthwqpanhz9hxx26gumo'
               />
 
               <Card
@@ -65,7 +65,7 @@ export default function VisaFree() {
                 curr_price={29999}
                 save={7000}
                 direct="/Thailand6d5n"
-                image={Thailand5n6ds}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/hhajk8pwfwtsd2vhgcsc'
               />
             </div>
             <div
@@ -80,7 +80,7 @@ export default function VisaFree() {
               curr_price={34699}
               save={7000}
                 direct="/Almaty"
-                image={almaty}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/dmco3dmhjdvkn0auoaf8'
               />
 
               <Card
@@ -91,7 +91,7 @@ export default function VisaFree() {
                 curr_price={38699}
                 save={5801}
                 direct="/SriLanka6n7d"
-                image={SriLanka}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/hl7ngkhtiha4ynq86ojz'
               />
             </div>
           </div>
@@ -127,7 +127,7 @@ export default function VisaFree() {
                 curr_price={33999}
                 save={5501}
               direct="/Nepal"
-              image={nepal}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/jacxgiv1rdbxkv0tgpqy'
             />
 
             <Card
@@ -138,7 +138,7 @@ export default function VisaFree() {
               curr_price={33999}
               save={5501}
               direct="/Malaysia"
-              image={Malaysias}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/bthwqpanhz9hxx26gumo'
             />
 
             <Card
@@ -149,7 +149,7 @@ export default function VisaFree() {
               curr_price={29999}
               save={7000}
               direct="/Thailand6d5n"
-              image={Thailand5n6ds}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/hhajk8pwfwtsd2vhgcsc'
             />
 
             <Card
@@ -160,7 +160,7 @@ export default function VisaFree() {
               curr_price={34699}
               save={7000}
               direct="/Almaty"
-              image={almaty}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/dmco3dmhjdvkn0auoaf8'
             />
 
             <Card
@@ -171,7 +171,7 @@ export default function VisaFree() {
               curr_price={38699}
               save={5801}
               direct="/SriLanka6n7d"
-              image={SriLanka}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/hl7ngkhtiha4ynq86ojz'
             />
 
             {/* <Card

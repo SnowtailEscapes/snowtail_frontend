@@ -64,7 +64,7 @@ const TestItinerary = () => {
           data-aos="zoom-in"
         >
           <Navbar />
-          <ItineraryImage small={Thailand5d4nSmall} large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/thailand4n5d' />
+          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/thailand4n5d' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/thailand4n5d' />
         </section>
         <Tourmain itinerary={itinerary}/>
         <Contact2 />

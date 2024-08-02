@@ -48,7 +48,7 @@ export default function Vietnam9n10d() {
         >
         
           <Navbar />
-          <ItineraryImage small={Vietnam9n10dSmall} large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/li7txbgjacv2t4za1yro' />
+          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/zynzypoqjbziyrzuswkh' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/li7txbgjacv2t4za1yro' />
         </section>
         <Tourmain />
         <Contact2 />

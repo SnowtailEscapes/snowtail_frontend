@@ -2,26 +2,6 @@ import { Suspense, lazy } from "react";
 import International from "./International";
 const LazyComponent = lazy(() => import("../Navbar"));
 import a from "../../styles/International.module.css";
-import thailand4n5dS from "../../assets/CardImages/thailand4n5dS.webp";
-import Thailand8n9ds from "../../assets/CardImages/thailand8n9ds.webp";
-import thailand5n6ds from "../../assets/CardImages/thailand5n6ds.webp";
-import bali5n6ds from "../../assets/CardImages/bali5n6dS.webp";
-import bali7n8ds from "../../assets/CardImages/Bali7n8ds.webp";
-import vietnam4n5d from "../../assets/CardImages/vietnam4n5ds.webp";
-import vietnam6n7d from "../../assets/CardImages/vietnam6n7ds.webp";
-import vietnam9n10d from "../../assets/CardImages/vietnam9n10ds.webp";
-import singapore4n5d from "../../assets/CardImages/singapore4n5ds.webp";
-import singapore6n7d from "../../assets/CardImages/singapore6n7ds.webp";
-import SM from "../../assets/CardImages/SMs.webp";
-import malaysia from "../../assets/CardImages/MalaysiaS.webp";
-import Switzerland from "../../assets/CardImages/switzerland5n6dS.webp";
-import France from "../../assets/CardImages/FranceS.webp";
-import Greece from "../../assets/CardImages/Greece7n8dS.webp";
-import SriLanka from "../../assets/CardImages/SriLankaS.webp";
-import Dubai3n4d from "../../assets/CardImages/Dubai3n4dS.webp";
-import Dubai5n6d from "../../assets/CardImages/Dubai5n6dS.webp";
-import nepal from "../../assets/CardImages/nepalS.webp";
-import almaty from "../../assets/CardImages/almaty.jpg";
 import { Helmet } from "react-helmet";
 
 export default function AllInternational() {
@@ -51,7 +31,7 @@ export default function AllInternational() {
             price={19699}
             location="PATTAYA & BANGKOK"
             duration="4 nights 5 days tour"
-            image={thailand4n5dS}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/thailand4n5d'
           />
 
           <International
@@ -60,7 +40,7 @@ export default function AllInternational() {
             price={29699}
             location="PHUKET & KRABI"
             duration="5 nights 6 days tour"
-            image={thailand5n6ds}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/hhajk8pwfwtsd2vhgcsc'
           />
 
           <International
@@ -69,7 +49,7 @@ export default function AllInternational() {
             price={59099}
             location="PHUKET/KRABI/PATTAYA/BANGKOK"
             duration="8 nights 9 days tour"
-            image={Thailand8n9ds}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/thailand8n9d'
           />
 
           <International
@@ -78,7 +58,7 @@ export default function AllInternational() {
             price={54699}
             location="BALI"
             duration="7 nights 8 days tour"
-            image={bali7n8ds}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/xlknx6r9srnj8hrcv80n'
           />
           <International
             to="/Bali6d5n"
@@ -86,7 +66,7 @@ export default function AllInternational() {
             price={34699}
             location="BALI"
             duration="5 nights 6 days tour"
-            image={bali5n6ds}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ajv3iepuyrelzskbgpir'
           />
 
           <International
@@ -95,7 +75,7 @@ export default function AllInternational() {
             price={37699}
             location="VIETNAM"
             duration="4 nights 5 days tour"
-            image={vietnam4n5d}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/cnfztqxnhddamzjxj6vk'
           />
 
           <International
@@ -104,7 +84,7 @@ export default function AllInternational() {
             price={57699}
             location="VIETNAM"
             duration="6 nights 7 days tour"
-            image={vietnam6n7d}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/srkqs6s7h6tgvqgnegh9'
           />
           <International
             to="/Vietnam9n10d"
@@ -112,7 +92,7 @@ export default function AllInternational() {
             price={89699}
             location="VIETNAM"
             duration="9 nights 10 days tour"
-            image={vietnam9n10d}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/zynzypoqjbziyrzuswkh'
           />
           <International
             to="/Singapore4n5d"
@@ -120,7 +100,7 @@ export default function AllInternational() {
             price={44699}
             location="SINGAPORE"
             duration="4 nights 5 days tour"
-            image={singapore4n5d}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/dicuyywnzshvd48cqssh'
           />
           <International
             to="/Singapore6n7d"
@@ -128,7 +108,7 @@ export default function AllInternational() {
             price={59699}
             location="SINGAPORE"
             duration="6 nights 7 days tour"
-            image={singapore6n7d}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/dionqfxfgjjefuufkybb'
           />
           <International
             to="/Singapore_Malaysia"
@@ -136,7 +116,7 @@ export default function AllInternational() {
             price={56999}
             location="SINGAPORE & MALAYSIA"
             duration="6 nights 7 days tour"
-            image={SM}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/bgzs32ixxddrhw7q4n5q'
           />
           <International
             to="/Malaysia"
@@ -144,7 +124,7 @@ export default function AllInternational() {
             price={33999}
             location="MALAYSIA"
             duration="6 nights 7 days tour"
-            image={malaysia}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/bthwqpanhz9hxx26gumo'
           />
           <International
             to="/Switzerland5n6d"
@@ -152,7 +132,7 @@ export default function AllInternational() {
             duration="5 nights 6 days tour"
             price={97999}
             location="SWITZERLAND"
-            image={Switzerland}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/im047rizfr16zpjs4ffx'
           />
           <International
             to="/France-Italy"
@@ -160,7 +140,7 @@ export default function AllInternational() {
             price={85699}
             location="FRANCE & ITALY"
             duration="4 nights 5 days tour"
-            image={France}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/e12rwj5elsq3trtqmlq5'
           />
           <International
             to="/Greece7n8d"
@@ -168,7 +148,7 @@ export default function AllInternational() {
             location="GREECE"
             price={139699}
             duration="7 nights 8 days tour"
-            image={Greece}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/qqaz26pebrcjum7ddwfl'
           />
           <International
             to="/SriLanka6n7d"
@@ -176,7 +156,7 @@ export default function AllInternational() {
             duration="6 nights 7 days tour"
             price={38699}
             location="SRI LANKA"
-            image={SriLanka}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/hl7ngkhtiha4ynq86ojz'
           />
           <International
             to="/Dubai3n4d"
@@ -184,7 +164,7 @@ export default function AllInternational() {
             location="DUBAI"
             price={25899}
             duration="3 nights 4 days tour"
-            image={Dubai3n4d}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/j7c8e9kld9mfj7bbxqmj'
           />
           <International
             to="/Dubai5n6d"
@@ -192,7 +172,7 @@ export default function AllInternational() {
             location="DUBAI"
             price={58899}
             duration="5 nights 6 days tour"
-            image={Dubai5n6d}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/suoctcvh0fvuysxd5tgn'
           />
 
           <International
@@ -200,7 +180,7 @@ export default function AllInternational() {
             duration="3 nights 4 days tour"
             price={54699}
             direct="/Nepal"
-            image={nepal}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/jacxgiv1rdbxkv0tgpqy'
             to="/Nepal"
           />
 
@@ -210,7 +190,7 @@ export default function AllInternational() {
             to="/Almaty"
             price={59099}
             direct="/Almaty"
-            image={almaty}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/dmco3dmhjdvkn0auoaf8'
           />
 
           <International
@@ -219,7 +199,7 @@ export default function AllInternational() {
             price={99999}
             location="Sydney"
             duration="7 nights 6 days tour"
-            image={vietnam9n10d}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/zynzypoqjbziyrzuswkh'
           />
 
           <International
@@ -228,7 +208,7 @@ export default function AllInternational() {
             price={99999}
             location="Kyoto"
             duration="9 nights 10 days tour"
-            image={vietnam9n10d}
+            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/zynzypoqjbziyrzuswkh'
           />
         </div>
       </div>

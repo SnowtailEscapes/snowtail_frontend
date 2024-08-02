@@ -39,7 +39,7 @@ export default function Vietnam7d6n() {
       <Suspense fallback={<div>Loading...</div>}>
         <section className={`${a.Vietnam6n7d} ${a.mobile} ${a.window}`} data-aos="zoom-in">
           <Navbar />
-          <ItineraryImage small={Vietnam6n7dSmall} large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/ir4yvulk8nbmlf3tkkya' />
+          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/srkqs6s7h6tgvqgnegh9' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/ir4yvulk8nbmlf3tkkya' />
         </section>
         <Tourmain />
         <Contact2 />

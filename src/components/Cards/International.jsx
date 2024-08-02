@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
-import Thailand8n9ds from "../../assets/CardImages/thailand8n9ds.webp";
-import bali7n8ds from "../../assets/CardImages/Bali7n8ds.webp";
-import singapore6n7ds from "../../assets/CardImages/singapore6n7ds.webp";
-import dubai5n6d from "../../assets/CardImages/Dubai5n6dS.webp";
-import almaty from "../../assets/CardImages/almaty.jpg";
+
 
 export default function International() {
   const [isMobileScreen, setMobileScreen] = useState(window.innerWidth > 0 && window.innerWidth < 600);
@@ -42,7 +38,7 @@ export default function International() {
                 curr_price={59099}
                 save={10000}
                 direct="/Thailand9d8n"
-                image={Thailand8n9ds}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/thailand8n9d'
               />
 
               <Card
@@ -54,7 +50,7 @@ export default function International() {
                 curr_price={54699}
                 save={10000}
                 direct="/Bali8d7n"
-                image={bali7n8ds}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/xlknx6r9srnj8hrcv80n'
               />
 
               <Card
@@ -66,7 +62,7 @@ export default function International() {
                 curr_price={56699}
                 direct="/Singapore6n7d"
                 save={7201}
-                image={singapore6n7ds}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/dionqfxfgjjefuufkybb'
               />
             </div>
             <div
@@ -83,7 +79,7 @@ export default function International() {
                 curr_price={58899}
                 save={10601}
                 direct="/Dubai5n6d"
-                image={dubai5n6d}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/suoctcvh0fvuysxd5tgn'
               />
 
               <Card
@@ -95,7 +91,7 @@ export default function International() {
               curr_price={34699}
               save={7000}
                 direct="/Almaty"
-                image={almaty}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/dmco3dmhjdvkn0auoaf8'
               />
             </div>
           </div>
@@ -122,7 +118,8 @@ export default function International() {
               curr_price={59099}
               save="SAVE ₹10,000"
               direct="/Thailand9d8n"
-              image={Thailand8n9ds}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/thailand8n9d'
+
             />
 
             <Card
@@ -134,7 +131,8 @@ export default function International() {
               curr_price={54699}
               save={10000}
               direct="/Bali8d7n"
-              image={bali7n8ds}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/xlknx6r9srnj8hrcv80n'
+
             />
 
             <Card
@@ -146,7 +144,7 @@ export default function International() {
               curr_price={56699}
               direct="/Singapore6n7d"
               save={7201}
-              image={singapore6n7ds}
+                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/dionqfxfgjjefuufkybb'
             />
 
             <Card 
@@ -158,7 +156,8 @@ export default function International() {
               curr_price={58899}
               save={10601}
               direct="/Dubai5n6d"
-              image={dubai5n6d}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/suoctcvh0fvuysxd5tgn'
+
             />
 
             <Card
@@ -170,7 +169,8 @@ export default function International() {
               curr_price={34699}
               save={7000}
               direct="/Almaty"
-              image={almaty}
+              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/dmco3dmhjdvkn0auoaf8'
+
             />
           </div>
         </>

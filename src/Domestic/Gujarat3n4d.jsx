@@ -42,7 +42,7 @@ export default function Rajasthan() {
 
         <Suspense fallback={<div>Loading...</div>}>
         <section className={a.section} data-aos="zoom-in">
-          <ItineraryImage small={Small} large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/p5revhg7hzge91wlc4du' />
+          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/mddzj4dekit9a7m3jepm' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/p5revhg7hzge91wlc4du' />
           <Navbar />
         </section>
         <Tourmain />

@@ -37,7 +37,6 @@ const SearchResults = () => {
                   key={item._id}
                 />
               ))}
-
         </div>
       </div>
       <Footer />

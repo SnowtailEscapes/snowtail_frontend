@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const fetchItinerary = createAsyncThunk('itinerary/fetchItinerary', async () => {
-  const response = await fetch('http://localhost:5000/api/itineraries');
+  const response = await fetch(`${import.meta.env.VITE_ITINERARIES}`);
   return response.json();
 });
 
