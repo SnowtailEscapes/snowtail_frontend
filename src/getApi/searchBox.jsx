@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import  {TypeAnimation}  from "react-type-animation"
 
@@ -41,6 +41,10 @@ const SearchBox = () => {
       setItineraries([]);
     }
   };
+
+  useEffect(()=>{
+    handleSearch()
+  },[]);
 
   const toggleTypeAnimation = (isVisible) => {
     setShowTypeAnimation(isVisible);

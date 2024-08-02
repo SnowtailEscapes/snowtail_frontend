@@ -38,9 +38,9 @@ const Card = ({
     dispatch(fetchCurrencyRates());
   }, [dispatch]);
 
-  // const numericRating = parseFloat(rating);
+  const numericRating = parseFloat(rating);
 
-  // const ratingOutOfFive = Math.round((numericRating / 10) * 10) / 10;
+  const ratingOutOfFive = Math.round((numericRating / 10) * 10) / 10;
 
   return (
     <div className="lg:w-1/3 md:1/2 w-11/12 carousel-item flex flex-col relative rounded-2xl">
