@@ -82,7 +82,7 @@ const Navbar = () => {
             </>
           )}
         </div>
-        <div className="navbar-end lg:hidden">
+        <div className="navbar-end lg:hidden z-10">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost">
               <svg

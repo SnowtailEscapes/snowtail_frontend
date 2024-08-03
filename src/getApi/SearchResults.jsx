@@ -53,7 +53,7 @@ const SearchResults = () => {
         <div className="flex flex-wrap justify-center gap-4">
           {itineraries.length > 0 &&
             itineraries.map((item) => (
-              <div className="lg:w-1/3 md:w-1/2 w-full p-2">
+              <div className="lg:w-1/3 md:w-1/2 w-full p-2" key={item._id}>
                 <div className="carousel-item flex flex-col relative rounded-2xl">
                   <div
                     className="relative text-center"

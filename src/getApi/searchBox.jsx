@@ -7,13 +7,13 @@ const SearchBox = () => {
   const [searchText, setSearchText] = useState("");
   const [showTypeAnimation, setShowTypeAnimation] = useState(true);
   const [sequence] = useState([
-    "Search for destinations",
+    "Search for locations",
     1000,
     "Search for bali",
     1000,
     "Search for thailand",
     1000,
-    "Search for dubai",
+    'Search for dubai',
     1000,
   ]);
   const navigate = useNavigate();
@@ -93,11 +93,10 @@ const SearchBox = () => {
         onFocus={() => toggleTypeAnimation(false)}
         onBeforeInput={() => toggleTypeAnimation(false)}
         onBlur={() => toggleTypeAnimation(false)}
-        className="py-2 px-3 bg-transparent border-none focus:outline-none flex-1 lg:w-3/4"
+        className="py-2 px-3 bg-transparent border-none focus:outline-none flex-1 w-3/4"
       />
-
       <button
-        className="bg-main-brand march text-white px-4 py-2 ml-2 rounded lg:w-1/5 w-1/4"
+        className="bg-main-brand march text-white px-4 py-2 ml-2 rounded w-1/4"
         onClick={handleSearchButtonClick}
       >
         Search
