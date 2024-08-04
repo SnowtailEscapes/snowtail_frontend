@@ -22,13 +22,13 @@ export default function Footer() {
               <Link to="/terms-conditions">
                 <li className="hover:text-light-shade text-[16px]">Terms and Conditions</li>
               </Link>
-              <Link to="/">
+              <Link>
                 <li className="hover:text-light-shade text-[16px]">Support</li>
               </Link>
-              <Link to="/">
+              <Link>
                 <li className="hover:text-light-shade text-[16px]">We are Hiring</li>
               </Link>
-              <Link to="/cancellation-policy">
+              <Link>
                 <li className="hover:text-light-shade text-[16px]">Cancellation Policy</li>
               </Link>
             </ul>

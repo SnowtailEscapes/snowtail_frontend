@@ -297,8 +297,6 @@ export default function Contact2() {
   const sendEmail = async (e) => {
     e.preventDefault();
     alert("Your message will be sent shortly, you can close the form. Thank you!")
-
-
     const emailData = {
       name,
       email,
@@ -467,8 +465,8 @@ export default function Contact2() {
   );
 }
 
-// Contact2.propTypes = {
-//   isVisible: PropTypes.bool.isRequired,
-//   onClose: PropTypes.func.isRequired,
-//   accomodation: PropTypes.string.isRequired,
-// };
+Contact2.propTypes = {
+  isVisible: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+  accomodation: PropTypes.string.isRequired,
+};

@@ -7,6 +7,7 @@ import logo from "../../public/logo/23.svg";
 import PropTypes from "prop-types";
 
 export const ContactLeft = ({onClose}) => {
+  
   return (
     <div className="flex flex-col p-5 bg-main-brand text-white md:w-1/3 w-full gap-4">
             <button onClick={onClose} className="btn bg-main-brand">
