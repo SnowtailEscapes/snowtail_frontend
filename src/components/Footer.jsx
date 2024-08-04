@@ -3,33 +3,33 @@ import { Link } from "react-router-dom";
 import fb from "../assets/footer/fb.png";
 import insta from "../assets/footer/insta.png";
 import linkedin from "../assets/footer/linkedin.png";
-import logo from "../assets/logo.webp";
+import logo from "../../public/logo/23.svg";
 
 export default function Footer() {
   return (
     <div className="relative flex flex-col items-center w-full">
       <div className="absolute top-0 z-10 w-full flex justify-center mt-10 h-2/6">
-        <div className="md:min-h-fit md:w-4/5 w-full border border-neutral md:rounded-lg flex flex-col md:flex-row bg-ligh-accent">
+        <div className="md:min-h-fit md:w-4/5 w-full md:rounded-lg flex flex-col md:flex-row bg-dark-accent text-white1">
           <div className="w-full md:w-1/2 p-4">
-            <h1 className="text-2xl md:text-3xl text-center march">About Snowtail Escapes</h1>
-            <ul className="list-none boston mt-4 flex  justify-center items-center flex-col ">
+            <h1 className="text-[1.5rem] text-center font-light text-black1">About Snowtail Escapes</h1>
+            <ul className="list-none font-ligh2 flex gap-2  justify-center items-center flex-col ">
               <Link to="/about">
-                <li className="hover:text-light-shade text-[20px]">About us</li>
+                <li className="hover:text-light-shade text-[16px]">About us</li>
               </Link>
               <Link to="/privacy-policy">
-                <li className="hover:text-light-shade text-[20px]">Privacy Policy</li>
+                <li className="hover:text-light-shade text-[16px]">Privacy Policy</li>
               </Link>
               <Link to="/terms-conditions">
-                <li className="hover:text-light-shade text-[20px]">Terms and Conditions</li>
+                <li className="hover:text-light-shade text-[16px]">Terms and Conditions</li>
               </Link>
               <Link to="/">
-                <li className="hover:text-light-shade text-[20px]">Support</li>
+                <li className="hover:text-light-shade text-[16px]">Support</li>
               </Link>
               <Link to="/">
-                <li className="hover:text-light-shade text-[20px]">We are Hiring</li>
+                <li className="hover:text-light-shade text-[16px]">We are Hiring</li>
               </Link>
               <Link to="/cancellation-policy">
-                <li className="hover:text-light-shade text-[20px]">Cancellation Policy</li>
+                <li className="hover:text-light-shade text-[16px]">Cancellation Policy</li>
               </Link>
             </ul>
           </div>
@@ -46,7 +46,7 @@ export default function Footer() {
       </div>
       <div className="mt-20"></div>
 
-      <div className="relative flex justify-center p-5 md:pt-52 bg-neutral text-white mt-20 pt-80 w-full">
+      <div className="relative flex justify-center p-5 md:pt-52 bg-black1 text-white mt-20 pt-80 w-full font-light">
         <div className="flex flex-col items-center gap-10 w-full max-w-4xl">
           <div className="divider divider-accent">
             <img src={logo} width={150} alt="Snowtail Escapes Logo" />

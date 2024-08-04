@@ -4,7 +4,7 @@ import dot from "../../assets/dot.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import PropTypes from "prop-types";
-import Contact3 from "../../../components/Contact3";
+import Contact3 from "../../../components/ContactThree";
 import CurrencyConverter from "../../../getApi/CurrencyConverter";
 
 const RightSide = ({
@@ -20,10 +20,10 @@ const RightSide = ({
       duration: 1500,
     });
   }, []);
-  const [showContactForm, setShowContactForm] = useState(false);
+  const [showContactForm1, setShowContactForm1] = useState(false);
 
-  const toggleContactForm = () => {
-    setShowContactForm(!showContactForm);
+  const toggleContactForm1 = () => {
+    setShowContactForm1(!showContactForm1);
   };
 
   return (
@@ -87,7 +87,7 @@ const RightSide = ({
           <div>
             <button
               className="btn bg-main-brand text-white"
-              onClick={toggleContactForm}
+              onClick={toggleContactForm1}
             >
               Contact with an Expert
             </button>
@@ -152,7 +152,7 @@ const RightSide = ({
           <div>
             <button
               className="btn bg-main-brand text-white"
-              onClick={toggleContactForm}
+              onClick={toggleContactForm1}
             >
               Contact with an Expert
             </button>
@@ -217,7 +217,7 @@ const RightSide = ({
           <div>
             <button
               className="btn bg-main-brand text-white"
-              onClick={toggleContactForm}
+              onClick={toggleContactForm1}
             >
               Contact with an Expert
             </button>
@@ -255,10 +255,11 @@ const RightSide = ({
             </div>
           </div>
         </div>
-        {showContactForm && (
+        {showContactForm1 && (
           <Contact3
-            isVisible={showContactForm}
-            onClose={() => setShowContactForm(false)}
+            isVisible={showContactForm1}
+            onClose={() => setShowContactForm1(false)}
+            accomodation='3 Star or Standard Accomodation'
           />
         )}
       </div>
