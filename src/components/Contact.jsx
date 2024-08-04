@@ -4,9 +4,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import PropTypes from "prop-types";
-import trip from "../assets/trip.webp";
-import visa from "../assets/visa.webp";
-import time from "../assets/time.webp";
+import { ContactLeft } from "./ContactLeft";
 
 
 const countryCodes = [
@@ -360,30 +358,7 @@ const Contact = ({ isVisible, onClose }) => {
         className="fixed"
       >
         <div className="contact-form flex flex-col md:flex-row items-stretch w-full h-full">
-          <div className="flex flex-col p-5 bg-violet-950 text-white md:w-1/3 w-full">
-            <button onClick={onClose} className="btn btn-sm btn-error self-end">
-              X
-            </button>
-            <h2 className="text-center mb-4 text-2xl">Snowtail Escapes</h2>
-            <div className="card bg-base-100 h-fit flex align-middle shadow-md shadow-white mb-4">
-              <div className="card-body text-center">
-                <div className="flex flex-col items-center gap-1">
-                  <img src={trip} width={30} alt="Customized Trips" />
-                  <p className="font-bold text-black text-nowrap">
-                    100% Customised Trips
-                  </p>
-                </div>
-                <div className="flex flex-col items-center gap-1">
-                  <img src={visa} width={30} alt="Visa Success" />
-                  <p className="font-bold text-black">90% Visa Success Rate</p>
-                </div>
-                <div className="flex flex-col items-center gap-1">
-                  <img src={time} width={30} alt="Coverage" />
-                  <p className="font-bold text-black">24x7 Coverage</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ContactLeft onClose={onClose}/>
           <div
             className="md:p-4 p-2 bg-white flex flex-col items-center justify-center md:w-2/3 w-full"
             style={{ fontSize: "13px" }}
