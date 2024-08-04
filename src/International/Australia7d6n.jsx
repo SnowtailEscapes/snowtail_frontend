@@ -44,7 +44,7 @@ export default function Australia() {
 
       <Suspense fallback={<div>Loading...</div>}>
         <section className={a.section} data-aos="zoom-in">
-          <ItineraryImage small={Small} large={Large} />
+          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/r1iqblqgi5qaszmdftqb' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/g54f4lpdeosyje2fvbqn' />
           <Navbar />
         </section>
         <Tourmain />

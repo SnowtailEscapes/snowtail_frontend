@@ -49,7 +49,7 @@
 
 .home {
   position: relative; /* Ensure the div can contain absolutely positioned elements */
-  height: auto;
+  height: 80vh;
   overflow: hidden; /* Hide overflow to prevent image overflow */
 }
 
@@ -72,7 +72,7 @@
 @media screen and (max-width:700px) {
   .home {
     position: relative; /* Ensure the div can contain absolutely positioned elements */
-    height: auto;
+    height: 50vh;
     overflow: hidden; /* Hide overflow to prevent image overflow */
   }
   

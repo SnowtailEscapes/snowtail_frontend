@@ -46,9 +46,8 @@ export default function Japan() {
           className={`${a.Vietnam9n10d} ${a.mobile} ${a.window}`}
           data-aos="zoom-in"
         >
-        
           <Navbar />
-          <ItineraryImage small={Vietnam9n10dSmall} large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/li7txbgjacv2t4za1yro' />
+          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/sdjswz0cdnggtozkooq3' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/wtjljprxslnhkbi4mvnt' />
         </section>
         <Tourmain />
         <Contact2 />

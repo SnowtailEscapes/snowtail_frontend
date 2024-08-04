@@ -74,7 +74,7 @@ const Navbar = () => {
       >
         <div className="navbar-start lg:navbar-start flex gap-5">
           <Link to="/">
-            <img src={logo} width={140} height={140} alt="logo" />
+            <img src={logo} width={200} height={150} alt="logo" />
           </Link>
           {!isHomePage && (
             <>
@@ -105,32 +105,32 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black dropdown-left"
             >
               <li>
-                <Link to="/" className="text-[22px] font-bold">
+                <Link to="/" className="text-[19px] font-bold">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/International" className="text-[22px] font-bold">
+                <Link to="/International" className="text-[19px] font-bold">
                   International
                 </Link>
               </li>
               <li>
-                <Link to="/Domestic" className="text-[22px] font-bold">
+                <Link to="/Domestic" className="text-[19px] font-bold">
                   Domestic
                 </Link>
               </li>
               <li>
-                <Link onClick={handleClick} className="text-[22px] font-bold">
+                <Link onClick={handleClick} className="text-[19px] font-bold">
                   Exclusive
                 </Link>
               </li>
               <li>
-                <Link onClick={handleClick} className="text-[22px] font-bold">
+                <Link onClick={handleClick} className="text-[19px] font-bold">
                   Group Tours
                 </Link>
               </li>
               <li>
-                <Link onClick={handleClick} className="text-[22px] font-bold">
+                <Link onClick={handleClick} className="text-[19px] font-bold">
                   Destination Weddings
                 </Link>
               </li>
@@ -141,14 +141,14 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to="/" className="text-[22px] font-bold hover:underline">
+              <Link to="/" className="text-[19px] font-bold hover:underline">
                 Home
               </Link>
             </li>
             <li>
               <Link
                 to="/International"
-                className="text-[22px] font-bold hover:underline"
+                className="text-[19px] font-bold hover:underline"
               >
                 International
               </Link>
@@ -156,23 +156,23 @@ const Navbar = () => {
             <li>
               <Link
                 to="/Domestic"
-                className="text-[22px] font-bold hover:underline"
+                className="text-[19px] font-bold hover:underline"
               >
                 Domestic
               </Link>
             </li>
             <li onClick={handleClick}>
-              <Link className="text-[22px] font-bold hover:underline">
+              <Link className="text-[19px] font-bold hover:underline">
                 Exclusive
               </Link>
             </li>
             <li onClick={handleClick}>
-              <Link className="text-[22px] font-bold hover:underline">
+              <Link className="text-[19px] font-bold hover:underline">
                 Group Tours
               </Link>
             </li>
             <li onClick={handleClick}>
-              <Link className="text-[22px] font-bold hover:underline">
+              <Link className="text-[19px] font-bold hover:underline">
                 Destination Weddings
               </Link>
             </li>
