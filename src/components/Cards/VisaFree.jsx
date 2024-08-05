@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
 
-import Thailand5n6ds from "../../assets/CardImages/thailand5n6ds.webp";
-import SriLanka from "../../assets/CardImages/SriLankaS.webp";
-import almaty from "../../assets/CardImages/almaty.jpg";
 
 
 export default function VisaFree() {
