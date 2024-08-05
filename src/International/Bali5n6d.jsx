@@ -14,9 +14,7 @@ const ScrollToTopButton = lazy(() =>
   import("../Itinerary/components/ScrollToTop")
 );
 
-// Import images
-import Bali5n6dLarge from "../assets/LargeImages/bali5n6dB.webp";
-import Bali5n6dSmall from "../assets/CardImages/bali5n6dS.webp";
+
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
 

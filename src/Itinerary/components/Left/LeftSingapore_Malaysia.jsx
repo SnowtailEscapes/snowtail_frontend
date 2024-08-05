@@ -32,6 +32,8 @@ export default function Left() {
             title="Singapore & Malaysia Escapes: A Journey of Cultural Marvels"
             location1="Singapore & Malaysia"
             time="6N/7D"
+            rating={4.8}
+          reviews={405}
           />
         </Suspense>
 

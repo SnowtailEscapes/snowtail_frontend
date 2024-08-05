@@ -6,7 +6,7 @@ import "../../styles/animations.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import RajasthanAccordion from "../Accordions/RajasthanAccordion";
-import Common  from "../Common/Top"
+import Common from "../Common/Top"
 import Inclusion from "../Common/Inclusion";
 import Confirmation from "../Common/Confirmation";
 import Cancellation from "../Common/Cancellation";
@@ -22,7 +22,8 @@ export default function LeftRajasthan() {
     <>
       <div className={a.tour_left}>
 
-        <Common place="JAIPUR, PUSHKAR, JODHPUR, UDAIPUR" title="The Incredible Gateway Rajasthan" location1="Rajasthan" time="7N/8D"/>
+        <Common place="JAIPUR, PUSHKAR, JODHPUR, UDAIPUR" title="The Incredible Gateway Rajasthan" location1="Rajasthan" time="7N/8D" rating={4.8}
+          reviews={405} />
 
         <div className={a.left3} data-aos="zoom-in">
           <img src={rajasthan} alt="rajashtan" />
@@ -65,17 +66,17 @@ export default function LeftRajasthan() {
           </div>
         </div>
 
-        
+
         <RajasthanAccordion />
-        <Inclusion/>
-        <Map link="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7126872.152351839!2d68.58762353204355!3d27.043981428419688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396a3efaf7e30e37%3A0xb52b9b4506c088e5!2sRajasthan!5e0!3m2!1sen!2sin!4v1717780829734!5m2!1sen!2sin"/>
-        <KnowBeforeYouGoDomestic/>
-      <Confirmation/>
-      <Cancellation/>
+        <Inclusion />
+        <Map link="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7126872.152351839!2d68.58762353204355!3d27.043981428419688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396a3efaf7e30e37%3A0xb52b9b4506c088e5!2sRajasthan!5e0!3m2!1sen!2sin!4v1717780829734!5m2!1sen!2sin" />
+        <KnowBeforeYouGoDomestic />
+        <Confirmation />
+        <Cancellation />
 
-        
 
-    </div>
+
+      </div>
     </>
   );
 }

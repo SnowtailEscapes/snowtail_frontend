@@ -33,6 +33,8 @@ export default function Left() {
             title="Singapore Escapes: A Journey through the Vibrant Lion City"
             location1="Singapore"
             time="4N/5D"
+            rating={4.8}
+          reviews={405}
           />
         </Suspense>
 

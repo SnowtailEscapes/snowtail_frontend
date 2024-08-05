@@ -26,6 +26,8 @@ export default function Left() {
           title="Best of Australia"
           location1="Australia"
           time="7N/6D"
+          rating={4.1}
+        reviews={450}
         />
 
         <div className={a.left3} data-aos="zoom-in">
@@ -45,16 +47,17 @@ export default function Left() {
             Sydney Opera House with a guided tour, uncovering its rich history
             and stunning design.
           </p>
-          {/* <div>
+          <div>
             <ul>
-              <li>Pick up - Almaty Airport</li>
-              <li>Drop - Almaty Airport</li>
-              <li>Country - Kazakhstan</li>
-              <li>Duration - 4N/5D</li>
-              <li>Best Season - november to february</li>
+              <li>Pick up - Melbourne Airport</li>
+              <li>Drop - Sydney Airport</li>
+              <li>Country - Australia </li>
+              <li>Duration - 6N/7D</li>
+              <li>Best Season - September to May </li>
               <li>Destination for- Couples/Friends/ Family</li>
+              <li>Mode of transportation- Car/traveller</li>
             </ul>
-          </div> */}
+          </div>
         </div>
 
         <Accordion />

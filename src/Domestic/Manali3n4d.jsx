@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import Large from "../assets/LargeImages/himachal.webp";
-import Small from "../assets/CardImages/manali.webp";
+
 import { Helmet } from "react-helmet";
 
 // Lazy load components

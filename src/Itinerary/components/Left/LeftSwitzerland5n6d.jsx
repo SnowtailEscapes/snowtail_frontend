@@ -28,6 +28,8 @@ export default function Left() {
           title="Swiss Splendor: A Glimpse of Switzerland Escape"
           location1="Switzerland"
           time="5N/6D"
+          rating={4.8}
+          reviews={405}
         />
 
         <div className={a.left3} data-aos="zoom-in">

@@ -24,8 +24,8 @@ const Left = ({itinerary}) => {
         place={itinerary.location}
         title={itinerary.title}
         location1={itinerary.place}
-        rating={itinerary.rating}
-        reviews={itinerary.Reviews}
+        rating={4.5}
+        reviews={126}
         time={itinerary.duration}
       />
 

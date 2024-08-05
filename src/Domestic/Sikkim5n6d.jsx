@@ -16,7 +16,7 @@ const ScrollToTopButton = lazy(() =>
 );
 
 import Large from "../assets/LargeImages/sikkim.webp";
-import Small from "../assets/CardImages/sikkim_card.webp";
+
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
 

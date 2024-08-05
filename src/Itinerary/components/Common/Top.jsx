@@ -14,6 +14,7 @@ const Common = ({ place , title , location1 , time , rating , reviews}) => {
       duration: 1200,
     });
   }, []);
+
   return (
     <>
       <div className={a.left1} data-aos="slide-right">
@@ -31,7 +32,7 @@ const Common = ({ place , title , location1 , time , rating , reviews}) => {
         </div>
         <div className={a.right}>
           <h4>Excellent</h4>
-          <h6>{Number(rating) / 10}/5</h6>
+          <h6>{rating}/5</h6>
           <p>({reviews} reviews)</p>
         </div>
       </div>

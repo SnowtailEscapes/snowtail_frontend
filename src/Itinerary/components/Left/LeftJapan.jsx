@@ -29,7 +29,9 @@ export default function Left() {
             place="Kyoto"
             title="Best of Japan | From Ancient Shrines to Futuristic Skylines"
             location1="Japan"
-            time="9N/10D"
+            time="8N/9D"
+            rating={4.8}
+          reviews={405}
           />
         </Suspense>
 
@@ -49,17 +51,17 @@ export default function Left() {
             allure of Odaiba District. This journey promises an unforgettable
             experience filled with scenic vistas and cultural treasures.
           </p>
-          {/* <div>
+          <div>
             <ul>
-              <li>Pick up - Noi Bai International Airport (HAN)</li>
-              <li>Drop - Tan Son Nhat International Airport (SGN)</li>
-              <li>Country - Vietnam</li>
-              <li>Duration - 9N/10D</li>
-              <li>Best Season - March to October</li>
+              <li>Pick up - Tokyo Airport</li>
+              <li>Drop - Osaka Airport</li>
+              <li>Country - Japan</li>
+              <li>Duration - 8N/9D</li>
+              <li>Best Season - Spring (March to May) and Fall (September to November)</li>
               <li>Destination for- Couples/Friends/ Family</li>
-              <li>Mode of transportation- Car/traveller</li>
+              <li>Mode of transportation- Car/traveller/Bullet Train</li>
             </ul>
-          </div> */}
+          </div>
         </div>
 
         <Suspense fallback={<div>Loading...</div>}>

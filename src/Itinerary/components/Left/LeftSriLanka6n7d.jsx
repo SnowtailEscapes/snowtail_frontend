@@ -32,6 +32,8 @@ export default function Left() {
             title="Sri Lanka a Jewel Of Indian Ocean"
             location1="Srilanka"
             time="6N/7D"
+            rating={4.8}
+          reviews={405}
           />
         </Suspense>
 

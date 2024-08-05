@@ -28,6 +28,8 @@ export default function Left() {
           title="A Himalayan Heaven"
           location1="Manali"
           time="3N/4D"
+          rating={4.8}
+          reviews={405}
         />
 
         <div className={a.left3} data-aos="zoom-in">

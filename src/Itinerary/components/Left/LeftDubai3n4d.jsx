@@ -28,6 +28,8 @@ export default function Left() {
           title="Dubai The City Of Wonders"
           location1="Dubai"
           time="5N/6D"
+          rating={4.8}
+          reviews={405}
         />
 
         <div className={a.left3} data-aos="zoom-in">

@@ -28,6 +28,8 @@ export default function Left() {
           title="Sleep in Nature's Lap"
           location1="Shimla & Manali"
           time="5N/6D"
+          rating={4.8}
+          reviews={405}
         />
 
         <div className={a.left3} data-aos="zoom-in">

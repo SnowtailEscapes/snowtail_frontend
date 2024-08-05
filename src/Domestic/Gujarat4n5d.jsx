@@ -3,8 +3,7 @@ import a from "../styles/Images.module.css";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Large from "../assets/LargeImages/gujarat3.webp";
-import Small from "../assets/CardImages/gujarat1.webp";
+
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
 

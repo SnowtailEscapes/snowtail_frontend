@@ -30,6 +30,8 @@ export default function Left() {
           title="Experience Jewels of Thailand"
           location1="Thailand"
           time="8N/9D"
+          rating={4.8}
+          reviews={405}
         />
 
         <div className={a.left3} data-aos="zoom-in">

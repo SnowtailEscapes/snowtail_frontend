@@ -4,7 +4,7 @@ import a from "../styles/Images.module.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Large from "../assets/LargeImages/uttrakhand.webp";
-import Small from "../assets/CardImages/uttrakhand_card.webp";
+
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage.jsx";
 import { Helmet } from "react-helmet";
 // Lazy load components

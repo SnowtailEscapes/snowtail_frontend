@@ -32,6 +32,8 @@ export default function Left() {
             title="Experience the Best of Paris & Rome"
             location1="France & Italy"
             time="4N/5D"
+            rating={4.8}
+          reviews={405}
           />
         </Suspense>
 

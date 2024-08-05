@@ -32,6 +32,8 @@ export default function Left() {
             title="Malaysian Marvels - Kuala Lumpur, Penang & Langkawi Escape"
             location1=" Malaysia"
             time="6N/7D"
+            rating={4.8}
+          reviews={405}
           />
         </Suspense>
 

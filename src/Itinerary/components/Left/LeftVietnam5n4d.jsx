@@ -30,6 +30,8 @@ export default function Left() {
             title="Escape to North Vietnam: A Journey of Cultural Marvels and Natural Wonders"
             location1="Vietnam"
             time="5N/4D"
+            rating={4.8}
+          reviews={405}
           />
         </Suspense>
 

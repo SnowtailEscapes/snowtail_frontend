@@ -28,6 +28,8 @@ export default function Left() {
           title="Mussoorie & Rishikesh: A Journey to the Queen of Hills"
           location1="Almaty"
           time="4N/5D"
+          rating={4.2}
+        reviews={168}
         />
 
         <div className={a.left3} data-aos="zoom-in">

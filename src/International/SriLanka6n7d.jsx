@@ -14,9 +14,6 @@ const ScrollToTopButton = lazy(() =>
   import("../Itinerary/components/ScrollToTop")
 );
 
-// Import images
-import SriLanka6n7dLarge from "../assets/LargeImages/SriLanka.webp";
-import SriLanka6n7dSmall from "../assets/CardImages/SriLankaS.webp";
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
 

@@ -30,6 +30,8 @@ export default function Left() {
           title="Explore Bangkok & Pattaya: A Vibrant Thai Adventure"
           location1="Thailand"
           time="5N/6D"
+          rating={4.8}
+          reviews={405}
         />
 
         <div className={a.left3} data-aos="zoom-in">

@@ -29,6 +29,8 @@ export default function Left() {
           title="Gangtok & Darjeeling The Abode of Clouds"
           location1="Sikkim"
           time="5N/6D"
+          rating={4.8}
+          reviews={405}
         />
 
         <div className={a.left3} data-aos="zoom-in">

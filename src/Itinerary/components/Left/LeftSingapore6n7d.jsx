@@ -33,6 +33,8 @@ export default function Left() {
             title="Unforgettable Singapore Adventure with Luxurious 2-Night Cruise"
             location1="Singapore"
             time="6N/7D"
+            rating={4.8}
+          reviews={405}
           />
         </Suspense>
 

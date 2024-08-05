@@ -28,6 +28,8 @@ export default function Left() {
           title="Instagrammable Himachal"
           location1="Himachal Pradesh"
           time="9N/10D"
+          rating={4.8}
+          reviews={405}
         />
 
         <div className={a.left3} data-aos="zoom-in">

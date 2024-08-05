@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+
+
 import Home from "./Pages/Home";
 import About from "./components/About";
 import PrivacyPolicy from "./components/PrivacyPolicy";
@@ -7,6 +9,8 @@ import Helmet from "react-helmet";
 import initializeGA from './utils/initializeGA';
 import RouteChangeTracker from './utils/RouteChangeTracker';
 import initializeClarity from './utils/initializeClarity';
+import NotFound from "./components/NotFound.jsx";
+
 
 // International
 import Thailand5d4n from "./International/Thailand5d4n";
@@ -29,10 +33,11 @@ import Dubai3n4d from "./International/Dubai3n4d.jsx";
 import Dubai5n6d from "./International/Dubai5n6d.jsx";
 import Nepal from "./International/Nepal.jsx";
 import Australia from "./International/Australia7d6n.jsx";
-import Japan from "./International/Japan9n10d.jsx";
+import Japan from "./International/Japan8n9d.jsx";
+import Japan2 from "./International/Japan2.jsx";
+import Philipenes from "./International/Philipenes.jsx";
 
 
-import NotFound from "./components/NotFound.jsx";
 
 // Domestic
 import Rajasthan from "./Domestic/Rajasthan";
@@ -75,7 +80,6 @@ function App() {
           content="A website for you for travelling around the world with your friends,family,or your partner"
         />
       </Helmet>
-     
         <Router>
         <RouteChangeTracker />
           <Routes>
@@ -143,7 +147,6 @@ function App() {
             <Route path="/Thailand6d5n" element={<Thailand6d5n />} />
             <Route path="/Thailand9d8n" element={<Thailand9d8n />} />
             
-
             {/* Bali */}
             <Route path="/Bali6d5n" element={<Bali6d5n />} />
             <Route path="/Bali8d7n" element={<Bali8d7n />} />
@@ -189,6 +192,10 @@ function App() {
 
             {/* Japan */}
             <Route path="Japan" element={<Japan/>}/>
+            <Route path="Japan5n6d" element={<Japan2/>}/>
+
+            {/* Philipenes */}
+            <Route path="" element={<Philipenes/>}/>
           </Routes>
         </Router>
       

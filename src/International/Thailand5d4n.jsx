@@ -17,9 +17,6 @@ const ScrollToTopButton = lazy(() =>
   import("../Itinerary/components/ScrollToTop")
 );
 
-// Import images
-import Thailand5d4nLarge from "../assets/LargeImages/thailand4n5db.webp";
-import Thailand5d4nSmall from "../assets/CardImages/thailand4n5dS.webp";
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 
 const TestItinerary = () => {

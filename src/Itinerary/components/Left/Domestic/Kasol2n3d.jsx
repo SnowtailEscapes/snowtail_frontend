@@ -29,6 +29,8 @@ export default function Left() {
           title="Land of Creamy Flavours"
           location1=" Kasol"
           time="2N/3D"
+          rating={4.8}
+          reviews={405}
         />
 
         <div className={a.left3} data-aos="zoom-in">

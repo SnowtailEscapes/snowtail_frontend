@@ -29,6 +29,8 @@ export default function Left() {
           title="Luxurious 6-Day Bali Honeymoon Escape: Kuta and Ubud Delights"
           location1="Bali"
           time="5N/6D"
+          rating={3.5}
+        reviews={250}
         />
 
         <div className={a.left3} data-aos="zoom-in">

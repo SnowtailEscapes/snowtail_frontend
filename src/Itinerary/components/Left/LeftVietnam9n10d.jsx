@@ -32,6 +32,8 @@ export default function Left() {
             title="Captivating Vietnam: A Journey Through Iconic Landmarks and Hidden Gems"
             location1="Vietnam"
             time="7N/6D"
+            rating={4.8}
+          reviews={405}
           />
         </Suspense>
 

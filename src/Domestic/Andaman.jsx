@@ -4,7 +4,7 @@ import a from "../styles/Images.module.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Large from "../assets/LargeImages/Andaman.avif";
-import Small from "../assets/CardImages/andaman.webp";
+
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
 

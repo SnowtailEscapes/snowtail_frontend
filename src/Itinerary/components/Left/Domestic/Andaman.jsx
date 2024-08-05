@@ -29,6 +29,8 @@ export default function Left() {
           title="Discover Andaman: A Journey to Serenity"
           location1="ANDAMAN & NICOBAR"
           time="4N/5D"
+          rating={4.8}
+          reviews={405}
         />
 
         <div className={a.left3} data-aos="zoom-in">

@@ -5,8 +5,6 @@ import a from "../styles/Images.module.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import Large from "../assets/LargeImages/Rj7n8dB.webp";
-import Small from "../assets/CardImages/Rj4n5dS.webp";
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage.jsx";
 import { Helmet } from "react-helmet";
 

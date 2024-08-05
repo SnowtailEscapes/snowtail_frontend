@@ -29,6 +29,8 @@ export default function Left() {
           title="Mussoorie & Rishikesh: A Journey to the Queen of Hills"
           location1="Uttarakhand"
           time="3N/4D"
+          rating={4.8}
+          reviews={405}
         />
 
         <div className={a.left3} data-aos="zoom-in">

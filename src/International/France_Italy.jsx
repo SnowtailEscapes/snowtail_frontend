@@ -10,9 +10,7 @@ const Contact2 = lazy(() => import("../components/Contact2"));
 const Footer = lazy(() => import("../components/Footer"));
 const ScrollToTopButton = lazy(() => import("../Itinerary/components/ScrollToTop"));
 
-// Import images
-import FranceItalyLarge from "../assets/LargeImages/FranceB.webp";
-import FranceItalySmall from "../assets/CardImages/FranceS.webp";
+
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
 

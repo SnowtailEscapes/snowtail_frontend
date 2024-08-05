@@ -5,7 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 import Large from "../assets/LargeImages/meghalaya.webp";
-import Small from "../assets/LargeImages/meghalaya.webp";
+
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
 

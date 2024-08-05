@@ -29,6 +29,8 @@ export default function Left() {
           title="Greece Odyssey: An 8-Day Escape"
           location1="Greece"
           time="7N/8D"
+          rating={4.8}
+          reviews={405}
         />
 
         <div className={a.left3} data-aos="zoom-in">
