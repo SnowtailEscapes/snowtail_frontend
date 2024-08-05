@@ -61,10 +61,10 @@
   color: #818090;
   gap:.6rem;
   margin-top: .7rem;
-  
 }
 .tour_package_details_bar_list > ul > li > img {
   margin-right: 0.3rem;
+  width: 4% !important;
 }
 .tour_package_details_bar_price {
   font-size: 18px;

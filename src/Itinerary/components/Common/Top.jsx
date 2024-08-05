@@ -3,10 +3,14 @@ import a from "../../styles/Tourmain.module.css";
 import "../../styles/animations.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import users from "../../assets/users-solid.svg";
-import paw from "../../assets/paw-solid.svg";
-import location from "../../assets/map-location-dot-solid.svg";
+
 import PropTypes from "prop-types";
+
+import location from "../../assets/location.png";
+import clock from "../../assets/clock.svg";
+import balloon from "../../assets/balloon.png";
+import customise from "../../assets/customisation.svg";
+import place2 from "../../assets/place.png";
 
 const Common = ({ place , title , location1 , time , rating , reviews}) => {
   useEffect(() => {
@@ -22,10 +26,10 @@ const Common = ({ place , title , location1 , time , rating , reviews}) => {
           <h1>{title}</h1>
           <div className={a.bottom}>
             <img
-              src="https://cdn.hugeicons.com/icons/location-06-solid-sharp.svg"
+              src={place2}
               alt="location-06"
-              width="20"
-              height="20"
+              width="30"
+              height="30"
             />
             <h2>{location1}</h2>
           </div>
@@ -40,11 +44,10 @@ const Common = ({ place , title , location1 , time , rating , reviews}) => {
         <div className={a.four_cards} >
           <div>
             <img
-              src="https://cdn.hugeicons.com/icons/clock-01-solid-rounded.svg"
+              src={clock}
               alt="clock-01"
               width="30"
               height="30"
-             
             />
           </div>
           <div>
@@ -56,32 +59,31 @@ const Common = ({ place , title , location1 , time , rating , reviews}) => {
         <div className={a.four_cards} >
           <div>
             <img
-              src={paw}
+              src={balloon}
               alt="paw"
-              width="30"
+              width="40"
               height="30"
              
             />
           </div>
           <div>
-            <h5>Tour Type</h5>
-            <p>Group tour</p>
+            <h5>Sight Seeing</h5>
+            <p>Included</p>
           </div>
         </div>
 
         <div className={a.four_cards} >
           <div>
             <img
-              src={users}
+              src={customise}
               alt="people"
               width="30"
               height="30"
-            
             />
           </div>
           <div>
-            <h5>Group size</h5>
-            <p>50 people</p>
+            <h5>Customization</h5>
+            <p>Connect to an expert</p>
           </div>
         </div>
 
