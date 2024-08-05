@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 // Lazy load components
 const Navbar = lazy(() => import("../components/Navbar"));
 const Tourmain = lazy(() =>
-    import("../Itinerary/components/Tourmain/ThailandTourmain8n9d")
+    import("../Itinerary/components/Tourmain/TourmainPhilipenes")
 );
 const Contact2 = lazy(() => import("../components/Contact2"));
 const Footer = lazy(() => import("../components/Footer"));

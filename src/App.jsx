@@ -191,11 +191,11 @@ function App() {
             <Route path="/Australia7d6n" element={<Australia/>}/>
 
             {/* Japan */}
-            <Route path="Japan" element={<Japan/>}/>
-            <Route path="Japan5n6d" element={<Japan2/>}/>
+            <Route path="/Japan" element={<Japan/>}/>
+            <Route path="/Japan5n6d" element={<Japan2/>}/>
 
             {/* Philipenes */}
-            <Route path="" element={<Philipenes/>}/>
+            <Route path="/Philipenes" element={<Philipenes/>}/>
           </Routes>
         </Router>
       

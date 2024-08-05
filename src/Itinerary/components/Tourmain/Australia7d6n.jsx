@@ -8,12 +8,12 @@ export default function Tourmain() {
       <div className={a.tourmain}>
         <Left />
         <RightSide
-          standard_cut={41699}
-          standard_current={34699}
-          deluxe_cut={45699}
-          super_deluxe_cut={49699}
-          deluxe_current={38699}
-          super_deluxe_current={43699}
+          standard_cut={124572}
+          standard_current={88980}
+          deluxe_cut={149772}
+          super_deluxe_cut={205506}
+          deluxe_current={106980}
+          super_deluxe_current={146790}
         />
       </div>
     </>

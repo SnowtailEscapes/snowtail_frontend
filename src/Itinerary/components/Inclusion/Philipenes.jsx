@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import dot from "../../assets/dot.svg";
-import dot2 from "../../assets/cross.svg";
 import a from "../../styles/Tourmain.module.css";
+import dot2 from "../../assets/cross.svg";
 import "../../styles/animations.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -19,63 +19,54 @@ export default function Inclusion() {
         <ul>
           <h4>Inclusions</h4>
           <li>
-            <img src={dot} width={5} alt="dot" /> 3 nights stay in Melbourne
+            <img src={dot} width={5} alt="dot" /> 7 nights Accommodation.
           </li>
           <li>
-            <img src={dot} width={5} alt="dot" /> 3 nights stay in Sydney
+            <img src={dot} width={5} alt="dot" /> Daily Breakfast as mentioned
+            with hotels
           </li>
           <li>
-            <img src={dot} width={5} alt="dot" /> Sydney Explorer Pass - Choice
-            of 2 and ticket
+            <img src={dot} width={5} alt="dot" /> Visa Assistance
           </li>
           <li>
-            <img src={dot} width={5} alt="dot" /> Melbourne Cricket Ground
-            Tickets and ticket
+            <img src={dot} width={5} alt="dot" /> Airport Transfers – PVT Basis
           </li>
           <li>
-            <img src={dot} width={5} alt="dot" /> Phillip Island Penguin Parade
-            Tour on a Shared basis and ticket
+            <img src={dot} width={5} alt="dot" /> Airport Assistance
           </li>
           <li>
-            <img src={dot} width={5} alt="dot" /> Great Ocean Road Tour from
-            Melbourne on a Shared basis and ticket
+            <img src={dot} width={5} alt="dot" /> Manila to Puerto Princesa
           </li>
           <li>
-            <img src={dot} width={5} alt="dot" /> Sydney Opera House Guided Tour
-            and ticket
+            <img src={dot} width={5} alt="dot" /> Private Underground River Tour
           </li>
           <li>
-            <img src={dot} width={5} alt="dot" /> Blue Mountains Day Tour from
-            Sydney on a Shared basis
+            <img src={dot} width={5} alt="dot" /> Puerto Princesa to El Nido by
+            Van
           </li>
           <li>
-            <img src={dot} width={5} alt="dot" />
-            Airport transfer from Melbourne International Airport to Deluxe
-            Hotel
+            <img src={dot} width={5} alt="dot" /> Private Linapacan Island Day
+            Trip with Buffet Lunch
           </li>
           <li>
-            <img src={dot} width={5} alt="dot" />
-            Airport transfer from Sydney Kingsford Smith International Airport
-            to Deluxe Hotel
-          </li>{" "}
+            <img src={dot} width={5} alt="dot" /> El Nido to Manila
+          </li>
           <li>
-            <img src={dot} width={5} alt="dot" />
-            Airport transfer from Melbourne International Airport to Deluxe
-            Hotel
+            <img src={dot} width={5} alt="dot" /> Half-Day Shore Excursion Museums
           </li>
         </ul>
         <ul>
           <h4>Exclusions</h4>
           <li>
             <img src={dot2} width={5} alt="dot" /> Cost of Emergency , Covid
-            Report , Insurance And Other Covid Related Expenses
+            Report , Insurance And Other Covid Related Expenses.
           </li>
           <li>
             <img src={dot2} width={5} alt="dot" /> Any Personal expenses.
           </li>
           <li>
             <img src={dot2} width={5} alt="dot" /> GST & (TCS - Claimable after
-            the tour)
+            the tour).
           </li>
           <li>
             <img src={dot2} width={5} alt="dot" /> Any Airfare
@@ -86,7 +77,7 @@ export default function Inclusion() {
           </li>
           <li>
             <img src={dot2} width={5} alt="dot" /> Anything not mentioned in the
-            inclusions list above
+            inclusions list above.
           </li>
         </ul>
       </div>

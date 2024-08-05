@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import dot from "../../../assets/dot.svg";
 import a from "../../../styles/Tourmain.module.css";
 import "../../../styles/animations.css";
+import dot2 from "../../../assets/cross.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -34,25 +35,25 @@ export default function Inclusion() {
           <ul>
             <h4>Exclusions</h4>
             <li>
-              <img src={dot} width={5} alt="dot" /> Tax
+              <img src={dot2} width={5} alt="dot" /> Tax
             </li>
             <li>
-              <img src={dot} width={5} alt="dot" /> Any Personal expenses like Tips, laundry, entry to monuments/ monasteries, Telephone bills etc.
+              <img src={dot2} width={5} alt="dot" /> Any Personal expenses like Tips, laundry, entry to monuments/ monasteries, Telephone bills etc.
             </li>
             <li>
-            <img src={dot} width={5} alt="dot" /> Insurance
+            <img src={dot2} width={5} alt="dot" /> Insurance
             </li>
             <li>
-              <img src={dot} width={5} alt="dot" /> GST & (TCS - Claimable after the tour)
+              <img src={dot2} width={5} alt="dot" /> GST & (TCS - Claimable after the tour)
             </li>
             <li>
-              <img src={dot} width={5} alt="dot" /> Any Airfare
+              <img src={dot2} width={5} alt="dot" /> Any Airfare
             </li>
             <li>
-              <img src={dot} width={5} alt="dot" /> Lunch / Any transfer / Meals that are not mentioned in the itinerary
+              <img src={dot2} width={5} alt="dot" /> Lunch / Any transfer / Meals that are not mentioned in the itinerary
             </li>
             <li>
-              <img src={dot} width={5} alt="dot" /> Anything not mentioned in the inclusions list above
+              <img src={dot2} width={5} alt="dot" /> Anything not mentioned in the inclusions list above
             </li>
           </ul>
         </div>

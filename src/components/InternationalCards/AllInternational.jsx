@@ -196,7 +196,7 @@ export default function AllInternational() {
           <International
             to="/Australia7d6n"
             title="Best of Australia"
-            price={99999}
+            price={88980}
             location="Sydney"
             duration="7 nights 6 days tour"
             image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/r1iqblqgi5qaszmdftqb"
@@ -217,6 +217,15 @@ export default function AllInternational() {
             price={99999}
             location="Kyoto"
             duration="5 nights 6 days tour"
+            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/sdjswz0cdnggtozkooq3"
+          />
+
+          <International
+            to="/Philipenes"
+            title="Discover the Wonders of the Philippines"
+            price={99999}
+            location="Manila"
+            duration="7 nights 8 days tour"
             image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/sdjswz0cdnggtozkooq3"
           />
         </div>

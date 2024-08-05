@@ -14,12 +14,10 @@ const ScrollToTopButton = lazy(() =>
   import("../Itinerary/components/ScrollToTop")
 );
 
-
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
 
 export default function Australia() {
-
   useEffect(() => {
     Aos.init({
       duration: 1300,
@@ -28,21 +26,24 @@ export default function Australia() {
 
   return (
     <div>
-    <Helmet>
-    <title>Almaty Tour</title>
-    <meta
-        name="description"
-        content="Experience the cultural and natural beauty of Almaty with our exclusive tours. Discover the scenic landscapes of the Almaty Mountains, the vibrant Green Bazaar, the historic Zenkov Cathedral, and the stunning Big Almaty Lake. Book your Almaty tour now for an unforgettable adventure in Kazakhstan!"
-    />
-    <meta
-        name="keywords"
-        content="Almaty tour, Almaty Mountains, Green Bazaar, Zenkov Cathedral, Big Almaty Lake, Almaty tourism, Almaty travel, Almaty holiday packages"
-    />
-</Helmet>
+      <Helmet>
+        <title>Australia Tour</title>
+        <meta
+          name="description"
+          content="Explore the diverse landscapes and vibrant cities of Australia with our exclusive tours. Discover the iconic Sydney Opera House, the Great Barrier Reef, the stunning Outback, and the cultural hub of Melbourne. Book your Australia tour now for an unforgettable adventure down under!"
+        />
+        <meta
+          name="keywords"
+          content="Australia tour, Sydney Opera House, Great Barrier Reef, Outback, Melbourne, Australia tourism, Australia travel, Australia holiday packages"
+        />
+      </Helmet>
 
       <Suspense fallback={<div>Loading...</div>}>
         <section className={a.section} data-aos="zoom-in">
-          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/r1iqblqgi5qaszmdftqb' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/g54f4lpdeosyje2fvbqn' />
+          <ItineraryImage
+            small="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/r1iqblqgi5qaszmdftqb"
+            large="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/g54f4lpdeosyje2fvbqn"
+          />
           <Navbar />
         </section>
         <Tourmain />

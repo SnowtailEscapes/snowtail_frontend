@@ -142,6 +142,7 @@
     font-weight: 400;
     line-height: 25.5px;
     padding-bottom: 15px;
+    margin-left: .5rem;
   }
 
   /* Left div 5 */
@@ -217,6 +218,9 @@
     font-size: 18px;
     line-height: 25.5px;
     list-style-type: disc;
+  }
+  .left6 > ul > li > img{
+    width:3% !important;
   }
   /* Left 8 div  */
   .left8 {
