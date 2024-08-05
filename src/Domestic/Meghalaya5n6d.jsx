@@ -4,7 +4,6 @@ import a from "../styles/Images.module.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import Large from "../assets/LargeImages/meghalaya.webp";
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
@@ -43,7 +42,7 @@ export default function Meghalaya() {
 
       <Suspense fallback={<div>Loading...</div>}>
         <section className={a.section} data-aos="zoom-in">
-          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/tcjagpzwhbnnktjw6ehf' large={Large} />
+          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/tcjagpzwhbnnktjw6ehf' large={''} />
           <Navbar />
         </section>
         <Tourmain />

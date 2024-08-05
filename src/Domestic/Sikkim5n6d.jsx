@@ -15,7 +15,6 @@ const ScrollToTopButton = lazy(() =>
   import("../Itinerary/components/ScrollToTop")
 );
 
-import Large from "../assets/LargeImages/sikkim.webp";
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
@@ -43,7 +42,7 @@ export default function Rajasthan() {
 
       <Suspense fallback={<div>Loading...</div>}>
         <section className={a.section} data-aos="zoom-in">
-          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ykxbiuiaflrokrrqfm8u' large={Large} />
+          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ykxbiuiaflrokrrqfm8u' large={''} />
           <Navbar />
         </section>
         <Tourmain />

@@ -6,7 +6,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
-import Large from "../assets/LargeImages/himachal.webp";
+
 
 import { Helmet } from "react-helmet";
 
@@ -48,7 +48,7 @@ export default function Rajasthan() {
 
       <Suspense fallback={<div>Loading...</div>}>
       <section className={a.section} data-aos="zoom-in">
-          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/nsrvtq5i9exisdh5rfkt' large={Large} />
+          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/nsrvtq5i9exisdh5rfkt' large={''} />
           <Navbar />
         </section>
         <Tourmain />
