@@ -70,55 +70,56 @@ const Card = ({
         <p className="save flex">Save {save}</p>
       </div>
       <div className="flex flex-col pt-2 gap-y-1">
-        <div className="flex flex-row justify-between">
-          <p className="text-[13px] text-main-brand font-bold">{duration}</p>
-          <p className="text-main-brand text-[13px] flex flex-row font-bold">
+        <Link to={direct}>
+          <div className="flex flex-row justify-between">
+            <p className="text-[13px] text-main-brand font-bold">{duration}</p>
+            <p className="text-main-brand text-[13px] flex flex-row font-bold">
+              <img
+                src={star}
+                width={20}
+                alt="Star"
+                loading="lazy"
+                color="text-main-brand"
+              />
+              <span>{rating}</span>
+            </p>
+          </div>
+          <div className="flex flex-col">
+            <h2 className=" text-[1.5rem] bold text-dark-accent font-bold font-arimo ">
+              {name}
+            </h2>
+            <h3 className="text-base boston text-black1 font-semibold">
+              {title}
+            </h3>
+          </div>
+
+          <div className="flex flex-row justify-between items-center">
+            {cut_price && (
+              <>
+                <h4 className="text-[13px] cut font-bold font-ligh2 flex">
+                  <CurrencyConverter price={Number(cut_price)} />
+                  /per
+                </h4>
+              </>
+            )}
+            <h4 className="text-base text-main-brand font-bold font-light2 flex">
+              <CurrencyConverter price={Number(curr_price)} />
+              <span className="text-base text-main-brand text-bold">/per</span>
+            </h4>
+          </div>
+          <div className="text-[13px] flex flex-row font-bold">
             <img
-              src={star}
+              src={percent}
               width={20}
               alt="Star"
               loading="lazy"
               color="text-main-brand"
             />
-            <span>{rating}</span>
-          </p>
-        </div>
-        <div className="flex flex-col">
-          <h2 className=" text-[1.5rem] bold text-dark-accent font-bold font-arimo ">
-            {name}
-          </h2>
-          <h3 className="text-base boston text-black1 font-semibold">
-            {title}
-          </h3>
-        </div>
-
-        <div className="flex flex-row justify-between items-center">
-          {cut_price && (
-            <>
-              <h4 className="text-[13px] cut font-bold font-ligh2 flex">
-                <CurrencyConverter price={Number(cut_price)} />
-                /per
-              </h4>
-            </>
-          )}
-          <h4 className="text-base text-main-brand font-bold font-light2 flex">
-            <CurrencyConverter price={Number(curr_price)} />
-            <span className="text-base text-main-brand text-bold">/per</span>
-          </h4>
-        </div>
-        <div className="text-[13px] flex flex-row font-bold">
-          <img
-            src={percent}
-            width={20}
-            alt="Star"
-            loading="lazy"
-            color="text-main-brand"
-          />
-          <p className="text-center w-1/3 text-xs rounded-xl discount text-nowrap text-ligh-accent text-[13px] font-light">
-            Special Monsoon Deal
-          </p>
-        </div>
-
+            <p className="text-center w-1/3 text-xs rounded-xl discount text-nowrap text-ligh-accent text-[13px] font-light">
+              Special Monsoon Deal
+            </p>
+          </div>
+        </Link>
         <div className="flex flex-row gap-3">
           <button
             className="btn btn-outline border-main-brand border-2 w-1/5"

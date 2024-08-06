@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <div className="relative flex flex-col items-center w-full">
       <div className="absolute top-0 z-10 w-full flex justify-center mt-10 h-2/6">
-        <div className="md:min-h-fit md:w-4/5 w-full md:rounded-lg flex flex-col md:flex-row bg-dark-accent text-white1">
+        <div className="md:min-h-fit md:w-4/5 w-full md:rounded-lg flex flex-col md:flex-row bg-green-500 text-white1">
           <div className="w-full md:w-1/2 p-4">
             <h1 className="text-[1.5rem] text-center font-light text-black1">About Snowtail Escapes</h1>
             <ul className="list-none font-ligh2 flex gap-2  justify-center items-center flex-col ">

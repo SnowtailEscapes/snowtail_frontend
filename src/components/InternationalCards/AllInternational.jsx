@@ -3,6 +3,7 @@ import International from "./International";
 const LazyComponent = lazy(() => import("../Navbar"));
 import a from "../../styles/International.module.css";
 import { Helmet } from "react-helmet";
+import Footer from "../Footer";
 
 export default function AllInternational() {
   return (
@@ -230,6 +231,7 @@ export default function AllInternational() {
           />
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
