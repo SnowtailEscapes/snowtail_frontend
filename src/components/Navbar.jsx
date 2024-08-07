@@ -1,22 +1,15 @@
-import logo from "../../public/logo/23.svg";
-import stick from "../assets/stick.webp";
+import logo from "../../public/NewLogos/2.svg";
+import logoMobile from "../../public/NewLogos/2.svg";
 import { useLocation, Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Countdown from "./Countdown";
+// import Countdown from "./Countdown";
 import { useEffect, useState } from "react";
-import CurrencyDropdown from "../getApi/CurrencyDropdown";
-
-const styles = {
-  boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
-  backdropFilter: "blur(2.5px)",
-  WebkitBackdropFilter: "blur(2.5px)",
-};
-
+// import CurrencyDropdown from "../getApi/CurrencyDropdown";
+import "../styles/navbar.css";
 const Navbar = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
-  const isOtherPage = location.pathname === "/*";
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -65,22 +58,26 @@ const Navbar = () => {
       </div> */}
 
       <div
-        className={
-          isHomePage
-            ? "text-white navbar bg-main-brand"
-            : "text-white navbar bg-main-brand"
-        }
-        style={styles}
+        className={`navbar-fixed navbar text-white ${width > 780 ? 'bg-main-brand' : 'bg-none'}   ${isHomePage ? 'bg-main-brand' : 'bg-main-brand'}`}
+
       >
         <div className="navbar-start lg:navbar-start flex gap-5">
           <Link to="/">
-            <img src={logo} width={200} height={150} alt="logo" />
+            {
+              width > 780 ? <>
+                <img src={logo} width={200} height={150} alt="logo" />
+
+              </> :
+                <>
+                  <img src={logoMobile} width={100} height={100} alt='logo' />
+                </>
+            }
           </Link>
-          {!isHomePage && (
+          {/* {!isHomePage && (
             <>
               <CurrencyDropdown />
             </>
-          )}
+          )} */}
         </div>
         <div className="navbar-end lg:hidden z-10">
           <div className="dropdown">

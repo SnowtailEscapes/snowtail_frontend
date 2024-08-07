@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Link, useNavigation } from "react-router-dom";
 import a from "../../styles/International.module.css";
 import CurrencyConverter from "../../getApi/CurrencyConverter";
 import { useDispatch } from "react-redux";
@@ -13,6 +13,7 @@ const International = ({ to, title, location, price, duration, image }) => {
   const dispatch = useDispatch();
   const [showContactForm, setShowContactForm] = useState(false);
   const [hover, setHover] = useState(false);
+
 
   useEffect(() => {
     dispatch(fetchCurrencyRates());
@@ -31,19 +32,17 @@ const International = ({ to, title, location, price, duration, image }) => {
       <div
         className={`${a.cardContainer} shadow-lg rounded-lg overflow-hidden`}
       >
-        <div className="md:flex">
-          <figure className={`${a.imageContainer} md:w-3/5`}>
+          <figure className={`${a.imageContainer}`}>
             <Link to={to}>
               <img
                 src={image}
                 loading="lazy"
                 alt="image"
-                className={`${a.img} w-full h-full object-cover`}
+                className={`${a.img} h-full cover`}
               />
             </Link>
-
           </figure>
-          <div className="p-6 md:w-2/5 flex flex-col justify-between">
+          <div className={`flex flex-col justify-between ${a.textContainer}`}>
             <ul className="flex text-xs text-green-500 justify-between mb-2">
               <li className={`${a.disc} font-[14px] text-main-brand`}>{duration}</li>
               <li className={`${a.disc} font-[14px] text-main-brand`}>International Tour</li>
@@ -52,7 +51,7 @@ const International = ({ to, title, location, price, duration, image }) => {
               <h2 className="text-[28px] font-semibold text-dark-accent mb-2 font-arimo">
                 {title}
               </h2>
-              <p className="text-black1 mb-2 font-ligh2 text-[20px] ">
+              <p className="text-black1 mb-2 font-ligh2 text-[16px] ">
                 {location}
               </p>
               <div className="flex space-x-2 mb-4">
@@ -73,13 +72,15 @@ const International = ({ to, title, location, price, duration, image }) => {
             </div>
             <div className="flex flex-row gap-3">
               <button
-                className="btn btn-outline border-main-brand border-2 w-1/5"
+                className="btn btn-outline border-main-brand border-2"
+                style={{width:"18%"}}
                 onClick={toggleContactForm}
               >
                 <img src={phone} width={40} alt="Phone" loading="lazy" />
               </button>
               <button
-                className="btn bg-main-brand rounded-md text-white w-4/5 text-[15px] font-bold"
+                className="btn bg-main-brand rounded-md text-white text-[15px] font-bold"
+                style={{width:"78%"}}
                 onClick={toggleContactForm}
               >
                 Request Callback
@@ -87,7 +88,6 @@ const International = ({ to, title, location, price, duration, image }) => {
             </div>
           </div>
         </div>
-      </div>
       {showContactForm && (
         <Contact
           isVisible={showContactForm}

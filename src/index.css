@@ -20,3 +20,24 @@ body {
 *{
   scroll-behavior: smooth !important;
 }
+
+@font-face {
+  font-family: "BostonAngelRegular";
+  src: url("../../public/font/Boston\ Angel\ Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MarchClean";
+  src: url("../../public/font/March\ Clean.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.boston {
+  font-family: "BostonAngelRegular", sans-serif;
+}
+.march {
+  font-family: "MarchClean", sans-serif;
+}

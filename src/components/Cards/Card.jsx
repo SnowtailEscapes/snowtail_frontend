@@ -10,6 +10,7 @@ import Contact from "../Contact";
 import CurrencyConverter from "../../getApi/CurrencyConverter";
 import { useDispatch } from "react-redux";
 import { fetchCurrencyRates } from "../../redux/slice/currencySlice";
+import { useSelector } from "react-redux";
 
 const Card = ({
   title,
@@ -25,6 +26,7 @@ const Card = ({
   const [showContactForm, setShowContactForm] = useState(false);
   const [hover, setHover] = useState(false);
   const dispatch = useDispatch();
+  const selectedCurrency = useSelector((state) => state.currency.selectedCurrency);
 
   const toggleContactForm = () => {
     setShowContactForm(!showContactForm);
@@ -43,7 +45,7 @@ const Card = ({
   const ratingOutOfFive = Math.round((numericRating / 10) * 10) / 10;
 
   return (
-    <div className="lg:w-1/3 md:1/2 w-11/12 carousel-item flex flex-col relative rounded-2xl">
+    <div className="lg:w-1/3 md:1/2 w-full carousel-item flex flex-col relative rounded-2xl">
       <div
         className="relative text-center"
         style={{ width: "100%", paddingBottom: "60%" }} // 5:3 aspect ratio
@@ -67,7 +69,7 @@ const Card = ({
           hover && "scale-105"
         } top-5 bg-main-brand absolute flex flex-row md:gap-2 p-1`}
       >
-        <p className="save flex">Save {save}</p>
+        <p className="save flex">Save {selectedCurrency.toUpperCase()}.{save}</p>
       </div>
       <div className="flex flex-col pt-2 gap-y-1">
         <Link to={direct}>

@@ -8,21 +8,21 @@ import Footer from "../Footer";
 export default function AllInternational() {
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Domestic Tours</title>
         <meta
           name="description"
           content="Locations , places for you Inside India to travel along with anyone"
         />
       </Helmet>
-      <div className={a.banner}>
+      <div>
         <Suspense fallback={<div>Loading...</div>}>
           <LazyComponent />
         </Suspense>
       </div>
       <div className="flex justify-center">
-        <div className="mt-12 p-5">
-          <h1 className="text-4xl font-semibold text-center">
+        <div className="mt-20 md:mt-28 p-5">
+          <h1 className="text-[26px] md:text-3xl march font-semibold text-nowrap text-center mb-4">
             Domestic Tour Adventures
           </h1>
           <International
@@ -30,7 +30,7 @@ export default function AllInternational() {
             title="The Incredible Gateway Rajasthan"
             location="RAJASTHAN"
             price={34399}
-            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/sajzabk69brdin5l2i9c'
+            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/sajzabk69brdin5l2i9c"
             duration="7 Nights and 8 Days tour"
           />
 
@@ -40,7 +40,7 @@ export default function AllInternational() {
             location="RAJASTHAN"
             duration="4 Nights and 5 Days tour"
             price={19999}
-            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/brttychqjlqpulgg9yng'
+            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/brttychqjlqpulgg9yng"
           />
 
           <International
@@ -49,7 +49,7 @@ export default function AllInternational() {
             location="RAJASTHAN"
             price={25899}
             duration="5 Nights and 6 Days tour"
-            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/u13fvrykkktzzpblxeps'
+            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/u13fvrykkktzzpblxeps"
           />
 
           <International
@@ -58,7 +58,7 @@ export default function AllInternational() {
             location="GUJARAT"
             price={16499}
             duration="3 Nights and 4 Days tour"
-            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/mddzj4dekit9a7m3jepm'
+            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/mddzj4dekit9a7m3jepm"
           />
 
           <International
@@ -67,8 +67,7 @@ export default function AllInternational() {
             location="GUJARAT"
             price={20999}
             duration="4 Nights and 5 Days tour"
-            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/uyfvy28acv8ifdrkxh1w'
-
+            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/uyfvy28acv8ifdrkxh1w"
           />
           <International
             to="/Kashmir5n6d"
@@ -76,14 +75,14 @@ export default function AllInternational() {
             duration="5 nights and 6 days tour"
             price={26700}
             location="KASHMIR"
-            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/e0pa63dcfd9ndpjikd6r'
+            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/e0pa63dcfd9ndpjikd6r"
           />
           <International
             to="/Kashmir3n4d"
             title="Experience Paradise On Earth"
             location="KASHMIR"
             price={18499}
-            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/io8nrf2tcetleax8jgyq'
+            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/io8nrf2tcetleax8jgyq"
             duration="3 nights and 4 days tour"
           />
           <International
@@ -92,7 +91,7 @@ export default function AllInternational() {
             location="LADAKH"
             price={29999}
             duration="5 nights and 6 days tour"
-            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/vbqfi1hyv63r0w845akt'
+            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/vbqfi1hyv63r0w845akt"
           />
           <International
             to="/Sikkim5n6d"
@@ -100,7 +99,7 @@ export default function AllInternational() {
             price={35799}
             location="SIKKIM"
             duration="5 nights and 6 days tour"
-            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ykxbiuiaflrokrrqfm8u'
+            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ykxbiuiaflrokrrqfm8u"
           />
           <International
             to="/Meghalaya5n6d"
@@ -108,7 +107,7 @@ export default function AllInternational() {
             duration="5 nights and 6 days tour"
             location="MEGHALAYA"
             price={32799}
-            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/tcjagpzwhbnnktjw6ehf'
+            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/tcjagpzwhbnnktjw6ehf"
           />
           <International
             to="/Kerala5n6d"
@@ -116,7 +115,7 @@ export default function AllInternational() {
             location="KERALA"
             price={25499}
             duration="5 nights and 6 days tour"
-            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/olwkfgtmedp6wipokes9'
+            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/olwkfgtmedp6wipokes9"
           />
           <International
             to="/Manali3n4d"
@@ -124,7 +123,7 @@ export default function AllInternational() {
             location="MANALI"
             price={15999}
             duration="3 nights and 4 days tour"
-            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/vorbmcxc5np6ahet04j0'
+            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/vorbmcxc5np6ahet04j0"
           />
           <International
             to="/Shimla5n6d"
@@ -132,13 +131,13 @@ export default function AllInternational() {
             location="SHIMLA & MANALI"
             duration="5 nights and 6 days tour"
             price={24500}
-            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ogxma6qe0ljqynhde8so'
+            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ogxma6qe0ljqynhde8so"
           />
           <International
             to="/Shimla9n10d"
             title="Instagrammable Himachal"
             location="SHIMLA/MANALI/DHARAMSHALA/DALHOUSIE"
-            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/nsrvtq5i9exisdh5rfkt'
+            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/nsrvtq5i9exisdh5rfkt"
             price={45999}
             duration="9 nights and 10 days tour"
           />
@@ -148,7 +147,7 @@ export default function AllInternational() {
             location="KASOL"
             price={10999}
             duration="2 nights and 3 days tour"
-            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/d4jj8za1frxjxgw2cs3l'
+            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/d4jj8za1frxjxgw2cs3l"
           />
           <International
             to="/Uttrakhand"
@@ -156,7 +155,7 @@ export default function AllInternational() {
             price={16999}
             location="UTTRAKHAND"
             duration="3 nights and 4 days tour"
-            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ytd5dytykzlpy6orblbl'
+            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ytd5dytykzlpy6orblbl"
           />
           <International
             to="/Andaman"
@@ -164,11 +163,11 @@ export default function AllInternational() {
             price={31988}
             duration="4 nights and 5 days tour"
             location="ANDAMAN & NICOBAR"
-            image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ntxfrgqqlxssxkybgdtt'
+            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ntxfrgqqlxssxkybgdtt"
           />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

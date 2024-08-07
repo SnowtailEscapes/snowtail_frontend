@@ -15,14 +15,14 @@ export default function AllInternational() {
           content="Locations , places for you outside India to travel along with anyone"
         />
       </Helmet>
-      <div className={a.banner}>
+      <div>
         <Suspense fallback={<div>Loading...</div>}>
           <LazyComponent />
         </Suspense>
       </div>
       <div className="flex justify-center">
-        <div className="mt-12 p-5">
-          <h1 className="text-4xl font-semibold text-center mb-4">
+        <div className="mt-20 md:mt-28 p-5">
+          <h1 className="text-[26px] md:text-3xl march font-semibold text-nowrap text-center mb-4">
             International Tour Adventures
           </h1>
 

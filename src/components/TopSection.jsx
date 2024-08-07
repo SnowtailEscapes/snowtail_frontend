@@ -18,7 +18,6 @@ export default function TopSection() {
       <Suspense fallback={<Loading />}>
         <div className="home">
           <Navbar />
-
           <picture>
             <source
               srcSet={`${"https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/hnso83ririyohsr7ayxe"} 1x, ${"https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/hnso83ririyohsr7ayxe"} 2x`}
