@@ -1,4 +1,5 @@
 import React, { lazy, Suspense, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import a from "../styles/Images.module.css";
 
 import Aos from "aos";
@@ -17,7 +18,8 @@ const ScrollToTopButton = lazy(() =>
 
 // Import images
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
-import { Helmet } from "react-helmet";
+import large from "../../public/Domestic/kashmir.webp";
+
 
 export default function Rajasthan() {
   useEffect(() => {
@@ -42,7 +44,7 @@ export default function Rajasthan() {
 
       <Suspense fallback={<div>Loading...</div>}>
         <section className={a.section} data-aos="zoom-in">
-          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/io8nrf2tcetleax8jgyq' large={''} />
+          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/io8nrf2tcetleax8jgyq' large={large} />
           <Navbar />
         </section>
         <Tourmain />

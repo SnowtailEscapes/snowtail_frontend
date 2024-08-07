@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
+import large from '../../public/Domestic/andaman.webp';
 
 // Lazy load components
 const Navbar = lazy(() => import("../components/Navbar"));
@@ -42,7 +43,7 @@ export default function Rajasthan() {
 
       <Suspense fallback={<div>Loading...</div>}>
         <section className={a.section} data-aos="zoom-in">
-          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ntxfrgqqlxssxkybgdtt' large={''} />
+          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ntxfrgqqlxssxkybgdtt' large={large} />
           <Navbar />
         </section>
         <Tourmain />
