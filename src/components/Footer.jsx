@@ -49,7 +49,7 @@ export default function Footer() {
       <div className="relative flex justify-center p-5 md:pt-52 bg-black1 text-white mt-20 pt-80 w-full font-light">
         <div className="flex flex-col items-center gap-10 w-full max-w-4xl">
           <div className="divider divider-accent">
-            <img src={logo} width={150} alt="Snowtail Escapes Logo" />
+            <img src={logo} width={300} alt="Snowtail Escapes Logo" />
           </div>
           <div className="flex gap-4 md:gap-10 justify-center mt-4">
             <img
