@@ -14,7 +14,6 @@ const International = ({ to, title, location, price, duration, image }) => {
   const [showContactForm, setShowContactForm] = useState(false);
   const [hover, setHover] = useState(false);
 
-
   useEffect(() => {
     dispatch(fetchCurrencyRates());
   }, [dispatch]);

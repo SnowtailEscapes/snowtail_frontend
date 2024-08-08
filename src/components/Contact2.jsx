@@ -289,7 +289,7 @@ export default function Contact2() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIsOpen(true); // Open modal every 100 seconds
-    }, 100000);
+    }, 300000);
 
     return () => clearInterval(interval); // Clear interval on component unmount
   }, []);
