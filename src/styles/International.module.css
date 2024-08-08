@@ -7,25 +7,24 @@
   }
   .cardContainer {
     /* Adjust these styles as per your design requirements */
-    background-color: #fff;
-    border: 1px solid #fff;
+    /* border: 1px solid; */
     width: 90%;
-    margin-bottom: 1rem;
-    height: 60vh;
+    margin-bottom: 2rem;
+    height: 50vh;
     display: flex;
   }
 
   .imageContainer {
-    min-width: 60vw;
-    max-width: 60vw;
-    width: 60vw;
-    height:60vh;
+    min-width: 44vw;
+    max-width: 44vw;
+    width: 44vw;
+    height:50vh;
   }
 
   .img {
     width: 100vw;
     height: 100vh;
-    object-fit:cover;
+    object-fit:fill;
   }
   .textContainer{
     padding: 1rem;

@@ -289,7 +289,7 @@ export default function Contact2() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIsOpen(true); // Open modal every 100 seconds
-    }, 300000);
+    }, 50000);
 
     return () => clearInterval(interval); // Clear interval on component unmount
   }, []);
@@ -338,6 +338,10 @@ export default function Contact2() {
     setPassengers("");
   };
 
+  const handleClose = ()=> {
+    setIsOpen(false);
+  }
+
   return (
     <>
       <ToastContainer
@@ -360,7 +364,7 @@ export default function Contact2() {
         className="fixed"
       >
         <div className="flex flex-col md:flex-row items-stretch w-full h-full">
-        <ContactLeft />
+        <ContactLeft onClick={handleClose}/>
           <div
             className="md:p-4 p-2 bg-white flex flex-col items-center justify-center md:w-2/3 w-full"
             style={{ fontSize: "13px" }}

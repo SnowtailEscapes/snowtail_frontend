@@ -65,8 +65,7 @@ const Navbar = () => {
           <Link to="/">
             {
               width > 780 ? <>
-                <img src={logo} width={200} height={150} alt="logo" />
-
+                <img src={logo} width={150} height={150} alt="logo" />
               </> :
                 <>
                   <img src={logoMobile} width={100} height={100} alt='logo' />

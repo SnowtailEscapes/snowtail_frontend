@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from "react";
+import GliderCarousel from "./gliderComponent";
 import Card from "./Card";
 
 export default function Domestic() {
-  const [isMobileScreen, setMobileScreen] = useState(window.innerWidth > 0 && window.innerWidth < 600);
-  const [isTabletScreen, setTabletScreen] = useState(window.innerWidth >= 600 && window.innerWidth < 1000);
+  const [isMobileScreen, setMobileScreen] = useState(
+    window.innerWidth > 0 && window.innerWidth < 600
+  );
+  const [isTabletScreen, setTabletScreen] = useState(
+    window.innerWidth >= 600 && window.innerWidth < 1000
+  );
   const [isLargeScreen, setLargeScreen] = useState(window.innerWidth >= 1000);
 
   useEffect(() => {
@@ -18,6 +23,82 @@ export default function Domestic() {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const domesticCards = [
+    {
+      Name: "Kashmir",
+      title: "Adventure Meet Serenity",
+      duration: "6 Days & 5 Nights",
+      rating: "4.8/5",
+      cut_price: 28700,
+      curr_price: 26700,
+      save: 2000,
+      direct: "/Kashmir5n6d",
+      image:
+        "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/e0pa63dcfd9ndpjikd6r",
+    },
+    {
+      Name: "Kashmir",
+      title: "Experience Paradise On Earth",
+      duration: "4 Days & 3 Nights",
+      rating: "4.8/5",
+      cut_price: 25900,
+      curr_price: 18499,
+      save: "SAVE INR 7,401",
+      direct: "/Kashmir3n4d",
+      image:
+        "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/io8nrf2tcetleax8jgyq",
+    },
+    {
+      Name: "Ladakh",
+      title: "Thrilling Leh Ladakh",
+      duration: "6 Days & 5 Nights",
+      rating: "4.8/5",
+      cut_price: 41999,
+      curr_price: 29999,
+      save: 12000,
+      direct: "/Ladakh5n6d",
+      image:
+        "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/vbqfi1hyv63r0w845akt",
+    },
+    {
+      Name: "Gangtok & Darjeeling",
+      title: "The Abode of Clouds",
+      duration: "6 Days & 5 Nights",
+      rating: "4.8/5",
+      cut_price: 50199,
+      curr_price: 35799,
+      save: 14400,
+      direct: "/Sikkim5n6d",
+      image:
+        "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ykxbiuiaflrokrrqfm8u",
+    },
+    {
+      Name: "Himachal Pradesh",
+      title: "Sleep In Natures Lap",
+      duration: "6 Days & 5 Nights",
+      rating: "4.8/5",
+      cut_price: 28700,
+      curr_price: 26700,
+      save: 2000,
+      direct: "/Shimla5n6d",
+      image:
+        "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ogxma6qe0ljqynhde8so",
+    },
+    {
+      Name: "Andaman",
+      title: "A Journey to Serenity",
+      duration: "5 Days & 4 Nights",
+      rating: "4.8/5",
+      cut_price: 44799,
+      curr_price: 31988,
+      save: 12811,
+      direct: "/Andaman",
+      image:
+        "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ntxfrgqqlxssxkybgdtt",
+    },
+  ];
+
   return (
     <div className="md:pl-20 md:pr-20 pl-4 pt-10">
       <h2 className="march text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
@@ -25,180 +106,30 @@ export default function Domestic() {
       </h2>
       {isLargeScreen && (
         <>
-          <div className="carousel p-10 pb-0  relative w-full">
-            <div
-              id="Domestic1"
-              className="carousel-item w-full flex justify-center gap-5 ml-14"
-            >
-              <Card
-                name="Kashmir"
-                title="Adventure Meet Serenity"
-                duration="6 Days & 5 Nights"
-                rating="4.8/5"
-                cut_price={28700}
-                curr_price={26700}
-                save={2000}
-                direct="/Kashmir5n6d"
-                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/e0pa63dcfd9ndpjikd6r'
-              />
-
-              <Card
-                name="Kashmir"
-                title="Experience Paradise On Earth"
-                duration="4 Days & 3 Nights"
-                rating="4.8/5"
-                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/io8nrf2tcetleax8jgyq'
-                cut_price={25900}
-                curr_price={18499}
-                direct="/Kashmir3n4d"
-                save="SAVE INR 7,401"
-              />
-
-              <Card
-                name="Ladakh"
-                title="Thrilling Leh Ladakh"
-                duration="6 Days & 5 Nights"
-                rating="4.8/5"
-                cut_price={41999}
-                curr_price={29999}
-                save={12000}
-                direct="/Ladakh5n6d"
-                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/vbqfi1hyv63r0w845akt'
-              />
-            </div>
-            <div
-              id="Domestic2"
-              className="carousel-item w-full flex justify-center gap-5 ml-14"
-            >
-              <Card
-                name="Gangtok & Darjeeling"
-                title="The Abode of Clouds"
-                duration="6 Days & 5 Nights"
-                rating="4.8/5"
-                cut_price={50199}
-                curr_price={35799}
-                save={14400}
-                direct="/Sikkim5n6d"
-                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ykxbiuiaflrokrrqfm8u'
-              />
-
-              <Card
-                name="Himachal Pradesh"
-                title="Sleep In Natures Lap"
-                duration="6 Days & 5 Nights"
-                rating="4.8/5"
-                cut_price={28700}
-                curr_price={26700}
-                save={2000}
-                direct="/Shimla5n6d"
-                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ogxma6qe0ljqynhde8so'
-              />
-
-              <Card
-                name='Andaman'
-                title="A Journey to Serenity"
-                duration="5 Days & 4 Nights"
-                rating="4.8/5"
-                cut_price={44799}
-                curr_price={31988}
-                save={12811}
-                direct="/Andaman"
-                image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ntxfrgqqlxssxkybgdtt'
-              />
-            </div>
-          </div>
-          <div className="flex justify-center w-full py-2 gap-2">
-            <a href="#Domestic1" className="btn btn-xs">
-              1
-            </a>
-            <a href="#Domestic2" className="btn btn-xs">
-              2
-            </a>
+          <GliderCarousel uniqueId="domestic" cards={domesticCards} />
+        </>
+      )}
+      {isMobileScreen && (
+        <>
+          <div className="carousel p-4 rounded-box flex justify-between items-center space-x-10 md:space-x-5">            
+              {domesticCards.map((card, index) => (
+                  <Card
+                    title={card.title}
+                    duration={card.duration}
+                    rating={card.rating}
+                    cut_price={card.cut_price}
+                    curr_price={card.curr_price}
+                    save={card.save}
+                    direct={card.direct}
+                    image={card.image}
+                    Name={card.Name}
+                    key={index}
+                  />
+                
+              ))}
           </div>
         </>
       )}
-      {
-        isMobileScreen || isTabletScreen ? (
-          <>
-          <div className="carousel p-4 rounded-box flex justify-between items-center space-x-10 md:space-x-5">
-            <Card
-              name="Kashmir"
-              title="Adventure Meet Serenity"
-              duration="6 Days & 5 Nights"
-              rating="4.8/5"
-              cut_price={28700}
-              curr_price={26700}
-              save={2000}
-              direct="/Kashmir5n6d"
-              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/e0pa63dcfd9ndpjikd6r'
-            />
-
-            <Card
-              name="Kashmir"
-              title="Experience Paradise On Earth"
-              duration="4 Days & 3 Nights"
-              rating="4.8/5"
-              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/io8nrf2tcetleax8jgyq'
-              cut_price={25900}
-              curr_price={18499}
-              direct="/Kashmir3n4d"
-              save="SAVE INR 7,401"
-            />
-
-            <Card
-              name="Ladakh"
-              title="Thrilling Leh Ladakh"
-              duration="6 Days & 5 Nights"
-              rating="4.8/5"
-              cut_price={41999}
-              curr_price={29999}
-              save={12000}
-              direct="/Ladakh5n6d"
-              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/vbqfi1hyv63r0w845akt'
-            />
-
-            <Card
-              name="Gangtok & Darjeeling"
-              title="The Abode of Clouds"
-              duration="6 Days & 5 Nights"
-              rating="4.8/5"
-              cut_price={50199}
-                curr_price={35799}
-                save={14400}
-              direct="/Sikkim5n6d"
-              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ykxbiuiaflrokrrqfm8u'
-            />
-
-            <Card
-              name="Himachal Pradesh"
-              title="Sleep In Natures Lap"
-              duration="6 Days & 5 Nights"
-              rating="4.8/5"
-              cut_price={28700}
-              curr_price={26700}
-              save={2000}
-              direct="/Shimla5n6d"
-              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ogxma6qe0ljqynhde8so'
-            />
-
-            <Card
-              name="Andaman"
-              title="A Journey to Serenity"
-              duration="5 Days & 4 Nights"
-              rating="4.8/5"
-              cut_price={44799}
-              curr_price={31988}
-              save={12811}
-              direct="/Andaman"
-              image='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ntxfrgqqlxssxkybgdtt'
-            />
-          </div>
-          </>
-        ):
-        (
-          <></>
-        )
-      }
     </div>
   );
 }
