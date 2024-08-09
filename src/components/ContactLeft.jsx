@@ -34,7 +34,7 @@ export const ContactLeft = ({onClose}) => {
                 </div>
               </div>
             </div>
-          </div>
+    </div>
   )
 }
 

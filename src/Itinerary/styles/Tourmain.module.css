@@ -310,6 +310,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .left6 > ul > li > img{
+    width:10%;
+  }
   /* General Styles */
   .tour_main {
     display: flex;

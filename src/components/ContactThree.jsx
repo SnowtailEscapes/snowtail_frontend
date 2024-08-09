@@ -220,7 +220,7 @@ const countryCodes = [
 
 const customStyles = {
   content: {
-    top: "50%",
+    top: "60%",
     left: "50%",
     right: "auto",
     bottom: "auto",
@@ -240,13 +240,13 @@ const customStyles = {
   mobileContent: {
     width: "80vw",
     maxWidth: "80vw",
-    height: "100vh",
+    height: "80vh",
     maxHeight: "100vh",
     fontSize: "11px",
     flexDirection: "column",
     borderRadius: "1rem",
     position: "fixed", // Keep the form fixed
-    top: "50%", // Center vertically
+    top: "55%", // Center vertically
     left: "50%", // Center horizontally
     transform: "translate(-50%, -50%)", // Center using translate
     padding: "0",

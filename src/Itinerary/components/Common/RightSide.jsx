@@ -77,17 +77,18 @@ const RightSide = ({
                     <CurrencyConverter price={Number(standard_cut)} />
                   </del>
                 </h6>
-                <h3 className="flex gap-2">
+                <h3 className="flex md:gap-2 text-nowrap">
                   <CurrencyConverter price={Number(standard_current)} /> 
                   <p>per person</p>
                 </h3>
               </div>
             </div>
           </div>
-          <div>
+          <div className="w-full">
             <button
               className="btn bg-main-brand text-white"
               onClick={toggleContactForm1}
+              style={{width:"100%"}}
             >
               Contact with an Expert
             </button>
@@ -153,6 +154,8 @@ const RightSide = ({
             <button
               className="btn bg-main-brand text-white"
               onClick={toggleContactForm1}
+              style={{width:"100%"}}
+
             >
               Contact with an Expert
             </button>
@@ -218,6 +221,8 @@ const RightSide = ({
             <button
               className="btn bg-main-brand text-white"
               onClick={toggleContactForm1}
+              style={{width:"100%"}}
+
             >
               Contact with an Expert
             </button>

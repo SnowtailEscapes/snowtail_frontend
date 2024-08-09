@@ -3,9 +3,11 @@ import Modal from "react-modal";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { ContactLeft } from "./ContactLeft";
 import PropTypes from "prop-types";
-
+import trip from "../assets/trip.webp";
+import time from "../assets/time.webp";
+import guide from "../assets/guide.png";
+import logo from "../../public/logo/23.svg";
 
 const countryCodes = [
   "+1",
@@ -220,7 +222,7 @@ const countryCodes = [
 
 const customStyles = {
   content: {
-    top: "50%",
+    top: "60%",
     left: "50%",
     right: "auto",
     bottom: "auto",
@@ -240,13 +242,13 @@ const customStyles = {
   mobileContent: {
     width: "80vw",
     maxWidth: "80vw",
-    height: "100vh",
+    height: "80vh",
     maxHeight: "100vh",
     fontSize: "11px",
     flexDirection: "column",
     borderRadius: "1rem",
     position: "fixed", // Keep the form fixed
-    top: "50%", // Center vertically
+    top: "55%", // Center vertically
     left: "50%", // Center horizontally
     transform: "translate(-50%, -50%)", // Center using translate
     padding: "0",
@@ -296,7 +298,9 @@ export default function Contact2() {
 
   const sendEmail = async (e) => {
     e.preventDefault();
-    alert("Your message will be sent shortly, you can close the form. Thank you!")
+    alert(
+      "Your message will be sent shortly, you can close the form. Thank you!"
+    );
     const emailData = {
       name,
       email,
@@ -338,9 +342,9 @@ export default function Contact2() {
     setPassengers("");
   };
 
-  const handleClose = ()=> {
+  const handleClose = () => {
     setIsOpen(false);
-  }
+  };
 
   return (
     <>
@@ -364,7 +368,34 @@ export default function Contact2() {
         className="fixed"
       >
         <div className="flex flex-col md:flex-row items-stretch w-full h-full">
-        <ContactLeft onClick={handleClose}/>
+          <div className="flex flex-col p-5 bg-main-brand text-white md:w-1/3 w-full gap-4">
+            <button onClick={()=>handleClose} className="btn bg-main-brand">
+              <p className="font-bold text-sm">X</p>
+            </button>
+            <div className="flex justify-center">
+              <img src={logo} width={200} height={20} alt="Snowtail Escapes" />
+            </div>
+            <div className="card bg-base-100 h-fit flex align-middle shadow-md shadow-white mb-4">
+              <div className="card-body text-center">
+                <div className="flex flex-col items-center gap-1">
+                  <img src={trip} width={30} alt="Customized Trips" />
+                  <p className="font-bold text-black text-nowrap">
+                    100% Customised Trips
+                  </p>
+                </div>
+                <div className="flex flex-col items-center gap-1">
+                  <img src={guide} width={20} alt="Visa Success" />
+                  <p className="font-bold text-black">Best Groun Assistance</p>
+                </div>
+                <div className="flex flex-col items-center gap-1">
+                  <img src={time} width={30} alt="Coverage" />
+                  <p className="font-bold text-black">
+                    Great Customer Experience
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div
             className="md:p-4 p-2 bg-white flex flex-col items-center justify-center md:w-2/3 w-full"
             style={{ fontSize: "13px" }}
@@ -458,7 +489,8 @@ export default function Contact2() {
                 Send Message
               </button>
               <p className="text-main-brand text-[13px]">
-                You would get a callback from an expert.<br/>
+                You would get a callback from an expert.
+                <br />
                 We dont share your data with other parties
               </p>
             </form>

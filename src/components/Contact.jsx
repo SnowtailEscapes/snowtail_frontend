@@ -220,7 +220,7 @@ const countryCodes = [
 
 const customStyles = {
   content: {
-    top: "50%",
+    top: "57%",
     left: "50%",
     right: "auto",
     bottom: "auto",
@@ -240,13 +240,13 @@ const customStyles = {
   mobileContent: {
     width: "80vw",
     maxWidth: "80vw",
-    height: "100vh",
+    height: "80vh",
     maxHeight: "100vh",
     fontSize: "11px",
     flexDirection: "column",
     borderRadius: "1rem",
     position: "fixed", // Keep the form fixed
-    top: "50%", // Center vertically
+    top: "55%", // Center vertically
     left: "50%", // Center horizontally
     transform: "translate(-50%, -50%)", // Center using translate
     padding: "0",
@@ -377,9 +377,9 @@ const Contact = ({ isVisible, onClose }) => {
                 onChange={(e) => setName(e.target.value)}
                 className="input input-bordered input-primary w-full"
               />
-              <div className="flex flex-col gap-2 items-center">
+              <div className="flex gap-2 items-center">
                 <select
-                  className="select select-primary w-full"
+                  className="select select-primary w-1/3 grid-cols-1"
                   value={isd}
                   onChange={(e) => setISD(e.target.value)}
                 >
@@ -397,7 +397,7 @@ const Contact = ({ isVisible, onClose }) => {
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="Mobile number"
-                  className="input input-bordered input-primary w-full"
+                  className="input input-bordered input-primary w-full grid-cols-10"
                 />
               </div>
               <input
