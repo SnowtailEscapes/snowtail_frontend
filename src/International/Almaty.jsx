@@ -44,7 +44,7 @@ export default function Almaty() {
 
       <Suspense fallback={<div>Loading...</div>}>
         <section className={a.section} data-aos="zoom-in">
-          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/dmco3dmhjdvkn0auoaf8' large={Large} />
+          <ItineraryImage small='https://snowtailescapes.com/images/card/almaty.webp' large={Large} />
           <Navbar />
         </section>
         <Tourmain />

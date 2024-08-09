@@ -46,7 +46,7 @@ export default function Japan() {
           data-aos="zoom-in"
         >
           <Navbar />
-          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/sdjswz0cdnggtozkooq3' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/wtjljprxslnhkbi4mvnt' />
+          <ItineraryImage small='https://snowtailescapes.com/images/card/japan2.webp' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/wtjljprxslnhkbi4mvnt' />
         </section>
         <Tourmain />
         <Contact2 />

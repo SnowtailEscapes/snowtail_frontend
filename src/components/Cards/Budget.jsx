@@ -36,7 +36,7 @@ export default function International() {
       "curr_price": 10999,
       "save": 4400,
       "direct": "/Kasol2n3d",
-      "image": "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/d4jj8za1frxjxgw2cs3l"
+      "image": "https://snowtailescapes.com/images/card/kasol.webp"
     },
     {
       "Name": "Mussoorie & Rishikesh",
@@ -47,7 +47,7 @@ export default function International() {
       "curr_price": 15999,
       "save": 6400,
       "direct": "/Uttrakhand",
-      "image": "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ytd5dytykzlpy6orblbl"
+      "image": "https://snowtailescapes.com/images/card/masoorie.webp"
     },
     {
       "Name": "Manali",
@@ -58,7 +58,7 @@ export default function International() {
       "curr_price": 15999,
       "save": 6400,
       "direct": "/Manali3n4d",
-      "image": "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/vorbmcxc5np6ahet04j0"
+      "image": "https://snowtailescapes.com/images/card/manali.webp"
     },
     {
       "Name": "Gujarat",
@@ -69,7 +69,7 @@ export default function International() {
       "curr_price": 16499,
       "save": 6700,
       "direct": "/Gujarat3n4d",
-      "image": "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/mddzj4dekit9a7m3jepm"
+      "image": "https://snowtailescapes.com/images/card/gujarat1.webp"
     },
     {
       "Name": "Bangkok & Pattaya",
@@ -80,7 +80,7 @@ export default function International() {
       "curr_price": 19999,
       "save": 5700,
       "direct": "/Thailand5d4n",
-      "image": "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/hhajk8pwfwtsd2vhgcsc"
+      "image": "https://snowtailescapes.com/images/card/thailand4n5dS.webp"
     },
     {
       "Name": "Phuket & Krabi",
@@ -91,7 +91,7 @@ export default function International() {
       "curr_price": 29999,
       "save": 7000,
       "direct": "/Thailand6d5n",
-      "image": "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/thailand4n5d"
+      "image": "https://snowtailescapes.com/images/card/thailand5n6ds.webp"
     }
   ]
   

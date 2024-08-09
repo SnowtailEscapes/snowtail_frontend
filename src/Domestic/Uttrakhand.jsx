@@ -42,7 +42,7 @@ export default function Rajasthan() {
 
       <Suspense fallback={<div>Loading...</div>}>
         <section className={a.section} data-aos="zoom-in">
-          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ytd5dytykzlpy6orblbl' large={large} />
+          <ItineraryImage small='https://snowtailescapes.com/images/card/masoorie.webp' large={large} />
           <Navbar />
         </section>
         <Tourmain />

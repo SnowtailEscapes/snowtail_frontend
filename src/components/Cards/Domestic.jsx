@@ -35,7 +35,7 @@ export default function Domestic() {
       save: 2000,
       direct: "/Kashmir5n6d",
       image:
-        "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/e0pa63dcfd9ndpjikd6r",
+        "https://snowtailescapes.com/images/card/kashmir1.webp",
     },
     {
       Name: "Kashmir",
@@ -47,7 +47,7 @@ export default function Domestic() {
       save: "SAVE INR 7,401",
       direct: "/Kashmir3n4d",
       image:
-        "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/io8nrf2tcetleax8jgyq",
+        "https://snowtailescapes.com/images/card/kashmir2.webp",
     },
     {
       Name: "Ladakh",
@@ -59,7 +59,7 @@ export default function Domestic() {
       save: 12000,
       direct: "/Ladakh5n6d",
       image:
-        "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/vbqfi1hyv63r0w845akt",
+        "https://snowtailescapes.com/images/card/ladakh.webp",
     },
     {
       Name: "Gangtok & Darjeeling",
@@ -71,7 +71,7 @@ export default function Domestic() {
       save: 14400,
       direct: "/Sikkim5n6d",
       image:
-        "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ykxbiuiaflrokrrqfm8u",
+        "https://snowtailescapes.com/images/card/sikkim.webp",
     },
     {
       Name: "Himachal Pradesh",
@@ -83,7 +83,7 @@ export default function Domestic() {
       save: 2000,
       direct: "/Shimla5n6d",
       image:
-        "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ogxma6qe0ljqynhde8so",
+        "https://snowtailescapes.com/images/card/shimla5n6d.webp",
     },
     {
       Name: "Andaman",
@@ -95,7 +95,7 @@ export default function Domestic() {
       save: 12811,
       direct: "/Andaman",
       image:
-        "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ntxfrgqqlxssxkybgdtt",
+        "https://snowtailescapes.com/images/card/andaman.webp",
     },
   ];
 

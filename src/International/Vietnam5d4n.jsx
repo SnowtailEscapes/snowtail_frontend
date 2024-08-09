@@ -38,7 +38,7 @@ export default function Vietnam4n5d() {
       <Suspense fallback={<div>Loading...</div>}>
         <section className={`${a.Vietnam4n5d} ${a.mobile} ${a.window}`} data-aos="zoom-in">
           <Navbar />
-          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/cnfztqxnhddamzjxj6vk' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/km2p7ynbnkxpzxzevjnw' />
+          <ItineraryImage small='https://snowtailescapes.com/images/card/vietnam4n5ds.webp' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/km2p7ynbnkxpzxzevjnw' />
         </section>
         <Tourmain />
         <Contact2 />

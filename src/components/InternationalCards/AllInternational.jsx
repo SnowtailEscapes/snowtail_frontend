@@ -32,7 +32,7 @@ export default function AllInternational() {
             price={19699}
             location="PATTAYA & BANGKOK"
             duration="4 nights 5 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/thailand4n5d"
+            image="https://snowtailescapes.com/images/card/thailand4n5dS.webp"
           />
 
           <International
@@ -41,7 +41,7 @@ export default function AllInternational() {
             price={29699}
             location="PHUKET & KRABI"
             duration="5 nights 6 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/hhajk8pwfwtsd2vhgcsc"
+            image="https://snowtailescapes.com/images/card/thailand5n6ds.webp"
           />
 
           <International
@@ -50,7 +50,7 @@ export default function AllInternational() {
             price={59099}
             location="PHUKET/KRABI/PATTAYA/BANGKOK"
             duration="8 nights 9 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/thailand8n9d"
+            image="https://snowtailescapes.com/images/card/thailand8n9ds.webp"
           />
 
           <International
@@ -59,7 +59,7 @@ export default function AllInternational() {
             price={54699}
             location="BALI"
             duration="7 nights 8 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/xlknx6r9srnj8hrcv80n"
+            image="https://snowtailescapes.com/images/card/Bali7n8ds.webp"
           />
           <International
             to="/Bali6d5n"
@@ -67,7 +67,7 @@ export default function AllInternational() {
             price={34699}
             location="BALI"
             duration="5 nights 6 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ajv3iepuyrelzskbgpir"
+            image="https://snowtailescapes.com/images/card/bali2.webp"
           />
 
           <International
@@ -76,7 +76,7 @@ export default function AllInternational() {
             price={37699}
             location="VIETNAM"
             duration="4 nights 5 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/cnfztqxnhddamzjxj6vk"
+            image="https://snowtailescapes.com/images/card/vietnam4n5ds.webp"
           />
 
           <International
@@ -85,7 +85,7 @@ export default function AllInternational() {
             price={57699}
             location="VIETNAM"
             duration="6 nights 7 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/srkqs6s7h6tgvqgnegh9"
+            image="https://snowtailescapes.com/images/card/vietnam6n7ds.webp"
           />
           <International
             to="/Vietnam9n10d"
@@ -93,7 +93,7 @@ export default function AllInternational() {
             price={89699}
             location="VIETNAM"
             duration="9 nights 10 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/zynzypoqjbziyrzuswkh"
+            image="https://snowtailescapes.com/images/card/vietnam9n10ds.webp"
           />
           <International
             to="/Singapore4n5d"
@@ -101,7 +101,7 @@ export default function AllInternational() {
             price={44699}
             location="SINGAPORE"
             duration="4 nights 5 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/dicuyywnzshvd48cqssh"
+            image="https://snowtailescapes.com/images/card/singapore4n5ds.webp"
           />
           <International
             to="/Singapore6n7d"
@@ -109,7 +109,7 @@ export default function AllInternational() {
             price={59699}
             location="SINGAPORE"
             duration="6 nights 7 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/dionqfxfgjjefuufkybb"
+            image="https://snowtailescapes.com/images/card/singapore6n7ds.webp"
           />
           <International
             to="/Singapore_Malaysia"
@@ -117,7 +117,7 @@ export default function AllInternational() {
             price={56999}
             location="SINGAPORE & MALAYSIA"
             duration="6 nights 7 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/bgzs32ixxddrhw7q4n5q"
+            image="https://snowtailescapes.com/images/card/SMs.webp"
           />
           <International
             to="/Malaysia"
@@ -125,7 +125,7 @@ export default function AllInternational() {
             price={33999}
             location="MALAYSIA"
             duration="6 nights 7 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/bthwqpanhz9hxx26gumo"
+            image="https://snowtailescapes.com/images/card/Malaysia.webp"
           />
           <International
             to="/Switzerland5n6d"
@@ -133,7 +133,7 @@ export default function AllInternational() {
             duration="5 nights 6 days tour"
             price={97999}
             location="SWITZERLAND"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/im047rizfr16zpjs4ffx"
+            image="https://snowtailescapes.com/images/card/swit.webp"
           />
           <International
             to="/France-Italy"
@@ -141,7 +141,7 @@ export default function AllInternational() {
             price={85699}
             location="FRANCE & ITALY"
             duration="4 nights 5 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/e12rwj5elsq3trtqmlq5"
+            image="https://snowtailescapes.com/images/card/France.webp"
           />
           <International
             to="/Greece7n8d"
@@ -149,7 +149,7 @@ export default function AllInternational() {
             location="GREECE"
             price={139699}
             duration="7 nights 8 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/qqaz26pebrcjum7ddwfl"
+            image="https://snowtailescapes.com/images/card/greece.webp"
           />
           <International
             to="/SriLanka6n7d"
@@ -157,7 +157,7 @@ export default function AllInternational() {
             duration="6 nights 7 days tour"
             price={38699}
             location="SRI LANKA"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/hl7ngkhtiha4ynq86ojz"
+            image="https://snowtailescapes.com/images/card/lanka.webp"
           />
           <International
             to="/Dubai3n4d"
@@ -165,7 +165,7 @@ export default function AllInternational() {
             location="DUBAI"
             price={25899}
             duration="3 nights 4 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/j7c8e9kld9mfj7bbxqmj"
+            image="https://snowtailescapes.com/images/card/Dubai3n4dS.webp"
           />
           <International
             to="/Dubai5n6d"
@@ -173,7 +173,7 @@ export default function AllInternational() {
             location="DUBAI"
             price={58899}
             duration="5 nights 6 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/suoctcvh0fvuysxd5tgn"
+            image="https://snowtailescapes.com/images/card/Dubai5n6dS.webp"
           />
 
           <International
@@ -181,7 +181,7 @@ export default function AllInternational() {
             duration="3 nights 4 days tour"
             price={54699}
             direct="/Nepal"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/jacxgiv1rdbxkv0tgpqy"
+            image="https://snowtailescapes.com/images/card/andaman.webp"
             to="/Nepal"
           />
 
@@ -191,7 +191,7 @@ export default function AllInternational() {
             to="/Almaty"
             price={59099}
             direct="/Almaty"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/dmco3dmhjdvkn0auoaf8"
+            image="https://snowtailescapes.com/images/card/almaty.webp"
           />
 
           <International
@@ -200,7 +200,7 @@ export default function AllInternational() {
             price={88980}
             location="Sydney"
             duration="7 nights 6 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/r1iqblqgi5qaszmdftqb"
+            image="https://snowtailescapes.com/images/card/australia.webp"
           />
 
           <International
@@ -209,7 +209,7 @@ export default function AllInternational() {
             price={99999}
             location="Kyoto"
             duration="9 nights 10 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/sdjswz0cdnggtozkooq3"
+            image="https://snowtailescapes.com/images/card/japan1.webp"
           />
 
           <International
@@ -218,7 +218,7 @@ export default function AllInternational() {
             price={99999}
             location="Kyoto"
             duration="5 nights 6 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/sdjswz0cdnggtozkooq3"
+            image="https://snowtailescapes.com/images/card/japan2.webp"
           />
 
           <International
@@ -227,7 +227,7 @@ export default function AllInternational() {
             price={99999}
             location="Manila"
             duration="7 nights 8 days tour"
-            image="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/sdjswz0cdnggtozkooq3"
+            image="https://snowtailescapes.com/images/card/philipenes.webp"
           />
         </div>
       </div>

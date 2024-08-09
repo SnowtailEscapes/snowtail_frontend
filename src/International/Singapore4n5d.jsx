@@ -39,7 +39,7 @@ export default function Singapore4n5d() {
       <Suspense fallback={<div>Loading...</div>}>
         <Navbar />
         <section className={`${a.section} ${a.Singapore4n5d}`} data-aos="zoom-in">
-        <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/dicuyywnzshvd48cqssh' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/jlvzholzkmxa3zj5ydow' />
+        <ItineraryImage small='https://snowtailescapes.com/images/card/singapore4n5ds.webp' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/jlvzholzkmxa3zj5ydow' />
         </section>
         <Tourmain />
         <Contact2 />

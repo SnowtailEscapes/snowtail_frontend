@@ -38,10 +38,9 @@ export default function Bali6d5n() {
         content="Bali tour, Kuta, Ubud, Tanah Lot, Uluwatu, Seminyak, Bali tourism, Bali travel, Bali holiday packages"
     />
 </Helmet>
-
       <Suspense fallback={<div>Loading...</div>}>
         <section className={a.section} data-aos="zoom-in">
-          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/ajv3iepuyrelzskbgpir' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/jfuuaf2dzf9obt5oeiuy' />
+          <ItineraryImage small='https://snowtailescapes.com/images/card/bali2.webp' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/jfuuaf2dzf9obt5oeiuy' />
           <Navbar />
         </section>
         <Tourmain />

@@ -36,7 +36,7 @@ export default function International() {
       "curr_price": 33999,
       "save": 5501,
       "direct": "/Nepal",
-      "image": "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/jacxgiv1rdbxkv0tgpqy"
+      "image": "https://snowtailescapes.com/images/card/nepal.webp"
     },
     {
       "Name": "Malaysia",
@@ -46,7 +46,7 @@ export default function International() {
       "curr_price": 33999,
       "save": 5501,
       "direct": "/Malaysia",
-      "image": "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/bthwqpanhz9hxx26gumo"
+      "image": "https://snowtailescapes.com/images/card/Malaysia.webp"
     },
     {
       "Name": "Thailand",
@@ -56,7 +56,7 @@ export default function International() {
       "curr_price": 29999,
       "save": 7000,
       "direct": "/Thailand6d5n",
-      "image": "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/hhajk8pwfwtsd2vhgcsc"
+      "image": "https://snowtailescapes.com/images/card/thailand5n6ds.webp"
     },
     {
       "Name": "Almaty",
@@ -66,7 +66,7 @@ export default function International() {
       "curr_price": 34699,
       "save": 7000,
       "direct": "/Almaty",
-      "image": "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/dmco3dmhjdvkn0auoaf8"
+      "image": "https://snowtailescapes.com/images/card/almaty.webp"
     },
     {
       "Name": "Sri Lanka | Jewel Of Indian Ocean",
@@ -76,7 +76,7 @@ export default function International() {
       "curr_price": 38699,
       "save": 5801,
       "direct": "/SriLanka6n7d",
-      "image": "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/hl7ngkhtiha4ynq86ojz"
+      "image": "https://snowtailescapes.com/images/card/lanka.webp"
     }
   ]
 

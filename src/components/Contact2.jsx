@@ -10,6 +10,7 @@ import guide from "../assets/guide.png";
 import logo from "../../public/logo/23.svg";
 
 const countryCodes = [
+  "+91 ~ India",
   "+1",
   "+7",
   "+20",
@@ -50,7 +51,6 @@ const countryCodes = [
   "+84",
   "+86",
   "+90",
-  "+91",
   "+92",
   "+93",
   "+94",
@@ -222,7 +222,7 @@ const countryCodes = [
 
 const customStyles = {
   content: {
-    top: "60%",
+    top: "57%",
     left: "50%",
     right: "auto",
     bottom: "auto",
@@ -291,7 +291,7 @@ export default function Contact2() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIsOpen(true); // Open modal every 100 seconds
-    }, 50000);
+    }, 300000);
 
     return () => clearInterval(interval); // Clear interval on component unmount
   }, []);
@@ -342,10 +342,6 @@ export default function Contact2() {
     setPassengers("");
   };
 
-  const handleClose = () => {
-    setIsOpen(false);
-  };
-
   return (
     <>
       <ToastContainer
@@ -369,7 +365,7 @@ export default function Contact2() {
       >
         <div className="flex flex-col md:flex-row items-stretch w-full h-full">
           <div className="flex flex-col p-5 bg-main-brand text-white md:w-1/3 w-full gap-4">
-            <button onClick={()=>handleClose} className="btn bg-main-brand">
+            <button onClick={()=>setIsOpen(false)} className="btn bg-main-brand">
               <p className="font-bold text-sm">X</p>
             </button>
             <div className="flex justify-center">

@@ -45,7 +45,7 @@ export default function Singapore6n7d() {
           data-aos="zoom-in"
         >
           <ItineraryImage
-            small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/dionqfxfgjjefuufkybb'
+            small='https://snowtailescapes.com/images/card/singapore6n7ds.webp'
             large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/jlvzholzkmxa3zj5ydow'
           />
         </section>

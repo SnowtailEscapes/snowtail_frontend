@@ -25,8 +25,6 @@ export default function International() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-
-
   const internationalCards = [
     {
       "Name": "Thailand",
@@ -38,7 +36,7 @@ export default function International() {
       "save": 10000,
       "direct": "/Thailand9d8n",
       "image":
-        "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/thailand8n9d",
+        "https://snowtailescapes.com/images/card/thailand8n9ds.webp",
     },
     {
       "Name": "Bali",
@@ -50,7 +48,7 @@ export default function International() {
       "save": 10000,
       "direct": "/Bali8d7n",
       "image":
-        "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/xlknx6r9srnj8hrcv80n",
+        "https://snowtailescapes.com/images/card/Bali7n8ds.webp",
     },
     {
       "Name": "Singapore",
@@ -62,7 +60,7 @@ export default function International() {
       "direct": "/Singapore6n7d",
       "save": 7201,
       "image":
-        "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/dionqfxfgjjefuufkybb",
+        "https://snowtailescapes.com/images/card/singapore6n7ds.webp",
     },
     {
       "Name": "Dubai",
@@ -74,7 +72,7 @@ export default function International() {
       "save": 10601,
       "direct": "/Dubai5n6d",
       "image":
-        "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/suoctcvh0fvuysxd5tgn",
+        "https://snowtailescapes.com/images/card/Dubai5n6dS.webp",
     },
     {
       "Name": "Almaty",
@@ -86,7 +84,7 @@ export default function International() {
       "save": 7000,
       "direct": "/Almaty",
       "image":
-        "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/dmco3dmhjdvkn0auoaf8",
+        "https://snowtailescapes.com/images/card/almaty.webp",
     },
     {
       "Name": "Australia",
@@ -97,8 +95,7 @@ export default function International() {
       "curr_price": 34699,
       "save": 7000,
       "direct": "/Australia7d6n",
-      "image":
-        "https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/r1iqblqgi5qaszmdftqb",
+      "image":"https://snowtailescapes.com/images/card/australia.webp",
     },
   ];
 

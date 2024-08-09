@@ -8,6 +8,7 @@ import { ContactLeft } from "./ContactLeft";
 
 
 const countryCodes = [
+  "+91",
   "+1",
   "+7",
   "+20",
@@ -48,7 +49,6 @@ const countryCodes = [
   "+84",
   "+86",
   "+90",
-  "+91",
   "+92",
   "+93",
   "+94",

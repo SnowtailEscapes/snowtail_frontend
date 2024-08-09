@@ -44,7 +44,7 @@ export default function Singapore6n7d() {
           className={`${a.section} ${a.SriLanka} ${a.mobile} ${a.window}`}
           data-aos="zoom-in"
         >
-          <ItineraryImage small='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/hl7ngkhtiha4ynq86ojz' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/sgp4jd69vsyap7dtfp3x' />
+          <ItineraryImage small='https://snowtailescapes.com/images/card/lanka.webp' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/sgp4jd69vsyap7dtfp3x' />
         </section>
         <Tourmain />
         <Contact2 />
