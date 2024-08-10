@@ -3,11 +3,10 @@ import { Link, useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
-import CurrencyConverter from "../getApi/CurrencyConverter";
 import { useDispatch } from "react-redux";
 import { fetchCurrencyRates } from "../redux/slice/currencySlice";
 import percent from "../assets/percent.png";
-import phone from "../assets/phone.webp";
+
 
 const SearchResults = () => {
   const location = useLocation();
