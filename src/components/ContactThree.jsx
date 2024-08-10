@@ -6,7 +6,6 @@ import "react-toastify/dist/ReactToastify.css";
 import PropTypes from "prop-types";
 import { ContactLeft } from "./ContactLeft";
 
-
 const countryCodes = [
   "+91",
   "+1",
