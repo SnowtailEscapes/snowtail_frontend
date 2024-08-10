@@ -10,7 +10,7 @@ import guide from "../assets/guide.png";
 import logo from "../../public/logo/23.svg";
 
 const countryCodes = [
-  "+91 ~ India",
+  "+91",
   "+1",
   "+7",
   "+20",
@@ -298,9 +298,7 @@ export default function Contact2() {
 
   const sendEmail = async (e) => {
     e.preventDefault();
-    alert(
-      "Your message will be sent shortly, you can close the form. Thank you!"
-    );
+    
     const emailData = {
       name,
       email,

@@ -292,7 +292,6 @@ const Contact = ({ isVisible, onClose }) => {
 
   const sendEmail = async (e) => {
     e.preventDefault();
-    alert("Your message will be sent shortly, you can close the form. Thank you!")
 
     const emailData = {
       name,

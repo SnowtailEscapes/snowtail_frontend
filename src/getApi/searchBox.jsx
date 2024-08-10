@@ -29,7 +29,6 @@ const SearchBox = () => {
         } else {
           setItineraries([]);
         }
-
         console.log(result);
       } catch (error) {
         console.error("Error fetching itineraries:", error);
