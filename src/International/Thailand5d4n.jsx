@@ -61,7 +61,7 @@ const TestItinerary = () => {
           data-aos="zoom-in"
         >
           <Navbar />
-          <ItineraryImage small='https://snowtailescapes.com/images/card/thailand4n5dS.webp' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/thailand4n5d' />
+          <ItineraryImage small='https://snowtailescapes.com/images/card/thailand4n5dS.webp' large='https://snowtailescapes.com/images/Large/thailand2.webp' />
         </section>
         <Tourmain itinerary={itinerary}/>
         <Contact2 />

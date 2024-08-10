@@ -45,7 +45,7 @@ export default function Thailand8n9d() {
           data-aos="zoom-in"
         >
           <Navbar />
-          <ItineraryImage small='https://snowtailescapes.com/images/card/thailand8n9ds.webp' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/thailand' />
+          <ItineraryImage small='https://snowtailescapes.com/images/card/thailand8n9ds.webp' large='https://snowtailescapes.com/images/Large/thailand4n5d.webp' />
         </section>
         <Tourmain />
         <Contact2 />

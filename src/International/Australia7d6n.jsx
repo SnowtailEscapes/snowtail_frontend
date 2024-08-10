@@ -42,7 +42,7 @@ export default function Australia() {
         <section className={a.section} data-aos="zoom-in">
           <ItineraryImage
             small="https://snowtailescapes.com/images/card/australia.webp"
-            large="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/g54f4lpdeosyje2fvbqn"
+            large="https://snowtailescapes.com/images/Large/australia.webp"
           />
           <Navbar />
         </section>

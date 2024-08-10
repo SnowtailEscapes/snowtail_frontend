@@ -181,7 +181,7 @@ export default function AllInternational() {
             duration="3 nights 4 days tour"
             price={54699}
             direct="/Nepal"
-            image="https://snowtailescapes.com/images/card/andaman.webp"
+            image="https://snowtailescapes.com/images/card/nepal.webp"
             to="/Nepal"
           />
 

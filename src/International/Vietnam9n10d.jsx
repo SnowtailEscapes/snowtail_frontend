@@ -46,7 +46,7 @@ export default function Vietnam9n10d() {
         >
         
           <Navbar />
-          <ItineraryImage small='https://snowtailescapes.com/images/card/vietnam9n10ds.webp' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/li7txbgjacv2t4za1yro' />
+          <ItineraryImage small='https://snowtailescapes.com/images/card/vietnam9n10ds.webp' large='https://snowtailescapes.com/images/Large/vietnam3.webp' />
         </section>
         <Tourmain />
         <Contact2 />

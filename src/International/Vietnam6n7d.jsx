@@ -37,7 +37,7 @@ export default function Vietnam7d6n() {
       <Suspense fallback={<div>Loading...</div>}>
         <section className={`${a.Vietnam6n7d} ${a.mobile} ${a.window}`} data-aos="zoom-in">
           <Navbar />
-          <ItineraryImage small='https://snowtailescapes.com/images/card/vietnam6n7ds.webp' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/ir4yvulk8nbmlf3tkkya' />
+          <ItineraryImage small='https://snowtailescapes.com/images/card/vietnam6n7ds.webp' large='https://snowtailescapes.com/images/Large/vietnam3.webp' />
         </section>
         <Tourmain />
         <Contact2 />

@@ -47,7 +47,7 @@ export default function Switzerland5n6d() {
         >
           <ItineraryImage
             small='https://snowtailescapes.com/images/card/swit.webp'
-            large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/gmn5t2mc8jlefqb4vbl2'
+            large='https://snowtailescapes.com/images/Large/swit.webp'
           />
         </section>
         <Tourmain />

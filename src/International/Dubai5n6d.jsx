@@ -38,7 +38,7 @@ export default function Bali6d5n() {
       <Suspense fallback={<div>Loading...</div>}>
         <Navbar />
         <section className={`${a.section} ${a.Dubai5n6d}`} data-aos="zoom-in">
-        <ItineraryImage small='https://snowtailescapes.com/images/card/Dubai5n6dS.webp' large='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/large/hszx4rmwwcu6lwqampog' />
+        <ItineraryImage small='https://snowtailescapes.com/images/card/Dubai5n6dS.webp' large='https://snowtailescapes.com/images/Large/dubai2.webp' />
         </section>
         <Tourmain />
         <Contact2 />
