@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { Link, useNavigation } from "react-router-dom";
 import a from "../../styles/International.module.css";
-import CurrencyConverter from "../../getApi/CurrencyConverter";
 import { useDispatch } from "react-redux";
 import { fetchCurrencyRates } from "../../redux/slice/currencySlice";
 import phone from "../../assets/phone.webp";
