@@ -7,7 +7,7 @@ import percent from "../../assets/percent.png";
 import phone from "../../assets/phone.webp";
 import { Link } from "react-router-dom";
 import Contact from "../Contact";
-import CurrencyConverter from "../../getApi/CurrencyConverter";
+// import CurrencyConverter from "../../getApi/CurrencyConverter";
 import { useDispatch } from "react-redux";
 import { fetchCurrencyRates } from "../../redux/slice/currencySlice";
 import { useSelector } from "react-redux";
@@ -95,7 +95,7 @@ const Card = ({
             } top-5 bg-main-brand absolute flex flex-row md:gap-2 p-1`}
           >
             <p className="save flex">
-              Save {selectedCurrency.toUpperCase()}.{save}
+              Save INR.{save}
             </p>
           </div>
           <div className="flex flex-col pt-2 gap-y-1">
@@ -129,14 +129,16 @@ const Card = ({
                 {cut_price && (
                   <>
                     <h4 className="text-[13px] cut font-bold font-ligh2 flex">
-                      <CurrencyConverter price={Number(cut_price)} />
+                      {/* <CurrencyConverter price={Number(cut_price)} /> */}
+                      {cut_price}
                       /per
                     </h4>
                   </>
                 )}
                 <h4 className="text-base text-main-brand font-bold font-light2 flex">
-                  <CurrencyConverter price={Number(curr_price)} />
+                  {/* <CurrencyConverter price={Number(curr_price)} /> */}
                   <span className="text-base text-main-brand text-bold">
+                  {curr_price}
                     /per
                   </span>
                 </h4>
