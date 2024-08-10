@@ -76,7 +76,7 @@ const International = ({ to, title, location, price, duration, image }) => {
               style={{ width: "18%" }}
               onClick={toggleContactForm}
             >
-              <img src={phone} width={40} alt="Phone" loading="lazy" />
+              <img src={phone} width={40} alt="Phone" loading="lazy" height={40} />
             </button>
             <button
               className="btn bg-main-brand rounded-md text-white text-[15px] font-bold"

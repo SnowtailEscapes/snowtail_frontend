@@ -7,9 +7,7 @@ import Loading from "../components/loading";
 const Home = () => {
   return (
     <>
-      <Suspense fallback={<Loading/>}>
-        <TopSection />
-      </Suspense>
+      <TopSection />
       <Contact2 />
       <Footer />
     </>

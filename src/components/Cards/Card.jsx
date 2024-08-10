@@ -108,6 +108,7 @@ const Card = ({
                   <img
                     src={star}
                     width={20}
+                    height={20}
                     alt="Star"
                     loading="lazy"
                     color="text-main-brand"
