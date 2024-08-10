@@ -59,7 +59,6 @@ import Domestic from "./components/DomesticCards/AllDomestic.jsx";
 import AllInternational from "./components/InternationalCards/AllInternational.jsx";
 import TermsAndConditions from "./components/TermsAndCondition.jsx";
 import Almaty from "./International/Almaty.jsx";
-import CurrencyConverter from "./getApi/CurrencyConverter.jsx";
 import SearchBox from "./getApi/searchBox.jsx";
 import SearchResults from "./getApi/SearchResults.jsx";
 
@@ -82,7 +81,6 @@ function App() {
         <RouteChangeTracker />
           <Routes>
             {/* COMMON SECTIONS */}
-            <Route path="/currency" element={<CurrencyConverter/>}/>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
