@@ -5,7 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import PropTypes from "prop-types";
 import Contact3 from "../../../components/ContactThree";
-import CurrencyConverter from "../../../getApi/CurrencyConverter";
+
 
 const RightSide = ({
   standard_cut,
@@ -74,11 +74,13 @@ const RightSide = ({
               <div className={styles.tour_package_bar_price}>
                 <h6>
                   <del>
-                    <CurrencyConverter price={Number(standard_cut)} />
+                    {/* <CurrencyConverter price={Number(standard_cut)} /> */}
+                    {standard_cut}
                   </del>
                 </h6>
                 <h3 className="flex md:gap-2 text-nowrap">
-                  <CurrencyConverter price={Number(standard_current)} /> 
+                  {/* <CurrencyConverter price={Number(standard_current)} />  */}
+                  {standard_current}
                   <p>per person</p>
                 </h3>
               </div>
@@ -140,11 +142,13 @@ const RightSide = ({
               <div className={styles.tour_package_bar_price}>
                 <h6>
                   <del>
-                    <CurrencyConverter price={deluxe_cut} />
+                    {/* <CurrencyConverter price={deluxe_cut} /> */}
+                    {deluxe_cut}
                   </del>
                 </h6>
                 <h3 className="flex gap-2">
-                  <CurrencyConverter price={deluxe_current} />
+                  {/* <CurrencyConverter price={deluxe_current} /> */}
+                  {deluxe_current}
                   <p>per person</p>
                 </h3>
               </div>
@@ -207,11 +211,13 @@ const RightSide = ({
               <div className={styles.tour_package_bar_price}>
                 <h6>
                   <del>
-                    <CurrencyConverter price={super_deluxe_cut} />
+                    {/* <CurrencyConverter price={super_deluxe_cut} /> */}
+                    {super_deluxe_cut}
                   </del>
                 </h6>
                 <h3 className="flex gap-2">
-                  <CurrencyConverter price={super_deluxe_current} />
+                  {/* <CurrencyConverter price={super_deluxe_current} /> */}
+                  {super_deluxe_current}
                   <p>per person</p>
                 </h3>
               </div>

@@ -65,7 +65,8 @@ const International = ({ to, title, location, price, duration, image }) => {
               </span>
             </div>
             <h3 className="text-[16px] text-main-brand flex-nowrap flex justify-self-end">
-              <CurrencyConverter price={price} />
+              {/* <CurrencyConverter price={price} /> */}
+              {price}
               <p>/person</p>
             </h3>
           </div>
