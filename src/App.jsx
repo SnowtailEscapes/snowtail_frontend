@@ -59,9 +59,7 @@ import Domestic from "./components/DomesticCards/AllDomestic.jsx";
 import AllInternational from "./components/InternationalCards/AllInternational.jsx";
 import TermsAndConditions from "./components/TermsAndCondition.jsx";
 import Almaty from "./International/Almaty.jsx";
-import SearchBox from "./getApi/searchBox.jsx";
 import SearchResults from "./getApi/SearchResults.jsx";
-
 
 function App() {
   useEffect(() => {
@@ -86,7 +84,6 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-conditions" element={<TermsAndConditions />} />
             <Route path="*" element={<NotFound />} />
-            <Route path="/search" element={<SearchBox/>}/>
             <Route path="/search-results" element={<SearchResults />} />
 
             {/* ITINERARY SECTION -> DOMESTIC  */}
