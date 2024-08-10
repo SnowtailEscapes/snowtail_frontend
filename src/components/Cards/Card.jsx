@@ -8,7 +8,7 @@ import phone from "../../assets/phone.webp";
 import { Link } from "react-router-dom";
 import Contact from "../Contact";
 // import CurrencyConverter from "../../getApi/CurrencyConverter";
-import { useDispatch } from "react-redux";
+// import { useDispatch } from "react-redux";
 import { fetchCurrencyRates } from "../../redux/slice/currencySlice";
 import { useSelector } from "react-redux";
 
@@ -47,9 +47,9 @@ const Card = ({
   const [showContactForm, setShowContactForm] = useState(false);
   const [hover, setHover] = useState(false);
   const dispatch = useDispatch();
-  const selectedCurrency = useSelector(
-    (state) => state.currency.selectedCurrency
-  );
+  // const selectedCurrency = useSelector(
+  //   (state) => state.currency.selectedCurrency
+  // );
 
   const toggleContactForm = () => {
     setShowContactForm(!showContactForm);
@@ -59,9 +59,9 @@ const Card = ({
     setHover(!hover);
   };
 
-  useEffect(() => {
-    dispatch(fetchCurrencyRates());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(fetchCurrencyRates());
+  // }, [dispatch]);
 
   const numericRating = parseFloat(rating);
 
