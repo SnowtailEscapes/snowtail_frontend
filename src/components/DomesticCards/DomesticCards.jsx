@@ -2,29 +2,29 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { Link, useNavigation } from "react-router-dom";
 import a from "../../styles/International.module.css";
-import { useDispatch } from "react-redux";
-import { fetchCurrencyRates } from "../../redux/slice/currencySlice";
+// import { useDispatch } from "react-redux";
+// import { fetchCurrencyRates } from "../../redux/slice/currencySlice";
 import phone from "../../assets/phone.webp";
 import Contact from "../Contact";
 
 
 const International = ({ to, title, location, price, duration, image }) => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const [showContactForm, setShowContactForm] = useState(false);
-  const [hover, setHover] = useState(false);
+  // const [hover, setHover] = useState(false);
 
 
-  useEffect(() => {
-    dispatch(fetchCurrencyRates());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(fetchCurrencyRates());
+  // }, [dispatch]);
 
   const toggleContactForm = () => {
     setShowContactForm(!showContactForm);
   };
 
-  const hoverHo = () => {
-    setHover(!hover);
-  };
+  // const hoverHo = () => {
+  //   setHover(!hover);
+  // };
 
   return (
     <div className="flex justify-center">
