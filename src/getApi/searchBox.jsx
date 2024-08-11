@@ -1,40 +1,38 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { TypeAnimation } from 'react-type-animation';
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { TypeAnimation } from "react-type-animation";
 
 const SearchBox = () => {
   const [itineraries, setItineraries] = useState([]);
-  const [searchText, setSearchText] = useState('');
+  const [searchText, setSearchText] = useState("");
   const [showTypeAnimation, setShowTypeAnimation] = useState(true);
+  const [sequence] = useState([
+    "Search for locations",
+    1000,
+    "Search for bali",
+    1000,
+    "Search for thailand",
+    1000,
+    "Search for dubai",
+    1000,
+  ]);
   const navigate = useNavigate();
 
-  // Set the animation sequence
-  const sequence = [
-    'Search for locations',
-    1000,
-    'Search for Bali',
-    1000,
-    'Search for Thailand',
-    1000,
-    'Search for Dubai',
-    1000,
-  ];
-
-  // Function to fetch itineraries
   const handleSearch = async (key) => {
     if (key.length > 1) {
       try {
-        const response = await fetch(`${import.meta.env.VITE_SEARCH}${key}`);
-        const result = await response.json();
+        let result = await fetch(`${import.meta.env.VITE_SEARCH}/` + key);
+        result = await result.json();
 
         if (result.itineraries && Array.isArray(result.itineraries)) {
           setItineraries(result.itineraries);
         } else {
           setItineraries([]);
         }
+
         console.log(result);
       } catch (error) {
-        console.error('Error fetching itineraries:', error);
+        console.error("Error fetching itineraries:", error);
         setItineraries([]);
       }
     } else {
@@ -42,30 +40,26 @@ const SearchBox = () => {
     }
   };
 
-  // Search on input change
-  const handleInputChange = (e) => {
-    const value = e.target.value;
-    setSearchText(value);
-    handleSearch(value);
+  useEffect(() => {
+    handleSearch();
+  }, []);
+
+  const toggleTypeAnimation = (isVisible) => {
+    setShowTypeAnimation(isVisible);
   };
 
-  // Navigate to search results page
   const handleSearchButtonClick = () => {
-    navigate('/search-results', { state: { itineraries, searchText } });
+    navigate("/search-results", { state: { itineraries, searchText } });
   };
-
-  // Handle animation visibility
-  const handleFocus = () => setShowTypeAnimation(false);
-  const handleBlur = () => setShowTypeAnimation(false);
 
   return (
-    <div className="flex justify-center items-center p-4">
-      <div className="flex items-center bg-gray-100 rounded-lg p-2 lg:w-1/2 w-full">
+    <div className="flex justify-center items-center">
+      <div className="m-6 lg:mt-36 mt-20 p-2 flex items-center bg-gray-100 rounded-lg lg:w-1/2 w-full">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 16"
           fill="currentColor"
-          className="h-5 w-5 text-gray-500 mr-2"
+          className="h-4 w-4 opacity-70"
         >
           <path
             fillRule="evenodd"
@@ -80,9 +74,13 @@ const SearchBox = () => {
               wrapper="span"
               speed={50}
               style={{
-                fontSize: '0.9rem',
-                whiteSpace: 'nowrap',
-                paddingLeft: '1rem',
+                fontSize:{
+                  sm:"0.5rem",
+                  md:"0.6rem",
+                  lg:"0.9rem"
+                },
+                whiteSpace: "nowrap",
+                paddingLeft: "1rem",
               }}
               repeat={Infinity}
             />
@@ -91,14 +89,17 @@ const SearchBox = () => {
         <input
           type="text"
           value={searchText}
-          onChange={handleInputChange}
-          onFocus={handleFocus}
-          onBlur={handleBlur}
-          className="py-2 px-3 bg-transparent border-none flex-1 w-full"
-          placeholder="Search..."
+          onChange={(e) => {
+            setSearchText(e.target.value);
+            handleSearch(e.target.value);
+          }}
+          onFocus={() => toggleTypeAnimation(false)}
+          onBeforeInput={() => toggleTypeAnimation(false)}
+          onBlur={() => toggleTypeAnimation(false)}
+          className="py-2 px-3 bg-transparent border-none focus:outline-none flex-1 w-full"
         />
         <button
-          className="bg-blue-500 text-white px-4 py-2 ml-2 rounded"
+          className="bg-main-brand march text-white px-4 py-2 ml-2 rounded w-1/4"
           onClick={handleSearchButtonClick}
         >
           Search
