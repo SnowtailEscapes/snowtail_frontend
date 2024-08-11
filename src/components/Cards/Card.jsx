@@ -46,7 +46,7 @@ const Card = ({
 
   const [showContactForm, setShowContactForm] = useState(false);
   const [hover, setHover] = useState(false);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   // const selectedCurrency = useSelector(
   //   (state) => state.currency.selectedCurrency
   // );
