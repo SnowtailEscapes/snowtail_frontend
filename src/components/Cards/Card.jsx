@@ -8,9 +8,9 @@ import phone from "../../assets/phone.webp";
 import { Link } from "react-router-dom";
 import Contact from "../Contact";
 // import CurrencyConverter from "../../getApi/CurrencyConverter";
-// import { useDispatch } from "react-redux";
-// import { fetchCurrencyRates } from "../../redux/slice/currencySlice";
-// import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { fetchCurrencyRates } from "../../redux/slice/currencySlice";
+import { useSelector } from "react-redux";
 
 const Card = ({
   title,
