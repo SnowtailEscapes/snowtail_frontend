@@ -19,7 +19,7 @@ const Contact = () => {
       message: message,
     };
 
-    const emailPromise = axios.post("http://localhost:5000", emailData);
+    const emailPromise = axios.post(`${import.meta.env.VITE_API_BASE_URL}/send-email`, emailData);
 
     toast.promise(
       emailPromise,

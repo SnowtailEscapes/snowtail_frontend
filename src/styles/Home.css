@@ -77,7 +77,7 @@
   width: 100%; /* Ensure the image covers the entire container */
   height: 100%; /* Ensure the image covers the entire container */
   object-fit: cover; /* Maintain aspect ratio and cover the container */
-  z-index: -1; /* Ensure it's behind other content */
+  z-index: -1 !important; /* Ensure it's behind other content */
 }
 
 .dropdown-left {

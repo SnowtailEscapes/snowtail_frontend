@@ -9,6 +9,7 @@ import initializeGA from './utils/initializeGA';
 import RouteChangeTracker from './utils/RouteChangeTracker';
 import initializeClarity from './utils/initializeClarity';
 import NotFound from "./components/NotFound.jsx";
+import Contact from "./Itinerary/components/Contact.jsx";
 
 // International
 import Thailand5d4n from "./International/Thailand5d4n";
@@ -85,6 +86,7 @@ function App() {
             <Route path="/terms-conditions" element={<TermsAndConditions />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/search-results" element={<SearchResults />} />
+            <Route path="/contact" element={<Contact/>}/>
 
             {/* ITINERARY SECTION -> DOMESTIC  */}
             <Route path="/Domestic" element={<Domestic />} />
