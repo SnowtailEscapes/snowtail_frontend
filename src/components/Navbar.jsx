@@ -41,8 +41,8 @@ const Navbar = () => {
     <>
       {/* <div className="w-full grid grid-cols-12 z-10  bg-main-brand items-center text-white md:h-8 justify-center">
         <p className="text-center md:text-md text-sm md:col-span-6 col-span-12">
-          <span className="font-bold">Monsoon Sale</span> up to{" "}
-          <span className="font-bold">40% OFF</span> on your trip
+          <span className="">Monsoon Sale</span> up to{" "}
+          <span className="">40% OFF</span> on your trip
         </p>
 
         {width >= 737 && (
@@ -101,32 +101,32 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black dropdown-left"
             >
               <li>
-                <Link to="/" className="text-[19px] font-bold">
+                <Link to="/" className="text-[19px] ">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/International" className="text-[19px] font-bold">
+                <Link to="/International" className="text-[19px] ">
                   International
                 </Link>
               </li>
               <li>
-                <Link to="/Domestic" className="text-[19px] font-bold">
+                <Link to="/Domestic" className="text-[19px] ">
                   Domestic
                 </Link>
               </li>
               <li>
-                <Link onClick={handleClick} className="text-[19px] font-bold">
+                <Link onClick={handleClick} className="text-[19px] ">
                   Exclusive
                 </Link>
               </li>
               <li>
-                <Link onClick={handleClick} className="text-[19px] font-bold">
+                <Link onClick={handleClick} className="text-[19px] ">
                   Group Tours
                 </Link>
               </li>
               <li>
-                <Link onClick={handleClick} className="text-[19px] font-bold">
+                <Link onClick={handleClick} className="text-[19px] ">
                   Destination Weddings
                 </Link>
               </li>
@@ -137,14 +137,14 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to="/" className="text-[19px] font-bold hover:underline">
+              <Link to="/" className="text-[19px]  hover:underline">
                 Home
               </Link>
             </li>
             <li>
               <Link
                 to="/International"
-                className="text-[19px] font-bold hover:underline"
+                className="text-[19px]  hover:underline"
               >
                 International
               </Link>
@@ -152,23 +152,23 @@ const Navbar = () => {
             <li>
               <Link
                 to="/Domestic"
-                className="text-[19px] font-bold hover:underline"
+                className="text-[19px]  hover:underline"
               >
                 Domestic
               </Link>
             </li>
             <li onClick={handleClick}>
-              <Link className="text-[19px] font-bold hover:underline">
+              <Link className="text-[19px]  hover:underline">
                 Exclusive
               </Link>
             </li>
             <li onClick={handleClick}>
-              <Link className="text-[19px] font-bold hover:underline">
+              <Link className="text-[19px]  hover:underline">
                 Group Tours
               </Link>
             </li>
             <li onClick={handleClick}>
-              <Link className="text-[19px] font-bold hover:underline">
+              <Link className="text-[19px]  hover:underline">
                 Destination Weddings
               </Link>
             </li>

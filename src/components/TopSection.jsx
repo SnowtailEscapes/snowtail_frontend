@@ -9,7 +9,7 @@ const VisaFree = React.lazy(() => import("./Cards/VisaFree"));
 const Escapes = React.lazy(() => import("./Escapes"));
 const InfiniteScrolling = React.lazy(() => import("./InfiniteScrolling"));
 const SearchBox = React.lazy(() => import("../getApi/searchBox"));
-import Loading from "./loading";
+// import Loading from "./loading";
 
 export default function TopSection() {
   return (
