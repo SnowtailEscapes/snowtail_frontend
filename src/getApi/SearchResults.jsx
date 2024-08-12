@@ -3,8 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
-import { useDispatch } from "react-redux";
-import { fetchCurrencyRates } from "../redux/slice/currencySlice";
+// import { useDispatch } from "react-redux";
+// import { fetchCurrencyRates } from "../redux/slice/currencySlice";
 import percent from "../assets/percent.png";
 
 
@@ -13,7 +13,7 @@ const SearchResults = () => {
 
   const [showContactForm, setShowContactForm] = useState(false);
   const [hover, setHover] = useState(false);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const toggleContactForm = () => {
     setShowContactForm(!showContactForm);
@@ -23,9 +23,9 @@ const SearchResults = () => {
     setHover(!hover);
   };
 
-  useEffect(() => {
-    dispatch(fetchCurrencyRates());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(fetchCurrencyRates());
+  // }, [dispatch]);
 
   // const numericRating = parseFloat(rating);
 
@@ -96,16 +96,18 @@ const SearchResults = () => {
                       <div className="flex flex-row justify-between items-center">
                         {item?.cut_price && (
                           <h4 className="text-[13px] cut font-ligh2 flex">
-                            <CurrencyConverter price={Number(item?.cut_price)} />
+                            {/* <CurrencyConverter price={Number(item?.cut_price)} /> */}
+                            {Number(item?.cut_price)}
                             /per
                           </h4>
                         )}
                         {item.prices && (
                           <h4 className="text-base text-main-brand font-bold font-light2 flex">
-                            <CurrencyConverter
+                            {/* <CurrencyConverter
                               price={Number(item?.prices.three_star)}
-                            />
-                            <span className="text-base text-main-brand font-normal">
+                            /> */}
+                            <span className="text-base text-main-brand font-bold">
+                            {Number(item?.prices.three_star)}
                               /per
                             </span>
                           </h4>
