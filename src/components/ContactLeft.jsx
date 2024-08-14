@@ -26,7 +26,7 @@ export const ContactLeft = ({onClose}) => {
                 </div>
                 <div className="flex flex-col items-center gap-1">
                   <img src={guide} width={20} alt="Visa Success" />
-                  <p className="font-bold text-black">Best Groun Assistance</p>
+                  <p className="font-bold text-black">Best Ground Assistance</p>
                 </div>
                 <div className="flex flex-col items-center gap-1">
                   <img src={time} width={30} alt="Coverage" />

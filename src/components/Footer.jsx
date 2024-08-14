@@ -35,7 +35,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="w-full md:w-1/2 p-4 items-center">
-            <img
+            <svg
               loading="lazy"
               className="rounded-lg object-cover w-full h-full"
               src="https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Small/wtjljprxslnhkbi4mvnt"
