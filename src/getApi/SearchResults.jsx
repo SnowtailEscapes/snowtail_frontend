@@ -39,7 +39,7 @@ const SearchResults = () => {
   return (
     <>
       <Navbar />
-      <div className="mb-10 md:mt-32">
+      <div className="mb-10 mt-32">
         {itineraries.length > 0 ? (
           <h1 className="text-2xl font-bold mb-6 text-center boston">
             Packages
