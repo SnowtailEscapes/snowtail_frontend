@@ -1,4 +1,6 @@
 .footer-logo{
-    background-color: #212121 !important;
     mask-image: url('../../public/logo/30.svg');
+}
+.footer{
+    width: 100vw !important;
 }

@@ -219,7 +219,7 @@ const countryCodes = [
 
 const customStyles = {
   content: {
-    top: "60%",
+    top: "57%",
     left: "50%",
     right: "auto",
     bottom: "auto",
@@ -251,7 +251,6 @@ const customStyles = {
     padding: "0",
   },
 };
-
 // Function to get the correct style based on the window width
 const getStyles = () => {
   const isMobile = window.innerWidth <= 768;

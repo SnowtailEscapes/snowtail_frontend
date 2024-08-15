@@ -1,54 +1,52 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { Link, useNavigation } from "react-router-dom";
-import a from "../../styles/International.module.css";
-// import { useDispatch } from "react-redux";
-// import { fetchCurrencyRates } from "../../redux/slice/currencySlice";
+import { Link, useLocation, useNavigation } from "react-router-dom";
+import "../../styles/International.css";
 import phone from "../../assets/phone.webp";
 import Contact from "../Contact";
 
 
 const International = ({ to, title, location, price, duration, image }) => {
-  // const dispatch = useDispatch();
+  const loc = useLocation();
+  const isInternational = loc.pathname === "/International";
+  const isDomestic = loc.pathname === "/Domestic";
   const [showContactForm, setShowContactForm] = useState(false);
-  // const [hover, setHover] = useState(false);
 
-
-  // useEffect(() => {
-  //   dispatch(fetchCurrencyRates());
-  // }, [dispatch]);
 
   const toggleContactForm = () => {
     setShowContactForm(!showContactForm);
   };
 
-  // const hoverHo = () => {
-  //   setHover(!hover);
-  // };
-
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center w-full">
       <div
-        className={`${a.cardContainer} rounded-xl overflow-hidden`}
+        className="cardContainer rounded-xl overflow-hidden"
       >
-        <figure className={`${a.imageContainer}`}>
+        <figure className="imageContainer">
           <Link to={to}>
             <img
               src={image}
               loading="lazy"
               alt="image"
-              className={`${a.img} h-full cover rounded-xl`}
+              className="img w-full h-full cover rounded-xl"
             />
           </Link>
         </figure>
-        <div className={`flex flex-col justify-between ${a.textContainer}`}>
+        <div className="flex flex-col justify-between textContainer">
           <ul className="flex text-xs text-green-500 justify-between mb-2">
-            <li className={`${a.disc} font-[14px] text-main-brand`}>{duration}</li>
-            <li className={`${a.disc} font-[14px] text-main-brand`}>International Tour</li>
+            <li className="disc font-[14px] text-main-brand">{duration}</li>
+            <li className="disc font-[14px] text-main-brand">
+              {isDomestic && <>Domestic Tours</>}
+              {isInternational && <>International Tours</>}
+            </li>
           </ul>
           <div>
             <h2 className="text-[28px] font-semibold text-dark-accent mb-2 font-arimo">
-              {location}
+              {
+                location && <>
+                  {location}
+                </>
+              }
             </h2>
             <p className="text-black1 mb-2 font-ligh2 text-[20px] ">
               {title}
@@ -72,15 +70,13 @@ const International = ({ to, title, location, price, duration, image }) => {
           </div>
           <div className="flex flex-row gap-3">
             <button
-              className="btn btn-outline border-main-brand border-2"
-              style={{ width: "18%" }}
+              className="btn btn-outline border-main-brand border-2 phone"
               onClick={toggleContactForm}
             >
               <img src={phone} width={40} alt="Phone" loading="lazy" />
             </button>
             <button
-              className="btn bg-main-brand rounded-md text-white text-[15px] font-bold"
-              style={{ width: "78%" }}
+              className="btn bg-main-brand rounded-md text-white text-[15px] font-bold request"
               onClick={toggleContactForm}
             >
               Request Callback

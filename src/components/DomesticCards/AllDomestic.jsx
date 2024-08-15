@@ -1,7 +1,6 @@
-import { Suspense, lazy } from "react";
-import International from "./DomesticCards";
-const LazyComponent = lazy(() => import("../Navbar"));
-import a from "../../styles/International.module.css";
+
+import International from "../InternationalCards/International";
+import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
 import Footer from "../Footer";
 
@@ -15,13 +14,9 @@ export default function AllInternational() {
           content="Locations , places for you Inside India to travel along with anyone"
         />
       </Helmet>
-      <div>
-        <Suspense fallback={<div>Loading...</div>}>
-          <LazyComponent />
-        </Suspense>
-      </div>
-      <div className="flex justify-center">
-        <div className="mt-20 md:mt-28 p-5">
+      <Navbar />
+      <div className="flex justify-right md:justify-center">
+        <div className="mt-20 md:mt-28 md:p-5">
           <h1 className="text-[26px] md:text-3xl march font-semibold text-nowrap text-center mb-4">
             Domestic Tour Adventures
           </h1>
@@ -167,7 +162,7 @@ export default function AllInternational() {
           />
         </div>
       </div>
-      <Footer />
+      {/* <Footer/> */}
     </>
   );
 }

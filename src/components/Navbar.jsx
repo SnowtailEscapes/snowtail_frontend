@@ -1,15 +1,16 @@
-import logo from "../../public/NewLogos/2.svg";
-import logoMobile from "../../public/NewLogos/2.svg";
+import React, { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import Countdown from "./Countdown";
-import { useEffect, useState } from "react";
-// import CurrencyDropdown from "../getApi/CurrencyDropdown";
+import logo from "../../public/NewLogos/2.svg";
 import "../styles/navbar.css";
+
 const Navbar = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
+  const isInternational = location.pathname === "/International";
+  const isDomestic = location.pathname === "/Domestic";
+
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -18,16 +19,11 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
   const handleClick = (e) => {
     e.preventDefault();
     toast.info("Coming Soon!", {
       position: "top-center",
-      autoClose: 13,
+      autoClose: 1300, // 1.3 seconds
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -35,52 +31,28 @@ const Navbar = () => {
       progress: undefined,
       theme: "light",
     });
-    e.preventDefault();
   };
+
+  const logoSize = width > 780 ? 150 : 100;
+
   return (
     <>
-      {/* <div className="w-full grid grid-cols-12 z-10  bg-main-brand items-center text-white md:h-8 justify-center">
-        <p className="text-center md:text-md text-sm md:col-span-6 col-span-12">
-          <span className="">Monsoon Sale</span> up to{" "}
-          <span className="">40% OFF</span> on your trip
-        </p>
-
-        {width >= 737 && (
-          <>
-          <div className="divider divider-horizontal divider-warning"></div>
-            <div className="col-span-5">
-              <Countdown duration={3 * 24 * 60 * 60 * 1000} />
-            </div>
-          </>
-        )}
-
-        <img src={stick} width={90} height={90} className="moving-div" alt="moving-div"/>
-      </div> */}
-
       <div
-        className={`navbar-fixed navbar text-white ${width > 780 ? 'bg-main-brand' : 'bg-none'}   ${isHomePage ? 'bg-main-brand' : 'bg-main-brand'}`}
-
+        className={`navbar-fixed navbar text-white ${
+          width > 780 ? "bg-main-brand" : "bg-none"
+        } bg-main-brand`}
       >
-        <div className="navbar-start lg:navbar-start flex gap-5">
+        <div className="navbar-start flex gap-5">
           <Link to="/">
-            {
-              width > 780 ? <>
-                <img src={logo} width={150} height={150} alt="logo" />
-              </> :
-                <>
-                  <img src={logoMobile} width={100} height={100} alt='logo' />
-                </>
-            }
+            <img src={logo} width={logoSize} height={logoSize} alt="logo" />
           </Link>
-          {/* {!isHomePage && (
-            <>
-              <CurrencyDropdown />
-            </>
-          )} */}
+          {/* Uncomment the CurrencyDropdown if needed */}
+          {/* {!isHomePage && <CurrencyDropdown />} */}
         </div>
+
         <div className="navbar-end lg:hidden z-10">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost">
+            <button className="btn btn-ghost" aria-label="Menu">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -95,38 +67,35 @@ const Navbar = () => {
                   d="M4 6h16M4 12h8m-8 6h16"
                 />
               </svg>
-            </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black dropdown-left"
-            >
+            </button>
+            <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black dropdown-left">
               <li>
-                <Link to="/" className="text-[19px] ">
+                <Link to="/" className="text-[19px]">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/International" className="text-[19px] ">
+                <Link to="/International" className="text-[19px]">
                   International
                 </Link>
               </li>
               <li>
-                <Link to="/Domestic" className="text-[19px] ">
+                <Link to="/Domestic" className="text-[19px]">
                   Domestic
                 </Link>
               </li>
               <li>
-                <Link onClick={handleClick} className="text-[19px] ">
+                <Link onClick={handleClick} className="text-[19px]">
                   Exclusive
                 </Link>
               </li>
               <li>
-                <Link onClick={handleClick} className="text-[19px] ">
+                <Link onClick={handleClick} className="text-[19px]">
                   Group Tours
                 </Link>
               </li>
               <li>
-                <Link onClick={handleClick} className="text-[19px] ">
+                <Link onClick={handleClick} className="text-[19px]">
                   Destination Weddings
                 </Link>
               </li>
@@ -137,14 +106,19 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to="/" className="text-[19px]  hover:underline">
+              <Link
+                to="/"
+                className={`text-[19px] ${isHomePage ? "underline" : "hover:underline"}`}
+              >
                 Home
               </Link>
             </li>
             <li>
               <Link
                 to="/International"
-                className="text-[19px]  hover:underline"
+                className={`text-[19px] ${
+                  isInternational ? "underline" : "hover:underline"
+                }`}
               >
                 International
               </Link>
@@ -152,32 +126,31 @@ const Navbar = () => {
             <li>
               <Link
                 to="/Domestic"
-                className="text-[19px]  hover:underline"
+                className={`text-[19px] ${
+                  isDomestic ? "underline" : "hover:underline"
+                }`}
               >
                 Domestic
               </Link>
             </li>
             <li onClick={handleClick}>
-              <Link className="text-[19px]  hover:underline">
-                Exclusive
-              </Link>
+              <Link className="text-[19px] hover:underline">Exclusive</Link>
             </li>
             <li onClick={handleClick}>
-              <Link className="text-[19px]  hover:underline">
-                Group Tours
-              </Link>
+              <Link className="text-[19px] hover:underline">Group Tours</Link>
             </li>
             <li onClick={handleClick}>
-              <Link className="text-[19px]  hover:underline">
+              <Link className="text-[19px] hover:underline">
                 Destination Weddings
               </Link>
             </li>
           </ul>
         </div>
       </div>
+
       <ToastContainer
         position="top-center"
-        autoClose={13}
+        autoClose={1300} // 1.3 seconds
         hideProgressBar={false}
         newestOnTop
         closeOnClick

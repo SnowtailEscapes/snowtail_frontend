@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import Logo from "../assets/newLogo.webp";
+import Logo from "../../public/logo/30.svg";
 import "../styles/about.css";
 
 export default function About() {

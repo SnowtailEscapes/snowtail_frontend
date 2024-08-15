@@ -254,7 +254,6 @@ const customStyles = {
     padding: "0",
   },
 };
-
 // Function to get the correct style based on the window width
 const getStyles = () => {
   const isMobile = window.innerWidth <= 768;

@@ -125,7 +125,6 @@ export default function Domestic() {
                     Name={card.Name}
                     key={index}
                   />
-                
               ))}
           </div>
         </>

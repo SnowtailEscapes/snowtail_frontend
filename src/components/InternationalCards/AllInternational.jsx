@@ -1,9 +1,31 @@
-import { Suspense, lazy } from "react";
 import International from "./International";
-const LazyComponent = lazy(() => import("../Navbar"));
-import a from "../../styles/International.module.css";
+import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
 import Footer from "../Footer";
+import philipenes from "../../../public/images/card/philipenes.webp"
+import japan2 from "../../../public/images/card/japan2.webp";
+import japan from "../../../public/images/card/japan1.webp";
+import australia from "../../../public/images/card/australia.webp";
+import almaty from "../../../public/images/card/almaty.webp";
+import bali from "../../../public/images/card/bali2.webp";
+import bali2 from "../../../public/images/card/Bali7n8ds.webp";
+import dubai from "../../../public/images/card/Dubai3n4dS.webp";
+import dubai2 from "../../../public/images/card/Dubai5n6dS.webp";
+import france from "../../../public/images/card/France.webp";
+import greece from "../../../public/images/card/greece.webp";
+import lanka from "../../../public/images/card/lanka.webp";
+import malaysia from "../../../public/images/card/Malaysia.webp";
+import nepal from "../../../public/images/card/nepal.webp";
+import singapore from "../../../public/images/card/singapore4n5ds.webp";
+import singapore2 from "../../../public/images/card/SMs.webp";
+import singapore3 from "../../../public/images/card/singapore6n7ds.webp";
+import swit from "../../../public/images/card/swit.webp";
+import thailand1 from "../../../public/images/card/thailand4n5dS.webp";
+import thailand2 from "../../../public/images/card/thailand5n6ds.webp";
+import thailand3 from "../../../public/images/card/thailand8n9ds.webp";
+import vietnam from "../../../public/images/card/vietnam4n5ds.webp";
+import vietnam2 from "../../../public/images/card/vietnam6n7ds.webp";
+import vietnam3 from "../../../public/images/card/vietnam9n10ds.webp";
 
 export default function AllInternational() {
   return (
@@ -15,13 +37,9 @@ export default function AllInternational() {
           content="Locations , places for you outside India to travel along with anyone"
         />
       </Helmet>
-      <div>
-        <Suspense fallback={<div>Loading...</div>}>
-          <LazyComponent />
-        </Suspense>
-      </div>
-      <div className="flex justify-center">
-        <div className="mt-20 md:mt-28 p-5">
+      <Navbar />
+      <div className="flex justify-right md:justify-center">
+        <div className="mt-20 md:mt-28 md:p-5">
           <h1 className="text-[26px] md:text-3xl march font-semibold text-nowrap text-center mb-4">
             International Tour Adventures
           </h1>
@@ -32,7 +50,7 @@ export default function AllInternational() {
             price={19699}
             location="PATTAYA & BANGKOK"
             duration="4 nights 5 days tour"
-            image="https://snowtailescapes.com/images/card/thailand4n5dS.webp"
+            image={thailand3}
           />
 
           <International
@@ -41,7 +59,7 @@ export default function AllInternational() {
             price={29699}
             location="PHUKET & KRABI"
             duration="5 nights 6 days tour"
-            image="https://snowtailescapes.com/images/card/thailand5n6ds.webp"
+            image={thailand2}
           />
 
           <International
@@ -50,7 +68,7 @@ export default function AllInternational() {
             price={59099}
             location="PHUKET/KRABI/PATTAYA/BANGKOK"
             duration="8 nights 9 days tour"
-            image="https://snowtailescapes.com/images/card/thailand8n9ds.webp"
+            image={thailand1}
           />
 
           <International
@@ -59,7 +77,7 @@ export default function AllInternational() {
             price={54699}
             location="BALI"
             duration="7 nights 8 days tour"
-            image="https://snowtailescapes.com/images/card/Bali7n8ds.webp"
+            image={bali}
           />
           <International
             to="/Bali6d5n"
@@ -67,7 +85,7 @@ export default function AllInternational() {
             price={34699}
             location="BALI"
             duration="5 nights 6 days tour"
-            image="https://snowtailescapes.com/images/card/bali2.webp"
+            image={bali2}
           />
 
           <International
@@ -76,7 +94,7 @@ export default function AllInternational() {
             price={37699}
             location="VIETNAM"
             duration="4 nights 5 days tour"
-            image="https://snowtailescapes.com/images/card/vietnam4n5ds.webp"
+            image={vietnam}
           />
 
           <International
@@ -85,7 +103,7 @@ export default function AllInternational() {
             price={57699}
             location="VIETNAM"
             duration="6 nights 7 days tour"
-            image="https://snowtailescapes.com/images/card/vietnam6n7ds.webp"
+            image={vietnam2}
           />
           <International
             to="/Vietnam9n10d"
@@ -93,7 +111,7 @@ export default function AllInternational() {
             price={89699}
             location="VIETNAM"
             duration="9 nights 10 days tour"
-            image="https://snowtailescapes.com/images/card/vietnam9n10ds.webp"
+            image={vietnam3}
           />
           <International
             to="/Singapore4n5d"
@@ -101,7 +119,7 @@ export default function AllInternational() {
             price={44699}
             location="SINGAPORE"
             duration="4 nights 5 days tour"
-            image="https://snowtailescapes.com/images/card/singapore4n5ds.webp"
+            image={singapore}
           />
           <International
             to="/Singapore6n7d"
@@ -109,7 +127,7 @@ export default function AllInternational() {
             price={59699}
             location="SINGAPORE"
             duration="6 nights 7 days tour"
-            image="https://snowtailescapes.com/images/card/singapore6n7ds.webp"
+            image={singapore2}
           />
           <International
             to="/Singapore_Malaysia"
@@ -117,7 +135,7 @@ export default function AllInternational() {
             price={56999}
             location="SINGAPORE & MALAYSIA"
             duration="6 nights 7 days tour"
-            image="https://snowtailescapes.com/images/card/SMs.webp"
+            image={singapore3}
           />
           <International
             to="/Malaysia"
@@ -125,7 +143,7 @@ export default function AllInternational() {
             price={33999}
             location="MALAYSIA"
             duration="6 nights 7 days tour"
-            image="https://snowtailescapes.com/images/card/Malaysia.webp"
+            image={malaysia}
           />
           <International
             to="/Switzerland5n6d"
@@ -133,7 +151,7 @@ export default function AllInternational() {
             duration="5 nights 6 days tour"
             price={97999}
             location="SWITZERLAND"
-            image="https://snowtailescapes.com/images/card/swit.webp"
+            image={swit}
           />
           <International
             to="/France-Italy"
@@ -141,7 +159,7 @@ export default function AllInternational() {
             price={85699}
             location="FRANCE & ITALY"
             duration="4 nights 5 days tour"
-            image="https://snowtailescapes.com/images/card/France.webp"
+            image={france}
           />
           <International
             to="/Greece7n8d"
@@ -149,7 +167,7 @@ export default function AllInternational() {
             location="GREECE"
             price={139699}
             duration="7 nights 8 days tour"
-            image="https://snowtailescapes.com/images/card/greece.webp"
+            image={greece}
           />
           <International
             to="/SriLanka6n7d"
@@ -157,7 +175,7 @@ export default function AllInternational() {
             duration="6 nights 7 days tour"
             price={38699}
             location="SRI LANKA"
-            image="https://snowtailescapes.com/images/card/lanka.webp"
+            image={lanka}
           />
           <International
             to="/Dubai3n4d"
@@ -165,7 +183,7 @@ export default function AllInternational() {
             location="DUBAI"
             price={25899}
             duration="3 nights 4 days tour"
-            image="https://snowtailescapes.com/images/card/Dubai3n4dS.webp"
+            image={dubai}
           />
           <International
             to="/Dubai5n6d"
@@ -173,25 +191,27 @@ export default function AllInternational() {
             location="DUBAI"
             price={58899}
             duration="5 nights 6 days tour"
-            image="https://snowtailescapes.com/images/card/Dubai5n6dS.webp"
+            image={dubai2}
           />
 
           <International
-            title="Nepal"
+            title="Himalayan Majesty"
             duration="3 nights 4 days tour"
             price={54699}
             direct="/Nepal"
-            image="https://snowtailescapes.com/images/card/nepal.webp"
+            location="Nepal"
+            image={nepal}
             to="/Nepal"
           />
 
           <International
-            title="Almaty |  Heart in Mountains "
+            title="Central Asian Gem"
             duration="9 Days and 8 Nights"
             to="/Almaty"
+            location="Almaty"
             price={59099}
             direct="/Almaty"
-            image="https://snowtailescapes.com/images/card/almaty.webp"
+            image={almaty}
           />
 
           <International
@@ -200,7 +220,7 @@ export default function AllInternational() {
             price={88980}
             location="Sydney"
             duration="7 nights 6 days tour"
-            image="https://snowtailescapes.com/images/card/australia.webp"
+            image={australia}
           />
 
           <International
@@ -209,7 +229,7 @@ export default function AllInternational() {
             price={99999}
             location="Kyoto"
             duration="9 nights 10 days tour"
-            image="https://snowtailescapes.com/images/card/japan1.webp"
+            image={japan}
           />
 
           <International
@@ -218,7 +238,7 @@ export default function AllInternational() {
             price={99999}
             location="Kyoto"
             duration="5 nights 6 days tour"
-            image="https://snowtailescapes.com/images/card/japan2.webp"
+            image={japan2}
           />
 
           <International
@@ -227,11 +247,11 @@ export default function AllInternational() {
             price={99999}
             location="Manila"
             duration="7 nights 8 days tour"
-            image="https://snowtailescapes.com/images/card/philipenes.webp"
+            image={philipenes}
           />
         </div>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 }
