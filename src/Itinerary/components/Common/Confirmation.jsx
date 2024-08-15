@@ -23,7 +23,7 @@ export default function Confirmation() {
 
       {isOpen && (
         <div>
-          <p>
+          <p className="text-[18px]">
             To finalize your trip, complete payment must be received before the
             date of the journey. The initial booking amount should be paid in
             advance according to the following terms:
@@ -49,7 +49,7 @@ export default function Confirmation() {
             </li>
           </ul>
 
-          <p className="text-main-brand mt-4">
+          <p className="text-main-brand mt-4 text-[18px]">
             PLEASE NOTE: FOR CUSTOMIZED AND HOTEL-SPECIFIC TOURS, CONNECT WITH
             YOUR POC TO GET EXACT CANCELLATION/RESCHEDULING CHARGES.
           </p>

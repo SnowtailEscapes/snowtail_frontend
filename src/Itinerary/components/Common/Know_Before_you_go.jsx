@@ -19,7 +19,7 @@ export default function KnowBeforeYouGo() {
   return (
     <>
       <div
-        className="text-[18px] leading-[25.5px] bg-[rgb(255,255,255)] p-5 mt-8 rounded-lg shadow-[0_-4px_-5px_14px_rgba(0,0,0,0.08),0_5px_8px_16px_rgba(0,0,0,0.08)] flex flex-col gap-5"
+        className="text-[18px] leading-[25.5px] bg-[rgb(255,255,255)] p-5 mt-8 rounded-lg shadow-[0_-4px_-5px_14px_rgba(0,0,0,0.08),0_5px_8px_16px_rgba(0,0,0,0.08)] flex flex-col gap-5 "
        
       >
         <div
@@ -95,7 +95,7 @@ export default function KnowBeforeYouGo() {
               </li>
             </ul>
 
-            <p className="text-main-brand mt-4">
+            <p className="text-main-brand mt-4 text-[18px]">
             Enjoy your journey with SNOWTAIL ESCAPES!
             </p>
           </div>

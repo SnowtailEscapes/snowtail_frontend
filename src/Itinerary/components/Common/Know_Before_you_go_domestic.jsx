@@ -64,7 +64,7 @@ export default function KnowBeforeYouGoDomestic() {
               </li>
             </ul>
 
-            <p className="text-main-brand mt-4">
+            <p className="text-main-brand mt-4 text-[18px]">
               Enjoy your journey with SNOWTAIL ESCAPES!
             </p>
           </div>

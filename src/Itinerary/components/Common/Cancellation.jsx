@@ -32,12 +32,12 @@ export default function Cancellation() {
 
         {isOpen && (
           <div>
-            <p className="mb-5 text-main-brand text-md">
+            <p className="mb-5 text-main-brand text-md text-[18px]">
               NO REFUND SHALL BE MADE WITH RESPECT TO THE INITIAL BOOKING AMOUNT FOR
               ANY CANCELLATIONS.
             </p>
 
-            <ul className="list-none flex flex-col gap-5">
+            <ul className="list-none flex flex-col gap-5 text-[18px]">
               <li className="flex gap-4 text-[18px] leading-[25.5px] list-disc">
                 <img src={dot} width={30} alt="dot" />
                 If cancellations are made 30 days before the start date of the trip,
@@ -77,7 +77,7 @@ export default function Cancellation() {
               </li>
             </ul>
 
-            <p className="text-main-brand mt-4">
+            <p className="text-main-brand mt-4 text-[18px]">
               PLEASE NOTE: FOR CUSTOMISED AND INTERNATIONAL TRIPS, CONNECT WITH POC
               IN ORDER TO GET EXACT CANCELLATION / RESCHEDULING CHARGES.
             </p>
