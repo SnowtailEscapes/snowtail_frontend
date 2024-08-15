@@ -17,6 +17,8 @@ const ScrollToTopButton = lazy(() =>
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage.jsx";
 import { Helmet } from "react-helmet";
+import large from "../../public/images/Large/bali7n8d.webp";
+import small from "../../public/images/card/Bali7n8ds.webp"
 
 export default function Bali6d5n() {
   useEffect(() => {
@@ -41,7 +43,7 @@ export default function Bali6d5n() {
 
       <Suspense fallback={<div>Loading...</div>}>
         <section className={`${a.section} ${a.Bali7n8d}`} data-aos="zoom-in">
-          <ItineraryImage small='https://snowtailescapes.com/images/card/Bali7n8ds.webp' large='https://snowtailescapes.com/images/Large/bali7n8d.webp' />
+          <ItineraryImage small={small} large={large} />
           <Navbar />
         </section>
         <Tourmain />

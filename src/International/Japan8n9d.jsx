@@ -16,6 +16,8 @@ const ScrollToTopButton = lazy(() =>
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage.jsx";
 import { Helmet } from "react-helmet";
+import large from "../../public/images/Large/japan1.webp";
+import small from "../../public/images/card/japan1.webp";
 
 export default function Japan() {
   useEffect(() => {
@@ -45,7 +47,7 @@ export default function Japan() {
           data-aos="zoom-in"
         >
           <Navbar />
-          <ItineraryImage small='https://snowtailescapes.com/images/card/japan1.webp' large='https://snowtailescapes.com/images/Large/japan1.webp' />
+          <ItineraryImage small={small} large={large} />
         </section>
         <Tourmain />
         <Contact2 />

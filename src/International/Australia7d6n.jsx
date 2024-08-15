@@ -16,6 +16,8 @@ const ScrollToTopButton = lazy(() =>
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
+import large from "../../public/images/Large/australia.webp";
+import small from "../../public/images/card/australia.webp"
 
 export default function Australia() {
   useEffect(() => {
@@ -41,8 +43,8 @@ export default function Australia() {
       <Suspense fallback={<div>Loading...</div>}>
         <section className={a.section} data-aos="zoom-in">
           <ItineraryImage
-            small="https://snowtailescapes.com/images/card/australia.webp"
-            large="https://snowtailescapes.com/images/Large/australia.webp"
+            small={small}
+            large={large}
           />
           <Navbar />
         </section>

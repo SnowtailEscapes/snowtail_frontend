@@ -15,7 +15,8 @@ const ScrollToTopButton = lazy(() =>
 );
 
 // Import images
-import Large from "../assets/LargeImages/almaty.avif";
+import large from "../../public/images/Large/almaty.webp";
+import small from "../../public/images/card/almaty.webp"
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
@@ -44,7 +45,7 @@ export default function Almaty() {
 
       <Suspense fallback={<div>Loading...</div>}>
         <section className={a.section} data-aos="zoom-in">
-          <ItineraryImage small='https://snowtailescapes.com/images/card/almaty.webp' large="https://snowtailescapes.com/images/Large/almaty.webp" />
+          <ItineraryImage small={small} large={large} />
           <Navbar />
         </section>
         <Tourmain />

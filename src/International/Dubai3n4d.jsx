@@ -9,7 +9,8 @@ const Tourmain = lazy(() => import("../Itinerary/components/Tourmain/Dubai3n4d")
 const Contact2 = lazy(() => import("../components/Contact2"));
 const Footer = lazy(() => import("../components/Footer"));
 const ScrollToTopButton = lazy(() => import("../Itinerary/components/ScrollToTop"));
-
+import large from "../../public/images/Large/dubai1.webp";
+import small from "../../public/images/card/Dubai3n4dS.webp";
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
@@ -38,7 +39,7 @@ export default function Bali6d5n() {
       <Suspense fallback={<div>Loading...</div>}>
         <Navbar />
         <section className={`${a.section} ${a.Dubai3n4d}`} data-aos="zoom-in">
-        <ItineraryImage small='https://snowtailescapes.com/images/card/Dubai3n4dS.webp' large='https://snowtailescapes.com/images/Large/dubai1.webp' />
+        <ItineraryImage small={small} large={large} />
         </section>
         <Tourmain />
         <Contact2 />

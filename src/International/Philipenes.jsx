@@ -13,6 +13,8 @@ const Footer = lazy(() => import("../components/Footer"));
 const ScrollToTopButton = lazy(() =>
     import("../Itinerary/components/ScrollToTop")
 );
+import large from "../../public/images/Large/philipenes.webp";
+import small from "../../public/images/card/philipenes.webp";
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
@@ -45,7 +47,7 @@ export default function Philipenes() {
                     data-aos="zoom-in"
                 >
                     <Navbar />
-                    <ItineraryImage small='https://snowtailescapes.com/images/card/philipenes.webp' large='https://snowtailescapes.com/images/Large/philipenes.webp' />
+                    <ItineraryImage small={small} large={large} />
                 </section>
                 <Tourmain />
                 <Contact2 />

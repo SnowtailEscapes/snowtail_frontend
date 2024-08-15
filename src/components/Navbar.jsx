@@ -4,6 +4,12 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import logo from "../../public/NewLogos/2.svg";
 import "../styles/navbar.css";
+import home from '../assets/home.png';
+import home2 from '../assets/home2.png';
+import international from '../assets/international.png';
+import international2 from '../assets/international2.png';
+import domestic2 from "../assets/domestic2.png";
+
 
 const Navbar = () => {
   const location = useLocation();
@@ -38,9 +44,8 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`navbar-fixed navbar text-white ${
-          width > 780 ? "bg-main-brand" : "bg-none"
-        } bg-main-brand`}
+        className={`navbar-fixed navbar text-white ${width > 780 ? "bg-main-brand" : "bg-none"
+          } bg-main-brand`}
       >
         <div className="navbar-start flex gap-5">
           <Link to="/">
@@ -71,16 +76,19 @@ const Navbar = () => {
             <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black dropdown-left">
               <li>
                 <Link to="/" className="text-[19px]">
+                <img src={home2} width={20}/>
                   Home
                 </Link>
               </li>
               <li>
                 <Link to="/International" className="text-[19px]">
+                <img src={international2} width={20}/>
                   International
                 </Link>
               </li>
               <li>
                 <Link to="/Domestic" className="text-[19px]">
+                <img src={domestic2} width={20}/>
                   Domestic
                 </Link>
               </li>
@@ -108,27 +116,26 @@ const Navbar = () => {
             <li>
               <Link
                 to="/"
-                className={`text-[19px] ${isHomePage ? "underline" : "hover:underline"}`}
+                className={`text-[19px]`}
               >
+               {/* <img src={home} width={20}/> */}
                 Home
               </Link>
             </li>
             <li>
               <Link
                 to="/International"
-                className={`text-[19px] ${
-                  isInternational ? "underline" : "hover:underline"
-                }`}
+                className={`text-[19px]`}
               >
+                {/* <img src={international} width={20}/> */}
                 International
               </Link>
             </li>
             <li>
               <Link
                 to="/Domestic"
-                className={`text-[19px] ${
-                  isDomestic ? "underline" : "hover:underline"
-                }`}
+                className={`text-[19px] ${isDomestic ? "underline" : "hover:underline"
+                  }`}
               >
                 Domestic
               </Link>

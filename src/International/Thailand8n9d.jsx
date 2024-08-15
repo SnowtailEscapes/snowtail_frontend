@@ -14,7 +14,8 @@ const ScrollToTopButton = lazy(() =>
   import("../Itinerary/components/ScrollToTop")
 );
 
-
+import large from "../../public/images/Large/thailand4n5d.webp";
+import small from "../../public/images/card/thailand8n9ds.webp";
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
 
@@ -45,7 +46,7 @@ export default function Thailand8n9d() {
           data-aos="zoom-in"
         >
           <Navbar />
-          <ItineraryImage small='https://snowtailescapes.com/images/card/thailand8n9ds.webp' large='https://snowtailescapes.com/images/Large/thailand4n5d.webp' />
+          <ItineraryImage small={small} large={large} />
         </section>
         <Tourmain />
         <Contact2 />

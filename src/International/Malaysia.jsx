@@ -13,6 +13,8 @@ const Footer = lazy(() => import("../components/Footer"));
 const ScrollToTopButton = lazy(() =>
   import("../Itinerary/components/ScrollToTop")
 );
+import large from "../../public/images/Large/malaysia.webp";
+import small from "../../public/images/card/Malaysia.webp";
 
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
@@ -42,7 +44,7 @@ export default function Singapore6n7d() {
       <Suspense fallback={<div>Loading...</div>}>
         <Navbar />
         <section className={`${a.section} ${a.Malaysia}`} data-aos="zoom-in">
-          <ItineraryImage small='https://snowtailescapes.com/images/card/Malaysia.webp' large='https://snowtailescapes.com/images/Large/malaysia.webp' />
+          <ItineraryImage small={small} large={large} />
         </section>
         <Tourmain />
         <Contact2 />

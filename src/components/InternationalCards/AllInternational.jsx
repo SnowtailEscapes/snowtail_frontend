@@ -204,16 +204,7 @@ export default function AllInternational() {
             to="/Nepal"
           />
 
-          <International
-            title="Central Asian Gem"
-            duration="9 Days and 8 Nights"
-            to="/Almaty"
-            location="Almaty"
-            price={59099}
-            direct="/Almaty"
-            image={almaty}
-          />
-
+          
           <International
             to="/Australia7d6n"
             title="Best of Australia"
@@ -249,6 +240,17 @@ export default function AllInternational() {
             duration="7 nights 8 days tour"
             image={philipenes}
           />
+
+<International
+            title="Central Asian Gem"
+            duration="9 Days and 8 Nights"
+            to="/Almaty"
+            location="Almaty"
+            price={59099}
+            direct="/Almaty"
+            image={almaty}
+          />
+
         </div>
       </div>
       {/* <Footer/> */}

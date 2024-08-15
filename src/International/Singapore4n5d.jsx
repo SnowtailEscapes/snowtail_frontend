@@ -13,6 +13,8 @@ const ScrollToTopButton = lazy(() => import("../Itinerary/components/ScrollToTop
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
+import large from "../../public/images/Large/singapore.webp";
+import small from "../../public/images/card/singapore4n5ds.webp";
 
 export default function Singapore4n5d() {
   useEffect(() => {
@@ -39,7 +41,7 @@ export default function Singapore4n5d() {
       <Suspense fallback={<div>Loading...</div>}>
         <Navbar />
         <section className={`${a.section} ${a.Singapore4n5d}`} data-aos="zoom-in">
-        <ItineraryImage small='https://snowtailescapes.com/images/card/singapore4n5ds.webp' large='https://snowtailescapes.com/images/Large/singapore.webp' />
+        <ItineraryImage small={small} large={large} />
         </section>
         <Tourmain />
         <Contact2 />

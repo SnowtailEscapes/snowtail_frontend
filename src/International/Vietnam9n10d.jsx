@@ -13,6 +13,8 @@ const Footer = lazy(() => import("../components/Footer"));
 const ScrollToTopButton = lazy(() =>
   import("../Itinerary/components/ScrollToTop")
 );
+import large from "../../public/images/Large/vietnam3.webp";
+import small from "../../public/images/card/vietnam9n10ds.webp";
 
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage.jsx";
@@ -46,7 +48,7 @@ export default function Vietnam9n10d() {
         >
         
           <Navbar />
-          <ItineraryImage small='https://snowtailescapes.com/images/card/vietnam9n10ds.webp' large='https://snowtailescapes.com/images/Large/vietnam3.webp' />
+          <ItineraryImage small={small} large={large} />
         </section>
         <Tourmain />
         <Contact2 />

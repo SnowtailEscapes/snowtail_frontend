@@ -13,7 +13,8 @@ const ScrollToTopButton = lazy(() => import("../Itinerary/components/ScrollToTop
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
-
+import large from "../../public/images/Large/vietnam3.webp";
+import small from "../../public/images/card/vietnam4n5ds.webp";
 export default function Vietnam4n5d() {
   useEffect(() => {
     Aos.init({
@@ -38,7 +39,7 @@ export default function Vietnam4n5d() {
       <Suspense fallback={<div>Loading...</div>}>
         <section className={`${a.Vietnam4n5d} ${a.mobile} ${a.window}`} data-aos="zoom-in">
           <Navbar />
-          <ItineraryImage small='https://snowtailescapes.com/images/card/vietnam4n5ds.webp' large='https://snowtailescapes.com/images/Large/vietnam3.webp' />
+          <ItineraryImage small={small} large={large} />
         </section>
         <Tourmain />
         <Contact2 />

@@ -17,6 +17,9 @@ const ScrollToTopButton = lazy(() =>
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
 
+import large from "../../public/images/Large/lanka.webp";
+import small from "../../public/images/card/lanka.webp";
+
 export default function Singapore6n7d() {
   useEffect(() => {
     Aos.init({
@@ -44,7 +47,7 @@ export default function Singapore6n7d() {
           className={`${a.section} ${a.SriLanka} ${a.mobile} ${a.window}`}
           data-aos="zoom-in"
         >
-          <ItineraryImage small='https://snowtailescapes.com/images/card/lanka.webp' large='https://snowtailescapes.com/images/Large/lanka.webp' />
+          <ItineraryImage small={small} large={large} />
         </section>
         <Tourmain />
         <Contact2 />

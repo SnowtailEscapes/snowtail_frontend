@@ -17,6 +17,9 @@ const ScrollToTopButton = lazy(() =>
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
+import large from "../../public/images/Large/swit.webp";
+import small from "../../public/images/card/swit.webp";
+
 
 export default function Switzerland5n6d() {
   useEffect(() => {
@@ -46,8 +49,8 @@ export default function Switzerland5n6d() {
           data-aos="zoom-in"
         >
           <ItineraryImage
-            small='https://snowtailescapes.com/images/card/swit.webp'
-            large='https://snowtailescapes.com/images/Large/swit.webp'
+            small={small}
+            large={large}
           />
         </section>
         <Tourmain />

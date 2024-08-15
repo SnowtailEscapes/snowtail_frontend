@@ -13,7 +13,8 @@ const Footer = lazy(() => import("../components/Footer"));
 const ScrollToTopButton = lazy(() =>
   import("../Itinerary/components/ScrollToTop")
 );
-
+import large from "../../public/images/Large/SM.webp";
+import small from "../../public/images/card/SMs.webp";
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
@@ -42,7 +43,7 @@ export default function Singapore6n7d() {
       <Suspense fallback={<div>Loading...</div>}>
         <Navbar />
         <section className={`${a.section} ${a.SM}`} data-aos="zoom-in">
-          <ItineraryImage small='https://snowtailescapes.com/images/card/SMs.webp' large='https://snowtailescapes.com/images/Large/SM.webp' />
+          <ItineraryImage small={small} large={large} />
         </section>
         <Tourmain />
         <Contact2 />
