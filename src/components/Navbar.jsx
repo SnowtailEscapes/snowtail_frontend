@@ -116,7 +116,8 @@ const Navbar = () => {
             <li>
               <Link
                 to="/"
-                className={`text-[19px]`}
+                className={`text-[19px] ${isHomePage ? "underline" : "hover:underline"
+                  }`}
               >
                {/* <img src={home} width={20}/> */}
                 Home
@@ -125,7 +126,8 @@ const Navbar = () => {
             <li>
               <Link
                 to="/International"
-                className={`text-[19px]`}
+                className={`text-[19px] ${isInternational ? "underline" : "hover:underline"
+                  }`}
               >
                 {/* <img src={international} width={20}/> */}
                 International

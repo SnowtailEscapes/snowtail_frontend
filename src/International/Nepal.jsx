@@ -13,8 +13,8 @@ const Footer = lazy(() => import("../components/Footer"));
 const ScrollToTopButton = lazy(() =>
   import("../Itinerary/components/ScrollToTop")
 );
-import large from "../../public/images/Large/andaman.webp";
-import small from "../../public/images/card/andaman.webp";
+import large from "../../public/images/Large/nepal.webp";
+import small from "../../public/images/card/nepal.webp";
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import { Helmet } from "react-helmet";
