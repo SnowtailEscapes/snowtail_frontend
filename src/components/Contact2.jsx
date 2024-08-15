@@ -494,8 +494,8 @@ export default function Contact2() {
   );
 }
 
-Contact2.propTypes = {
-  isVisible: PropTypes.bool.isRequired,
-  onClose: PropTypes.func.isRequired,
-  accomodation: PropTypes.string.isRequired,
-};
+// Contact2.propTypes = {
+//   isVisible: PropTypes.bool.isRequired,
+//   onClose: PropTypes.func.isRequired,
+//   accomodation: PropTypes.string.isRequired,
+// };

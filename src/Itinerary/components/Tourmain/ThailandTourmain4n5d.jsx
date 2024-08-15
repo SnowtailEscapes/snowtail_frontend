@@ -10,18 +10,18 @@ const Tourmain = ({ itinerary }) => {
       <LeftThailand itinerary={itinerary} />
       <RightSide
         standard_cut={25699}
-        standard_current={`${itinerary.prices.three_star}`}
+        standard_current={19999}
         deluxe_cut={28999}
         super_deluxe_cut={33999}
-        deluxe_current={`${itinerary.prices.four_star}`}
-        super_deluxe_current={`${itinerary.prices.five_star}`}
+        deluxe_current={21999}
+        super_deluxe_current={26999}
       />
     </div>
   );
 };
 
 Tourmain.propTypes = {
- itinerary:PropTypes.number.isRequired
+ itinerary:PropTypes.object.isRequired
 };
 
 export default Tourmain;

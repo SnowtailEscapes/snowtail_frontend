@@ -6,14 +6,14 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import PropTypes from "prop-types";
 
-const Inclusion = ({ itinerary }) => {
+const Inclusion = ({ data }) => {
   useEffect(() => {
     Aos.init({
       duration: 1200,
     });
   }, []);
 
-  if (!itinerary) {
+  if (!data) {
     return <p>Loading...</p>;
   }
 
@@ -22,17 +22,17 @@ const Inclusion = ({ itinerary }) => {
       <h3>Included/Excluded</h3>
       <ul>
         <h4>Inclusions</h4>
-        {itinerary.inclusions.map((inclusion, index) => (
+        {data.inclusions.map((inclusion, index) => (
           <li key={index}>
-            <img src={dot} width={30} alt="dot" /> {inclusion}
+            <img src={dot} width={5} alt="dot" /> {inclusion}
           </li>
         ))}
       </ul>
       <ul>
         <h4>Exclusions</h4>
-        {itinerary.exclusions.map((exclusion, index) => (
+        {data.exclusions.map((exclusion, index) => (
           <li key={index}>
-            <img src={dot} width={30} alt="dot" /> {exclusion}
+            <img src={dot} width={5} alt="dot" /> {exclusion}
           </li>
         ))}
       </ul>
@@ -41,7 +41,7 @@ const Inclusion = ({ itinerary }) => {
 };
 
 Inclusion.propTypes = {
-  itinerary: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired,
 };
 
 export default Inclusion;

@@ -29,18 +29,18 @@ const Left = ({itinerary}) => {
         time={itinerary.duration}
       />
 
-      <div className={a.left3} data-aos="zoom-in">
+      <div className={a.left3} itinerary-aos="zoom-in">
         <img src='https://res.cloudinary.com/djbo8r8ic/image/upload/f_auto,q_auto/v1/snowtail%20escapes/Banner/yluv3lm8seiggyzhsi3s' alt="Thailand" />
       </div>
 
-      <div className={a.left4} data-aos="slide-right">
+      <div className={a.left4} itinerary-aos="slide-right">
         <h3>Overview</h3>
         <p>{itinerary.description1}</p>
         <div>
           <ul>
-            {itinerary.description2.map((desc, index) => (
+            {/* {itinerary.description2.map((desc, index) => (
               <li key={index}>{desc}</li>
-            ))}
+            ))} */}
           </ul>
         </div>
       </div>
@@ -49,7 +49,7 @@ const Left = ({itinerary}) => {
 
       <Inclusion itinerary={itinerary} />
 
-      <Map link={itinerary.map} />
+      <Map link="https://www.google.com/maps/d/u/0/embed?mid=1XVp22quSk-byRNON89piBEzmaO4&hl=en&ehbc=2E312F&ll=14.798518108336411%2C99.73663349999997&z=6"/>
       <KnowBeforeYouGo />
 
       <Confirmation />

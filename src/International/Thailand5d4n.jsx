@@ -1,4 +1,4 @@
-import React, { useEffect, lazy, Suspense } from "react";
+import React, { useEffect, lazy, Suspense, useState } from "react";
 import a from "../styles/Images.module.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -20,7 +20,11 @@ const ScrollToTopButton = lazy(() =>
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 
 const TestItinerary = () => {
+  const [itinerary, setItinerary] = useState({});
   const dispatch = useDispatch();
+
+  const { itinerary: itineraries, isLoading, isError } = useSelector((state) => state.itinerary);
+
   useEffect(() => {
     Aos.init({
       duration: 1300,
@@ -28,17 +32,24 @@ const TestItinerary = () => {
     dispatch(fetchItinerary());
   }, [dispatch]);
 
-  const { data: itineraries, isLoading, isError } = useSelector((state) => state.itinerary);
+  useEffect(() => {
+    if (Array.isArray(itineraries) && itineraries.length > 32) {
+      const it = itineraries[32]; // Safely accessing the 33rd item
+      setItinerary(it);
+    } else {
+      console.log('Itinerary not found or insufficient itinerary.');
+    }
+  }, [itineraries]);
 
-  // Assuming itineraries is an array and we're taking the first item
-  const itinerary = Array.isArray(itineraries) && itineraries.length > 0 ? itineraries[33] : null;
+  useEffect(() => {
+    console.log(itinerary); // Logs the updated itinerary
+  }, [itinerary]);
 
-  if (isLoading) {
-    return <p>Loading...</p>;
+  if(isError){
+    console.log("error occured");
   }
-
-  if (isError || !itinerary || !itinerary.prices) {
-    return <p>Error loading itineraries.</p>;
+  if(isLoading){
+    console.log("Loading")
   }
 
   return (
@@ -58,12 +69,12 @@ const TestItinerary = () => {
       <Suspense fallback={<div>Loading...</div>}>
         <section
           className={`${a.section} ${a.Thailand5d4n} ${a.mobile} ${a.window}`}
-          data-aos="zoom-in"
+          itinerary-aos="zoom-in"
         >
           <Navbar />
           <ItineraryImage small='https://snowtailescapes.com/images/card/thailand4n5dS.webp' large='https://snowtailescapes.com/images/Large/thailand2.webp' />
         </section>
-        <Tourmain itinerary={itinerary}/>
+        <Tourmain itinerary={itinerary} />
         <Contact2 />
         <Footer />
         <ScrollToTopButton />

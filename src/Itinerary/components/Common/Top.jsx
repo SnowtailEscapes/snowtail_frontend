@@ -108,12 +108,12 @@ const Common = ({ place , title , location1 , time , rating , reviews}) => {
 };
 
 Common.propTypes = {
-  place: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  location1: PropTypes.string.isRequired,
-  time: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
-  reviews: PropTypes.number.isRequired
+  place: PropTypes.string,
+  title: PropTypes.string,
+  location1: PropTypes.string,
+  time: PropTypes.string,
+  rating: PropTypes.number,
+  reviews: PropTypes.number
 };
 
 export default Common;

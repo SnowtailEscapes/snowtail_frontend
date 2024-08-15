@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/accordians.css";
 import PropTypes from "prop-types";
-import dot from "../../assets/dot.svg";
 import a from "../../styles/Tourmain.module.css";
 import "../../styles/animations.css";
 import Aos from "aos";
@@ -28,6 +27,12 @@ const Accordion = ({ itinerary }) => {
     });
     setExpandedDays(newExpandedState);
   };
+
+  console.log("Itinerary data:", itinerary); // Debugging
+
+  if (!itinerary || !itinerary.activities || itinerary.activities.length === 0) {
+    return <div>No itinerary available</div>; // Fallback UI
+  }
 
   return (
     <div className={a.left5} data-aos="slide-right">
@@ -69,7 +74,15 @@ const Accordion = ({ itinerary }) => {
 };
 
 Accordion.propTypes = {
-  itinerary: PropTypes.object.isRequired,
+  itinerary: PropTypes.shape({
+    activities: PropTypes.arrayOf(
+      PropTypes.shape({
+        day: PropTypes.number.isRequired,
+        title: PropTypes.string.isRequired,
+        points: PropTypes.arrayOf(PropTypes.string).isRequired,
+      })
+    ).isRequired,
+  }).isRequired,
 };
 
 export default Accordion;
