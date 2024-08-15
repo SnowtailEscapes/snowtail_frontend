@@ -24,7 +24,7 @@ const Inclusion = ({ itinerary }) => {
         <h4>Inclusions</h4>
         {itinerary.inclusions.map((inclusion, index) => (
           <li key={index}>
-            <img src={dot} width={5} alt="dot" /> {inclusion}
+            <img src={dot} width={30} alt="dot" /> {inclusion}
           </li>
         ))}
       </ul>
@@ -32,7 +32,7 @@ const Inclusion = ({ itinerary }) => {
         <h4>Exclusions</h4>
         {itinerary.exclusions.map((exclusion, index) => (
           <li key={index}>
-            <img src={dot} width={5} alt="dot" /> {exclusion}
+            <img src={dot} width={30} alt="dot" /> {exclusion}
           </li>
         ))}
       </ul>

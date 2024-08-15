@@ -31,20 +31,20 @@ export default function Confirmation() {
 
           <ul className="list-none flex flex-col gap-5 mt-5">
             <li className="flex gap-4 text-[18px] leading-[25.5px] list-disc">
-              <img src={dot} width={5} alt="dot" />
+              <img src={dot} width={30} alt="dot" />
               50% Advance at the time of booking.
             </li>
             <li className="flex gap-4 text-[18px] leading-[25.5px] list-disc">
-              <img src={dot} width={5} alt="dot" />
+              <img src={dot} width={30} alt="dot" />
               Remaining 50% before 10 days of the travel date for Domestic Tours
               & 50% before 15 days of the travel date for International Tours.
             </li>
             <li className="flex gap-4 text-[18px] leading-[25.5px] list-disc">
-              <img src={dot} width={5} alt="dot" />
+              <img src={dot} width={30} alt="dot" />
               Modification charges at the time of modification.
             </li>
             <li className="flex gap-4 text-[18px] leading-[25.5px] list-disc">
-              <img src={dot} width={5} alt="dot" />
+              <img src={dot} width={30} alt="dot" />
               For FLIGHTS, 100% payment at the time of booking.
             </li>
           </ul>
