@@ -27,41 +27,7 @@ import andaman from "../../../public/images/card/andaman.webp";
 export default function AllDomestic() {
   const [screenSize, setScreenSize] = useState("large");
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredTours, setFilteredTours] = useState([
-    {
-      to: "/Rajasthan",
-      title: "The Incredible Gateway Rajasthan",
-      Name: "RAJASTHAN",
-      price: 34399,
-      image: rj1,
-      duration: "7 Nights and 8 Days tour",
-    },
-    {
-      to: "/Rajasthan4n5d",
-      title: "Journey Of majesty",
-      Name: "RAJASTHAN",
-      duration: "4 Nights and 5 Days tour",
-      price: 19999,
-      image: rj2,
-    },
-    {
-      to: "/Rajasthan5n6d",
-      title: "Explore Sand Tails",
-      Name: "RAJASTHAN",
-      price: 25899,
-      duration: "5 Nights and 6 Days tour",
-      image: rj3,
-    },
-    {
-      to: "/Gujarat3n4d",
-      title: "Monument of pride",
-      Name: "GUJARAT",
-      price: 16499,
-      duration: "3 Nights and 4 Days tour",
-      image: gujarat,
-    },
-    // ... (Add all other tours here)
-  ]);
+  const [filteredTours, setFilteredTours] = useState([]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -87,7 +53,7 @@ export default function AllDomestic() {
       tours.filter(
         (tour) =>
           tour.title.toLowerCase().includes(term) ||
-          tour.Name.toLowerCase().includes(term)
+          tour.location.toLowerCase().includes(term)
       )
     );
   };
@@ -96,7 +62,7 @@ export default function AllDomestic() {
     {
       to: "/Rajasthan",
       title: "The Incredible Gateway Rajasthan",
-      Name: "RAJASTHAN",
+      location: "RAJASTHAN",
       price: 34399,
       image: rj1,
       duration: "7 Nights and 8 Days tour",
@@ -104,7 +70,7 @@ export default function AllDomestic() {
     {
       to: "/Rajasthan4n5d",
       title: "Journey Of majesty",
-      Name: "RAJASTHAN",
+      location: "RAJASTHAN",
       duration: "4 Nights and 5 Days tour",
       price: 19999,
       image: rj2,
@@ -112,7 +78,7 @@ export default function AllDomestic() {
     {
       to: "/Rajasthan5n6d",
       title: "Explore Sand Tails",
-      Name: "RAJASTHAN",
+      location: "RAJASTHAN",
       price: 25899,
       duration: "5 Nights and 6 Days tour",
       image: rj3,
@@ -120,7 +86,7 @@ export default function AllDomestic() {
     {
       to: "/Gujarat3n4d",
       title: "Monument of pride",
-      Name: "GUJARAT",
+      location: "GUJARAT",
       price: 16499,
       duration: "3 Nights and 4 Days tour",
       image: gujarat,
@@ -128,7 +94,7 @@ export default function AllDomestic() {
     {
       to: "/Gujarat4n5d",
       title: "Gujarat’s Coastal Charms and Wildlife Wonders",
-      Name: "GUJARAT",
+      location: "GUJARAT",
       price: 20999,
       duration: "4 Nights and 5 Days tour",
       image: gujarat2,
@@ -138,13 +104,13 @@ export default function AllDomestic() {
       title: "Adventure meet Serenity",
       duration: "5 nights and 6 days tour",
       price: 26700,
-      Name: "KASHMIR",
+      location: "KASHMIR",
       image: kashmir1,
     },
     {
       to: "/Kashmir3n4d",
       title: "Experience Paradise On Earth",
-      Name: "KASHMIR",
+      location: "KASHMIR",
       price: 18499,
       image: kashmir2,
       duration: "3 nights and 4 days tour",
@@ -152,7 +118,7 @@ export default function AllDomestic() {
     {
       to: "/Ladakh5n6d",
       title: "Thrilling Leh Ladakh",
-      Name: "LADAKH",
+      location: "LADAKH",
       price: 29999,
       duration: "5 nights and 6 days tour",
       image: ladakh,
@@ -161,7 +127,7 @@ export default function AllDomestic() {
       to: "/Sikkim5n6d",
       title: "Gangtok & Darjeeling The Abode of Clouds",
       price: 35799,
-      Name: "SIKKIM",
+      location: "SIKKIM",
       duration: "5 nights and 6 days tour",
       image: sikkim,
     },
@@ -169,14 +135,14 @@ export default function AllDomestic() {
       to: "/Meghalaya5n6d",
       title: "Meghalaya - Discover The Magic",
       duration: "5 nights and 6 days tour",
-      Name: "MEGHALAYA",
+      location: "MEGHALAYA",
       price: 32799,
       image: meghalaya,
     },
     {
       to: "/Kerala5n6d",
       title: "Experience God’s Own Country",
-      Name: "KERALA",
+      location: "KERALA",
       price: 25499,
       duration: "5 nights and 6 days tour",
       image: kerala,
@@ -184,7 +150,7 @@ export default function AllDomestic() {
     {
       to: "/Manali3n4d",
       title: "A Himalayan Heaven",
-      Name: "MANALI",
+      location: "MANALI",
       price: 15999,
       duration: "3 nights and 4 days tour",
       image: manali,
@@ -192,7 +158,7 @@ export default function AllDomestic() {
     {
       to: "/Shimla5n6d",
       title: "Sleep in Nature's Lap",
-      Name: "SHIMLA & MANALI",
+      location: "SHIMLA & MANALI",
       duration: "5 nights and 6 days tour",
       price: 24500,
       image: shimla1,
@@ -200,7 +166,7 @@ export default function AllDomestic() {
     {
       to: "/Shimla9n10d",
       title: "Instagrammable Himachal",
-      Name: "SHIMLA & more...",
+      location: "SHIMLA , MANALI , DHARAMSHALA AND DALHOUSIE",
       image: shimla2,
       price: 45999,
       duration: "9 nights and 10 days tour",
@@ -208,7 +174,7 @@ export default function AllDomestic() {
     {
       to: "/Kasol2n3d",
       title: "Land of Creamy Flavours",
-      Name: "KASOL",
+      location: "KASOL",
       price: 10999,
       duration: "2 nights and 3 days tour",
       image: kasol,
@@ -217,7 +183,7 @@ export default function AllDomestic() {
       to: "/Uttrakhand",
       title: "Mussoorie & Rishikesh: A Journey to the Queen of Hills",
       price: 16999,
-      Name: "UTTRAKHAND",
+      location: "UTTRAKHAND",
       duration: "3 nights and 4 days tour",
       image: masoorie,
     },
@@ -226,7 +192,7 @@ export default function AllDomestic() {
       title: "Discover Andaman: A Journey to Serenity",
       price: 31988,
       duration: "4 nights and 5 days tour",
-      Name: "ANDAMAN & NICOBAR",
+      location: "ANDAMAN & NICOBAR",
       image: andaman,
     },
   ];
@@ -236,7 +202,7 @@ export default function AllDomestic() {
       tours.filter(
         (tour) =>
           tour.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          tour.Name.toLowerCase().includes(searchTerm.toLowerCase())
+          tour.location.toLowerCase().includes(searchTerm.toLowerCase())
       )
     );
   }, [searchTerm]);
@@ -257,12 +223,12 @@ export default function AllDomestic() {
             Domestic Tour Adventures
           </h1>
           <div className="flex justify-center mb-4">
-            <label className="input input-bordered flex items-center gap-2">
+            <label className="input input-bordered flex items-center gap-2 md:w-4/5">
               <input
                 value={searchTerm}
                 onChange={handleSearch}
                 type="text"
-                className="grow"
+                className="w-full"
                 placeholder="Search"
               />
               <svg
@@ -285,7 +251,7 @@ export default function AllDomestic() {
               key={index}
               to={tour.to}
               title={tour.title}
-              Name={tour.Name}
+              location={tour.location}
               price={tour.price}
               image={tour.image}
               duration={tour.duration}

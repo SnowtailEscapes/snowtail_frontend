@@ -39,42 +39,31 @@ const International = ({ to, title, location, price, duration, image }) => {
             </li>
           </ul>
           <div>
-            <h2 className="text-[28px] font-semibold text-dark-accent mb-2 font-arimo">
-              {
-                location && <>
-                  {location}
-                </>
-              }
+            <h2 className="text-[28px] font-semibold text-dark-accent mb-2 font-arimo text-wrap">
+              {location}
             </h2>
-            <p className="text-black1 mb-2 font-ligh2 text-[20px] ">
+            <p className="text-black1 mb-2 ml-0 font-ligh2 text-[20px]">
               {title}
             </p>
             <div className="flex space-x-2 mb-4">
-              <span className="text-[16px] px-3 rounded-md font-light  bg-ligh-accent shadow-sm shadow-black1">
+              <span className="text-[16px] px-3 rounded-md font-light  bg-ligh-accent shadow-sm shadow-black1 text-green-900">
                 All meals
               </span>
-              <span className="text-[16px] px-3 rounded-md font-light bg-ligh-accent shadow-sm shadow-black1">
+              <span className="text-[16px] px-3 rounded-md font-light bg-ligh-accent shadow-sm shadow-black1 text-green-900">
                 3 star resort
               </span>
-              <span className="text-[16px] px-3 rounded-md font-light bg-ligh-accent shadow-sm shadow-black1">
+              <span className="text-[16px] px-3 rounded-md font-light bg-ligh-accent shadow-sm shadow-black1 text-green-900">
                 Major sightseeing
               </span>
             </div>
             <h3 className="text-[16px] text-main-brand flex-nowrap flex justify-self-end">
               {/* <CurrencyConverter price={price} /> */}
-              {price}
-              <p>/person</p>
+              INR.{price}/person
             </h3>
           </div>
           <div className="flex flex-row gap-3">
             <button
-              className="btn btn-outline border-main-brand border-2 phone"
-              onClick={toggleContactForm}
-            >
-              <img src={phone} width={80} alt="Phone" loading="lazy" />
-            </button>
-            <button
-              className="btn bg-main-brand rounded-md text-white text-[15px] font-bold request"
+              className="btn bg-main-brand rounded-md text-white text-[15px] font-bold request w-full"
               onClick={toggleContactForm}
             >
               Request Callback

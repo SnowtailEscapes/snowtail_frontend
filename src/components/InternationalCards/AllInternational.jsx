@@ -269,12 +269,12 @@ export default function AllInternational() {
           </h1>
 
           <div className="flex justify-center mb-4">
-            <label className="input input-bordered flex items-center gap-2">
+            <label className="input input-bordered flex items-center gap-2 md:w-4/5">
               <input
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 type="text"
-                className="grow"
+                className="w-full"
                 placeholder="Search"
               />
               <svg
