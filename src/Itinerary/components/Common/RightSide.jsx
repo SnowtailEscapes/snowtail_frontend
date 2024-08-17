@@ -75,13 +75,12 @@ const RightSide = ({
                 <h6>
                   <del>
                     {/* <CurrencyConverter price={Number(standard_cut)} /> */}
-                    {standard_cut}
+                    INR.{standard_cut}
                   </del>
                 </h6>
                 <h3 className="flex md:gap-2 text-nowrap">
                   {/* <CurrencyConverter price={Number(standard_current)} />  */}
-                  {standard_current}
-                  <p>per person</p>
+                  INR.{standard_current}/per person
                 </h3>
               </div>
             </div>
@@ -143,13 +142,12 @@ const RightSide = ({
                 <h6>
                   <del>
                     {/* <CurrencyConverter price={deluxe_cut} /> */}
-                    {deluxe_cut}
+                    INR.{deluxe_cut}
                   </del>
                 </h6>
-                <h3 className="flex gap-2">
+                <h3 className="flex md:gap-2 text-nowrap">
                   {/* <CurrencyConverter price={deluxe_current} /> */}
-                  {deluxe_current}
-                  <p>per person</p>
+                  INR.{deluxe_current}/per person
                 </h3>
               </div>
             </div>
@@ -212,13 +210,12 @@ const RightSide = ({
                 <h6>
                   <del>
                     {/* <CurrencyConverter price={super_deluxe_cut} /> */}
-                    {super_deluxe_cut}
+                    INR.{super_deluxe_cut}
                   </del>
                 </h6>
-                <h3 className="flex gap-2">
+                <h3 className="flex md:gap-2 text-nowrap">
                   {/* <CurrencyConverter price={super_deluxe_current} /> */}
-                  {super_deluxe_current}
-                  <p>per person</p>
+                  INR.{super_deluxe_current}/per person
                 </h3>
               </div>
             </div>

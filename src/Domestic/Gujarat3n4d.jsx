@@ -39,7 +39,6 @@ export default function Rajasthan() {
           content="Gujarat tour, Ahmedabad, Kutch, Somnath temple, Gir National Park, Diu beaches, Vadodara heritage, Gujarat tourism, Gujarat travel, Gujarat holiday packages"
         />
       </Helmet>
-
         <Suspense fallback={<div>Loading...</div>}>
         <section className={a.section} data-aos="zoom-in">
           <ItineraryImage small='https://snowtailescapes.com/images/card/gujarat1.webp' large={large} />

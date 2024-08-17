@@ -28,7 +28,8 @@ export default function International() {
 
 
   const   freeCards = [
-    {
+    { 
+      "title":"Wonders of Nepal: The Heart of the Himalayas",
       "Name": "Nepal",
       "duration": "4 Days & 3 Nights",
       "rating": "4.8/5",
@@ -38,7 +39,8 @@ export default function International() {
       "direct": "/Nepal",
       "image": "https://snowtailescapes.com/images/card/nepal.webp"
     },
-    {
+    { 
+      "title" : "Malaysian Marvels - Kuala Lumpur, Penang & Langkawi Escape",
       "Name": "Malaysia",
       "duration": "7 Days & 6 Nights",
       "rating": "4.8/5",
@@ -48,7 +50,8 @@ export default function International() {
       "direct": "/Malaysia",
       "image": "https://snowtailescapes.com/images/card/Malaysia.webp"
     },
-    {
+    { 
+      "title":"Experience Jewels of Thailand",
       "Name": "Thailand",
       "duration": "6 Days & 5 Nights",
       "rating": "4.8/5",
@@ -59,6 +62,7 @@ export default function International() {
       "image": "https://snowtailescapes.com/images/card/thailand5n6ds.webp"
     },
     {
+       "title" :"Almaty: A Fusion of History, Culture, and Natural Splendor", 
       "Name": "Almaty",
       "duration": "6 Days & 5 Nights",
       "rating": "4.8/5",
@@ -69,7 +73,8 @@ export default function International() {
       "image": "https://snowtailescapes.com/images/card/almaty.webp"
     },
     {
-      "Name": "Sri Lanka | Jewel Of Indian Ocean",
+      "title":"Jewel Of Indian Ocean",
+      "Name": "Sri Lanka",
       "duration": "7 Days & 6 Nights",
       "rating": "4.8/5",
       "cut_price": 44500,

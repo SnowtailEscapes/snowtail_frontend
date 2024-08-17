@@ -49,7 +49,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="mt-60 w-full"></div>
+      <div className="mt-40 w-full"></div>
 
       <div className="relative flex justify-center p-5 md:pt-52 bg-light-shade mt-20 pt-80 w-full font-light">
         <div className="flex flex-col items-center gap-10 w-full">

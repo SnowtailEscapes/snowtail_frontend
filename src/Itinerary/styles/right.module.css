@@ -72,7 +72,7 @@
   
 .tour_package_bar_price {
   display: flex;
-  gap: 0.5rem;
+  gap: 2rem;
   font-weight: 600;
   line-height: 25.5px;
   height: 41.3931px;
@@ -90,6 +90,7 @@
   color: #F68C1F;
   display: flex;
   flex-wrap: nowrap;
+  font-size: 20px;
   
 }
 
