@@ -26,7 +26,7 @@ const International = ({ to, title, location, price, duration, image }) => {
           <Link to={to}>
             <img
               src={image}
-              alt="image"
+              alt={title}
             />
           </Link>
         </figure>
