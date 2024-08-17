@@ -46,6 +46,7 @@
   }
 }
 
+
 @media screen and (max-width: 730px) and (min-width:0px) {
   .cardContainer {
     display: flex;

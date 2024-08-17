@@ -71,7 +71,7 @@ const International = ({ to, title, location, price, duration, image }) => {
               className="btn btn-outline border-main-brand border-2 phone"
               onClick={toggleContactForm}
             >
-              <img src={phone} width={40} alt="Phone" loading="lazy" />
+              <img src={phone} width={80} alt="Phone" loading="lazy" />
             </button>
             <button
               className="btn bg-main-brand rounded-md text-white text-[15px] font-bold request"
