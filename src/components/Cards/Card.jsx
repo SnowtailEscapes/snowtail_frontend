@@ -88,7 +88,11 @@ const Card = ({
               hover && "scale-105"
             } top-5 bg-main-brand absolute flex flex-row md:gap-2 p-1`}
           >
-            <p className="save flex">Save INR.{save}</p>
+            {save && (
+              <>
+                <p className="save flex">Save INR.{save}</p>
+              </>
+            )}
           </div>
           <div className="flex flex-col pt-2 gap-y-1">
             <Link to={direct}>
@@ -112,9 +116,13 @@ const Card = ({
                 <h2 className="text-[1.5rem] bold text-dark-accent font-bold font-arimo">
                   {Name}
                 </h2>
-                <h3 className="text-base boston text-black1 font-semibold">
-                  {title}
-                </h3>
+                {title && (
+                  <>
+                    <h3 className="text-base boston text-black1 font-semibold">
+                      {title}
+                    </h3>
+                  </>
+                )}
               </div>
 
               <div className="flex flex-row justify-between items-center">
@@ -278,7 +286,7 @@ const Card = ({
 
 Card.propTypes = {
   Name: PropTypes.string.isRequired, // Corrected to match the prop used in the component
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   duration: PropTypes.string.isRequired,
   rating: PropTypes.string.isRequired,
   cut_price: PropTypes.number.isRequired,
