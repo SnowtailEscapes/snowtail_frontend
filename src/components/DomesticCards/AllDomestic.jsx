@@ -24,13 +24,13 @@ import andaman from "../../../public/images/card/andaman.webp";
 export default function AllInternational() {
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Domestic Tours</title>
         <meta
           name="description"
           content="Locations , places for you Inside India to travel along with anyone"
         />
-      </Helmet>
+      </Helmet> */}
       <Navbar />
       <div className="flex justify-right md:justify-center">
         <div className="mt-20 md:mt-28 md:p-5">

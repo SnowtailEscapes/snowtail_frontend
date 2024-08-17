@@ -1,14 +1,14 @@
 import React, { Suspense } from "react";
 import "../styles/Home.css";
 
-const Navbar = React.lazy(() => import("./Navbar"));
-const International = React.lazy(() => import("./Cards/International"));
-const Domestic = React.lazy(() => import("./Cards/Domestic"));
-const Budget = React.lazy(() => import("./Cards/Budget"));
-const VisaFree = React.lazy(() => import("./Cards/VisaFree"));
-const Escapes = React.lazy(() => import("./Escapes"));
-const InfiniteScrolling = React.lazy(() => import("./InfiniteScrolling"));
-const SearchBox = React.lazy(() => import("../getApi/searchBox"));
+import Navbar from "./Navbar";
+import International from "./Cards/International";
+import Domestic from "./Cards/Domestic";
+import Budget from "./Cards/Budget";
+import VisaFree from "./Cards/VisaFree";
+import Escapes from "./Escapes";
+import InfiniteScrolling from "./InfiniteScrolling";
+import SearchBox from "../getApi/searchBox";
 
 export default function TopSection() {
   return (
@@ -24,10 +24,7 @@ export default function TopSection() {
         </picture>
         <SearchBox />
       </div>
-
-
       <InfiniteScrolling />
-
       <div className="flex flex-col gap-10 ">
         <International />
 

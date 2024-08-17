@@ -69,13 +69,13 @@ function App() {
   }, []);
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Snowtail Escapes</title>
         <meta
           name="description"
           content="A website for you for travelling around the world with your friends,family,or your partner"
         />
-      </Helmet>
+      </Helmet> */}
         <Router>
         <RouteChangeTracker />
           <Routes>

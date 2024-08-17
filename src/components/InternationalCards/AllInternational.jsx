@@ -1,8 +1,9 @@
 import International from "./International";
 import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
-import Footer from "../Footer";
-import philipenes from "../../../public/images/card/philipenes.webp"
+import "../../styles/International.css";
+
+import philipenes from "../../../public/images/card/philipenes.webp";
 import japan2 from "../../../public/images/card/japan2.webp";
 import japan from "../../../public/images/card/japan1.webp";
 import australia from "../../../public/images/card/australia.webp";
@@ -26,17 +27,19 @@ import thailand3 from "../../../public/images/card/thailand8n9ds.webp";
 import vietnam from "../../../public/images/card/vietnam4n5ds.webp";
 import vietnam2 from "../../../public/images/card/vietnam6n7ds.webp";
 import vietnam3 from "../../../public/images/card/vietnam9n10ds.webp";
+import Footer from "../Footer";
 
 export default function AllInternational() {
+  
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>International Tours</title>
         <meta
           name="description"
           content="Locations , places for you outside India to travel along with anyone"
         />
-      </Helmet>
+      </Helmet> */}
       <Navbar />
       <div className="flex justify-right md:justify-center">
         <div className="mt-20 md:mt-28 md:p-5">
@@ -204,7 +207,6 @@ export default function AllInternational() {
             to="/Nepal"
           />
 
-          
           <International
             to="/Australia7d6n"
             title="Best of Australia"
@@ -241,7 +243,7 @@ export default function AllInternational() {
             image={philipenes}
           />
 
-<International
+          <International
             title="Central Asian Gem"
             duration="9 Days and 8 Nights"
             to="/Almaty"
@@ -250,10 +252,9 @@ export default function AllInternational() {
             direct="/Almaty"
             image={almaty}
           />
-
         </div>
       </div>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 }

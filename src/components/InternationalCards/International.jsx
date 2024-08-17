@@ -25,8 +25,8 @@ const International = ({ to, title, location, price, duration, image }) => {
         <figure className="imageContainer">
           <Link to={to}>
             <img
+              width={200}
               src={image}
-              loading="lazy"
               alt="image"
               className="img w-full h-full cover rounded-xl"
             />

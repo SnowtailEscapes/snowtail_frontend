@@ -19,7 +19,6 @@ const SearchBox = () => {
   const navigate = useNavigate();
 
   const handleSearch = async (key) => {
-    if (key.length > 1) {
       try {
         let result = await fetch(`${import.meta.env.VITE_SEARCH}/` + key);
         result = await result.json();
@@ -35,9 +34,6 @@ const SearchBox = () => {
         console.error("Error fetching itineraries:", error);
         setItineraries([]);
       }
-    } else {
-      setItineraries([]);
-    }
   };
 
   useEffect(() => {
