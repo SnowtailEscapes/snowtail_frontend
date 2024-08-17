@@ -73,7 +73,7 @@ const Card = ({
               <img
                 loading="lazy"
                 src={image}
-                className="img rounded-box hover:scale-105"
+                className="home-img rounded-box hover:scale-105"
                 onMouseEnter={hoverHo}
                 alt={title}
                 width="100%"
@@ -88,11 +88,7 @@ const Card = ({
               hover && "scale-105"
             } top-5 bg-main-brand absolute flex flex-row md:gap-2 p-1`}
           >
-            {save && (
-              <>
-                <p className="save flex">Save INR.{save}</p>
-              </>
-            )}
+            <p className="save flex">Save INR.{save}</p>
           </div>
           <div className="flex flex-col pt-2 gap-y-1">
             <Link to={direct}>
@@ -116,13 +112,9 @@ const Card = ({
                 <h2 className="text-[1.5rem] bold text-dark-accent font-bold font-arimo">
                   {Name}
                 </h2>
-                {title && (
-                  <>
-                    <h3 className="text-base boston text-black1 font-semibold">
-                      {title}
-                    </h3>
-                  </>
-                )}
+                <h3 className="text-base boston text-black1 font-semibold">
+                  {title}
+                </h3>
               </div>
 
               <div className="flex flex-row justify-between items-center">
@@ -183,7 +175,7 @@ const Card = ({
               <img
                 loading="lazy"
                 src={image}
-                className="img rounded-box hover:scale-105"
+                className="home-img rounded-box hover:scale-105"
                 onMouseEnter={hoverHo}
                 alt={title}
                 width="100%"
@@ -286,7 +278,7 @@ const Card = ({
 
 Card.propTypes = {
   Name: PropTypes.string.isRequired, // Corrected to match the prop used in the component
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   duration: PropTypes.string.isRequired,
   rating: PropTypes.string.isRequired,
   cut_price: PropTypes.number.isRequired,

@@ -6,7 +6,7 @@ import phone from "../../assets/phone.webp";
 import Contact from "../Contact";
 
 
-const International = ({ to, title, location, price, duration, image }) => {
+const Domestic = ({ to, title, location, price, duration, image }) => {
   const loc = useLocation();
   const isInternational = loc.pathname === "/International";
   const isDomestic = loc.pathname === "/Domestic";
@@ -92,7 +92,7 @@ const International = ({ to, title, location, price, duration, image }) => {
   );
 };
 
-International.propTypes = {
+Domestic.propTypes = {
   title: PropTypes.string.isRequired,
   to: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
@@ -101,4 +101,4 @@ International.propTypes = {
   image: PropTypes.string.isRequired,
 };
 
-export default International;
+export default Domestic;
