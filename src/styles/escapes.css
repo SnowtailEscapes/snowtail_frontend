@@ -5,6 +5,7 @@
         width: 80vw;
         height: 80vh;
         object-fit: contain;
+        background-repeat: no-repeat;
     }
 }
 
@@ -15,5 +16,6 @@
         width: 100vw;
         height: max-content;
         object-fit: contain;
+        background-repeat: no-repeat;
     }
 }

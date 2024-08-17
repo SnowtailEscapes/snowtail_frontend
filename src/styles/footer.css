@@ -2,5 +2,5 @@
     mask-image: url('../../public/logo/30.svg');
 }
 .footer{
-    width: 100vw !important;
+    width: 100% !important;
 }

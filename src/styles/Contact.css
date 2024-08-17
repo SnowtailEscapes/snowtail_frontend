@@ -4,7 +4,7 @@
   
   /* Styles for the Contact Form */
 .contact-form {
-    max-width: 600px;
+    max-width: 60rem;
     margin: 50px auto;
     padding: 20px;
     background: #f9f9f9;
@@ -35,7 +35,7 @@
   
   .contact-form textarea {
     resize: vertical;
-    min-height: 150px;
+    min-height: 15rem;
   }
   
   .contact-form input[type="submit"] {

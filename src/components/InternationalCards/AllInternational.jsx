@@ -28,8 +28,29 @@ import vietnam from "../../../public/images/card/vietnam4n5ds.webp";
 import vietnam2 from "../../../public/images/card/vietnam6n7ds.webp";
 import vietnam3 from "../../../public/images/card/vietnam9n10ds.webp";
 import Footer from "../Footer";
+import MobileFooter from "../MobileFooter"
+import { useEffect, useState } from "react";
 
 export default function AllInternational() {
+
+  const [screenSize, setScreenSize] = useState("large");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 600) {
+        setScreenSize("mobile");
+      } else if (window.innerWidth < 1000) {
+        setScreenSize("tablet");
+      } else {
+        setScreenSize("large");
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Set initial state
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   
   return (
     <>
@@ -254,7 +275,15 @@ export default function AllInternational() {
           />
         </div>
       </div>
-      <Footer/>
+        {
+          screenSize === "large" && <Footer/>
+        }
+        {
+          screenSize === "tablet" && <Footer/>
+        }
+        {
+          screenSize === "mobile" && <MobileFooter/>
+        }
     </>
   );
 }

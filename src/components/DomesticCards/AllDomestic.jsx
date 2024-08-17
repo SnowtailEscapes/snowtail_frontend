@@ -2,7 +2,6 @@
 import International from "../InternationalCards/International";
 import Navbar from "../Navbar";
 import { Helmet } from "react-helmet";
-import Footer from "../Footer";
 import rj1 from "../../../public/images/card/rj1.webp";
 import rj2 from "../../../public/images/card/rj2.webp";
 import rj3 from "../../../public/images/card/rj3.webp";
@@ -20,8 +19,29 @@ import shimla2 from "../../../public/images/card/shimla9n10d.webp";
 import sikkim from "../../../public/images/card/sikkim.webp";
 import kerala from "../../../public/images/card/kerala.webp";
 import andaman from "../../../public/images/card/andaman.webp";
-
+import { useEffect, useState } from "react";
+import Footer from "../Footer";
+import MobileFooter from "../MobileFooter";
 export default function AllInternational() {
+  const [screenSize, setScreenSize] = useState("large");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 600) {
+        setScreenSize("mobile");
+      } else if (window.innerWidth < 1000) {
+        setScreenSize("tablet");
+      } else {
+        setScreenSize("large");
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Set initial state
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
       {/* <Helmet>
@@ -179,7 +199,15 @@ export default function AllInternational() {
           />
         </div>
       </div>
-      {/* <Footer/> */}
+      {
+          screenSize === "large" && <Footer/>
+        }
+        {
+          screenSize === "tablet" && <Footer/>
+        }
+        {
+          screenSize === "mobile" && <MobileFooter/>
+        }
     </>
   );
 }
