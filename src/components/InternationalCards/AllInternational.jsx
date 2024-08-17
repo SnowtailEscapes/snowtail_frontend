@@ -1,6 +1,5 @@
 import International from "./International";
 import Navbar from "../Navbar";
-import { Helmet } from "react-helmet";
 import "../../styles/International.css";
 
 import philipenes from "../../../public/images/card/philipenes.webp";

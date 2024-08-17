@@ -1,7 +1,6 @@
-
-import International from "../InternationalCards/International";
+import "../../styles/International.css";
+import International from "./DomesticCards";
 import Navbar from "../Navbar";
-import { Helmet } from "react-helmet";
 import rj1 from "../../../public/images/card/rj1.webp";
 import rj2 from "../../../public/images/card/rj2.webp";
 import rj3 from "../../../public/images/card/rj3.webp";
