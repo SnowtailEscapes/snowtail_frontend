@@ -121,16 +121,14 @@ const Card = ({
                 {cut_price && (
                   <h4 className="text-[13px] cut font-bold font-ligh2 flex">
                     {/* <CurrencyConverter price={Number(cut_price)} /> */}
-                    {cut_price}
-                    /per
+                    INR.{cut_price}
+                    /person
                   </h4>
                 )}
-                <h4 className="text-base text-main-brand font-bold font-light2 flex">
+                <h4 className="text-base text-main-brand font-bold font-ligh2 flex">
                   {/* <CurrencyConverter price={Number(curr_price)} /> */}
-                  <span className="text-base text-main-brand text-bold">
-                    {curr_price}
-                    /per
-                  </span>
+                  INR.{curr_price}
+                  /person
                 </h4>
               </div>
               <div className="text-[13px] flex flex-row font-bold">

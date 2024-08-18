@@ -15,25 +15,25 @@ export default function Footer() {
             <h1 className="text-[1.5rem] text-center font-light text-black1">About Snowtail Escapes</h1>
             <ul className="list-none font-ligh2 flex gap-2  justify-center items-center flex-col ">
               <Link to="/about">
-                <li className=" text-[16px]">About us</li>
+                <li className=" text-[16px] hover:text-white1 hover:underline">About us</li>
               </Link>
               <Link to="/contact">
-                <li className=" text-[16px]">Contact us</li>
+                <li className=" text-[16px] hover:text-white1 hover:underline">Contact us</li>
               </Link>
               <Link to="/privacy-policy">
-                <li className=" text-[16px]">Privacy Policy</li>
+                <li className=" text-[16px] hover:text-white1 hover:underline">Privacy Policy</li>
               </Link>
               <Link to="/terms-conditions">
-                <li className=" text-[16px]">Terms and Conditions</li>
+                <li className=" text-[16px] hover:text-white1 hover:underline">Terms and Conditions</li>
               </Link>
               <Link>
-                <li className=" text-[16px]">Support</li>
+                <li className=" text-[16px] hover:text-white1 hover:underline">Support</li>
               </Link>
               <Link>
-                <li className=" text-[16px]">We are Hiring</li>
+                <li className=" text-[16px] hover:text-white1 hover:underline">We are Hiring</li>
               </Link>
               <Link>
-                <li className=" text-[16px]">Cancellation Policy</li>
+                <li className=" text-[16px] hover:text-white1 hover:underline">Cancellation Policy</li>
               </Link>
             </ul>
           </div>
