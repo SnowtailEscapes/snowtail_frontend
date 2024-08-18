@@ -59,7 +59,7 @@ const Navbar = () => {
     <>
       <div
         className={`navbar-fixed navbar top-0 left-0 w-full z-50  text-white ${scrolled ? "scrolled" : ""
-          } ${width > 780 ? "bg-main-brand" : `${scrolled ? "" : `${isHomePage ? '   mix-blend-multiply' : 'mix-blend-none'}`}`}`}
+          } ${width > 780 ? "bg-main-brand" : `${scrolled ? "" : `${isHomePage ? '   mix-blend-multiply' : `${!isInternational && !isDomestic ?  'bg-white mix-blend-normal' : ''}`}`}`}`}
       >
 
         <div className="navbar-start flex gap-5">
@@ -83,7 +83,7 @@ const Navbar = () => {
                   <img
                     src={scrolled ? logoScrolled : logo}
                     width={logoSize}
-                    className={`nav-logo ${scrolled ? "bg-main-brand" : "mix-blend-multiply"} `}
+                    className={`nav-logo ${scrolled ? "" : "mix-blend-multiply"} `}
                     height={logoSize}
                     alt="logo"
                   />
@@ -99,9 +99,29 @@ const Navbar = () => {
           <div className={`dropdown`}>
             <button className="btn btn-ghost flex items-center justify-center" aria-label="Menu" onClick={handleDropdownToggle}>
               <img
-                src={scrolled ? (isDropdownOpen ? close2 : hamburger2) : (isDropdownOpen ? close1 : hamburger)}
-                width={isDropdownOpen ? 15 : 30}
-                className={`mix-blend-multiply`}
+                src={
+                  !isHomePage && !isInternational && !isDomestic
+                    ? hamburger
+                    : scrolled
+                      ? isDropdownOpen
+                        ? close2
+                        : hamburger2
+                      : isDropdownOpen
+                        ? close1
+                        : hamburger
+                }
+                width={
+                  !isHomePage && !isInternational && !isDomestic
+                    ? 30
+                    : scrolled
+                      ? isDropdownOpen
+                        ? 15
+                        : 30
+                      : isDropdownOpen
+                        ? 15
+                        : 30
+                }
+                className="mix-blend-multiply"
                 height={logoSize}
                 alt="logo"
               />
