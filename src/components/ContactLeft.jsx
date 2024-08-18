@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import trip from "../assets/trip.webp";
 import visa from "../assets/visa.webp";
 import time from "../assets/time.webp";
@@ -6,16 +6,38 @@ import guide from "../assets/guide.png";
 import logo from "../../public/logo/23.svg";
 import PropTypes from "prop-types";
 
-export const ContactLeft = ({onClose}) => {
-  
+export const ContactLeft = ({ onClose }) => {
+  const [screenSize, setScreenSize] = useState("large");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 600) {
+        setScreenSize("mobile");
+      } else if (window.innerWidth < 1000) {
+        setScreenSize("tablet");
+      } else {
+        setScreenSize("large");
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Set initial state
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+
   return (
     <div className="flex flex-col p-5 bg-main-brand text-white md:w-1/3 w-full gap-4">
-            <button onClick={onClose} className="btn bg-main-brand">
-              <p className="font-bold text-sm">X</p>
-            </button>
-            <div className="flex justify-center">
-              <img src={logo} width={200} height={20} alt="Snowtail Escapes" />
-            </div>
+      <button onClick={onClose} className="btn bg-main-brand">
+        <p className="font-bold text-sm">X</p>
+      </button>
+      <div className="flex justify-center">
+        <img src={logo} width={200} height={20} alt="Snowtail Escapes" />
+      </div>
+      {
+        screenSize === "large" && (
+          <>
             <div className="card bg-base-100 h-fit flex align-middle shadow-md shadow-white mb-4">
               <div className="card-body text-center">
                 <div className="flex flex-col items-center gap-1">
@@ -34,6 +56,10 @@ export const ContactLeft = ({onClose}) => {
                 </div>
               </div>
             </div>
+          </>
+        )
+      }
+
     </div>
   )
 }
@@ -41,5 +67,5 @@ export const ContactLeft = ({onClose}) => {
 
 
 ContactLeft.propTypes = {
-    onClose: PropTypes.func.isRequired,
-  };
+  onClose: PropTypes.func.isRequired,
+};

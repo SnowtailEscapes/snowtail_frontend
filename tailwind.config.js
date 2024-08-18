@@ -15,7 +15,8 @@ export default {
       fontFamily: {
         light: ["DM Sans", "sans-serif"],
         ligh2: ["droid-serif", "serif"],
-        arimo: ["Arimo" , "sans-serif"]
+        arimo: ["Arimo" , "sans-serif"],
+        lora:["Lora","serif"]
       },
     },
   },

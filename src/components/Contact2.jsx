@@ -275,6 +275,26 @@ export default function Contact2() {
   const [flexibleYes, setFlexibleYes] = useState(false);
   const [flexibleNo, setFlexibleNo] = useState(false);
   const [passengers, setPassengers] = useState("");
+  const [screenSize, setScreenSize] = useState("large");
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 600) {
+        setScreenSize("mobile");
+      } else if (window.innerWidth < 1000) {
+        setScreenSize("tablet");
+      } else {
+        setScreenSize("large");
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Set initial state
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -297,7 +317,7 @@ export default function Contact2() {
 
   const sendEmail = async (e) => {
     e.preventDefault();
-    
+
     const emailData = {
       name,
       email,
@@ -362,31 +382,48 @@ export default function Contact2() {
       >
         <div className="flex flex-col md:flex-row items-stretch w-full h-full">
           <div className="flex flex-col p-5 bg-main-brand text-white md:w-1/3 w-full gap-4">
-            <button onClick={()=>setIsOpen(false)} className="btn bg-main-brand">
+            <button onClick={() => setIsOpen(false)} className="btn bg-main-brand">
               <p className="font-bold text-sm">X</p>
             </button>
             <div className="flex justify-center">
               <img src={logo} width={200} height={20} alt="Snowtail Escapes" />
             </div>
             <div className="card bg-base-100 h-fit flex align-middle shadow-md shadow-white mb-4">
-              <div className="card-body text-center">
-                <div className="flex flex-col items-center gap-1">
-                  <img src={trip} width={30} alt="Customized Trips" />
-                  <p className="font-bold text-black text-nowrap">
-                    100% Customised Trips
-                  </p>
-                </div>
-                <div className="flex flex-col items-center gap-1">
-                  <img src={guide} width={20} alt="Visa Success" />
-                  <p className="font-bold text-black">Best Groun Assistance</p>
-                </div>
-                <div className="flex flex-col items-center gap-1">
-                  <img src={time} width={30} alt="Coverage" />
-                  <p className="font-bold text-black">
-                    Great Customer Experience
-                  </p>
-                </div>
-              </div>
+              {
+                screenSize === "mobile" && (
+                  <>
+
+                  </>
+                )
+              }
+              {
+                screenSize === "large" || screenSize === "tablet" ? (
+                  <>
+                    <div className="card-body text-center">
+                      <div className="flex flex-col items-center gap-1">
+                        <img src={trip} width={30} alt="Customized Trips" />
+                        <p className="font-bold text-black text-nowrap">
+                          100% Customised Trips
+                        </p>
+                      </div>
+                      <div className="flex flex-col items-center gap-1">
+                        <img src={guide} width={20} alt="Visa Success" />
+                        <p className="font-bold text-black">Best Groun Assistance</p>
+                      </div>
+                      <div className="flex flex-col items-center gap-1">
+                        <img src={time} width={30} alt="Coverage" />
+                        <p className="font-bold text-black">
+                          Great Customer Experience
+                        </p>
+                      </div>
+                    </div>
+                  </> 
+                ):
+                  (
+                    <></>
+                  )
+                }
+
             </div>
           </div>
           <div

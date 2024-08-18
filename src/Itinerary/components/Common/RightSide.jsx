@@ -80,7 +80,7 @@ const RightSide = ({
                 </h6>
                 <h3 className="flex md:gap-2 text-nowrap">
                   {/* <CurrencyConverter price={Number(standard_current)} />  */}
-                  INR.{standard_current}/per person
+                  INR.{standard_current}/person
                 </h3>
               </div>
             </div>
@@ -147,7 +147,7 @@ const RightSide = ({
                 </h6>
                 <h3 className="flex md:gap-2 text-nowrap">
                   {/* <CurrencyConverter price={deluxe_current} /> */}
-                  INR.{deluxe_current}/per person
+                  INR.{deluxe_current}/person
                 </h3>
               </div>
             </div>
@@ -215,7 +215,7 @@ const RightSide = ({
                 </h6>
                 <h3 className="flex md:gap-2 text-nowrap">
                   {/* <CurrencyConverter price={super_deluxe_current} /> */}
-                  INR.{super_deluxe_current}/per person
+                  INR.{super_deluxe_current}/person
                 </h3>
               </div>
             </div>

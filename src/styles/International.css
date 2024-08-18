@@ -1,16 +1,12 @@
 
 @media screen and (min-width: 730px) {
-  .banner {
-    background-image: url("../assets/banner.webp");
-    height: 60vh;
-    background-size: cover;
-  }
+
   .cardContainer {
     /* Adjust these styles as per your design requirements */
     /* border: 1px solid; */
     width: 90%;
     margin-bottom: 2rem;
-    height: 50vh;
+    height: 53vh;
     display: flex;
     justify-content: center;
     border-radius: 20px !important;

@@ -4,6 +4,7 @@ import star from "../assets/star.webp";
 import trip from "../assets/trip.webp";
 import visa from "../assets/visa.webp";
 import time from "../assets/time.webp";
+
 export default function Infinite() {
   return (
     <>

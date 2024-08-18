@@ -1,9 +1,4 @@
 import React, { useEffect, useState } from "react";
-import google from "../assets/google.webp";
-import star from "../assets/star.webp";
-import trip from "../assets/trip.webp";
-import visa from "../assets/visa.webp";
-import time from "../assets/time.webp";
 import Infinite from "./Infinite";
 
 export default function InfiniteScrolling() {

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { Link, useLocation, useNavigation } from "react-router-dom";
 import "../../styles/International.css";
-import phone from "../../assets/phone.webp";
 import Contact from "../Contact";
 
 
@@ -11,7 +10,6 @@ const International = ({ to, title, location, price, duration, image }) => {
   const isInternational = loc.pathname === "/International";
   const isDomestic = loc.pathname === "/Domestic";
   const [showContactForm, setShowContactForm] = useState(false);
-
 
   const toggleContactForm = () => {
     setShowContactForm(!showContactForm);

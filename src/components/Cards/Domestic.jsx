@@ -101,7 +101,7 @@ export default function Domestic() {
 
   return (
     <div className="md:pl-20 md:pr-20 pl-4 pt-10">
-      <h2 className="march text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
+      <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
         Popular Domestic Tours
       </h2>
       {isLargeScreen && (

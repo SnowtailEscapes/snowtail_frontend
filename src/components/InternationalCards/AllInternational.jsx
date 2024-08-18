@@ -71,8 +71,7 @@ export default function AllInternational() {
     },
     {
       to: "/Bali6d5n",
-      title:
-        "Luxurious 6-Day Bali Honeymoon Escape: Kuta and Ubud Delights",
+      title: "Luxurious 6-Day Bali Honeymoon Escape: Kuta and Ubud Delights",
       price: 34699,
       location: "BALI",
       duration: "5 nights 6 days tour",
@@ -251,9 +250,10 @@ export default function AllInternational() {
   }, []);
 
   useEffect(() => {
-    const filtered = tours.filter((tour) =>
-      tour.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      tour.location.toLowerCase().includes(searchQuery.toLowerCase())
+    const filtered = tours.filter(
+      (tour) =>
+        tour.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        tour.location.toLowerCase().includes(searchQuery.toLowerCase())
     );
     setFilteredTours(filtered);
   }, [searchQuery]);
@@ -261,51 +261,106 @@ export default function AllInternational() {
   return (
     <>
       <Navbar />
+      {screenSize === "mobile" && (
+        <>
+          <div className="flex justify-center mt-20 md:mt-28 md:p-5">
+            <div className="w-full md:w-3/4">
+              <h1 className="text-[26px] md:text-3xl font-lora font-semibold text-center mb-4">
+                International Tour Adventures
+              </h1>
 
-      <div className="flex justify-center mt-20 md:mt-28 md:p-5">
-        <div className="w-full md:w-3/4">
-          <h1 className="text-[26px] md:text-3xl march font-semibold text-center mb-4">
-            International Tour Adventures
-          </h1>
+              <div className="flex justify-center mb-4">
+                <label className="input input-bordered flex items-center gap-2 md:w-4/5">
+                  <input
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    type="text"
+                    className="w-full"
+                    placeholder="Search"
+                  />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    className="h-4 w-4 opacity-70"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </label>
+              </div>
 
-          <div className="flex justify-center mb-4">
-            <label className="input input-bordered flex items-center gap-2 md:w-4/5">
-              <input
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                type="text"
-                className="w-full"
-                placeholder="Search"
-              />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                fill="currentColor"
-                className="h-4 w-4 opacity-70"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-                  clipRule="evenodd"
+              {filteredTours.map((tour) => (
+                <International
+                  key={tour.to}
+                  to={tour.to}
+                  title={tour.title}
+                  price={tour.price}
+                  location={tour.location}
+                  duration={tour.duration}
+                  image={tour.image}
                 />
-              </svg>
-            </label>
+              ))}
+            </div>
           </div>
+        </>
+      )}
+      {
+        screenSize === "large" && (
+          <>
 
-          {filteredTours.map((tour) => (
-            <International
-              key={tour.to}
-              to={tour.to}
-              title={tour.title}
-              price={tour.price}
-              location={tour.location}
-              duration={tour.duration}
-              image={tour.image}
-            />
-          ))}
+            <div className="flex justify-center">
+              <div className="mt-20 md:mt-28 md:p-5">
+                <h1 className="text-[26px] md:text-3xl font-lora font-semibold text-center mb-4">
+                  International Tour Adventures
+                </h1>
 
-        </div>
-      </div>
+                <div className="flex justify-center mb-4">
+                  <label className="input input-bordered flex items-center gap-2 md:w-4/5">
+                    <input
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      type="text"
+                      className="w-full"
+                      placeholder="Search"
+                    />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      className="h-4 w-4 opacity-70"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </label>
+                </div>
+
+                {filteredTours.map((tour) => (
+                  <International
+                    key={tour.to}
+                    to={tour.to}
+                    title={tour.title}
+                    price={tour.price}
+                    location={tour.location}
+                    duration={tour.duration}
+                    image={tour.image}
+                  />
+                ))}
+
+              </div>
+            </div>
+          </>
+
+        )
+      }
+
       {screenSize === "large" && <Footer />}
       {screenSize === "tablet" && <Footer />}
       {screenSize === "mobile" && <MobileFooter />}

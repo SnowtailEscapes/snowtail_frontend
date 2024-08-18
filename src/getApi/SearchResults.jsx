@@ -62,7 +62,7 @@ const SearchResults = () => {
                       <img
                         loading="lazy"
                         src={item?.small_img}
-                        className="img rounded-box hover:scale-105"
+                        className="img2 rounded-box hover:scale-105"
                         onMouseEnter={hoverHo}
                         alt={item?.title}
                         width="100%"
@@ -79,7 +79,7 @@ const SearchResults = () => {
                         <p className="save flex">Save {item?.save}</p>
                       </div>
                     )}
-                    <div className="flex flex-col pt-2 gap-y-1">
+                    <div className="flex flex-col mt-10 gap-y-1">
                       <div className="flex flex-row justify-between">
                         <p className="text-[13px] text-main-brand font-bold">
                           {item?.duration}
@@ -107,8 +107,8 @@ const SearchResults = () => {
                               price={Number(item?.prices.three_star)}
                             /> */}
                             <span className="text-base text-main-brand font-bold">
-                            {Number(item?.prices.three_star)}
-                              /per
+                            INR.{Number(item?.prices.three_star)}
+                              /person
                             </span>
                           </h4>
                         )}

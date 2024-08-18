@@ -219,7 +219,7 @@ export default function AllDomestic() {
       <Navbar />
       <div className="flex justify-center">
         <div className="mt-20 md:mt-28 md:p-5 items-center">
-          <h1 className="text-center text-[26px] md:text-3xl march font-semibold mb-4">
+          <h1 className="text-center text-[26px] md:text-3xl font-lora font-semibold mb-4">
             Domestic Tour Adventures
           </h1>
           <div className="flex justify-center mb-4">
