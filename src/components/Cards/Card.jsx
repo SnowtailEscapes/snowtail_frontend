@@ -186,7 +186,7 @@ const Card = ({
           <div
             className={`${
               hover && "scale-105"
-            } top-5 bg-main-brand absolute flex flex-row md:gap-2 p-1`}
+            } top-5 bg-main-brand absolute flex flex-row md:gap-1 p-1`}
           >
             <p className="save flex">Save INR.{save}</p>
           </div>

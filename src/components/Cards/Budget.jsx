@@ -94,7 +94,7 @@ export default function International() {
       "image": "https://snowtailescapes.com/images/card/thailand5n6ds.webp"
     }
   ]
-  
+
   return (
     <div className="md:pl-20 md:pr-20 pl-4 pt-10">
       <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
@@ -107,22 +107,29 @@ export default function International() {
       )}
       {isMobileScreen && (
         <>
-          <div className="carousel p-4 rounded-box flex justify-between items-center space-x-10 md:space-x-5">            
-              {budgetCards.map((card, index) => (
-                  <Card
-                    title={card.title}
-                    duration={card.duration}
-                    rating={card.rating}
-                    cut_price={card.cut_price}
-                    curr_price={card.curr_price}
-                    save={card.save}
-                    direct={card.direct}
-                    image={card.image}
-                    Name={card.Name}
-                    key={index}
-                  />
-              ))}
+          <div className="carousel p-4 pb-0 rounded-box flex justify-between items-center space-x-10 md:space-x-5">
+            {budgetCards.map((card, index) => (
+              <Card
+                title={card.title}
+                duration={card.duration}
+                rating={card.rating}
+                cut_price={card.cut_price}
+                curr_price={card.curr_price}
+                save={card.save}
+                direct={card.direct}
+                image={card.image}
+                Name={card.Name}
+                key={index}
+              />
+            ))}
           </div>
+
+            <div className="flex justify-center gap-5">
+            {budgetCards.map((item) => (
+              <p className="text-4xl text-main-brand">.</p>
+              ))}
+            </div>
+          
         </>
       )}
     </div>
