@@ -360,10 +360,7 @@ export default function AllInternational() {
 
         )
       }
-
-      {screenSize === "large" && <Footer />}
-      {screenSize === "tablet" && <Footer />}
-      {screenSize === "mobile" && <MobileFooter />}
+<Footer/>
     </>
   );
 }

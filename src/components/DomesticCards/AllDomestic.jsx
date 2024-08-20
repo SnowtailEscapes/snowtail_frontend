@@ -259,9 +259,7 @@ export default function AllDomestic() {
           ))}
         </div>
       </div>
-      {screenSize === "large" && <Footer />}
-      {screenSize === "tablet" && <Footer />}
-      {screenSize === "mobile" && <MobileFooter />}
+      <Footer/>
     </>
   );
 }
