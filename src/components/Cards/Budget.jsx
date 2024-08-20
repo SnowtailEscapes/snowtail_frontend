@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import GliderCarousel from "./gliderComponent";
 import Card from "./Card";
 
@@ -25,9 +25,31 @@ export default function International() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const carouselRef = useRef(null);
+
+  const handlePrev = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({
+        left: -carouselRef.current.clientWidth,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const handleNext = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({
+        left: carouselRef.current.clientWidth,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+
 
   const budgetCards = [
-    {
+    { 
+      "id":0,
       "Name": "Kasol",
       "title": "Land of Creamy Flavors",
       "duration": "3 Days & 2 Nights",
@@ -39,6 +61,7 @@ export default function International() {
       "image": "https://snowtailescapes.com/images/card/kasol.webp"
     },
     {
+      "id":1,
       "Name": "Mussoorie & Rishikesh",
       "title": "A Journey to the Queen of Hills",
       "duration": "4 Days & 3 Nights",
@@ -49,7 +72,8 @@ export default function International() {
       "direct": "/Uttrakhand",
       "image": "https://snowtailescapes.com/images/card/masoorie.webp"
     },
-    {
+    { 
+      "id":2,
       "Name": "Manali",
       "title": "A Himalayan Heaven",
       "duration": "4 Days & 3 Nights",
@@ -60,7 +84,8 @@ export default function International() {
       "direct": "/Manali3n4d",
       "image": "https://snowtailescapes.com/images/card/manali.webp"
     },
-    {
+    { 
+      "id":3,
       "Name": "Gujarat",
       "title": "Monument of Pride",
       "duration": "4 Days & 3 Nights",
@@ -71,7 +96,8 @@ export default function International() {
       "direct": "/Gujarat3n4d",
       "image": "https://snowtailescapes.com/images/card/gujarat1.webp"
     },
-    {
+    { 
+      "id":4,
       "Name": "Bangkok & Pattaya",
       "title": "A Vibrant Thai Adventure",
       "duration": "5 Days & 4 Nights",
@@ -82,7 +108,8 @@ export default function International() {
       "direct": "/Thailand5d4n",
       "image": "https://snowtailescapes.com/images/card/thailand4n5dS.webp"
     },
-    {
+    { 
+      "id":5,
       "Name": "Phuket & Krabi",
       "title": "Experience Best of Southern Thailand",
       "duration": "6 Days & 5 Nights",
@@ -107,8 +134,8 @@ export default function International() {
       )}
       {isMobileScreen && (
         <>
-          <div className="carousel p-4 pb-0 rounded-box flex justify-between items-center space-x-10 md:space-x-5">
-            {budgetCards.map((card, index) => (
+          {/* <div className="carousel p-4 pb-0 rounded-box flex justify-between items-center space-x-10 md:space-x-5">
+             {budgetCards.map((card, index) => (
               <Card
                 title={card.title}
                 duration={card.duration}
@@ -121,15 +148,17 @@ export default function International() {
                 Name={card.Name}
                 key={index}
               />
+            ))} 
+          </div> */}
+          <div className="carousel p-4 rounded-box flex justify-between items-center space-x-10 md:space-x-5">
+            {budgetCards.map((card) => (
+              <Card {...card} key={card.id} />
             ))}
           </div>
-
-            <div className="flex justify-center gap-5">
-            {budgetCards.map((item) => (
-              <p className="text-4xl text-main-brand">.</p>
-              ))}
-            </div>
-          
+          <div className="flex w-full justify-center gap-2">
+            <button onClick={handlePrev} className="btn btn-xs">Prev</button>
+            <button onClick={handleNext} className="btn btn-xs">Next</button>
+          </div>
         </>
       )}
     </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import GliderCarousel from "./gliderComponent";
 import Card from "./Card";
 
@@ -24,8 +24,30 @@ export default function Domestic() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const carouselRef = useRef(null);
+
+  const handlePrev = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({
+        left: -carouselRef.current.clientWidth,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const handleNext = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({
+        left: carouselRef.current.clientWidth,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+
   const domesticCards = [
-    {
+    { 
+      "id":0,
       "Name": "Kashmir",
       "title": "Adventure Meet Serenity",
       "duration": "6 Days & 5 Nights",
@@ -37,7 +59,8 @@ export default function Domestic() {
       "image":
         "https://snowtailescapes.com/images/card/kashmir1.webp",
     },
-    {
+    { 
+      "id":1,
       "Name": "Kashmir",
       "title": "Experience Paradise On Earth",
       "duration": "4 Days & 3 Nights",
@@ -49,7 +72,8 @@ export default function Domestic() {
       "image":
         "https://snowtailescapes.com/images/card/kashmir2.webp",
     },
-    {
+    { 
+      "id":2,
       "Name": "Ladakh",
       "title": "Thrilling Leh Ladakh",
       "duration": "6 Days & 5 Nights",
@@ -61,7 +85,8 @@ export default function Domestic() {
       "image":
         "https://snowtailescapes.com/images/card/ladakh.webp",
     },
-    {
+    { 
+      "id":3,
       "Name": "Gangtok & Darjeeling",
       "title": "The Abode of Clouds",
       "duration": "6 Days & 5 Nights",
@@ -73,7 +98,8 @@ export default function Domestic() {
       "image":
         "https://snowtailescapes.com/images/card/sikkim.webp",
     },
-    {
+    { 
+      "id":4,
       "Name": "Himachal Pradesh",
       "title": "Sleep In Natures Lap",
       "duration": "6 Days & 5 Nights",
@@ -85,7 +111,8 @@ export default function Domestic() {
       "image":
         "https://snowtailescapes.com/images/card/shimla5n6d.webp",
     },
-    {
+    {  
+      "id":5,
       "Name": "Andaman",
       "title": "A Journey to Serenity",
       "duration": "5 Days & 4 Nights",
@@ -111,7 +138,7 @@ export default function Domestic() {
       )}
       {isMobileScreen && (
         <>
-          <div className="carousel p-4 rounded-box flex justify-between items-center space-x-10 md:space-x-5">            
+          {/* <div className="carousel p-4 rounded-box flex justify-between items-center space-x-10 md:space-x-5">            
               {domesticCards.map((card, index) => (
                   <Card
                     title={card.title}
@@ -126,6 +153,15 @@ export default function Domestic() {
                     key={index}
                   />
               ))}
+          </div> */}
+          <div className="carousel p-4 rounded-box flex justify-between items-center space-x-10 md:space-x-5">
+            {domesticCards.map((card) => (
+              <Card {...card} key={card.id} />
+            ))}
+          </div>
+          <div className="flex w-full justify-center gap-2">
+            <button onClick={handlePrev} className="btn btn-xs">Prev</button>
+            <button onClick={handleNext} className="btn btn-xs">Next</button>
           </div>
         </>
       )}

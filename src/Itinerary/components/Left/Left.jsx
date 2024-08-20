@@ -35,12 +35,15 @@ const Left = ({itinerary}) => {
 
       <div className={a.left4} itinerary-aos="slide-right">
         <h3>Overview</h3>
-        <p>{itinerary.description1}</p>
+        <p>Discover the dynamic allure of Bangkok, Thailand's capital, and Pattaya, the lively party hub. Bangkok, also known as Krung Thep or the 'City of Angels,' boasts a rich tapestry of history and culture, from glittering shrines to bustling street markets. Meanwhile, Pattaya offers endless fun with its vibrant nightlife and scenic beaches, making it an ideal destination for those seeking excitement and relaxation.</p>
         <div>
           <ul>
-            {/* {itinerary.description2.map((desc, index) => (
-              <li key={index}>{desc}</li>
-            ))} */}
+            <li>Pick up - Bangkok Airport</li>
+            <li>Drop - Bangkok Airport</li>
+            <li>Country - Thailand</li>
+            <li>Duration - 4N/5D</li>
+            <li>Destination for- Couples/Friends/ Family</li>
+            <li>Mode of transportation- Car/traveller</li>
           </ul>
         </div>
       </div>

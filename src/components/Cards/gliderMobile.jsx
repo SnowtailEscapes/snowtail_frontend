@@ -1,43 +1,36 @@
-// MobileGlider.js
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Glider from 'glider-js';
 import Card from './Card';
 
 const MobileGlider = ({ car }) => {
+  const gliderRef = useRef(null);
+
   useEffect(() => {
-    new Glider(document.querySelector('.glider-mobile'), {
-      slidesToShow: 1,
-      dots: '#dots-mobile',
-      draggable: true,
+    const gliderInstance = new Glider(gliderRef.current, {
+      slidesToShow: 1,  // Show one card at a time
+      dots: '#dots-mobile',  // Enable dots for scrollability
+      draggable: true,  // Allow dragging
       arrows: {
-        prev: '.glider-prev-mobile',
-        next: '.glider-next-mobile',
+        prev: '.glider-prev-mobile',  // Previous arrow
+        next: '.glider-next-mobile',  // Next arrow
       },
     });
+
+    return () => {
+      gliderInstance.destroy();  // Cleanup when component unmounts
+    };
   }, [car]);
 
   return (
-    <>
-      <div className="glider-mobile carousel p-4 pb-0 rounded-box flex flex-nowrap">
+    <div className="mobile-glider-container">
+      <div ref={gliderRef} className="glider-mobile p-4 rounded-box flex flex-nowrap">
         {car.map((card, index) => (
-          <Card
-            title={card.title}
-            duration={card.duration}
-            rating={card.rating}
-            cut_price={card.cut_price}
-            curr_price={card.curr_price}
-            save={card.save}
-            direct={card.direct}
-            image={card.image}
-            Name={card.Name}
-            key={index}
-          />
+          <Card {...card} key={index} />
         ))}
       </div>
-      <div id="dots-mobile" className="glider-dots flex justify-center gap-3 mt-4">
-        
-      </div>
-    </>
+
+      <div id="dots-mobile" className="glider-dots mt-4"></div>  {/* Dots for navigation */}
+    </div>
   );
 };
 
