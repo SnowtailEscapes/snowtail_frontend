@@ -5,35 +5,37 @@ import insta from "../assets/footer/insta.png";
 import linkedin from "../assets/footer/linkedin.png";
 import logo from "../../public/logo/30.svg";
 import "../styles/footer.css";
+import logo2 from '../../public/NewLogos/Logo.png';
 
 export default function Footer() {
   return (
     <div className="relative flex flex-col items-center footer">
       <div className="absolute top-0 z-10 w-full flex justify-center mt-10 md:h-3/6">
-        <div className="md:min-h-fit md:w-4/5 w-full md:rounded-lg flex flex-col md:flex-row bg-green-500">
+        <div className="md:min-h-fit md:w-4/5 w-full md:rounded-lg flex flex-col md:flex-row bg-dark-accent">
           <div className="w-full md:w-1/2 p-4">
-            <h1 className="text-[1.5rem] text-center font-light text-black1">About Snowtail Escapes</h1>
-            <ul className="list-none font-ligh2 flex gap-2  justify-center items-center flex-col ">
+            {/* <h1 className="text-[1.5rem] mb-1 text-center font-light text-white1">Snowtail Escapes</h1> */}
+            <img src={logo2}/>
+            <ul className="list-none font-ligh2 flex gap-2  justify-start flex-col ">
               <Link to="/about">
-                <li className=" text-[16px] hover:text-white1 hover:underline">About us</li>
+                <li className=" text-[16px] text-white1 hover:underline">About us</li>
               </Link>
               <Link to="/contact">
-                <li className=" text-[16px] hover:text-white1 hover:underline">Contact us</li>
+                <li className=" text-[16px] text-white1 hover:underline">Contact us</li>
               </Link>
               <Link to="/privacy-policy">
-                <li className=" text-[16px] hover:text-white1 hover:underline">Privacy Policy</li>
+                <li className=" text-[16px] text-white1 hover:underline">Privacy Policy</li>
               </Link>
               <Link to="/terms-conditions">
-                <li className=" text-[16px] hover:text-white1 hover:underline">Terms and Conditions</li>
+                <li className=" text-[16px] text-white1 ">Terms and Conditions</li>
               </Link>
               <Link>
-                <li className=" text-[16px] hover:text-white1 hover:underline">Support</li>
+                <li className=" text-[16px] text-white1 hover:underline">Support</li>
               </Link>
               <Link>
-                <li className=" text-[16px] hover:text-white1 hover:underline">We are Hiring</li>
+                <li className=" text-[16px] text-white1 hover:underline">We are Hiring</li>
               </Link>
               <Link>
-                <li className=" text-[16px] hover:text-white1 hover:underline">Cancellation Policy</li>
+                <li className=" text-[16px] text-white1 hover:underline">Cancellation Policy</li>
               </Link>
             </ul>
           </div>
@@ -49,7 +51,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="mt-40 w-full"></div>
+      <div className="mt-52 w-full"></div>
 
       <div className="relative flex justify-center p-5 md:pt-52 bg-light-shade mt-20 pt-80 w-full font-light">
         <div className="flex flex-col items-center gap-10 w-full">
