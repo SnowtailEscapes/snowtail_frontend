@@ -14,7 +14,11 @@ export default function Footer() {
         <div className="md:min-h-fit md:w-4/5 w-full md:rounded-lg flex flex-col md:flex-row bg-dark-accent">
           <div className="w-full md:w-1/2 p-4">
             {/* <h1 className="text-[1.5rem] mb-1 text-center font-light text-white1">Snowtail Escapes</h1> */}
-            <img src={logo2}/>
+            <div className="flex justify-center">
+            <img src={logo2} width={200} height={300}/>
+
+            </div>
+            
             <ul className="list-none font-ligh2 flex gap-2  justify-start flex-col ">
               <Link to="/about">
                 <li className=" text-[16px] text-white1 hover:underline">About us</li>
@@ -51,7 +55,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="mt-52 w-full"></div>
+      <div className="md:mt-52 w-full mt-64"></div>
 
       <div className="relative flex justify-center p-5 md:pt-52 bg-light-shade mt-20 pt-80 w-full font-light">
         <div className="flex flex-col items-center gap-10 w-full">

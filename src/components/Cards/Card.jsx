@@ -131,7 +131,7 @@ const Card = ({
                   /person
                 </h4>
               </div>
-              <div className="text-[13px] flex justify-center items-center flex-row font-bold">
+              <div className="text-[13px] flex flex-row font-bold">
                 <img
                   src={percent}
                   width={20}
