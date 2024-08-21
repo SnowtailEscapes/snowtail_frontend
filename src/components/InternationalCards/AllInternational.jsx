@@ -4,6 +4,7 @@ import Navbar from "../Navbar";
 import "../../styles/International.css";
 import Footer from "../Footer";
 import MobileFooter from "../MobileFooter";
+import Mview from "../DomesticCards/MobileCards";
 
 // Import your images here
 import philipenes from "../../../public/images/card/philipenes.webp";
@@ -263,9 +264,9 @@ export default function AllInternational() {
       <Navbar />
       {screenSize === "mobile" && (
         <>
-          <div className="flex justify-center mt-20 md:mt-28 md:p-5">
+          <div className="flex justify-center mt-20 md:mt-28 md:p-5 p-5">
             <div className="w-full md:w-3/4">
-              <h1 className="text-[26px] md:text-3xl font-lora font-semibold text-center mb-4">
+              <h1 className="text-[26px] md:text-3xl font-lora font-semibold text-center mb-4 mt-4">
                 International Tour Adventures
               </h1>
 
@@ -294,7 +295,7 @@ export default function AllInternational() {
               </div>
 
               {filteredTours.map((tour) => (
-                <International
+                <Mview
                   key={tour.to}
                   to={tour.to}
                   title={tour.title}
@@ -357,7 +358,6 @@ export default function AllInternational() {
               </div>
             </div>
           </>
-
         )
       }
 <Footer/>

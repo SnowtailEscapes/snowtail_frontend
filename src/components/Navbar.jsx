@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import logo from "../../public/NewLogos/1.svg";
 import logoScrolled from "../../public/NewLogos/2.svg";
+import logo2 from '../../public/NewLogos/Logo.png';
 import "../styles/navbar.css";
 import home2 from "../assets/home2.png";
 import international2 from "../assets/international2.png";
@@ -59,9 +60,8 @@ const Navbar = () => {
     <>
       <div
         className={`navbar-fixed navbar top-0 left-0 w-full z-50  text-white ${scrolled ? "scrolled" : ""
-          } ${width > 780 ? "bg-main-brand" : `${scrolled ? "" : `${isHomePage ? '   mix-blend-multiply' : `${!isInternational && !isDomestic ?  'bg-white mix-blend-normal' : ''}`}`}`}`}
+          } ${width > 780 ? "bg-main-brand" : `${scrolled ? "" : `${isHomePage ? '' : `${!isInternational && !isDomestic ?  'bg-main-brand' : 'bg-main-brand'}`}`}`}`}
       >
-
         <div className="navbar-start flex gap-5">
           <Link to="/">
             {
@@ -81,9 +81,8 @@ const Navbar = () => {
               width < 780 && (
                 <>
                   <img
-                    src={scrolled ? logoScrolled : logo}
+                    src={scrolled ? logoScrolled : logo2}
                     width={logoSize}
-                    className={`nav-logo ${scrolled ? "" : "mix-blend-multiply"} `}
                     height={logoSize}
                     alt="logo"
                   />
@@ -101,14 +100,14 @@ const Navbar = () => {
               <img
                 src={
                   !isHomePage && !isInternational && !isDomestic
-                    ? hamburger
+                    ? hamburger2
                     : scrolled
                       ? isDropdownOpen
                         ? close2
                         : hamburger2
                       : isDropdownOpen
                         ? close1
-                        : hamburger
+                        : hamburger2
                 }
                 width={
                   !isHomePage && !isInternational && !isDomestic

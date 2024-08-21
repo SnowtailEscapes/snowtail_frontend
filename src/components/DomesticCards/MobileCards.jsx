@@ -1,93 +1,163 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { Link, useLocation, useNavigation } from "react-router-dom";
-import "../../styles/International.css";
+import tag from "../../assets/tag.webp";
+import "../../styles/Card.css";
+import star from "../../assets/star2.png";
+import percent from "../../assets/percent.png";
 import phone from "../../assets/phone.webp";
+import { Link } from "react-router-dom";
 import Contact from "../Contact";
+// import CurrencyConverter from "../../getApi/CurrencyConverter";
+// import { useDispatch } from "react-redux";
+// import { fetchCurrencyRates } from "../../redux/slice/currencySlice";
+// import { useSelector } from "react-redux";
 
-const Domestic = ({ to, title, location, price, duration, image }) => {
-  const loc = useLocation();
-  const isInternational = loc.pathname === "/International";
-  const isDomestic = loc.pathname === "/Domestic";
+const Card = ({
+  title,
+  duration,
+  price,
+  image,
+  to,
+  location
+}) => {
+  const [screenSize, setScreenSize] = useState("large");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 600) {
+        setScreenSize("mobile");
+      } else if (window.innerWidth < 1000) {
+        setScreenSize("tablet");
+      } else {
+        setScreenSize("large");
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Set initial state
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const [showContactForm, setShowContactForm] = useState(false);
+  const [hover, setHover] = useState(false);
 
   const toggleContactForm = () => {
     setShowContactForm(!showContactForm);
   };
 
+  const hoverHo = () => {
+    setHover(!hover);
+  };
   return (
-    <div
-      className="flex justify-center dom-card"
-    >
-      <div className="cardContainer rounded-xl overflow-hidden">
-        <figure className="imageContainer">
-          <Link to={to}>
-            <img src={image} alt={title} />
-          </Link>
-        </figure>
-        <div className="flex flex-col justify-between textContainer">
-          <ul className="flex text-xs text-green-500 justify-between mb-2">
-            <li className="disc font-[14px] text-main-brand">{duration}</li>
-            <li className="disc font-[14px] text-main-brand">
-              {isDomestic && <>Domestic Tours</>}
-              {isInternational && <>International Tours</>}
-            </li>
-          </ul>
-          <div>
-            <h2 className="text-[28px] font-semibold text-dark-accent mb-2 font-arimo">
-              {location && <>{location}</>}
-            </h2>
-            <p className="text-black1 mb-2 font-ligh2 text-[20px] ">{title}</p>
-            <div className="flex space-x-2 mb-4">
-              <span className="text-[16px] px-3 rounded-md font-light  bg-ligh-accent shadow-sm shadow-black1 text-green-950">
-                All meals
-              </span>
-              <span className="text-[16px] px-3 rounded-md font-light bg-ligh-accent shadow-sm shadow-black1 text-green-950">
-                3 star resort
-              </span>
-              <span className="text-[16px] px-3 rounded-md font-light bg-ligh-accent shadow-sm shadow-black1 text-green-950">
-                Major sightseeing
-              </span>
-            </div>
-            <h3 className="text-[16px] text-main-brand flex-nowrap flex justify-self-end">
-              {/* <CurrencyConverter price={price} /> */}
-              {price}
-              <p>/person</p>
-            </h3>
+    <>
+      {screenSize === "mobile" && (
+        <div className="lg:w-1/3 md:1/2 w-full carousel-item flex flex-col relative rounded-2xl mb-4">
+          <div
+            className="relative text-center"
+            style={{ width: "100%", paddingBottom: "60%" }} // 5:3 aspect ratio
+          >
+            <Link to={to}>
+              <img
+                loading="lazy"
+                src={image}
+                className="home-img rounded-box hover:scale-105"
+                onMouseEnter={hoverHo}
+                alt={title}
+                width="100%"
+                decoding="async"
+                height="100%"
+                style={{ position: "absolute", top: 0, left: 0 }}
+              />
+            </Link>
           </div>
-          <div className="flex flex-row gap-3">
-            <button
-              className="btn btn-outline border-main-brand border-2 phone"
-              onClick={toggleContactForm}
-            >
-              <img src={phone} width={40} alt="Phone" loading="lazy" />
-            </button>
-            <button
-              className="btn bg-main-brand rounded-md text-white text-[15px] font-bold request"
-              onClick={toggleContactForm}
-            >
-              Request Callback
-            </button>
+          <div className="flex flex-col pt-2 gap-y-1">
+            <Link to={to}>
+              <div className="flex flex-row justify-between">
+                <p className="text-[13px] text-main-brand font-bold">
+                  {duration}
+                </p>
+                <p className="text-main-brand text-[13px] flex flex-row font-bold">
+                  <img
+                    src={star}
+                    width={20}
+                    alt="Star"
+                    loading="lazy"
+                    color="text-main-brand"
+                  />
+                  <span>4.5/5</span>
+                </p>
+              </div>
+              <div className="flex flex-col">
+                <h2 className="text-[1.5rem] bold text-dark-accent font-bold font-arimo">
+                  {location.substring(0, 20)}
+                </h2>
+                <h3 className="text-base text-wrap boston text-black1 font-semibold">
+                  {title}
+                </h3>
+              </div>
+              <div className="flex flex-row justify-between mt-2">
+                <div className="text-[13px] flex flex-row text-center font-bold items-center">
+                  <img
+                    src={percent}
+                    width={20}
+                    height={10}
+                    alt="Star"
+                    loading="lazy"
+                    color="text-main-brand"
+                  />
+                  <p className="text-center w-1/3 text-xs rounded-xl discount text-nowrap text-green-800 text-[13px] font-light">
+                    Special Monsoon Deal
+                  </p>
+                </div>
+                <div className="flex flex-row justify-between items-center">
+                  <h4 className="text-base text-main-brand font-bold font-light2 flex">
+                    {/* <CurrencyConverter price={Number(curr_price)} /> */}
+                    <span className="text-base text-main-brand text-bold">
+                      INR.{price}
+                      /person
+                    </span>
+                  </h4>
+                </div>
+              </div>
+
+            </Link>
+            <div className="flex flex-row gap-3">
+              <button
+                className="btn btn-outline border-main-brand border-2"
+                style={{ width: "18%" }}
+                onClick={toggleContactForm}
+              >
+                <img src={phone} width={40} alt="Phone" loading="lazy" />
+              </button>
+              <button
+                className="btn bg-main-brand rounded-md text-white text-[15px] font-bold"
+                onClick={toggleContactForm}
+                style={{ width: "77%" }}
+              >
+                Request Callback
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
       {showContactForm && (
         <Contact
           isVisible={showContactForm}
           onClose={() => setShowContactForm(false)}
         />
       )}
-    </div>
+    </>
   );
 };
 
-Domestic.propTypes = {
-  title: PropTypes.string.isRequired,
+Card.propTypes = {
   to: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
   duration: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
   image: PropTypes.string.isRequired,
 };
 
-export default Domestic;
+export default Card;

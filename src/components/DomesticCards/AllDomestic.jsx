@@ -3,7 +3,7 @@ import "../../styles/International.css";
 import Domestic from "../InternationalCards/International";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-import MobileFooter from "../MobileFooter";
+import Mview from "./MobileCards";
 
 // Import images as you already did
 import rj1 from "../../../public/images/card/rj1.webp";
@@ -217,49 +217,105 @@ export default function AllDomestic() {
         />
       </Helmet> */}
       <Navbar />
-      <div className="flex justify-center">
-        <div className="mt-20 md:mt-28 md:p-5 items-center">
-          <h1 className="text-center text-[26px] md:text-3xl font-lora font-semibold mb-4">
-            Domestic Tour Adventures
-          </h1>
-          <div className="flex justify-center mb-4">
-            <label className="input input-bordered flex items-center gap-2 md:w-4/5">
-              <input
-                value={searchTerm}
-                onChange={handleSearch}
-                type="text"
-                className="w-full"
-                placeholder="Search"
-              />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                fill="currentColor"
-                className="h-4 w-4 opacity-70"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </label>
-          </div>
 
-          {filteredTours.map((tour, index) => (
-            <Domestic
-              key={index}
-              to={tour.to}
-              title={tour.title}
-              location={tour.location}
-              price={tour.price}
-              image={tour.image}
-              duration={tour.duration}
-            />
-          ))}
-        </div>
-      </div>
-      <Footer/>
+      {
+        screenSize === "large" && (
+          <>
+            <div className="flex justify-center ">
+              <div className="mt-20 md:mt-28 md:p-5 items-center">
+                <h1 className="text-center text-[26px] md:text-3xl font-lora font-semibold mb-4 mt-4">
+                  Domestic Tour Adventures
+                </h1>
+                <div className="flex justify-center mb-4">
+                  <label className="input input-bordered flex items-center gap-2 md:w-4/5">
+                    <input
+                      value={searchTerm}
+                      onChange={handleSearch}
+                      type="text"
+                      className="w-full"
+                      placeholder="Search"
+                    />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      className="h-4 w-4 opacity-70"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </label>
+                </div>
+
+                {filteredTours.map((tour, index) => (
+                  <Domestic
+                    key={index}
+                    to={tour.to}
+                    title={tour.title}
+                    location={tour.location}
+                    price={tour.price}
+                    image={tour.image}
+                    duration={tour.duration}
+                  />
+                ))}
+              </div>
+            </div>
+          </>
+        )
+      }
+      {
+        screenSize === "mobile" && (
+          <>
+          <div className="flex justify-center p-5">
+              <div className="mt-20 md:mt-28 md:p-5 items-center">
+                <h1 className="text-center text-[26px] md:text-3xl font-lora font-semibold mb-4 mt-4">
+                  Domestic Tour Adventures
+                </h1>
+                <div className="flex justify-center mb-4">
+                  <label className="input input-bordered flex items-center gap-2 md:w-4/5">
+                    <input
+                      value={searchTerm}
+                      onChange={handleSearch}
+                      type="text"
+                      className="w-full"
+                      placeholder="Search"
+                    />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      className="h-4 w-4 opacity-70"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </label>
+                </div>
+
+                {filteredTours.map((tour, index) => (
+                  <Mview
+                    key={index}
+                    to={tour.to}
+                    title={tour.title}
+                    location={tour.location}
+                    price={tour.price}
+                    image={tour.image}
+                    duration={tour.duration}
+                  />
+                ))}
+              </div>
+            </div>
+          </>
+        )
+      }
+
+      <Footer />
     </>
   );
 }
