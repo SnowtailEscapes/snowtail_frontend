@@ -6,7 +6,15 @@
     transform: translateX(calc(-100%));
   }
 }
-
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.41); /* Adjust the opacity and color as needed */
+}
 .navbar-fixed{
   position: fixed;
   top: 0;
@@ -66,7 +74,7 @@
 
 .home {
   position: relative; /* Ensure the div can contain absolutely positioned elements */
-  height: 80vh;
+  height: 100vh;
   overflow: hidden; /* Hide overflow to prevent image overflow */
 }
 
@@ -85,6 +93,10 @@
   left: auto;
 }
 
+.home-text{
+  height: 95vh;
+}
+
 @media screen and (max-width:700px) {
   .home {
     position: relative; /* Ensure the div can contain absolutely positioned elements */
@@ -101,4 +113,8 @@
     object-fit: cover; /* Maintain aspect ratio and cover the container */
     z-index: -1 !important; /* Ensure it's behind other content */
   }
+  .home-text{
+    height: 80vh;
+  }
+  
 }

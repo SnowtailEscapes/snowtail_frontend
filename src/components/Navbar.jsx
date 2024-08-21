@@ -60,7 +60,7 @@ const Navbar = () => {
     <>
       <div
         className={`navbar-fixed navbar top-0 left-0 w-full z-50  text-white ${scrolled ? "scrolled" : ""
-          } ${width > 780 ? "bg-main-brand" : `${scrolled ? "" : `${isHomePage ? '' : `${!isInternational && !isDomestic ?  'bg-main-brand' : 'bg-main-brand'}`}`}`}`}
+          } ${width > 780 ? `${!isHomePage ? 'bg-main-brand' : 'bg-none'}` : `${scrolled ? "" : `${isHomePage ? '' : `${!isInternational && !isDomestic ?  'bg-main-brand' : 'bg-main-brand'}`}`}`}`}
       >
         <div className="navbar-start flex gap-5">
           <Link to="/">
@@ -68,7 +68,7 @@ const Navbar = () => {
               width > 780 && (
                 <>
                   <img
-                    src={logoScrolled}
+                    src={!isHomePage ? logoScrolled : logo2}
                     width={logoSize}
                     className={`nav-logo ${scrolled ? "logo-scrolled" : ""}`}
                     height={logoSize}

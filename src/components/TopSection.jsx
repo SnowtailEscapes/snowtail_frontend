@@ -9,19 +9,21 @@ import VisaFree from "./Cards/VisaFree";
 import Escapes from "./Escapes";
 import InfiniteScrolling from "./InfiniteScrolling";
 import SearchBox from "../getApi/searchBox";
+import home from "../../public/images/card/home.webp";
 
 export default function TopSection() {
   return (
     <>
       <div className="home">
         <Navbar />
-        <picture>
+        <div className="home-image-container">
           <img
-            src="https://snowtailescapes.com/images/Large/france.webp"
+            src={home}
             alt="Place image for tourism"
             className="home-image"
           />
-        </picture>
+          <div className="overlay"></div>
+        </div>
         <SearchBox />
       </div>
       <InfiniteScrolling />

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
+import '../styles/Home.css';
 
 const SearchBox = () => {
   const [itineraries, setItineraries] = useState([]);
@@ -49,8 +50,9 @@ const SearchBox = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
-    <div className="m-6 p-2 bg-gray-100 rounded-lg lg:w-1/2 w-full flex items-center">
+    <div className="flex justify-end flex-col p-5 home-text">
+    <h1 className="text-3xl md:text-4xl font-extrabold text-wrap text-white1 font-lora w-4/5 md:w-2/5">Experience the Travel with Snowtail Escapes</h1>
+    <div className="p-2 m-3 ml-0 bg-gray-100 rounded-3xl lg:w-1/2 w-full flex justify-center items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 16 16"
@@ -95,14 +97,14 @@ const SearchBox = () => {
         className="py-2 px-3 bg-transparent border-none focus:outline-none flex-1 w-full"
       />
       <button
-        className="bg-main-brand march text-white px-4 py-2 ml-2 rounded"
+        className="bg-main-brand march text-white px-4 py-2 ml-2 rounded-3xl"
         onClick={handleSearchButtonClick}
       >
         Search
       </button>
     </div>
+    <p className="text-white1 text-sm md:text-lg font-light w-5/6">Your Luxurious Journey Awaits — Pack Your Bags, and We’ll Handle the Rest!</p>
   </div>
-  
   );
 };
 
