@@ -1,5 +1,6 @@
 import React, { lazy, Suspense, useEffect } from "react";
 import a from "../styles/Images.module.css";
+import favicon from '../../public/NewLogos/4.svg';
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -35,6 +36,8 @@ export default function Rajasthan() {
           name="description"
           content="Explore the majestic beauty of Rajasthan with our exclusive tours. Discover the rich cultural heritage of Jaipur, the stunning palaces of Udaipur, the vibrant markets of Jodhpur, the golden sands of Jaisalmer, the serene lakes of Pushkar, and the wildlife of Ranthambore. Book your Rajasthan tour now for an unforgettable experience!"
         />
+        <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
+
       </Helmet>
       <Suspense fallback={<div>Loading...</div>}>
         <section className={a.section} data-aos="zoom-in">

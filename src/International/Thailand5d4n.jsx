@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchItinerary } from "../redux/slice/itinerarySlice";
 import { Helmet } from "react-helmet";
+import favicon from '../../public/NewLogos/4.svg';
 
 // Lazy load components
 const Navbar = lazy(() => import("../components/Navbar"));
@@ -65,6 +66,8 @@ const TestItinerary = () => {
           name="keywords"
           content="Thailand tour, Bangkok, Phuket, Chiang Mai, Pattaya, Thailand tourism, Thailand travel, Thailand holiday packages"
         />
+        <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
+
       </Helmet>
 
       <Suspense fallback={<div>Loading...</div>}>

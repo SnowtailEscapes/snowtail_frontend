@@ -2,6 +2,7 @@ import React, { lazy, Suspense, useEffect } from "react";
 import a from "../styles/Images.module.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import favicon from '../../public/NewLogos/4.svg';
 
 // Lazy load components
 const Navbar = lazy(() => import("../components/Navbar"));
@@ -39,6 +40,8 @@ export default function Bali6d5n() {
         name="keywords"
         content="Bali tour, Kuta, Ubud, Tanah Lot, Uluwatu, Seminyak, Bali tourism, Bali travel, Bali holiday packages"
     />
+        <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
+
 </Helmet>
       <Suspense fallback={<div>Loading...</div>}>
         <section className={a.section} data-aos="zoom-in">

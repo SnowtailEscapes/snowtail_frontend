@@ -2,6 +2,7 @@ import React, { lazy, Suspense, useEffect } from "react";
 import a from "../styles/Images.module.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import favicon from '../../public/NewLogos/4.svg';
 
 // Lazy load components
 const Navbar = lazy(() => import("../components/Navbar"));
@@ -35,6 +36,8 @@ export default function Singapore6n7d() {
         name="keywords"
         content="France tour, Paris, Eiffel Tower, Provence, Loire Valley, French Riviera, France tourism, France travel, France holiday packages , Italy tour, Rome, Venice, Florence, Amalfi Coast, Italy tourism, Italy travel, Italy holiday packages"
     />
+        <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
+
 </Helmet>
 
       <Suspense fallback={<div>Loading...</div>}>

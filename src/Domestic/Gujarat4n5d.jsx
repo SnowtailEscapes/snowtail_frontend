@@ -1,5 +1,6 @@
 import React, { lazy, Suspense, useEffect } from "react";
 import a from "../styles/Images.module.css";
+import favicon from '../../public/NewLogos/4.svg';
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -39,6 +40,8 @@ export default function Rajasthan() {
           name="keywords"
           content="Gujarat tour, Ahmedabad, Kutch, Somnath temple, Gir National Park, Diu beaches, Vadodara heritage, Gujarat tourism, Gujarat travel, Gujarat holiday packages"
         />
+        <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
+
       </Helmet>
 
       <Suspense fallback={<div>Loading...</div>}>

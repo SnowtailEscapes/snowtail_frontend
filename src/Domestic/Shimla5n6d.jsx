@@ -5,6 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 import large from "../../public/Domestic/himachal.webp";
+import favicon from '../../public/NewLogos/4.svg';
 
 import { Helmet } from "react-helmet";
 // Lazy load components
@@ -45,6 +46,8 @@ export default function Rajasthan() {
           name="keywords"
           content="Shimla tour, The Ridge, Christ Church, Mall Road, Kufri, Shimla tourism, Shimla travel, Shimla holiday packages"
         />
+        <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
+
       </Helmet>
 
       <Suspense fallback={<div>Loading...</div>}>
