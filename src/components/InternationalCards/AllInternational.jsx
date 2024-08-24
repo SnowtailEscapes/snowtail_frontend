@@ -233,6 +233,9 @@ export default function AllInternational() {
     },
   ];
 
+
+
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 600) {

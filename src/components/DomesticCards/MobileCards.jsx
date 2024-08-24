@@ -21,6 +21,7 @@ const Card = ({
   location
 }) => {
   const [screenSize, setScreenSize] = useState("large");
+  const [cut, setCut] = useState();
 
   useEffect(() => {
     const handleResize = () => {
@@ -49,6 +50,14 @@ const Card = ({
   const hoverHo = () => {
     setHover(!hover);
   };
+
+  useEffect(() => {
+    let a = price;
+    a = Math.round((a * 0.4 + a) / 1000) * 1000 - 1;
+    setCut(a);
+  }, []);
+
+
   return (
     <>
       {screenSize === "mobile" && (
@@ -74,7 +83,7 @@ const Card = ({
           <div className="flex flex-col pt-2 gap-y-1">
             <Link to={to}>
               <div className="flex flex-row justify-between">
-                <p className="text-[13px] text-main-brand font-bold">
+                <p className="text-[13px] text-main-brand font-arimo font-bold">
                   {duration}
                 </p>
                 <p className="text-main-brand text-[13px] flex flex-row font-bold">
@@ -85,7 +94,7 @@ const Card = ({
                     loading="lazy"
                     color="text-main-brand"
                   />
-                  <span>4.5/5</span>
+                  <span className="font-arimo">4.5/5</span>
                 </p>
               </div>
               <div className="flex flex-col">
@@ -96,29 +105,35 @@ const Card = ({
                   {title}
                 </h3>
               </div>
+
               <div className="flex flex-row justify-between mt-2">
-                <div className="text-[13px] flex flex-row text-center font-bold items-center">
-                  <img
-                    src={percent}
-                    width={20}
-                    height={10}
-                    alt="Star"
-                    loading="lazy"
-                    color="text-main-brand"
-                  />
-                  <p className="text-center w-1/3 text-xs rounded-xl discount text-nowrap text-green-800 text-[13px] font-light">
-                    Special Monsoon Deal
-                  </p>
-                </div>
                 <div className="flex flex-row justify-between items-center">
                   <h4 className="text-base text-main-brand font-bold font-light2 flex">
                     {/* <CurrencyConverter price={Number(curr_price)} /> */}
-                    <span className="text-base text-main-brand text-bold">
-                      INR.{price}
-                      /person
+                    <span className="text-base font-arimo text-main-brand text-bold line-through">
+                      INR.{cut}/person
                     </span>
                   </h4>
                 </div>
+                <div className="flex flex-row justify-between items-center">
+                  <h4 className="text-base text-main-brand font-bold font-arimo font-light2 flex">
+                    {/* <CurrencyConverter price={Number(curr_price)} /> */}
+                    INR.{price}/person
+                  </h4>
+                </div>
+              </div>
+              <div className="text-[13px] flex flex-row text-center font-bold items-center">
+                <img
+                  src={percent}
+                  width={20}
+                  height={10}
+                  alt="Star"
+                  loading="lazy"
+                  color="text-main-brand"
+                />
+                <p className="text-center w-1/3 text-xs rounded-xl discount text-nowrap text-green-800 text-[13px] font-light">
+                  Special Monsoon Deal
+                </p>
               </div>
 
             </Link>
@@ -131,7 +146,7 @@ const Card = ({
                 <img src={phone} width={40} alt="Phone" loading="lazy" />
               </button>
               <button
-                className="btn bg-main-brand rounded-md text-white text-[15px] font-bold"
+                className="btn font-light bg-main-brand rounded-md text-white text-[15px] font-bold"
                 onClick={toggleContactForm}
                 style={{ width: "77%" }}
               >

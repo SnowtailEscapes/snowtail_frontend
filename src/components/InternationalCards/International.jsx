@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import { Link, useLocation, useNavigation } from "react-router-dom";
 import "../../styles/International.css";
 import Contact from "../Contact";
+import percent from "../../assets/percent.png";
+
 
 
 const International = ({ to, title, location, price, duration, image }) => {
@@ -10,6 +12,13 @@ const International = ({ to, title, location, price, duration, image }) => {
   const isInternational = loc.pathname === "/International";
   const isDomestic = loc.pathname === "/Domestic";
   const [showContactForm, setShowContactForm] = useState(false);
+  const [cut, setCut] = useState();
+
+  useEffect(() => {
+    let a = price;
+    a = Math.round((a * 0.4 + a) / 1000) * 1000 - 1;
+    setCut(a);
+  }, []);
 
   const toggleContactForm = () => {
     setShowContactForm(!showContactForm);
@@ -54,10 +63,35 @@ const International = ({ to, title, location, price, duration, image }) => {
                 Major sightseeing
               </span>
             </div>
-            <h3 className="text-[16px] text-main-brand flex-nowrap flex justify-self-end">
-              {/* <CurrencyConverter price={price} /> */}
-              INR.{price}/person
-            </h3>
+          </div>
+          <div className="text-[13px] flex flex-row text-center font-bold items-center">
+                <img
+                  src={percent}
+                  width={20}
+                  height={10}
+                  alt="Star"
+                  loading="lazy"
+                  color="text-main-brand"
+                />
+                <p className="text-center w-1/3 text-xs rounded-xl discount text-nowrap text-green-800 text-[13px] md:text-[20px] font-light">
+                  Special Monsoon Deal
+                </p>
+              </div>
+          <div className="flex flex-row justify-between mt-2">
+            <div className="flex flex-row justify-between items-center">
+              <h4 className="text-base text-main-brand font-bold font-light2 flex">
+                {/* <CurrencyConverter price={Number(curr_price)} /> */}
+                <span className="text-base font-arimo text-main-brand text-bold line-through">
+                  INR.{cut}/person
+                </span>
+              </h4>
+            </div>
+            <div className="flex flex-row justify-between items-center">
+              <h4 className="text-base text-main-brand font-bold font-arimo font-light2 flex">
+                {/* <CurrencyConverter price={Number(curr_price)} /> */}
+                INR.{price}/person
+              </h4>
+            </div>
           </div>
           <div className="flex flex-row gap-3">
             <button
