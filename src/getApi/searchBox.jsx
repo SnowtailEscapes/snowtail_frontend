@@ -97,7 +97,7 @@ const SearchBox = () => {
         className="py-2 px-3 bg-transparent border-none focus:outline-none flex-1 w-full"
       />
       <button
-        className="bg-main-brand march text-white px-4 py-2 ml-2 rounded-3xl max-w-2.5"
+        className="bg-main-brand march text-white px-4 py-2 ml-2 rounded-3xl min-w-auto max-w-auto"
         onClick={handleSearchButtonClick}
       >
         Search

@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import Home from "./Pages/Home";
 import About from "./components/About";
 import PrivacyPolicy from "./components/PrivacyPolicy";
-import Helmet from "react-helmet";
 import initializeGA from './utils/initializeGA';
 import RouteChangeTracker from './utils/RouteChangeTracker';
 import initializeClarity from './utils/initializeClarity';
@@ -61,6 +60,7 @@ import AllInternational from "./components/InternationalCards/AllInternational.j
 import TermsAndConditions from "./components/TermsAndCondition.jsx";
 import Almaty from "./International/Almaty.jsx";
 import SearchResults from "./getApi/SearchResults.jsx";
+import Success from "./components/Success.jsx";
 
 function App() {
   useEffect(() => {
@@ -69,13 +69,6 @@ function App() {
   }, []);
   return (
     <>
-      {/* <Helmet>
-        <title>Snowtail Escapes</title>
-        <meta
-          name="description"
-          content="A website for you for travelling around the world with your friends,family,or your partner"
-        />
-      </Helmet> */}
         <Router>
         <RouteChangeTracker />
           <Routes>
@@ -87,6 +80,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
             <Route path="/search-results" element={<SearchResults />} />
             <Route path="/contact" element={<Contact/>}/>
+            <Route path="/success" element={<Success/>}/>
 
             {/* ITINERARY SECTION -> DOMESTIC  */}
             <Route path="/Domestic" element={<Domestic />} />

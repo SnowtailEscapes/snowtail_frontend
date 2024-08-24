@@ -277,7 +277,9 @@ export default function Contact2() {
   const [passengers, setPassengers] = useState("");
   const [screenSize, setScreenSize] = useState("large");
 
-
+  const handleSuccess =() => {
+    redirect('./success')
+  }
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 600) {
@@ -329,22 +331,37 @@ export default function Contact2() {
       date,
     };
 
-    try {
-      const response = await axios.post(
-        `${import.meta.env.VITE_API_BASE_URL}/send-email`,
-        emailData
-      );
+    const emailPromise = axios.post(
+      `${import.meta.env.VITE_API_BASE_URL}/send-email`,
+      emailData
+    );
 
-      if (response.status === 200) {
-        toast.success("Message Sent");
-        setIsOpen(false); // Close modal on successful submission
-        resetForm();
-      } else {
-        toast.error("Message not sent");
+    toast.promise(
+      emailPromise,
+      {
+        pending: 'Sending your message...',
+        success: 'Message Sent Successfully 😀',
+        error: 'Sorry, message not sent 😥',
+      },
+      {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
       }
+    );
+
+    try {
+      await emailPromise;
+      setIsOpen(false);
+      onClose(); // Close modal on successful submission
+      resetForm();
     } catch (error) {
       console.error("Failed to send email:", error);
-      toast.error("Failed to send message");
     }
   };
 

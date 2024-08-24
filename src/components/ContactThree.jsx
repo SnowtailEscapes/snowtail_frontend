@@ -5,6 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import PropTypes from "prop-types";
 import { ContactLeft } from "./ContactLeft";
+import { redirect } from "react-router-dom";
 
 const countryCodes = [
   "+91",
@@ -274,6 +275,9 @@ const Contact = ({ isVisible, onClose, accommodation }) => {
   const [isSending, setIsSending] = useState(false);
   const [accommodations, setAccomodation] = useState("");
 
+  const handleSuccess =() => {
+    redirect('./success')
+  }
   useEffect(() => {
     setAccomodation(accommodation);
   });
@@ -299,41 +303,51 @@ const Contact = ({ isVisible, onClose, accommodation }) => {
 
   const sendEmail = async (e) => {
     e.preventDefault();
-    setIsSending(true);
+
     const emailData = {
       name,
       email,
       phone,
       isd,
-      packages,
-      place,
+      flexibleYes,
+      flexibleNo,
+      passengers,
       date,
-      accommodations,
     };
 
-    try {
-      const response = await axios.post(
-        `${import.meta.env.VITE_EMAIL}`,
-        emailData
-      );
+    const emailPromise = axios.post(
+      `${import.meta.env.VITE_API_BASE_URL}/send-email`,
+      emailData
+    );
 
-      setIsSending(false);
-
-      if (response.status === 200) {
-        toast.success("Message Sent");
-        setIsOpen(false);
-        onClose(); // Close modal on successful submission
-        resetForm();
-      } else {
-        toast.error("Message not sent");
+    toast.promise(
+      emailPromise,
+      {
+        pending: 'Sending your message...',
+        success: 'Message Sent Successfully 😀',
+        error: 'Sorry, message not sent 😥',
+      },
+      {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
       }
+    );
+
+    try {
+      await emailPromise;
+      setIsOpen(false);
+      onClose(); // Close modal on successful submission
+      resetForm();
     } catch (error) {
-      setIsSending(false);
       console.error("Failed to send email:", error);
-      toast.error("Failed to send message");
     }
   };
-
   const resetForm = () => {
     setName("");
     setEmail("");

@@ -314,7 +314,7 @@ const Contact = ({ isVisible, onClose }) => {
       {
         pending: 'Sending your message...',
         success: 'Message Sent Successfully 😀',
-        error: 'Sorry, message not sent 😥'
+        error: 'Sorry, message not sent 😥',
       },
       {
         position: "top-right",
@@ -348,6 +348,10 @@ const Contact = ({ isVisible, onClose }) => {
     setFlexibleNo(false);
     setPassengers("");
   };
+
+  const handleSuccess =() => {
+    redirect('./success');
+  }
 
   return (
     <>
