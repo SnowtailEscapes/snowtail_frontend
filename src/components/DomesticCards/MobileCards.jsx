@@ -27,7 +27,7 @@ const Card = ({
     const handleResize = () => {
       if (window.innerWidth < 600) {
         setScreenSize("mobile");
-      } else if (window.innerWidth < 1000) {
+      } else if (window.innerWidth < 1100) {
         setScreenSize("tablet");
       } else {
         setScreenSize("large");

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { Link, useLocation, useNavigation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../../styles/International.css";
 import Contact from "../Contact";
 import percent from "../../assets/percent.png";
@@ -16,7 +16,7 @@ const International = ({ to, title, location, price, duration, image }) => {
     let a = price;
     a = Math.round((a * 0.4 + a) / 1000) * 1000 - 1;
     setCut(a);
-  }, []);
+  }, [price]);
 
   const toggleContactForm = () => {
     setShowContactForm(!showContactForm);
@@ -24,15 +24,10 @@ const International = ({ to, title, location, price, duration, image }) => {
 
   return (
     <div className="flex justify-center w-full">
-      <div
-        className="cardContainer rounded-xl overflow-hidden"
-      >
+      <div className="cardContainer rounded-xl overflow-hidden">
         <figure className="imageContainer">
           <Link to={to}>
-            <img
-              src={image}
-              alt={title}
-            />
+            <img src={image} alt={title} />
           </Link>
         </figure>
         <div className="flex flex-col textContainer">
@@ -51,7 +46,7 @@ const International = ({ to, title, location, price, duration, image }) => {
               {title}
             </p>
             <div className="flex space-x-2 mb-4">
-              <span className="text-[16px] px-3 rounded-md font-light  bg-ligh-accent shadow-sm shadow-black1 text-green-900">
+              <span className="text-[16px] px-3 rounded-md font-light bg-ligh-accent shadow-sm shadow-black1 text-green-900">
                 All meals
               </span>
               <span className="text-[16px] px-3 rounded-md font-light bg-ligh-accent shadow-sm shadow-black1 text-green-900">
@@ -63,22 +58,21 @@ const International = ({ to, title, location, price, duration, image }) => {
             </div>
           </div>
           <div className="text-[13px] flex flex-row text-center font-bold items-center">
-                <img
-                  src={percent}
-                  width={20}
-                  height={10}
-                  alt="Star"
-                  loading="lazy"
-                  color="text-main-brand"
-                />
-                <p className="text-center w-1/3 text-xs rounded-xl discount text-nowrap text-green-800 text-[13px] md:text-[20px] font-light">
-                  Special Monsoon Deal
-                </p>
-              </div>
+            <img
+              src={percent}
+              width={20}
+              height={10}
+              alt="Star"
+              loading="lazy"
+              color="text-main-brand"
+            />
+            <p className="text-center w-1/3 text-xs rounded-xl discount text-nowrap text-green-800 text-[13px] md:text-[20px] font-light">
+              Special Monsoon Deal
+            </p>
+          </div>
           <div className="flex flex-row justify-between mt-2">
             <div className="flex flex-row justify-between items-center">
               <h4 className="text-base text-main-brand font-bold font-light2 flex">
-                {/* <CurrencyConverter price={Number(curr_price)} /> */}
                 <span className="text-base font-arimo text-main-brand text-bold line-through">
                   INR.{cut}/person
                 </span>
@@ -86,7 +80,6 @@ const International = ({ to, title, location, price, duration, image }) => {
             </div>
             <div className="flex flex-row justify-between items-center">
               <h4 className="text-base text-main-brand font-bold font-arimo font-light2 flex">
-                {/* <CurrencyConverter price={Number(curr_price)} /> */}
                 INR.{price}/person
               </h4>
             </div>
