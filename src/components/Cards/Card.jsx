@@ -264,7 +264,7 @@ const Card = ({
         </>
       )}
       {screenSize === "mobile" && (
-        <div className="lg:w-1/3 md:1/2 w-full carousel-item flex flex-col relative rounded-2xl">
+        <div className="w-full flex flex-col relative rounded-2xl">
           <div
             className="relative text-center"
             style={{ width: "100%", paddingBottom: "60%" }} // 5:3 aspect ratio
@@ -279,7 +279,7 @@ const Card = ({
                 width="100%"
                 decoding="async"
                 height="100%"
-                style={{ position: "absolute", top: 0, left: 0 }}
+                
               />
             </Link>
           </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import GliderCarousel from "./gliderComponent";
-import Card from "./Card";
+import Mcard from "./gliderMobile";
 
 export default function International() {
 
@@ -123,44 +123,37 @@ export default function International() {
   ]
 
   return (
-    <div className="md:pl-20 md:pr-20 pl-4 pt-10">
-      <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
-        Popular Budget Tours
-      </h2>
-      {isLargeScreen && (
-        <>
-          <GliderCarousel uniqueId="budget" cards={budgetCards} />
-        </>
-      )}
-      {isMobileScreen && (
-        <>
-          {/* <div className="carousel p-4 pb-0 rounded-box flex justify-between items-center space-x-10 md:space-x-5">
-             {budgetCards.map((card, index) => (
-              <Card
-                title={card.title}
-                duration={card.duration}
-                rating={card.rating}
-                cut_price={card.cut_price}
-                curr_price={card.curr_price}
-                save={card.save}
-                direct={card.direct}
-                image={card.image}
-                Name={card.Name}
-                key={index}
-              />
-            ))} 
-          </div> */}
-          <div className="carousel p-4 rounded-box flex justify-between items-center space-x-10 md:space-x-5">
-            {budgetCards.map((card) => (
-              <Card {...card} key={card.id} />
-            ))}
+  <>
+    {
+        isLargeScreen && (
+          <div className="md:pl-20 md:pr-20 pl-4 pt-10">
+            <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
+              Popular International Tours
+            </h2>
+            <GliderCarousel uniqueId="budget" cards={budgetCards} />
           </div>
-          <div className="flex w-full justify-center gap-2">
-            <button onClick={handlePrev} className="btn btn-xs">Prev</button>
-            <button onClick={handleNext} className="btn btn-xs">Next</button>
+        )
+      }
+      {
+        isTabletScreen && (
+          <div className="md:pl-20 md:pr-20 pl-4 pt-10">
+            <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
+              Popular International Tours
+            </h2>
+            <GliderCarousel uniqueId="budget" cards={budgetCards} />
           </div>
-        </>
-      )}
-    </div>
+        )
+      }
+      {
+        isMobileScreen && (
+          <div className="text-center pt-10">
+          <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
+              Popular International Tours
+            </h2>
+            <Mcard cards={budgetCards} uniqueId="budget" />
+          </div>
+        )
+      }
+  </>
   );
 }

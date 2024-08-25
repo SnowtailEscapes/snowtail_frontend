@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import GliderCarousel from "./gliderComponent";
-import Card from "./Card";
+import Mcard from "./gliderMobile";
 
 export default function International() {
 
@@ -47,7 +47,7 @@ export default function International() {
 
   const internationalCards = [
     {
-      "id":0,
+      "id": 0,
       "Name": "Thailand",
       "title": "Experience Jewels of Thailand",
       "duration": "9 Days & 8 Nights",
@@ -59,8 +59,8 @@ export default function International() {
       "image":
         "https://snowtailescapes.com/images/card/thailand8n9ds.webp",
     },
-    { 
-      "id":1,
+    {
+      "id": 1,
       "Name": "Bali",
       "title": "Enchanting Bali Escape with Gili Island",
       "duration": "8 Days & 7 Nights",
@@ -72,8 +72,8 @@ export default function International() {
       "image":
         "https://snowtailescapes.com/images/card/Bali7n8ds.webp",
     },
-    { 
-      "id":2,
+    {
+      "id": 2,
       "Name": "Singapore",
       "title": "A Journey of Cultural Marvels",
       "duration": "7 Days & 6 Nights",
@@ -85,8 +85,8 @@ export default function International() {
       "image":
         "https://snowtailescapes.com/images/card/singapore6n7ds.webp",
     },
-    { 
-      "id":3,
+    {
+      "id": 3,
       "Name": "Dubai",
       "title": "A Journey of Luxury and Wonder",
       "duration": "6 Days & 5 Nights",
@@ -98,8 +98,8 @@ export default function International() {
       "image":
         "https://snowtailescapes.com/images/card/Dubai5n6dS.webp",
     },
-    { 
-      "id":4,
+    {
+      "id": 4,
       "Name": "Almaty",
       "title": "Heart in Mountains",
       "duration": "9 Days & 8 Nights",
@@ -111,8 +111,8 @@ export default function International() {
       "image":
         "https://snowtailescapes.com/images/card/almaty.webp",
     },
-    { 
-      "id":5,
+    {
+      "id": 5,
       "Name": "Australia",
       "title": "Best in Australia",
       "duration": "7 Days & 6 Nights",
@@ -121,49 +121,43 @@ export default function International() {
       "curr_price": 34699,
       "save": 7000,
       "direct": "/Australia7d6n",
-      "image":"https://snowtailescapes.com/images/card/australia.webp",
+      "image": "https://snowtailescapes.com/images/card/australia.webp",
     },
   ];
 
   return (
-<div className="md:pl-20 md:pr-20 pl-4 pt-10">
-      <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
-        Popular International Tours
-      </h2>
-      {isLargeScreen && (
-        <>
-          <GliderCarousel uniqueId="international" cards={internationalCards} />
-        </>
-      )}
-      {isMobileScreen && (
-        <>
-          {/* <div className="carousel p-4 rounded-box flex justify-between items-center space-x-10 md:space-x-5">            
-              {internationalCards.map((card, index) => (
-                  <Card
-                    title={card.title}
-                    duration={card.duration}
-                    rating={card.rating}
-                    cut_price={card.cut_price}
-                    curr_price={card.curr_price}
-                    save={card.save}
-                    direct={card.direct}
-                    image={card.image}
-                    Name={card.Name}
-                    key={index}
-                  />
-              ))}
-          </div> */}
-          <div className="carousel p-4 rounded-box flex justify-between items-center space-x-10 md:space-x-5">
-            {internationalCards.map((card) => (
-              <Card {...card} key={card.id} />
-            ))}
+    <>
+      {
+        isLargeScreen && (
+          <div className="md:pl-20 md:pr-20 pl-4 pt-10">
+            <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
+              Popular International Tours
+            </h2>
+            <GliderCarousel uniqueId="international" cards={internationalCards} />
           </div>
-          <div className="flex w-full justify-center gap-2">
-            <button onClick={handlePrev} className="btn btn-xs">Prev</button>
-            <button onClick={handleNext} className="btn btn-xs">Next</button>
+        )
+      }
+      {
+        isTabletScreen && (
+          <div className="md:pl-20 md:pr-20 pl-4 pt-10">
+            <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
+              Popular International Tours
+            </h2>
+            <GliderCarousel uniqueId="international" cards={internationalCards} />
           </div>
-        </>
-      )}
-    </div>
+        )
+      }
+      {
+        isMobileScreen && (
+          <div className="text-center pt-10">
+          <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
+              Popular International Tours
+            </h2>
+            <Mcard cards={internationalCards} uniqueId="international" />
+          </div>
+        )
+      }
+    </>
+
   );
 }

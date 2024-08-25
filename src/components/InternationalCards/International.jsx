@@ -5,8 +5,6 @@ import "../../styles/International.css";
 import Contact from "../Contact";
 import percent from "../../assets/percent.png";
 
-
-
 const International = ({ to, title, location, price, duration, image }) => {
   const loc = useLocation();
   const isInternational = loc.pathname === "/International";

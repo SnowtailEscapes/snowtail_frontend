@@ -81,6 +81,7 @@ const SearchBox = () => {
               paddingLeft: "1rem",
             }}
             repeat={Infinity}
+            
           />
         )}
       </div>
