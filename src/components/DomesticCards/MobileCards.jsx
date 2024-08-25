@@ -111,14 +111,14 @@ const Card = ({
                   <h4 className="text-base text-main-brand font-bold font-light2 flex">
                     {/* <CurrencyConverter price={Number(curr_price)} /> */}
                     <span className="text-base font-arimo text-main-brand text-bold line-through">
-                      INR.{cut}/person
+                    ₹{cut}/person
                     </span>
                   </h4>
                 </div>
                 <div className="flex flex-row justify-between items-center">
                   <h4 className="text-base text-main-brand font-bold font-arimo font-light2 flex">
                     {/* <CurrencyConverter price={Number(curr_price)} /> */}
-                    INR.{price}/person
+                    ₹{price}/person
                   </h4>
                 </div>
               </div>

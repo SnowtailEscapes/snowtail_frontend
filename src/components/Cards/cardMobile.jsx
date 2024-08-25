@@ -19,12 +19,8 @@ const Card = ({
   image,
   Name,
 }) => {
-  
-
   const [showContactForm, setShowContactForm] = useState(false);
   const [hover, setHover] = useState(false);
-  
-
   const toggleContactForm = () => {
     setShowContactForm(!showContactForm);
   };
@@ -85,7 +81,6 @@ const Card = ({
                   {title}
                 </h3>
               </div>
-
               <div className="flex flex-row justify-between items-center">
                 {cut_price && (
                   <h4 className="text-[13px] cut font-bold font-ligh2 flex">

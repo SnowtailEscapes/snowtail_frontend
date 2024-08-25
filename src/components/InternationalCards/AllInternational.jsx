@@ -58,7 +58,7 @@ export default function AllInternational() {
       to: "/Thailand9d8n",
       title: "Experience Jewels of Thailand",
       price: 59099,
-      location: "PHUKET/KRABI/PATTAYA/BANGKOK",
+      location: "PHUKET & more...",
       duration: "8 nights 9 days tour",
       image: thailand1,
     },
@@ -232,8 +232,6 @@ export default function AllInternational() {
       image: almaty,
     },
   ];
-
-
 
 
   useEffect(() => {
