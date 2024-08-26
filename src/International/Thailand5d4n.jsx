@@ -57,7 +57,7 @@ const TestItinerary = () => {
   return (
     <div>
       <Helmet>
-        <title>{itinerary.place}</title>
+        <title>Thailand</title>
         <meta
           name="description"
           content="Discover the vibrant culture and stunning landscapes of Thailand with our exclusive tours. Explore the bustling city of Bangkok, the serene beaches of Phuket, the historic temples of Chiang Mai, and the vibrant nightlife of Pattaya. Book your Thailand tour now for an unforgettable adventure!"
