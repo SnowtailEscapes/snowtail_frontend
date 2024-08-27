@@ -18,10 +18,12 @@ const Card = ({
   price,
   image,
   to,
-  location
+  location,
+  price2
 }) => {
   const [screenSize, setScreenSize] = useState("large");
   const [cut, setCut] = useState();
+  
 
   useEffect(() => {
     const handleResize = () => {
@@ -52,15 +54,19 @@ const Card = ({
   };
 
   useEffect(() => {
-    let a = price;
-    a = Math.round((a * 0.4 + a) / 1000) * 1000 - 1;
+    let a;
+    if(price){
+      a = price;
+    }
+    else{
+      a = price2;
+    }
+    a = Math.round(((a * 0.4) + a) / 1000) * 1000 - 1;
     setCut(a);
   }, []);
 
-
   return (
     <>
-      {screenSize === "mobile" && (
         <div className="lg:w-1/3 md:1/2 w-full carousel-item flex flex-col relative rounded-2xl mb-12">
           <div
             className="relative text-center"
@@ -111,14 +117,25 @@ const Card = ({
                   <h4 className="text-base text-main-brand font-bold font-light2 flex">
                     {/* <CurrencyConverter price={Number(curr_price)} /> */}
                     <span className="text-base font-arimo text-main-brand text-bold line-through">
-                    ₹{cut}/person
+                      ₹{cut}/person
                     </span>
                   </h4>
                 </div>
                 <div className="flex flex-row justify-between items-center">
                   <h4 className="text-base text-main-brand font-bold font-arimo font-light2 flex">
                     {/* <CurrencyConverter price={Number(curr_price)} /> */}
-                    ₹{price}/person
+                    {
+                      price && (<>
+                        ₹{price}/person
+                      </>)
+                    }
+                    {
+                      price2 && (
+                        <>
+                        ₹{price2}/person
+                        </>
+                      )
+                    }
                   </h4>
                 </div>
               </div>
@@ -155,7 +172,6 @@ const Card = ({
             </div>
           </div>
         </div>
-      )}
       {showContactForm && (
         <Contact
           isVisible={showContactForm}
@@ -171,7 +187,8 @@ Card.propTypes = {
   title: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   duration: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
+  price: PropTypes.number,
+  price2: PropTypes.string,
   image: PropTypes.string.isRequired,
 };
 
