@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import GliderCarousel from "./gliderComponent";
 import Mcard from "./gliderMobile";
 
-export default function International() {
+export default function Budget() {
 
   const [isMobileScreen, setMobileScreen] = useState(
     window.innerWidth > 0 && window.innerWidth < 600
@@ -128,7 +128,7 @@ export default function International() {
         isLargeScreen && (
           <div className="md:pl-20 md:pr-20 pl-4 pt-10">
             <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
-              Popular International Tours
+              Popular Budget Tours
             </h2>
             <GliderCarousel uniqueId="budget" cards={budgetCards} />
           </div>
@@ -138,7 +138,7 @@ export default function International() {
         isTabletScreen && (
           <div className="md:pl-20 md:pr-20 pl-4 pt-10">
             <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
-              Popular International Tours
+              Popular Budget Tours
             </h2>
             <GliderCarousel uniqueId="budget" cards={budgetCards} />
           </div>
@@ -148,7 +148,7 @@ export default function International() {
         isMobileScreen && (
           <div className="text-center pt-10">
           <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
-              Popular International Tours
+              Popular Budget Tours
             </h2>
             <Mcard cards={budgetCards} uniqueId="budget" />
           </div>

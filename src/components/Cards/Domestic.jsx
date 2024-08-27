@@ -133,7 +133,7 @@ export default function Domestic() {
         isLargeScreen && (
           <div className="md:pl-20 md:pr-20 pl-4 pt-10">
             <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
-              Popular International Tours
+              Popular Domestic Tours
             </h2>
             <GliderCarousel uniqueId="domestic" cards={domesticCards} />
           </div>
@@ -143,7 +143,7 @@ export default function Domestic() {
         isTabletScreen && (
           <div className="md:pl-20 md:pr-20 pl-4 pt-10">
             <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
-              Popular International Tours
+              Popular Domestic Tours
             </h2>
             <GliderCarousel uniqueId="domestic" cards={domesticCards} />
           </div>
@@ -153,7 +153,7 @@ export default function Domestic() {
         isMobileScreen && (
           <div className="text-center pt-10">
           <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
-              Popular International Tours
+              Popular Domestic Tours
             </h2>
             <Mcard cards={domesticCards} uniqueId="domestic" />
           </div>
