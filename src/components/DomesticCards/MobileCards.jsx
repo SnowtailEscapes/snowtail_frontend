@@ -23,7 +23,7 @@ const Card = ({
 }) => {
   const [screenSize, setScreenSize] = useState("large");
   const [cut, setCut] = useState();
-
+  
 
   useEffect(() => {
     const handleResize = () => {
@@ -104,8 +104,8 @@ const Card = ({
                 </p>
               </div>
               <div className="flex flex-col">
-                <h2 className="text-[1.5rem] bold text-dark-accent font-bold font-arimo text-wrap">
-                  {location}
+                <h2 className="text-[1.5rem] bold text-dark-accent font-bold font-arimo">
+                  {location.substring(0, 20)}
                 </h2>
                 <h3 className="text-base text-wrap boston text-black1 font-semibold">
                   {title}
