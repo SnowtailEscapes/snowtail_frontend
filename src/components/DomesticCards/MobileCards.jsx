@@ -61,7 +61,7 @@ const Card = ({
   return (
     <>
       {screenSize === "mobile" && (
-        <div className="lg:w-1/3 md:1/2 w-full carousel-item flex flex-col relative rounded-2xl mb-4">
+        <div className="lg:w-1/3 md:1/2 w-full carousel-item flex flex-col relative rounded-2xl mb-12">
           <div
             className="relative text-center"
             style={{ width: "100%", paddingBottom: "60%" }} // 5:3 aspect ratio

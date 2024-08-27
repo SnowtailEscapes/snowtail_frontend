@@ -103,10 +103,10 @@ const Navbar = () => {
                     ? hamburger2
                     : scrolled
                       ? isDropdownOpen
-                        ? close2
+                        ? hamburger2
                         : hamburger2
                       : isDropdownOpen
-                        ? close1
+                        ? hamburger2
                         : hamburger2
                 }
                 width={
@@ -114,10 +114,10 @@ const Navbar = () => {
                     ? 30
                     : scrolled
                       ? isDropdownOpen
-                        ? 15
+                        ? 30
                         : 30
                       : isDropdownOpen
-                        ? 15
+                        ? 30
                         : 30
                 }
                 className="mix-blend-multiply"

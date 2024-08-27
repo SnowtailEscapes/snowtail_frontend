@@ -211,13 +211,6 @@ export default function AllDomestic() {
 
   return (
     <>
-      {/* <Helmet>
-        <title>Domestic Tours</title>
-        <meta
-          name="description"
-          content="Names , places for you Inside India to travel along with anyone"
-        />
-      </Helmet> */}
       <Navbar />
 
       {
@@ -319,8 +312,8 @@ export default function AllDomestic() {
       {
         screenSize === "mobile" && (
           <>
-          <div className="flex justify-center p-5">
-              <div className="mt-20 md:mt-28 md:p-5 items-center">
+          <div className="flex justify-center mt-20 md:mt-28 md:p-5 p-5 ">
+              <div className="w-full md:w-3/4">
                 <h1 className="text-center text-[26px] md:text-3xl font-lora font-semibold mb-4 mt-4">
                   Domestic Tour Adventures
                 </h1>
