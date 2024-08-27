@@ -25,7 +25,7 @@ export default function Left() {
       <div className={a.tour_left}>
         <Common
           place="Kazakhstan"
-          title="Mussoorie & Rishikesh: A Journey to the Queen of Hills"
+          title="Almaty : A Central Asian Gem"
           location1="Almaty"
           time="4N/5D"
           rating={4.2}
