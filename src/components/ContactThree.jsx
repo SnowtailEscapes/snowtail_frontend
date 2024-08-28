@@ -273,14 +273,7 @@ const Contact = ({ isVisible, onClose, accommodation }) => {
   const [place, setPlace] = useState("");
   const [packages, setPackages] = useState("");
   const [isSending, setIsSending] = useState(false);
-  const [accommodations, setAccomodation] = useState("");
-
-  const handleSuccess =() => {
-    redirect('./success')
-  }
-  useEffect(() => {
-    setAccomodation(accommodation);
-  });
+  const [accommodations, setAccommodations] = useState(accommodation);
 
   useEffect(() => {
     setPackages(window.location.pathname);
@@ -303,51 +296,48 @@ const Contact = ({ isVisible, onClose, accommodation }) => {
 
   const sendEmail = async (e) => {
     e.preventDefault();
+    setIsSending(true);
 
     const emailData = {
       name,
       email,
       phone,
       isd,
-      flexibleYes,
-      flexibleNo,
-      passengers,
       date,
+      accommodations,
+      packages,
+      place,
     };
 
-    const emailPromise = axios.post(
-      `${import.meta.env.VITE_API_BASE_URL}/send-email`,
-      emailData
-    );
-
-    toast.promise(
-      emailPromise,
-      {
-        pending: 'Sending your message...',
-        success: 'Message Sent Successfully 😀',
-        error: 'Sorry, message not sent 😥',
-      },
-      {
-        position: "top-right",
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "colored",
-      }
-    );
-
     try {
-      await emailPromise;
+      await toast.promise(
+        axios.post(`${import.meta.env.VITE_API_BASE_URL}/send-email`, emailData),
+        {
+          pending: "Sending your message...",
+          success: "Message Sent Successfully 😀",
+          error: "Sorry, message not sent 😥",
+        },
+        {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        }
+      );
       setIsOpen(false);
       onClose(); // Close modal on successful submission
       resetForm();
     } catch (error) {
       console.error("Failed to send email:", error);
+    } finally {
+      setIsSending(false);
     }
   };
+
   const resetForm = () => {
     setName("");
     setEmail("");
@@ -356,7 +346,7 @@ const Contact = ({ isVisible, onClose, accommodation }) => {
     setDate("");
     setPackages("");
     setPlace("");
-    setAccomodation("");
+    setAccommodations("");
   };
 
   return (
@@ -381,7 +371,7 @@ const Contact = ({ isVisible, onClose, accommodation }) => {
         className="fixed"
       >
         <div className="contact-form flex flex-col md:flex-row items-stretch w-full h-full">
-          <ContactLeft onClose={onClose}/>
+          <ContactLeft onClose={onClose} />
           <div
             className="md:p-4 p-2 bg-white flex flex-col items-center justify-center md:w-2/3 w-full"
             style={{ fontSize: "16px" }}
@@ -402,7 +392,7 @@ const Contact = ({ isVisible, onClose, accommodation }) => {
               />
               <div className="flex gap-2 items-center">
                 <select
-                  className="select select-primary w-1/3 grid-cols-1"
+                  className="select select-primary w-1/3"
                   value={isd}
                   onChange={(e) => setISD(e.target.value)}
                 >
@@ -420,7 +410,7 @@ const Contact = ({ isVisible, onClose, accommodation }) => {
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="Mobile number"
-                  className="input input-bordered input-primary w-full grid-cols-10"
+                  className="input input-bordered input-primary w-full"
                 />
               </div>
               <input
@@ -438,18 +428,6 @@ const Contact = ({ isVisible, onClose, accommodation }) => {
                 onChange={(e) => setDate(e.target.value)}
                 className="input input-bordered input-primary w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
-              {/* <div className="flex flex-col md:flex-row gap-2 items-center">
-                                <label className="md:w-1/2 text-[15px]">Hotel Accommodation</label>
-                                <select
-                                    className="select select-primary md:w-1/2 grid-cols-1 w-full"
-                                    value={packages}
-                                    onChange={(e) => setPackages(e.target.value)}
-                                >
-                                    <option value="3 star">Standard rooms</option>
-                                    <option value="4 star">Deluxe rooms</option>
-                                    <option value="5 star">Super deluxe rooms</option>
-                                </select>
-                            </div> */}
               <button
                 type="submit"
                 className="btn bg-main-brand w-full"

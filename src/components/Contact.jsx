@@ -349,10 +349,6 @@ const Contact = ({ isVisible, onClose }) => {
     setPassengers("");
   };
 
-  const handleSuccess =() => {
-    redirect('./success');
-  }
-
   return (
     <>
       <ToastContainer
@@ -396,7 +392,7 @@ const Contact = ({ isVisible, onClose }) => {
               />
               <div className="flex gap-2 items-center">
                 <select
-                  className="select select-primary w-1/3 grid-cols-1"
+                  className="select select-primary w-1/3"
                   value={isd}
                   onChange={(e) => setISD(e.target.value)}
                 >
@@ -414,7 +410,7 @@ const Contact = ({ isVisible, onClose }) => {
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="Mobile number"
-                  className="input input-bordered input-primary w-full grid-cols-10"
+                  className="input input-bordered input-primary w-full"
                 />
               </div>
               <input
