@@ -27,7 +27,7 @@ export default function Left() {
           place="JAIPUR, UDAIPUR, KUMBHALGARH"
           title="Journey Of majesty"
           location1="RAJASTHAN"
-          time="5N/6D"
+          time="4N/5D"
           rating={4.8}
           reviews={405}
         />

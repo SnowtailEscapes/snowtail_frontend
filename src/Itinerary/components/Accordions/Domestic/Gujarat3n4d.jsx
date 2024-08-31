@@ -47,7 +47,7 @@ export default function RajasthanAccordion() {
                 className="collapse-title hover:cursor-pointer"
                 onClick={handleDay1}
               >
-                Arrival Vadodara & Transfer to KEVADIA.
+                Pickup from Vadodara/ Ahmedabad. Transfer to Kevadia
               </div>
               {day1 ? <p>▲</p> : <p>▼</p>}
             </div>

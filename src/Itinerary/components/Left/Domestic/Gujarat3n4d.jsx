@@ -27,7 +27,7 @@ export default function Left() {
           place="Vadodara"
           title="Monument of pride"
           location1="GUJARAT"
-          time="5N/6D"
+          time="3N/4D"
           rating={4.8}
           reviews={405}
         />
@@ -39,7 +39,7 @@ export default function Left() {
         <div className={a.left4} data-aos="slide-right">
           <h3>Overview</h3>
           <p>
-            Kevadia is a census town in Narmada district in the Indian state of
+            Vadodara is a census town in Narmada district in the Indian state of
             Gujarat. The town is best known as the location of the Statue of
             Unity, the tallest statue in the world. The town is also home to the
             Ekta Nagar railway station.

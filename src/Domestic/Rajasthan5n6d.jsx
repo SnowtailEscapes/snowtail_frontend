@@ -12,7 +12,7 @@ import { Helmet } from "react-helmet";
 // Lazy load components
 const Navbar = lazy(() => import("../components/Navbar"));
 const Tourmain = lazy(() =>
-  import("../Itinerary/components/Tourmain/Domestic/Rajasthan4n5d")
+  import("../Itinerary/components/Tourmain/Domestic/Rajasthan5n6d.jsx")
 );
 const Contact2 = lazy(() => import("../components/Contact2"));
 const Footer = lazy(() => import("../components/Footer"));

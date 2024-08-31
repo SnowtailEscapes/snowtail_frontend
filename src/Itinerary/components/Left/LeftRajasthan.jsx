@@ -36,7 +36,7 @@ export default function LeftRajasthan() {
             tempting cuisine are a few of the many highlights of this
             magnificent state. Set amidst a vast desert, the magical land of
             Rajasthan is synonymous with romance and chivalry. As one of the
-            best travel agencies in India, we at TravelMenu take immense pride
+            best travel agencies in India, we at Snowtail Escapes take immense pride
             in helping you explore royalty like never before. With our Rajasthan
             tour packages, travel back in time and in the era of the reign of
             the crown. Feel their tradition and culture like your own! A
@@ -49,7 +49,7 @@ export default function LeftRajasthan() {
             Our Rajasthan holiday packages give you a glimpse of the Rajasthani
             folk music, dances, cuisine, puppet show called Kathputli, many
             remarkable forts, temples, and the splendid, opulent Rajput culture.
-            Browse the beauty of Rajasthan on one of our proficient Veena World
+            Browse the beauty of Rajasthan on one of our proficient Snowtail Escapes
             online tour packages. We encourage you to make the most fascinating
             memories with us and relish our legacy to travel, explore and
             celebrate life.

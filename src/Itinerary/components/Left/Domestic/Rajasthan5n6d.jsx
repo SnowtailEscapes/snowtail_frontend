@@ -8,7 +8,7 @@ import a from "../../../styles/Tourmain.module.css";
 import "../../../styles/animations.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import RajasthanAccordion from "../../Accordions/Domestic/Rajasthan4n5d.jsx";
+import RajasthanAccordion from "../../Accordions/Domestic/Rajasthan5n6d.jsx";
 import Common from "../../Common/Top.jsx";
 import Map from "../../Common/Map.jsx";
 import Rajasthan4n5d from "../../Inclusion/Domestic/Rajasthan4n5d.jsx";
@@ -27,7 +27,7 @@ export default function Left() {
           place="JAIPUR, UDAIPUR, KUMBHALGARH"
           title="Journey Of majesty"
           location1="RAJASTHAN"
-          time="4N/5D"
+          time="5N/6D"
           rating={4.8}
           reviews={405}
         />

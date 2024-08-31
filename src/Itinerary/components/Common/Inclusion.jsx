@@ -4,6 +4,7 @@ import a from "../../styles/Tourmain.module.css";
 import "../../styles/animations.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import dot2 from "../../assets/cross.svg";
 import PropTypes from "prop-types";
 
 const Inclusion = ({ data }) => {
@@ -20,21 +21,16 @@ const Inclusion = ({ data }) => {
         <h4>Inclusions</h4>
         
           <li>
-            <img src={dot} width={5} alt="dot" /> Transfers: Pvt Airport Pick up and drop as per your flight timings & Comfortable and hygienic vehicle for sightseeing on all days as per the itinerary.
+            <img src={dot} width={5} alt="dot" /> Transfers: Pvt Airport/Railway Station Pick up and drop as per your flight timings & Comfortable and hygienic vehicle for sightseeing on all days as per the itinerary.
           </li>
 
           <li>
-            <img src={dot} width={5} alt="dot" />Accommodation: 3 nights accommodation in Kuta and 2 nights accommodation in Ubud
+            <img src={dot} width={5} alt="dot" /> Accommodation: 1N Jaipur, 2N Jodhpur, 1N Jaisalmer, 1N Sam, 2N Udaipur.
           </li>
 
           <li>
-            <img src={dot} width={5} alt="dot" /> Meals: Breakfast from Day 2 to Day 6 and Lunch on day 4
+            <img src={dot} width={5} alt="dot" /> Meals: Breakfast at Selected hotels. 
           </li>
-
-          <li>
-            <img src={dot} width={5} alt="dot" /> Visa assistance: It will be provided (Charges are not included)
-          </li>
-
           <li>
             <img src={dot} width={5} alt="dot" /> Guide: Professional driver cum guide to help you explore this beautiful city
           </li>
@@ -44,27 +40,27 @@ const Inclusion = ({ data }) => {
         <h4>Exclusions</h4>
        
           <li>
-            <img src={dot} width={5} alt="dot" /> Cost of Emergency, Covid Report, Insurance And Other Covid Related Expenses
+            <img src={dot2} width={5} alt="dot" /> Cost of Emergency, Covid Report, Insurance And Other Covid Related Expenses
           </li>
 
           <li>
-            <img src={dot} width={5} alt="dot" /> Any Personal expenses.
+            <img src={dot2} width={5} alt="dot" /> Any Personal expenses.
           </li>
 
           <li>
-            <img src={dot} width={5} alt="dot" /> GST & (TCS - Claimable after the tour)
+            <img src={dot2} width={5} alt="dot" /> GST & (TCS - Claimable after the tour)
           </li>
 
           <li>
-            <img src={dot} width={5} alt="dot" /> Any Airfare
+            <img src={dot2} width={5} alt="dot" /> Any Airfare/Railway Tickets
           </li>
 
           <li>
-            <img src={dot} width={5} alt="dot" /> Lunch / Any transfer / Meals that are not mentioned in the itinerary
+            <img src={dot2} width={5} alt="dot" /> Lunch / Any transfer / Meals that are not mentioned in the itinerary
           </li>
 
           <li>
-            <img src={dot} width={5} alt="dot" /> Anything not mentioned in the inclusions list above
+            <img src={dot2} width={5} alt="dot" /> Anything not mentioned in the inclusions list above
           </li>    
           
       </ul>

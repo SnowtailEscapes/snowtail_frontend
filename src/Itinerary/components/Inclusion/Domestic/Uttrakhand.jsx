@@ -47,7 +47,7 @@ export default function Inclusion() {
             <img src={dot2} width={5} alt="dot" /> Insurance
             </li>
             <li>
-              <img src={dot2} width={5} alt="dot" /> GST & (TCS - Claimable after the tour)
+              <img src={dot2} width={5} alt="dot" /> GST is Applicable.
             </li>
             <li>
               <img src={dot2} width={5} alt="dot" /> Any Airfare
