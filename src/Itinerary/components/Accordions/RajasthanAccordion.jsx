@@ -61,7 +61,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay1}
               >
                 Arrival in Jaipur | Welcome to Pink city
@@ -94,7 +94,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay2}
               >
                 Pushkar Jodhpur | Welcome to Blue city
@@ -120,7 +120,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay3}
               >
                 Jodhpur
@@ -161,7 +161,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay4}
               >
                 Jodhpur - Jaisalmer (Golden city welcomes you)
@@ -204,7 +204,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay5}
               >
                 SAM - Thar Desert
@@ -230,7 +230,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay6}
               >
                 Udaipur - City of Romance
@@ -254,7 +254,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay7}
               >
                 Udaipur
@@ -292,7 +292,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay8}
               >
                 Udaipur to Jaipur

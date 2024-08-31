@@ -48,7 +48,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay1}
               >
                 Arrival in Bangkok & Transfer to Pattaya - Dive into the
@@ -78,7 +78,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay2}
               >
                 Coral Island Tour With Lunch - Thrilling Adventures Await
@@ -129,7 +129,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay3}
               >
                 Transfer from Pattaya to Bangkok - Welcome to the City of Angels
@@ -164,7 +164,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay4}
               >
                 City Tour of Bangkok - Unveiling the Charms of the City.
@@ -200,7 +200,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay5}
               >
                 Departure - Cherish Memories Forever

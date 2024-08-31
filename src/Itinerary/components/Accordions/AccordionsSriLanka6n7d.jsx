@@ -68,7 +68,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
           <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay1}
               >
                 Arrival in Colombo | Transfer to Enchanting Kandy
@@ -107,7 +107,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
           <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay2}
               >
                Explore the Charms of Kandy
@@ -144,7 +144,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
           <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay3}
               >
               Journey to Scenic Nuwara Eliya
@@ -184,7 +184,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
           <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay4}
               >
                Discover Nuwara Eliya's Mystique
@@ -219,7 +219,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
           <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay5}
               >
                Tranquil Retreat in Bentota
@@ -256,7 +256,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
           <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay6}
               >
                Explore Vibrant Colombo
@@ -296,7 +296,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
           <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay7}
               >
                Departure from Colombo

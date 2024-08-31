@@ -47,7 +47,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay1}
               >
                 Arrival in Jaipur
@@ -80,7 +80,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay2}
               >
                 Jaipur - Udaipur (Via Chittorgarh)
@@ -115,7 +115,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay3}
               >
                 Udaipur Sightseeing
@@ -152,7 +152,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay4}
               >
                 Kumbhalgarh
@@ -181,7 +181,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay5}
               >
                 Jaipur Transfer

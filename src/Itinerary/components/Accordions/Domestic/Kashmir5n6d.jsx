@@ -50,7 +50,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay1}
               >
                 Arrival in SRINAGAR | Welcome to the Kashmir
@@ -76,7 +76,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay2}
               >
                 SRINAGAR - GULMARG (Day Excursion, 52 kms)
@@ -112,7 +112,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay3}
               >
                 SRINAGAR - PAHALGAM (Day Excursion, 90 Kms)
@@ -145,7 +145,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay4}
               >
                 SRINAGAR - SONMARG (80 Kms)
@@ -174,7 +174,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay5}
               >
                 SONMARG - SRINAGAR
@@ -205,7 +205,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay6}
               >
                 DEPARTURE

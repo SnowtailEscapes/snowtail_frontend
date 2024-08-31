@@ -67,7 +67,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
           <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay1}
               >
                 Arrival & Night Safari Adventure
@@ -104,7 +104,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
           <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay2}
               >
                 Half Day City Tour of Singapore And Sentosa
@@ -142,7 +142,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
           <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay3}
               >
                 Universal Studios Adventure
@@ -175,7 +175,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
           <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay4}
               >
                 Transfer to Genting Dream Cruise | Sail leisurely in open waters
@@ -210,7 +210,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
           <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay5}
               >
                 Leisure Day on Cruise
@@ -242,7 +242,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
           <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay6}
               >
                  Singapore Arrival & Gardens by the Bay Exploration
@@ -277,7 +277,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
           <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title"
                 onClick={handleDay7}
               >
                  Departure from Singapore | Leave with Cheerful Memories
