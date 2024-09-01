@@ -84,8 +84,7 @@ export default function Accordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay1}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay1}
               >
                 Kathmandu - Nagarkot
               </div>
@@ -112,8 +111,7 @@ export default function Accordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay2}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay2}
               >
                 Nagarkot - Kathmandu
               </div>
@@ -145,8 +143,7 @@ export default function Accordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay3}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay3}
               >
                 Kathmandu - Pokhara
               </div>
@@ -179,8 +176,7 @@ export default function Accordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay4}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay4}
               >
                 Pokhara Sightseeing
               </div>
@@ -211,8 +207,7 @@ export default function Accordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay5}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay5}
               >
                 Pokhara - Kathmandu
               </div>
@@ -239,8 +234,7 @@ export default function Accordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay6}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay6}
               >
                Departure
               </div>

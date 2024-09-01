@@ -52,8 +52,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay1}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay1}
               >
                 Arrival in Dubai (Dhow Cruise Creek)
               </div>
@@ -92,8 +91,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay2}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay2}
               >
                 Dubai (City Tour)
               </div>
@@ -128,8 +126,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay3}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay3}
               >
                 Abu Dhabi (City Tour & Ferrari World)
               </div>
@@ -164,8 +161,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay4}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay4}
               >
                 Dubai (Desert Safari)
               </div>
@@ -201,8 +197,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay5}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay5}
               >
                 Departure | Take a plethora of memories with you
               </div>

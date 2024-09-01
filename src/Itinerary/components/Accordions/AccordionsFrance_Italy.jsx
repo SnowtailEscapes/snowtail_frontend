@@ -52,8 +52,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay1}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay1}
               >
                 Arrival in Paris
               </div>
@@ -83,8 +82,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay2}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay2}
               >
                 Full Day City Tour of Paris
               </div>
@@ -121,8 +119,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay3}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay3}
               >
                 Fly from Paris to Rome
               </div>
@@ -152,8 +149,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay4}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay4}
               >
                 Full Day City Tour of Rome
               </div>
@@ -186,8 +182,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay4}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay4}
               >
                 Departure | Farewell With Fond Memories
               </div>

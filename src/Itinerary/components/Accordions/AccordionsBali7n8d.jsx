@@ -70,8 +70,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay1}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay1}
               >
                 Arrival in Bali | Discover Local Delights
               </div>
@@ -102,8 +101,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay2}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay2}
               >
                 Ubud Full Day Tour | Witness the Grace of Tegenungan Waterfall
                 and Green Vistas of Tegalalang Rice Terrace
@@ -139,8 +137,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay3}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay3}
               >
                 Transfer to Seminyak | Sunset Dinner Cruise
               </div>
@@ -171,8 +168,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay4}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay4}
               >
                 Witness the Beautiful Temples | Tanah Lot and Ulluwatu Temple
                 Tour
@@ -207,8 +203,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay5}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay5}
               >
                 Transfers to Gili Islands | Island Paradise Beckons Tour
               </div>
@@ -241,8 +236,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay6}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay6}
               >
                 Leisure in Gili Islands | Tropical Exploration
               </div>
@@ -276,8 +270,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay7}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay7}
               >
                 Return to Kuta | Farewell to Island Bliss
               </div>
@@ -310,8 +303,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay8}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay8}
               >
                 Departure | Fond Farewells
               </div>

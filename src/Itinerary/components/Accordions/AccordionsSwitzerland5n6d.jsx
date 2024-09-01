@@ -49,8 +49,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay1}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay1}
               >
                 Arrival in Zurich | Gateway to Swiss Grandeur
               </div>
@@ -80,8 +79,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay2}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay2}
               >
                 Mount Titlis Adventure & Lucerne Marvels
               </div>
@@ -115,8 +113,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay3}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay3}
               >
                 Leisure Day in Zurich
               </div>
@@ -142,8 +139,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay4}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay4}
               >
                 Rhine Falls Marvel & Nature's Grandeur
               </div>
@@ -176,8 +172,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay5}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay5}
               >
                 Discover Zurich's cultural treasures after breakfast, including
                 the Swiss National Museum and the iconic Zurich Opera House.
@@ -204,8 +199,7 @@ export default function RajasthanAccordion() {
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer title"
-                onClick={handleDay6}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay6}
               >
                 Departure | Cherish Happy Memories
               </div>
