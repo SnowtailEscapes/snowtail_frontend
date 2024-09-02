@@ -47,7 +47,7 @@ export default function Accordion() {
     <div className={a.left5} data-aos="slide-right">
       <div className="flex items-center justify-between">
         <h3>Itinerary</h3>
-        <button className="btn w-1/2" onClick={handleExpandAll}>
+        <button className="btn btn-md bg-light-shade mb-6" onClick={handleExpandAll}>
           {day1 && day2 && day3 && day4 && day5 && day6 && day7 ? "Collapse All" : "Expand All"}
         </button>
       </div>
@@ -96,10 +96,10 @@ export default function Accordion() {
                 Phillip Island Excursion
               </div>
               {day2 ? <p
-                onClick={handleDay1}
+                onClick={handleDay2}
                 className="hover:cursor-pointer"
               >▲</p> : <p
-                onClick={handleDay1}
+                onClick={handleDay2}
                 className="hover:cursor-pointer"
               >▼</p>}
             </div>
@@ -129,10 +129,10 @@ export default function Accordion() {
                 Great Ocean Road Adventure
               </div>
               {day3 ? <p
-                onClick={handleDay1}
+                onClick={handleDay3}
                 className="hover:cursor-pointer"
               >▲</p> : <p
-                onClick={handleDay1}
+                onClick={handleDay3}
                 className="hover:cursor-pointer"
               >▼</p>}
             </div>
@@ -166,10 +166,10 @@ export default function Accordion() {
                 Arrival in Sydney
               </div>
               {day4 ? <p
-                onClick={handleDay1}
+                onClick={handleDay4}
                 className="hover:cursor-pointer"
               >▲</p> : <p
-                onClick={handleDay1}
+                onClick={handleDay4}
                 className="hover:cursor-pointer"
               >▼</p>}
             </div>
@@ -202,10 +202,10 @@ export default function Accordion() {
                 Sydney City Sightseeing
               </div>
               {day5 ? <p
-                onClick={handleDay1}
+                onClick={handleDay5}
                 className="hover:cursor-pointer"
               >▲</p> : <p
-                onClick={handleDay1}
+                onClick={handleDay5}
                 className="hover:cursor-pointer"
               >▼</p>}
             </div>
@@ -235,10 +235,10 @@ export default function Accordion() {
                 Blue Mountains Excursion
               </div>
               {day6 ? <p
-                onClick={handleDay1}
+                onClick={handleDay6}
                 className="hover:cursor-pointer"
               >▲</p> : <p
-                onClick={handleDay1}
+                onClick={handleDay6}
                 className="hover:cursor-pointer"
               >▼</p>}
             </div>
@@ -268,10 +268,10 @@ export default function Accordion() {
                 Departure from Sydney
               </div>
               {day7 ? <p
-                onClick={handleDay1}
+                onClick={handleDay7}
                 className="hover:cursor-pointer"
               >▲</p> : <p
-                onClick={handleDay1}
+                onClick={handleDay7}
                 className="hover:cursor-pointer"
               >▼</p>}
             </div>

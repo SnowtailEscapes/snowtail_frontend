@@ -63,7 +63,7 @@ export default function RajasthanAccordion() {
     <div className={a.left5} data-aos="slide-right">
       <div className="flex items-center justify-between">
         <h3>Itinerary</h3>
-        <button className="btn w-1/2" onClick={handleExpandAll}>
+        <button className="btn btn-md bg-light-shade mb-6" onClick={handleExpandAll}>
           {day1 &&
             day2 &&
             day3 &&
@@ -80,7 +80,6 @@ export default function RajasthanAccordion() {
       </div>
       <div className="accordians">
         <div className="accor join">
-
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
@@ -89,7 +88,6 @@ export default function RajasthanAccordion() {
                 <button className="btn btn-sm rounded-3xl bg-main-brand">Day 1</button>
                 Welcome to Greece! Arrival in Athens
               </div>
-
               {day1 ? <p
                 onClick={handleDay1}
                 className="hover:cursor-pointer"
@@ -116,7 +114,6 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 2</h5>
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
@@ -127,10 +124,10 @@ export default function RajasthanAccordion() {
                 City Tour with Acropolis Museum | Wander at the UNESCO Heritage
               </div>
               {day2 ? <p
-                onClick={handleDay1}
+                onClick={handleDay2}
                 className="hover:cursor-pointer"
               >▲</p> : <p
-                onClick={handleDay1}
+                onClick={handleDay2}
                 className="hover:cursor-pointer"
               >▼</p>}
             </div>
@@ -153,7 +150,7 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 3</h5>
+         
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
@@ -166,10 +163,10 @@ export default function RajasthanAccordion() {
               </div>
 
               {day3 ? <p
-                onClick={handleDay1}
+                onClick={handleDay3}
                 className="hover:cursor-pointer"
               >▲</p> : <p
-                onClick={handleDay1}
+                onClick={handleDay3}
                 className="hover:cursor-pointer"
               >▼</p>}
             </div>
@@ -192,7 +189,7 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 4</h5>
+         
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
@@ -204,10 +201,10 @@ export default function RajasthanAccordion() {
               </div>
               
 {day4 ? <p
-                onClick={handleDay1}
+                onClick={handleDay4}
                 className="hover:cursor-pointer"
               >▲</p> : <p
-                onClick={handleDay1}
+                onClick={handleDay4}
                 className="hover:cursor-pointer"
               >▼</p>}
             </div>
@@ -226,7 +223,7 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 5</h5>
+         
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
@@ -239,10 +236,10 @@ export default function RajasthanAccordion() {
               </div>
               
 {day5 ? <p
-                onClick={handleDay1}
+                onClick={handleDay5}
                 className="hover:cursor-pointer"
               >▲</p> : <p
-                onClick={handleDay1}
+                onClick={handleDay5}
                 className="hover:cursor-pointer"
               >▼</p>}
             </div>
@@ -265,7 +262,7 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 6</h5>
+        
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
@@ -278,10 +275,10 @@ export default function RajasthanAccordion() {
               </div>
               
 {day6 ? <p
-                onClick={handleDay1}
+                onClick={handleDay6}
                 className="hover:cursor-pointer"
               >▲</p> : <p
-                onClick={handleDay1}
+                onClick={handleDay6}
                 className="hover:cursor-pointer"
               >▼</p>}
             </div>
@@ -304,7 +301,7 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 7</h5>
+         
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
@@ -316,10 +313,10 @@ export default function RajasthanAccordion() {
               </div>
               
 {day7 ? <p
-                onClick={handleDay1}
+                onClick={handleDay7}
                 className="hover:cursor-pointer"
               >▲</p> : <p
-                onClick={handleDay1}
+                onClick={handleDay7}
                 className="hover:cursor-pointer"
               >▼</p>}
             </div>
@@ -341,7 +338,7 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 8</h5>
+          
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
@@ -353,10 +350,10 @@ export default function RajasthanAccordion() {
               </div>
               
 {day8 ? <p
-                onClick={handleDay1}
+                onClick={handleDay8}
                 className="hover:cursor-pointer"
               >▲</p> : <p
-                onClick={handleDay1}
+                onClick={handleDay8}
                 className="hover:cursor-pointer"
               >▼</p>}
             </div>
