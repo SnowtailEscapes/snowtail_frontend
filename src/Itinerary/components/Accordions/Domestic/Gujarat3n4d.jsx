@@ -34,19 +34,22 @@ export default function RajasthanAccordion() {
     <div className={a.left5} data-aos="slide-right">
       <div className="flex items-center justify-between">
         <h3>Itinerary</h3>
-        <button className="btn w-1/2" onClick={handleExpandAll}>
+        <button className="btn btn-md bg-light-shade mb-6" onClick={handleExpandAll}>
           {day1 && day2 && day3 && day4 ? "Collapse All" : "Expand All"}
         </button>
       </div>
       <div className="accordians">
         <div className="accor join">
-          <h5 className="join-item">Day 1</h5>
+         
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"
+
                 onClick={handleDay1}
               >
+              <button className="btn btn-sm rounded-3xl bg-main-brand">Day 1</button>
+
                 Pickup from Vadodara/ Ahmedabad. Transfer to Kevadia
               </div>
               {day1 ? <p>▲</p> : <p>▼</p>}
@@ -66,13 +69,16 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 2</h5>
+         
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"
+
                 onClick={handleDay2}
               >
+              <button className="btn btn-sm rounded-3xl bg-main-brand">Day 2</button>
+
                 KEVADIA - AHMEDABAD
               </div>
               {day2 ? <p>▲</p> : <p>▼</p>}
@@ -95,13 +101,16 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 3</h5>
+          
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"
+
                 onClick={handleDay3}
               >
+              <button className="btn btn-sm rounded-3xl bg-main-brand">Day 3</button>
+
                 AHMEDABAD
               </div>
               {day3 ? <p>▲</p> : <p>▼</p>}
@@ -120,13 +129,16 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 4</h5>
+         
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
+                className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"
+
                 onClick={handleDay4}
               >
+              <button className="btn btn-sm rounded-3xl bg-main-brand">Day 4</button>
+
                 DEPARTURE
               </div>
               {day4 ? <p>▲</p> : <p>▼</p>}

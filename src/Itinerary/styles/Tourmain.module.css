@@ -6,11 +6,11 @@
     grid-template-columns: 8fr 4fr;
     font-size: 18px;
     line-height: 25.5px;
+    font-family: arimo !important;
   }
 
   .tour_left {
     padding: 2rem;
-
     display: flex;
     flex-direction: column;
   }
@@ -146,7 +146,7 @@
   }
 
   /* Left div 5 */
-  .left5,
+
   .left7 {
     font-size: 18px;
     line-height: 25.5px;
@@ -158,6 +158,12 @@
     box-shadow: rgba(0, 0, 0, 0.08) -4px -5px 14px 0px,
       rgba(0, 0, 0, 0.08) 5px 8px 16px 0px;
     border-radius: 10px;
+  }
+
+  .left5{
+    line-height: 25.5px;
+    margin-top: 30px;
+    overflow: visible;
   }
 
   .left5 > div > h3 {
@@ -419,7 +425,6 @@
 
   /* Left 4, 5, 6, 7 */
   .left4,
-  .left5,
   .left6,
   .left7 {
     margin: 1rem;

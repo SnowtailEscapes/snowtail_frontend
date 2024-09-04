@@ -39,19 +39,19 @@ export default function RajasthanAccordion() {
     <div className={a.left5} data-aos="slide-right">
       <div className="flex items-center justify-between">
         <h3>Itinerary</h3>
-        <button className="btn w-1/2" onClick={handleExpandAll}>
+        <button className="btn btn-md bg-light-shade mb-6" onClick={handleExpandAll}>
           {day1 && day2 && day3 && day4 && day5 && day6 ? "Collapse All" : "Expand All"}
         </button>
       </div>
       <div className="accordians">
         <div className="accor join">
-          <h5 className="join-item">Day 1</h5>
+        
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
-                onClick={handleDay1}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay1}
               >
+              <button className="btn btn-sm rounded-3xl bg-main-brand">Day 1</button>
                 Arrival in Zurich | Gateway to Swiss Grandeur
               </div>
               {day1 ? <p>▲</p> : <p>▼</p>}
@@ -76,13 +76,14 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 2</h5>
+          
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
-                onClick={handleDay2}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay2}
               >
+              <button className="btn btn-sm rounded-3xl bg-main-brand">Day 2</button>
+
                 Mount Titlis Adventure & Lucerne Marvels
               </div>
               {day2 ? <p>▲</p> : <p>▼</p>}
@@ -111,13 +112,14 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 3</h5>
+         
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
-                onClick={handleDay3}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay3}
               >
+              <button className="btn btn-sm rounded-3xl bg-main-brand">Day 3</button>
+
                 Leisure Day in Zurich
               </div>
               {day3 ? <p>▲</p> : <p>▼</p>}
@@ -138,13 +140,14 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 4</h5>
+         
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
-                onClick={handleDay4}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay4}
               >
+              <button className="btn btn-sm rounded-3xl bg-main-brand">Day 4</button>
+
                 Rhine Falls Marvel & Nature's Grandeur
               </div>
               {day4 ? <p>▲</p> : <p>▼</p>}
@@ -172,13 +175,14 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 5</h5>
+      
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
-                onClick={handleDay5}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay5}
               >
+              <button className="btn btn-sm rounded-3xl bg-main-brand">Day 5</button>
+
                 Discover Zurich's cultural treasures after breakfast, including
                 the Swiss National Museum and the iconic Zurich Opera House.
               </div>
@@ -199,14 +203,14 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 6</h5>
-
+          
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
-                onClick={handleDay6}
+               className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4"                onClick={handleDay6}
               >
+              <button className="btn btn-sm rounded-3xl bg-main-brand">Day 6</button>
+
                 Departure | Cherish Happy Memories
               </div>
               {day6 ? <p>▲</p> : <p>▼</p>}

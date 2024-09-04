@@ -63,33 +63,38 @@ export default function RajasthanAccordion() {
     <div className={a.left5} data-aos="slide-right">
       <div className="flex items-center justify-between">
         <h3>Itinerary</h3>
-        <button className="btn w-1/2" onClick={handleExpandAll}>
+        <button className="btn btn-md bg-light-shade mb-6" onClick={handleExpandAll}>
           {day1 &&
-          day2 &&
-          day3 &&
-          day4 &&
-          day5 &&
-          day6 &&
-          day7 &&
-          day8 &&
-          day9 &&
-          day10
+            day2 &&
+            day3 &&
+            day4 &&
+            day5 &&
+            day6 &&
+            day7 &&
+            day8 &&
+            day9 &&
+            day10
             ? "Collapse All"
             : "Expand All"}
         </button>
       </div>
       <div className="accordians">
         <div className="accor join">
-          <h5 className="join-item">Day 1</h5>
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
-                onClick={handleDay1}
+                className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4" onClick={handleDay1}
               >
+                <button className="btn btn-sm rounded-3xl bg-main-brand">Day 1</button>
                 Welcome to Greece! Arrival in Athens
               </div>
-              {day1 ? <p>▲</p> : <p>▼</p>}
+              {day1 ? <p
+                onClick={handleDay1}
+                className="hover:cursor-pointer"
+              >▲</p> : <p
+                onClick={handleDay1}
+                className="hover:cursor-pointer"
+              >▼</p>}
             </div>
             {day1 && (
               <div className="collapse-content">
@@ -109,16 +114,22 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 2</h5>
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
-                onClick={handleDay2}
+                className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4" onClick={handleDay2}
               >
+                <button className="btn btn-sm rounded-3xl bg-main-brand">Day 2</button>
+
                 City Tour with Acropolis Museum | Wander at the UNESCO Heritage
               </div>
-              {day2 ? <p>▲</p> : <p>▼</p>}
+              {day2 ? <p
+                onClick={handleDay2}
+                className="hover:cursor-pointer"
+              >▲</p> : <p
+                onClick={handleDay2}
+                className="hover:cursor-pointer"
+              >▼</p>}
             </div>
             {day2 && (
               <div className="collapse-content">
@@ -139,17 +150,25 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 3</h5>
+         
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
-                onClick={handleDay3}
+                className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4" onClick={handleDay3}
               >
+                <button className="btn btn-sm rounded-3xl bg-main-brand">Day 3</button>
+
                 Discover Stunning Mykonos | Proceed from Athens to Mykonos (via
                 ferry)
               </div>
-              {day3 ? <p>▲</p> : <p>▼</p>}
+
+              {day3 ? <p
+                onClick={handleDay3}
+                className="hover:cursor-pointer"
+              >▲</p> : <p
+                onClick={handleDay3}
+                className="hover:cursor-pointer"
+              >▼</p>}
             </div>
             {day3 && (
               <div className="collapse-content">
@@ -170,16 +189,24 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 4</h5>
+         
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
-                onClick={handleDay4}
+                className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4" onClick={handleDay4}
               >
+                <button className="btn btn-sm rounded-3xl bg-main-brand">Day 4</button>
+
                 Witness the Surreal Beauty of Mykonos | Tour of Delos (Optional)
               </div>
-              {day4 ? <p>▲</p> : <p>▼</p>}
+              
+{day4 ? <p
+                onClick={handleDay4}
+                className="hover:cursor-pointer"
+              >▲</p> : <p
+                onClick={handleDay4}
+                className="hover:cursor-pointer"
+              >▼</p>}
             </div>
             {day4 && (
               <div className="collapse-content">
@@ -196,17 +223,25 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 5</h5>
+         
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
-                onClick={handleDay5}
+                className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4" onClick={handleDay5}
               >
+                <button className="btn btn-sm rounded-3xl bg-main-brand">Day 5</button>
+
                 Discover Santorini | Head out from Mykonos to Santorini (via
                 ferry)
               </div>
-              {day5 ? <p>▲</p> : <p>▼</p>}
+              
+{day5 ? <p
+                onClick={handleDay5}
+                className="hover:cursor-pointer"
+              >▲</p> : <p
+                onClick={handleDay5}
+                className="hover:cursor-pointer"
+              >▼</p>}
             </div>
             {day5 && (
               <div className="collapse-content">
@@ -227,17 +262,25 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 6</h5>
+        
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
-                onClick={handleDay6}
+                className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4" onClick={handleDay6}
               >
+                <button className="btn btn-sm rounded-3xl bg-main-brand">Day 6</button>
+
                 Explore Santorini | Full-Day Volcano Tour, Hot Springs,
                 Thirassia, and Oia Sunset
               </div>
-              {day6 ? <p>▲</p> : <p>▼</p>}
+              
+{day6 ? <p
+                onClick={handleDay6}
+                className="hover:cursor-pointer"
+              >▲</p> : <p
+                onClick={handleDay6}
+                className="hover:cursor-pointer"
+              >▼</p>}
             </div>
             {day6 && (
               <div className="collapse-content">
@@ -258,16 +301,24 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 7</h5>
+         
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
-                onClick={handleDay7}
+                className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4" onClick={handleDay7}
               >
+                <button className="btn btn-sm rounded-3xl bg-main-brand">Day 7</button>
+
                 Head back to Athens from Santorini (via Ferry)
               </div>
-              {day7 ? <p>▲</p> : <p>▼</p>}
+              
+{day7 ? <p
+                onClick={handleDay7}
+                className="hover:cursor-pointer"
+              >▲</p> : <p
+                onClick={handleDay7}
+                className="hover:cursor-pointer"
+              >▼</p>}
             </div>
             {day7 && (
               <div className="collapse-content">
@@ -287,16 +338,24 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 8</h5>
+          
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
-                className="collapse-title hover:cursor-pointer"
-                onClick={handleDay8}
+                className="collapse-title hover:cursor-pointer title flex justify-space items-center gap-4" onClick={handleDay8}
               >
+                <button className="btn btn-sm rounded-3xl bg-main-brand">Day 8</button>
+
                 Departure | End of Experience
               </div>
-              {day8 ? <p>▲</p> : <p>▼</p>}
+              
+{day8 ? <p
+                onClick={handleDay8}
+                className="hover:cursor-pointer"
+              >▲</p> : <p
+                onClick={handleDay8}
+                className="hover:cursor-pointer"
+              >▼</p>}
             </div>
             {day8 && (
               <div className="collapse-content">
