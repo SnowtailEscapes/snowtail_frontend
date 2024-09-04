@@ -131,7 +131,7 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 3</h5>
+         
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
@@ -169,7 +169,7 @@ export default function RajasthanAccordion() {
         </div>
 
         <div className="accor join">
-          <h5 className="join-item">Day 4</h5>
+          
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div

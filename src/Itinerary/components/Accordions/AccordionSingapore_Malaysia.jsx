@@ -51,7 +51,6 @@ export default function RajasthanAccordion() {
       </div>
       <div className="accordians">
         <div className="accor join">
-         
           <div className="collapse collapse-open join-item">
             <div className="flex items-center">
               <div
