@@ -1,5 +1,7 @@
 import { useState } from "react";
 import dot from "../../assets/dot.svg";
+import "../../../styles/about.css";
+import { useSelector } from 'react-redux';
 
 export default function Confirmation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,9 +10,13 @@ export default function Confirmation() {
     setIsOpen(!isOpen);
   };
 
+  const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
+
+
   return (
+    <div className={isDarkMode ? 'dark-mode' : 'hehe'}>
     <div
-      className="text-[18px] leading-[25.5px] bg-[rgb(255,255,255)] p-5 mt-8 rounded-lg shadow-[0_-4px_-5px_14px_rgba(0,0,0,0.08),0_5px_8px_16px_rgba(0,0,0,0.08)] flex flex-col gap-5"
+      className="text-[18px] leading-[25.5px]  p-5 mt-8 rounded-lg shadow-[0_-4px_-5px_14px_rgba(0,0,0,0.08),0_5px_8px_16px_rgba(0,0,0,0.08)] flex flex-col gap-5"
     >
       <div className="flex justify-between items-center cursor-pointer" onClick={toggleCollapse}>
         <h3 className="text-[20px] font-medium leading-[28.8px] mb-5 pb-2 min-w-fit">
@@ -55,6 +61,7 @@ export default function Confirmation() {
           </p>
         </div>
       )}
+    </div>
     </div>
   );
 }

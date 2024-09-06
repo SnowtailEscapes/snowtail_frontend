@@ -13,6 +13,7 @@ import hamburger from "../assets/hamburger5.png"
 import hamburger2 from "../assets/hamburger6.png"
 import close1 from "../assets/close1.png";
 import close2 from "../assets/close2.png";
+import DarkModeToggle from './ToggleDarkMode';
 
 const Navbar = () => {
   const location = useLocation();
@@ -21,6 +22,7 @@ const Navbar = () => {
   const isDomestic = location.pathname === "/Domestic";
   const isSearch = location.pathname === "/search-results";
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
 
   const [width, setWidth] = useState(window.innerWidth);
   const [scrolled, setScrolled] = useState(false);
@@ -56,11 +58,18 @@ const Navbar = () => {
   const handleDropdownToggle = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+
+  const handleTheme = () => {
+    setDarkMode(true);
+  }
+
+
+
   return (
     <>
       <div
         className={`navbar-fixed navbar top-0 left-0 w-full z-50  text-white ${scrolled ? "scrolled" : ""
-          } ${width > 780 ? `${!isHomePage ? 'bg-main-brand' : 'bg-none'}` : `${scrolled ? "" : `${isHomePage ? '' : `${!isInternational && !isDomestic ?  'bg-main-brand' : 'bg-main-brand'}`}`}`}`}
+          } ${width > 780 ? `${!isHomePage ? 'bg-main-brand' : 'bg-none'}` : `${scrolled ? "" : `${isHomePage ? '' : `${!isInternational && !isDomestic ? 'bg-main-brand' : 'bg-main-brand'}`}`}`}`}
       >
         <div className="navbar-start flex gap-5">
           <Link to="/">
@@ -161,6 +170,10 @@ const Navbar = () => {
                       Destination Weddings
                     </Link>
                   </li>
+                  <li>
+                    <DarkModeToggle />
+                  </li>
+
                 </ul>
               )
             }
@@ -207,9 +220,9 @@ const Navbar = () => {
                 Destination Weddings
               </Link>
             </li>
+            <DarkModeToggle />
           </ul>
         </div>
-
       </div>
 
       <ToastContainer
