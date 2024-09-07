@@ -1,0 +1,13 @@
+.hehe {
+    
+    color: black !important;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white !important;
+}
+.dot{
+    width: 2.5% !important;
+    aspect-ratio: 2;
+}

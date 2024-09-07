@@ -9,6 +9,9 @@ import RouteChangeTracker from './utils/RouteChangeTracker';
 import initializeClarity from './utils/initializeClarity';
 import NotFound from "./components/NotFound.jsx";
 import Contact from "./Itinerary/components/Contact.jsx";
+import "./styles/about.css";
+import { useSelector } from 'react-redux';
+
 
 // International
 import Thailand5d4n from "./International/Thailand5d4n";
@@ -67,8 +70,10 @@ function App() {
     initializeGA();
     initializeClarity();
   }, []);
+  const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
+
   return (
-    <>
+    <div className={isDarkMode ? 'dark-mode' : 'hehe'}>
         <Router>
         <RouteChangeTracker />
           <Routes>
@@ -188,7 +193,7 @@ function App() {
           </Routes>
         </Router>
       
-    </>
+    </div>
   );
 }
 

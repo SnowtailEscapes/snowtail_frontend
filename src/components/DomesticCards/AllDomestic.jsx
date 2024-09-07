@@ -25,11 +25,13 @@ import shimla2 from "../../../public/images/card/shimla9n10d.webp";
 import sikkim from "../../../public/images/card/sikkim.webp";
 import kerala from "../../../public/images/card/kerala.webp";
 import andaman from "../../../public/images/card/andaman.webp";
+import { useSelector } from "react-redux";
 
 export default function AllDomestic() {
   const [screenSize, setScreenSize] = useState("large");
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredTours, setFilteredTours] = useState([]);
+  const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
 
   useEffect(() => {
     const handleResize = () => {
@@ -212,7 +214,6 @@ export default function AllDomestic() {
   return (
     <>
       <Navbar />
-
       {
         screenSize === "large" && (
           <>
@@ -227,7 +228,8 @@ export default function AllDomestic() {
                       value={searchTerm}
                       onChange={handleSearch}
                       type="text"
-                      className="w-full"
+                      className="min-w-full text-black1"
+
                       placeholder="Search"
                     />
                     <svg
@@ -275,7 +277,8 @@ export default function AllDomestic() {
                       value={searchTerm}
                       onChange={handleSearch}
                       type="text"
-                      className="w-full"
+                      className="min-w-full text-black1"
+
                       placeholder="Search"
                     />
                     <svg
@@ -323,7 +326,8 @@ export default function AllDomestic() {
                       value={searchTerm}
                       onChange={handleSearch}
                       type="text"
-                      className="w-full"
+                      className="min-w-full text-black1"
+
                       placeholder="Search"
                     />
                     <svg

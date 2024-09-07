@@ -278,7 +278,7 @@ export default function AllInternational() {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     type="text"
-                    className="w-full"
+                    className="min-w-full text-black1"
                     placeholder="Search"
                   />
                   <svg
@@ -327,7 +327,8 @@ export default function AllInternational() {
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       type="text"
-                      className="w-full"
+                      className="min-w-full text-black1"
+
                       placeholder="Search"
                     />
                     <svg
@@ -376,7 +377,7 @@ export default function AllInternational() {
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       type="text"
-                      className="w-full"
+                      className="min-w-full text-black1"
                       placeholder="Search"
                     />
                     <svg

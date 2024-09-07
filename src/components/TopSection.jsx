@@ -10,22 +10,33 @@ import Escapes from "./Escapes";
 import InfiniteScrolling from "./InfiniteScrolling";
 import SearchBox from "../getApi/searchBox";
 import home from "../../public/images/card/home.webp";
+import { useSelector } from "react-redux";
 
 export default function TopSection() {
+
+  const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
+
+
   return (
     <>
-      <div className="home">
+      <div className={`home ${isDarkMode ? 'bg-none' : ''}`}>
         <Navbar />
-        <div className="home-image-container">
+        <div className={`home-image-container ${isDarkMode ? 'dark-image' : ''}`}>
           <img
             src={home}
             alt="Place image for tourism"
-            className="home-image"
+            className={`home-image ${isDarkMode ? 'dark-image' : ''}`}
           />
-          <div className="overlay"></div>
+          {
+            !isDarkMode && <div className="overlay"></div>
+          }
+          {
+            isDarkMode && <div className="overlay2"></div>
+          }
         </div>
         <SearchBox />
       </div>
+
       <InfiniteScrolling />
       <div className="flex flex-col gap-10 ">
         <International />

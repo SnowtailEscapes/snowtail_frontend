@@ -6,6 +6,16 @@
     transform: translateX(calc(-100%));
   }
 }
+
+.dark-mode .home-image {
+  filter: brightness(0.8); /* Brightens the image slightly in dark mode */
+}
+
+.dark-overlay {
+  background: rgba(255, 255, 255, 0.15); /* Light overlay in dark mode */
+  z-index: 1;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -13,7 +23,17 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: rgba(0, 0, 0, 0.41); /* Adjust the opacity and color as needed */
+  background: rgba(0, 0, 0, 0.6); 
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(255,255,255,255); 
 }
 .navbar-fixed{
   position: fixed;

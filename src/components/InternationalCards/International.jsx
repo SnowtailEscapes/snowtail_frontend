@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigation } from "react-router-dom";
 import "../../styles/International.css";
 import Contact from "../Contact";
 import percent from "../../assets/percent.png";
+import { useSelector } from "react-redux";
 
 const International = ({ to, title, location, price, duration, image }) => {
   const loc = useLocation();
@@ -11,6 +12,7 @@ const International = ({ to, title, location, price, duration, image }) => {
   const isDomestic = loc.pathname === "/Domestic";
   const [showContactForm, setShowContactForm] = useState(false);
   const [cut, setCut] = useState();
+  const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
 
   useEffect(() => {
     let a = price;
@@ -35,8 +37,8 @@ const International = ({ to, title, location, price, duration, image }) => {
             />
           </Link>
         </figure>
-        <div className="flex flex-col textContainer">
-          <ul className="flex text-xs text-green-500 justify-between mb-2">
+        <div className="flex flex-col justify-between textContainer">
+          <ul className={`flex text-xs justify-between mb-2`}>
             <li className="disc font-[14px] text-main-brand">{duration}</li>
             <li className="disc font-[14px] text-main-brand">
               {isDomestic && <>Domestic Tours</>}
@@ -47,7 +49,7 @@ const International = ({ to, title, location, price, duration, image }) => {
             <h2 className="text-[28px] font-semibold text-dark-accent mb-2 font-arimo text-wrap">
               {location}
             </h2>
-            <p className="text-black1 mb-2 ml-0 font-ligh2 text-[20px]">
+            <p className={`${isDarkMode ? '' : 'text-black1'} mb-2 ml-0 font-ligh2 text-[20px]`}>
               {title}
             </p>
             <div className="flex space-x-2 mb-4">
@@ -71,7 +73,7 @@ const International = ({ to, title, location, price, duration, image }) => {
                   loading="lazy"
                   color="text-main-brand"
                 />
-                <p className="text-center w-1/3 text-xs rounded-xl discount text-nowrap text-green-800 text-[13px] md:text-[20px] font-light">
+                <p className={`text-center w-1/3 text-xs rounded-xl discount text-nowrap ${isDarkMode ? '' : 'text-green-800'} text-[13px] md:text-[20px] font-light`}>
                   Special Monsoon Deal
                 </p>
               </div>
@@ -91,9 +93,9 @@ const International = ({ to, title, location, price, duration, image }) => {
               </h4>
             </div>
           </div>
-          <div className="flex flex-row gap-3">
+          <div className="flex flex-row mb-0">
             <button
-              className="btn bg-main-brand rounded-md text-white text-[15px] font-bold request w-full"
+              className="btn bg-main-brand rounded-md text-[15px] font-bold request w-full"
               onClick={toggleContactForm}
             >
               Request Callback

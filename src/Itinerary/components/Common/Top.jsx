@@ -3,9 +3,9 @@ import a from "../../styles/Tourmain.module.css";
 import "../../styles/animations.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
+import "../../../styles/about.css";
+import { useSelector } from 'react-redux';
 import PropTypes from "prop-types";
-
 import location from "../../assets/location.png";
 import clock from "../../assets/clock.svg";
 import balloon from "../../assets/balloon.png";
@@ -18,9 +18,10 @@ const Common = ({ place , title , location1 , time , rating , reviews}) => {
       duration: 1200,
     });
   }, []);
+  const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
 
   return (
-    <>
+    <div className={isDarkMode ? 'dark-mode' : 'hehe'}>
       <div className={a.left1} data-aos="slide-right">
         <div className={a.left}>
           <h1>{title}</h1>
@@ -103,7 +104,7 @@ const Common = ({ place , title , location1 , time , rating , reviews}) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
