@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import banner from "../../../../assets/Banner/Andaman_banner.avif";
-
+import "../../../../styles/about.css";
+import { useSelector } from 'react-redux';
 
 import Confirmation from "../../Common/Confirmation.jsx";
 import Cancellation from "../../Common/Cancellation.jsx";
@@ -21,9 +22,12 @@ export default function Left() {
       duration: 1200,
     });
   }, []);
+
+  const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
+
   return (
     <>
-      <div className={a.tour_left}>
+      <div className={`${a.tour_left} {isDarkMode ? 'dark-mode' : 'hehe'}`}>
         <Common
           place="ANDAMAN & NICOBAR"
           title="Discover Andaman: A Journey to Serenity"

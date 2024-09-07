@@ -14,15 +14,15 @@ const DarkModeToggle = () => {
     };
 
     return (
-        <div onClick={handleToggle}>
-            {isDarkMode ? <button className='btn bg-white'>
+        <>
+            {isDarkMode ? <button className='btn btn-md bg-white' onClick={handleToggle}>
                 <img width={30} height={30} src={dark} /> Dark
             </button> :
-                <button className='btn bg-black text-white'>
+                <button className='btn bg-black btn-md text-white' onClick={handleToggle}>
                     <img width={30} height={20} src={light} /> Light
                 </button>
             }
-        </div>
+        </>
     );
 };
 

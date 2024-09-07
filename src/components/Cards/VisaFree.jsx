@@ -112,7 +112,7 @@ export default function International() {
     {
         isLargeScreen && (
           <div className="md:pl-20 md:pr-20 pl-4 pt-10">
-            <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
+            <h2 className="font-lora md:mb-3  font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
               Popular Visa Free Tours
             </h2>
             <GliderCarousel uniqueId="free" cards={freeCards} />
@@ -122,7 +122,7 @@ export default function International() {
       {
         isTabletScreen && (
           <div className="md:pl-20 md:pr-20 pl-4 pt-10">
-            <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
+            <h2 className="font-lora md:mb-3  font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
             Popular Visa Free Tours
             </h2>
             <GliderCarousel uniqueId="free" cards={freeCards} />
@@ -132,7 +132,7 @@ export default function International() {
       {
         isMobileScreen && (
           <div className="text-center pt-10">
-          <h2 className="font-lora md:mb-3 text-black1 font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
+          <h2 className="font-lora md:mb-3  font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">
           Popular Visa Free Tours
             </h2>
             <Mcard cards={freeCards} uniqueId="free" />

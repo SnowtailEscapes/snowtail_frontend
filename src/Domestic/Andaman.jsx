@@ -3,6 +3,8 @@ import a from "../styles/Images.module.css";
 import favicon from '../../public/NewLogos/4.svg';
 import Aos from "aos";
 import "aos/dist/aos.css";
+import "../styles/about.css";
+import { useSelector } from 'react-redux';
 
 
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
@@ -26,9 +28,10 @@ export default function Rajasthan() {
       duration: 1300,
     });
   }, []);
+  const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
 
   return (
-    <div>
+    <div className={isDarkMode ? 'dark-mode' : 'hehe'}>
       <Helmet>
         <title>Andaman Tour</title>
         <meta

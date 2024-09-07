@@ -42,38 +42,38 @@ export default function Cancellation() {
 
             <ul className="list-none flex flex-col gap-5 text-[18px]">
               <li className="flex gap-4 text-[18px] leading-[25.5px] list-disc">
-                <img src={dot} width={30} alt="dot" />
+                <img src={dot} width={30} alt="dot" className="dot"/>
                 If cancellations are made 30 days before the start date of the trip,
                 50% of the trip cost will be charged as cancellation fees.If
                 cancellations are made 15-30 days before the start date of the trip,
                 75% of the trip cost will be charged as cancellation fees.
               </li>
               <li className="flex gap-4 text-[18px] leading-[25.5px] list-disc">
-                <img src={dot} width={30} alt="dot" />
+                <img src={dot} width={30} alt="dot" className="dot"/>
                 If cancellations are made within 0-15 days before the start date of
                 the trip, 100% of the trip cost will be charged as cancellation
                 fees.
               </li>
               <li className="flex gap-4 text-[18px] leading-[25.5px] list-disc">
-                <img src={dot} width={30} alt="dot" />
+                <img src={dot} width={30} alt="dot" className="dot"/>
                 In the case of unforeseen weather conditions or government
                 restrictions, certain activities may be canceled. In such cases, the
                 operator will try his best to provide an alternate feasible
                 activity. However, no refund will be provided for the same.
               </li>
               <li className="flex gap-4 text-[18px] leading-[25.5px] list-disc">
-                <img src={dot} width={30} alt="dot" />
+                <img src={dot} width={30} alt="dot" className="dot"/>
                 If a rescheduling date request comes within 30 days from the trip
                 date, the booking amount can neither be adjusted to your next date
                 nor refunded.
               </li>
               <li className="flex gap-4 text-[18px] leading-[25.5px] list-disc">
-                <img src={dot} width={30} alt="dot" />
+                <img src={dot} width={30} alt="dot" className="dot"/>
                 If a rescheduling date request comes prior to 30 days, it can be
                 done without any cancellation charges in the case of domestic trips.
               </li>
               <li className="flex gap-4 text-[18px] leading-[25.5px] list-disc">
-                <img src={dot} width={30} alt="dot" />
+                <img src={dot} width={30} alt="dot" className="dot"/>
                 Flights: No refund will be provided for flights unless booked under
                 specific cancellation or rescheduling conditions than concerned POC
                 will update the charges before confirming the booking.

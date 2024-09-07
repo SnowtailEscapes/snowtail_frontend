@@ -6,6 +6,8 @@ import percent from "../../assets/percent.png";
 import phone from "../../assets/phone.webp";
 import { Link } from "react-router-dom";
 import Contact from "../Contact";
+import { useSelector } from 'react-redux';
+
 
 const Card = ({
   title,
@@ -27,6 +29,8 @@ const Card = ({
   const hoverHo = () => {
     setHover(!hover);
   };
+  const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
+
 
   return (
     <>
@@ -75,7 +79,7 @@ const Card = ({
               <h2 className="text-[1.5rem] bold text-dark-accent font-bold font-arimo">
                 {Name}
               </h2>
-              <h3 className="text-base boston text-black1 font-semibold">
+              <h3 className="text-base boston  font-semibold">
                 {title}
               </h3>
             </div>
@@ -103,7 +107,7 @@ const Card = ({
                 loading="lazy"
                 color="text-main-brand"
               />
-              <p className="text-center w-1/3 text-xs rounded-xl discount text-nowrap text-green-800 text-[13px] font-light">
+              <p className={`text-center w-1/3 text-xs rounded-xl discount text-nowrap text-[13px] font-light ${isDarkMode ? '' : 'text-green-800'}`}>
                 Special Monsoon Deal
               </p>
             </div>

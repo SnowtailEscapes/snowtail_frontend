@@ -98,7 +98,7 @@
   .left8 {
     font-size: 18px;
     line-height: 25.5px;
-    background-color: rgb(255, 255, 255);
+    
     margin-top: 30px;
     padding: 20px;
     display: block;
@@ -150,7 +150,7 @@
   .left7 {
     font-size: 18px;
     line-height: 25.5px;
-    background-color: rgb(255, 255, 255);
+    
     margin-top: 30px;
     padding: 20px;
     display: block;
@@ -180,7 +180,7 @@
   .left6 {
     font-size: 18px;
     line-height: 25.5px;
-    background-color: rgb(255, 255, 255);
+   
     padding: 20px;
     margin: 30px 0px 0px;
     border-radius: 10px;
@@ -188,7 +188,7 @@
       5px 8px 16px 0px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2rem;
   }
 
   .left6 > h3 {
@@ -233,7 +233,7 @@
     font-size: 18px;
     line-height: 25.5px;
 
-    background-color: rgb(255, 255, 255);
+   
     padding: 20px;
     margin: 30px 0px 0px;
     border-radius: 10px;
@@ -252,7 +252,7 @@
     padding: 20px 0;
     margin: 0;
     border: none;
-    background-color: transparent;
+   
     box-sizing: border-box;
     display: grid;
     grid-template-rows: 1fr 3fr;
@@ -285,7 +285,6 @@
     line-height: 24px;
     text-align: start !important;
 
-    background-color: rgb(243, 246, 253);
     border: 1.83206px dashed rgba(221, 221, 221, 0.46);
     margin: 0;
     padding: 10px 22px;
@@ -305,7 +304,7 @@
     line-height: 27px;
     text-align: center;
     background-color: #fb923c;
-    color: #fff;
+   
     padding: 12px 18px;
     width: 50%;
     display: inline-block;
@@ -430,7 +429,7 @@
     margin: 1rem;
     font-size: 18px;
     line-height: 25.5px;
-    background-color: rgb(255, 255, 255);
+   
     padding: 20px;
     display: block;
     overflow: visible;
@@ -438,11 +437,18 @@
       rgba(0, 0, 0, 0.08) 5px 8px 16px 0px;
     border-radius: 10px;
   }
+  .left6{
+    gap: 2rem;
+  }
+  .left5{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
 
   .left8 {
     font-size: 18px;
     line-height: 25.5px;
-    background-color: rgb(255, 255, 255);
     padding: 20px;
     margin: 30px 0px 0px;
     border-radius: 10px;
@@ -475,6 +481,8 @@
   .left4 > div > ul > li {
     list-style-type: disc;
     padding-bottom: 15px;
+    margin-left: 1rem;
+    font-weight: normal;
   }
 
   /* Left 6 */
@@ -493,8 +501,7 @@
   .left8 > ul > h4 {
     font-size: 25px;
     font-weight: 500;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 0.5rem;
   }
 
   .left6 > ul > li {
@@ -512,7 +519,7 @@
     padding: 20px 0;
     margin: 0;
     border: none;
-    background-color: transparent;
+   
     box-sizing: border-box;
     display: grid;
     grid-template-rows: 1fr 3fr;
@@ -545,7 +552,6 @@
     line-height: 24px;
     text-align: start !important;
 
-    background-color: rgb(243, 246, 253);
     border: 1.83206px dashed rgba(221, 221, 221, 0.46);
     margin: 0;
     padding: 10px 22px;
@@ -565,7 +571,7 @@
     line-height: 27px;
     text-align: center;
     background-color: #fb923c;
-    color: #fff;
+   
     padding: 12px 35px;
     display: inline-block;
     cursor: pointer;
@@ -580,13 +586,14 @@
   .left7 {
     font-size: 18px;
     line-height: 1.6;
-    background-color: #ffffff;
     margin-top: 20px;
     padding: 15px;
     display: block;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
   }
+
+  
 }
 .left7 > h3 {
   font-size: 25px;

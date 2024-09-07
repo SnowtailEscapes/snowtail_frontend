@@ -7,6 +7,7 @@ import percent from "../../assets/percent.png";
 import phone from "../../assets/phone.webp";
 import { Link } from "react-router-dom";
 import Contact from "../Contact";
+import { useSelector } from "react-redux";
 // import CurrencyConverter from "../../getApi/CurrencyConverter";
 // import { useDispatch } from "react-redux";
 // import { fetchCurrencyRates } from "../../redux/slice/currencySlice";
@@ -23,6 +24,7 @@ const Card = ({
 }) => {
   const [screenSize, setScreenSize] = useState("large");
   const [cut, setCut] = useState();
+  const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
   
 
   useEffect(() => {
@@ -107,7 +109,7 @@ const Card = ({
                 <h2 className="text-[1.5rem] bold text-dark-accent font-bold font-arimo">
                   {location.substring(0, 20)}
                 </h2>
-                <h3 className="text-base text-wrap boston text-black1 font-semibold">
+                <h3 className="text-base text-wrap boston ${isDarkMode ? '' : 'text-black1'}font-semibold">
                   {title}
                 </h3>
               </div>
@@ -148,7 +150,7 @@ const Card = ({
                   loading="lazy"
                   color="text-main-brand"
                 />
-                <p className="text-center w-1/3 text-xs rounded-xl discount text-nowrap text-green-800 text-[13px] font-light">
+                <p className={`text-center w-1/3 text-xs rounded-xl discount text-nowrap ${isDarkMode ? '' : 'text-green-800'}  text-[13px] font-light`}>
                   Special Monsoon Deal
                 </p>
               </div>

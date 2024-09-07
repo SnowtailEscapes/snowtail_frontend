@@ -136,7 +136,7 @@ const Navbar = () => {
             </button>
             {
               isDropdownOpen && (
-                <ul className={`menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52 text-black dropdown-left ${isInternational || isDomestic || !isHomePage ? 'bg-white1' : ''} ${scrolled ? 'bg-white1' : ''}`}>
+                <ul className={`menu menu-sm dropdown-content mt-3 z-[1] shadow  rounded-box dropdown-left`}>
                   <li>
                     <Link to="/" className="text-[19px]">
                       <img src={home2} width={20} />
@@ -166,14 +166,13 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link onClick={handleClick} className="text-[19px]">
+                    <Link onClick={handleClick} className="text-[19px] items-center">
                       Destination Weddings
                     </Link>
                   </li>
-                  <li>
+                  <li className="items-center">
                     <DarkModeToggle />
                   </li>
-
                 </ul>
               )
             }
