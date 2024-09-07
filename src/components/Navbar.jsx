@@ -13,6 +13,7 @@ import hamburger from "../assets/hamburger5.png"
 import hamburger2 from "../assets/hamburger6.png"
 import close1 from "../assets/close1.png";
 import close2 from "../assets/close2.png";
+import DarkModeToggle from './ToggleDarkMode';
 
 const Navbar = () => {
   const location = useLocation();
@@ -21,6 +22,7 @@ const Navbar = () => {
   const isDomestic = location.pathname === "/Domestic";
   const isSearch = location.pathname === "/search-results";
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
 
   const [width, setWidth] = useState(window.innerWidth);
   const [scrolled, setScrolled] = useState(false);
@@ -56,11 +58,18 @@ const Navbar = () => {
   const handleDropdownToggle = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+
+  const handleTheme = () => {
+    setDarkMode(true);
+  }
+
+
+
   return (
     <>
       <div
         className={`navbar-fixed navbar top-0 left-0 w-full z-50  text-white ${scrolled ? "scrolled" : ""
-          } ${width > 780 ? `${!isHomePage ? 'bg-main-brand' : 'bg-none'}` : `${scrolled ? "" : `${isHomePage ? '' : `${!isInternational && !isDomestic ?  'bg-main-brand' : 'bg-main-brand'}`}`}`}`}
+          } ${width > 780 ? `${!isHomePage ? 'bg-main-brand' : 'bg-none'}` : `${scrolled ? "" : `${isHomePage ? '' : `${!isInternational && !isDomestic ? 'bg-main-brand' : 'bg-main-brand'}`}`}`}`}
       >
         <div className="navbar-start flex gap-5">
           <Link to="/">
@@ -127,7 +136,7 @@ const Navbar = () => {
             </button>
             {
               isDropdownOpen && (
-                <ul className={`menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52 text-black dropdown-left ${isInternational || isDomestic || !isHomePage ? 'bg-white1' : ''} ${scrolled ? 'bg-white1' : ''}`}>
+                <ul className={`menu menu-sm dropdown-content mt-3 z-[1] shadow  rounded-box dropdown-left`}>
                   <li>
                     <Link to="/" className="text-[19px]">
                       <img src={home2} width={20} />
@@ -157,9 +166,12 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link onClick={handleClick} className="text-[19px]">
+                    <Link onClick={handleClick} className="text-[19px] items-center">
                       Destination Weddings
                     </Link>
+                  </li>
+                  <li className="items-center">
+                    <DarkModeToggle />
                   </li>
                 </ul>
               )
@@ -207,9 +219,9 @@ const Navbar = () => {
                 Destination Weddings
               </Link>
             </li>
+            <DarkModeToggle />
           </ul>
         </div>
-
       </div>
 
       <ToastContainer

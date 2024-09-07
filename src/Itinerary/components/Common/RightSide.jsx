@@ -5,7 +5,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import PropTypes from "prop-types";
 import Contact3 from "../../../components/ContactThree";
-
+import "../../../styles/about.css";
+import { useSelector } from 'react-redux';
 
 const RightSide = ({
   standard_cut,
@@ -21,13 +22,14 @@ const RightSide = ({
     });
   }, []);
   const [showContactForm1, setShowContactForm1] = useState(false);
+  const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
 
   const toggleContactForm1 = () => {
     setShowContactForm1(!showContactForm1);
   };
 
   return (
-    <>
+    <div className={isDarkMode ? 'dark-mode' : 'hehe'}>
       <div className={styles.tour_right}>
         <div className={styles.right1}>
           <div className={styles.top}>
@@ -263,6 +265,7 @@ const RightSide = ({
             </div>
           </div>
         </div>
+        
         {showContactForm1 && (
           <Contact3
             isVisible={showContactForm1}
@@ -271,7 +274,7 @@ const RightSide = ({
           />
         )}
       </div>
-    </>
+    </div>
   );
 };
 

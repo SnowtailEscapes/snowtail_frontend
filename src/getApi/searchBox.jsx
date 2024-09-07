@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 import '../styles/Home.css';
+import { useSelector } from "react-redux";
 
 const SearchBox = () => {
   const [itineraries, setItineraries] = useState([]);
@@ -18,6 +19,7 @@ const SearchBox = () => {
     1000,
   ]);
   const navigate = useNavigate();
+  const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
 
   const handleSearch = async (key) => {
       try {
@@ -51,8 +53,8 @@ const SearchBox = () => {
 
   return (
     <div className="flex justify-end flex-col p-5 home-text">
-    <h1 className="text-3xl md:text-4xl font-extrabold text-wrap text-white1 font-lora w-4/5 md:w-2/5">Experience the Travel with Snowtail Escapes</h1>
-    <div className="p-2 m-3 ml-0 bg-gray-100 rounded-3xl lg:w-1/2 w-full flex justify-center items-center">
+    <h1 className="text-3xl text-white1 md:text-4xl font-extrabold text-wrap font-lora w-4/5 md:w-2/5">Experience the Travel with Snowtail Escapes</h1>
+    <div className="p-2 m-3 ml-0 bg-gray-100 rounded-3xl lg:w-1/2 w-full flex justify-center items-center text-black1">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 16 16"
@@ -95,16 +97,16 @@ const SearchBox = () => {
         onFocus={() => toggleTypeAnimation(false)}
         onBeforeInput={() => toggleTypeAnimation(false)}
         onBlur={() => toggleTypeAnimation(false)}
-        className="py-2 px-3 bg-transparent border-none focus:outline-none flex-1 w-full"
+        className="py-2 text-black1 px-3 bg-transparent border-none focus:outline-none flex-1 w-full"
       />
       <button
-        className="bg-main-brand march text-white px-4 py-2 ml-2 rounded-3xl min-w-auto max-w-auto"
+        className="bg-main-brand march px-4 py-2 ml-2 rounded-3xl min-w-auto max-w-auto"
         onClick={handleSearchButtonClick}
       >
         Search
       </button>
     </div>
-    <p className="text-white1 text-sm md:text-lg font-light w-5/6">Your Luxurious Journey Awaits — Pack Your Bags, and We’ll Handle the Rest!</p>
+    <p className={`text-sm md:text-lg font-light w-5/6 text-white1`}>Your Luxurious Journey Awaits — Pack Your Bags, and We’ll Handle the Rest!</p>
   </div>
   );
 };

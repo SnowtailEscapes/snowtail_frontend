@@ -38,7 +38,7 @@ export default function RajasthanAccordion() {
     <div className={a.left5} data-aos="slide-right">
       <div className="flex items-center justify-between">
         <h3>Itinerary</h3>
-        <button className="btn btn-md bg-light-shade mb-6" onClick={handleExpandAll}>
+        <button className="btn btn-md bg-light-shade mb-6 mr-3" onClick={handleExpandAll}>
           {day1 && day2 && day3 && day4  ? "Collapse All" : "Expand All"}
         </button>
       </div>

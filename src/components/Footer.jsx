@@ -6,19 +6,23 @@ import linkedin from "../assets/footer/linkedin.png";
 import logo from "../../public/logo/30.svg";
 import "../styles/footer.css";
 import logo2 from '../../public/NewLogos/Logo.png';
+import { useSelector } from "react-redux";
 
 export default function Footer() {
+
+  const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
+
   return (
     <div className="relative flex flex-col items-center footer">
       <div className="absolute top-0 z-10 w-full flex justify-center mt-10 md:h-3/6">
-        <div className="md:min-h-fit md:w-4/5 w-full md:rounded-lg flex flex-col md:flex-row bg-dark-accent">
+        <div className={`md:min-h-fit md:w-4/5 w-full md:rounded-lg flex flex-col md:flex-row ${isDarkMode ? '' : 'bg-dark-accent'} `}>
           <div className="w-full md:w-1/2 p-4">
             {/* <h1 className="text-[1.5rem] mb-1 text-center font-light text-white1">Snowtail Escapes</h1> */}
             <div className="flex justify-center">
-            <img src={logo2} width={200} height={300}/>
+              <img src={logo2} width={200} height={300} />
 
             </div>
-            
+
             <ul className="list-none font-ligh2 flex gap-2  justify-start flex-col ">
               <Link to="/about">
                 <li className=" text-[16px] text-white1 hover:underline">About us</li>
@@ -57,10 +61,15 @@ export default function Footer() {
       </div>
       <div className="md:mt-52 w-full mt-64"></div>
 
-      <div className="relative flex justify-center p-5 md:pt-52 bg-light-shade mt-20 pt-80 w-full font-light">
+      <div className={`relative flex justify-center p-5 md:pt-52 ${isDarkMode ? '' : 'bg-light-shade'} mt-20 pt-80 w-full font-light`}>
         <div className="flex flex-col items-center gap-10 w-full">
           <div className="divider divider-accent "> {/* Set your desired background color here */}
-            <img src={logo} width={300} alt="Snowtail Escapes Logo" className="footer-logo mix-blend-multiply " />
+            {
+              isDarkMode ? <img src={logo2} width={300} alt="Snowtail Escapes Logo" className="footer-logo" /> :
+                <>
+                  <img src={logo} width={300} alt="Snowtail Escapes Logo" className="footer-logo mix-blend-multiply" />
+                </>
+            }
           </div>
 
           <div className="flex gap-4 md:gap-10 justify-center mt-4">

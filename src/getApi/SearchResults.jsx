@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import Mview from "../components/DomesticCards/MobileCards";
+import { useSelector } from "react-redux";
 
 
 const SearchResults = () => {
@@ -11,6 +12,7 @@ const SearchResults = () => {
   const [showContactForm, setShowContactForm] = useState(false);
   const [hover, setHover] = useState(false);
   // const dispatch = useDispatch();
+  const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
 
   const toggleContactForm = () => {
     setShowContactForm(!showContactForm);
@@ -36,7 +38,7 @@ const SearchResults = () => {
   return (
     <>
       <Navbar />
-      <div className="mb-10 mt-32 p-4">
+      <div className="mb-10 pt-32 p-4">
         {itineraries.length > 0 ? (
           <h1 className="text-2xl font-bold mb-6 text-center boston">
             Packages
