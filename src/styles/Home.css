@@ -7,18 +7,6 @@
   }
 }
 
-<<<<<<< HEAD
-=======
-.dark-mode .home-image {
-  filter: brightness(0.8); /* Brightens the image slightly in dark mode */
-}
-
-.dark-overlay {
-  background: rgba(255, 255, 255, 0.15); /* Light overlay in dark mode */
-  z-index: 1;
-}
-
->>>>>>> 45633d500292b8492e79fcb945c6a61726f8b6c7
 .overlay {
   position: absolute;
   top: 0;
