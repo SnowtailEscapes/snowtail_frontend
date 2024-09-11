@@ -14,7 +14,7 @@ const Map = ({link}) => {
   }, []);
   return (
     <>
-      <div className={a.left7} data-aos="zoom-out">
+      <div className={a.left7}>
         <h3>Tours Location</h3>
         <div>
           <iframe

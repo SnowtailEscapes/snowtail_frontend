@@ -24,6 +24,10 @@
     border-radius: 20px;
   }
   .textContainer{
+    min-height: 50vh;
+    max-height: 50vh;
+    border-radius: 20px !important;
+    height:50vh;
     padding: 1rem;
     width: 100%;
   }
