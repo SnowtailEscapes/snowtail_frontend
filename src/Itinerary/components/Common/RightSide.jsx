@@ -7,6 +7,7 @@ import PropTypes from "prop-types";
 import Contact3 from "../../../components/ContactThree";
 import "../../../styles/about.css";
 import { useSelector } from 'react-redux';
+import ScrollToTopButton from "../ScrollToTop";
 
 const RightSide = ({
   standard_cut,
@@ -29,8 +30,8 @@ const RightSide = ({
   };
 
   return (
-    <div className={isDarkMode ? 'dark-mode' : 'hehe'}>
-      <div className={styles.tour_right}>
+    <div className={isDarkMode ? 'dark-mode' : 'hehe'}  >
+      <div className={styles.tour_right }  id="price">
         <div className={styles.right1}>
           <div className={styles.top}>
             <div className={styles.tour_details_right_box_heading}>
@@ -274,6 +275,7 @@ const RightSide = ({
           />
         )}
       </div>
+      <ScrollToTopButton/>
     </div>
   );
 };

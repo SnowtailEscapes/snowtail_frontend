@@ -11,3 +11,9 @@
     width: 2.5% !important;
     aspect-ratio: 2;
 }
+@media screen and (max-width:800px){
+    .dot{
+        width: 8% !important;
+        aspect-ratio: 2;
+    }
+}

@@ -2,6 +2,7 @@ import Left from "../Left/LeftAlmaty.jsx";
 import RightSide from "../Common/RightSide.jsx";
 import a from "../../styles/Tourmain.module.css";
 
+
 export default function Tourmain() {
   return (
     <>

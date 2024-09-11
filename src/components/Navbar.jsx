@@ -136,7 +136,7 @@ const Navbar = () => {
             </button>
             {
               isDropdownOpen && (
-                <ul className={`menu menu-sm dropdown-content mt-3 z-[1] shadow  rounded-box dropdown-left`}>
+                <ul className={`menu menu-sm dropdown-content mt-3  shadow  rounded-box dropdown-left`}>
                   <li>
                     <Link to="/" className="text-[19px]">
                       <img src={home2} width={20} />
