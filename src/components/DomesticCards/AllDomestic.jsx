@@ -199,6 +199,39 @@ export default function AllDomestic() {
       location: "ANDAMAN & NICOBAR",
       image: andaman,
     },
+    {
+      to: "/lonavala3n4d",
+      title: "Nature's Bliss in Lonavala: A Relaxing Escape",
+      price: 31988,
+      duration: "3 nights and 4 days tour",
+      location: "Mumbai",
+      image: andaman,
+    },
+    {
+      to: "/lonavala4n5d",
+      title: "Nature's Bliss in Lonavala: A Relaxing Escape",
+      price: 31988,
+      duration: "4 nights and 5 days tour",
+      location: "Mumbai",
+      image: andaman,
+    },
+    {
+      to: "/dharamshala",
+      title: "Unwind in Dharamshala: Peaceful Getaway in the Mountains",
+      price: 31988,
+      duration: "5 nights and 6 days tour",
+      location: "Dharamshala",
+      image: andaman,
+    },
+    {
+      to: "/dharamshala",
+      title: "Spiti Valley Expedition: The Land of Monasteries and Mystique",
+      price: 31988,
+      duration: "7 nights and 8 days tour",
+      location: "Himachal Pradesh",
+      image: andaman,
+    },
+    
   ];
 
   useEffect(() => {

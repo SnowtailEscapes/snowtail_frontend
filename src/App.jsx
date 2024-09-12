@@ -145,8 +145,6 @@ function App() {
             <Route path="/spiti" element={<Spiti/>} />
 
 
-
-
             {/* ITINERARY SECTION -> INTERNATIONAL  */}
             <Route path="/International" element={<AllInternational />} />
 
