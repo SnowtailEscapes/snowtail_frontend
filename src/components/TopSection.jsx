@@ -11,22 +11,18 @@ import InfiniteScrolling from "./InfiniteScrolling";
 import SearchBox from "../getApi/searchBox";
 import home from "../../public/images/card/home.webp";
 import { useSelector } from "react-redux";
+import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 
 export default function TopSection() {
 
   const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
-
 
   return (
     <>
       <div className={`home ${isDarkMode ? 'bg-none' : ''}`}>
         <Navbar />
         <div className={`home-image-container ${isDarkMode ? 'dark-image' : ''}`}>
-          <img
-            src={home}
-            alt="Place image for tourism"
-            className={`home-image ${isDarkMode ? 'dark-image' : ''}`}
-          />
+          <ItineraryImage small={home} large={home}/> 
           {
             !isDarkMode && <div className="overlay"></div>
           }
