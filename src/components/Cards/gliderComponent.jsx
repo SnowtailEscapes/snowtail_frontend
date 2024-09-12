@@ -2,6 +2,9 @@ import React, { useEffect, useRef } from "react";
 import Glider from "glider-js";
 import "glider-js/glider.min.css";
 import Card from "./Card"; // Adjust the import as needed
+import left from "../../../public/left.png";
+import right from "../../../public/right.png";
+
 
 export default function GliderCarousel({ uniqueId, cards }) {
   const gliderRef = useRef(null);
@@ -58,7 +61,7 @@ export default function GliderCarousel({ uniqueId, cards }) {
         aria-label="Previous"
         className="glider-prev"
       >
-        «
+        <img className="hover:cursor-pointer" lazy="loading" src={left} width={50} />
       </button>
       <div className="glider" ref={gliderRef}>
         {cards.map((card, index) => (
@@ -72,7 +75,7 @@ export default function GliderCarousel({ uniqueId, cards }) {
         aria-label="Next"
         className="glider-next"
       >
-        »
+        <img className="hover:cursor-pointer" lazy="loading" src={right} width={50} />
       </button>
     </div>
   );
