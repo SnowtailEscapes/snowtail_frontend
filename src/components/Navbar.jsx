@@ -29,16 +29,26 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
-    const handleScroll = () => setScrolled(window.scrollY > 50); // Adjust the scroll threshold as needed
-
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+  
+    const handleTouchStart = () => setScrolled(window.scrollY > 50); // Touch start event
+    const handleTouchEnd = () => setScrolled(window.scrollY > 50);   // Touch end event
+  
+    // Add event listeners
     window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
-
+    window.addEventListener("touchstart", handleTouchStart); // Add touchstart event listener
+    window.addEventListener("touchend", handleTouchEnd);     // Add touchend event listener
+  
     return () => {
+      // Clean up event listeners
       window.removeEventListener("resize", handleResize);
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("touchstart", handleTouchStart); // Remove touchstart event listener
+      window.removeEventListener("touchend", handleTouchEnd);     // Remove touchend event listener
     };
   }, []);
+  
 
   const handleClick = (e) => {
     e.preventDefault();

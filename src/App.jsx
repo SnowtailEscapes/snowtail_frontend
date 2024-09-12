@@ -11,7 +11,9 @@ import NotFound from "./components/NotFound.jsx";
 import Contact from "./Itinerary/components/Contact.jsx";
 import "./styles/about.css";
 import { useSelector } from 'react-redux';
-
+import SearchResults from "./getApi/SearchResults.jsx";
+import Success from "./components/Success.jsx";
+import TermsAndConditions from "./components/TermsAndCondition.jsx";
 
 // International
 import Thailand5d4n from "./International/Thailand5d4n";
@@ -37,6 +39,7 @@ import Australia from "./International/Australia7d6n.jsx";
 import Japan from "./International/Japan8n9d.jsx";
 import Japan2 from "./International/Japan2.jsx";
 import Philipenes from "./International/Philipenes.jsx";
+import Almaty from "./International/Almaty.jsx";
 
 
 
@@ -60,10 +63,11 @@ import Uttrakhand from "./Domestic/Uttrakhand.jsx";
 import Andaman from "./Domestic/Andaman.jsx";
 import Domestic from "./components/DomesticCards/AllDomestic.jsx";
 import AllInternational from "./components/InternationalCards/AllInternational.jsx";
-import TermsAndConditions from "./components/TermsAndCondition.jsx";
-import Almaty from "./International/Almaty.jsx";
-import SearchResults from "./getApi/SearchResults.jsx";
-import Success from "./components/Success.jsx";
+import Lonavala3n4d from "./Domestic/Lonavala3n4d.jsx";
+import Lonavala4n5d from "./Domestic/Lonavala4n5d.jsx";
+import Dharamshala from "./Domestic/Dharamshala.jsx";
+import Spiti from "./Domestic/Spiti.jsx";
+
 
 function App() {
   useEffect(() => {
@@ -129,6 +133,19 @@ function App() {
 
             {/* Andaman and Nicobar */}
             <Route path="/Andaman" element={<Andaman />} />
+
+            {/* Mumbai */}
+            <Route path="/lonavala3n4d" element={<Lonavala3n4d/>}/>
+            <Route path="/lonavala4n5d" element={<Lonavala4n5d/>}/>
+
+            {/* Himachal Pradesh */}
+            <Route path="/dharamshala" element={<Dharamshala/>}/>
+
+            {/* Spiti */}
+            <Route path="/spiti" element={<Spiti/>} />
+
+
+
 
             {/* ITINERARY SECTION -> INTERNATIONAL  */}
             <Route path="/International" element={<AllInternational />} />
