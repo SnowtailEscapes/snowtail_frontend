@@ -26,15 +26,12 @@ const International = ({ to, title, location, price, duration, image }) => {
 
   return (
     <div className="flex justify-center w-full">
-      <div
-        className="cardContainer rounded-xl overflow-hidden"
-      >
+      <div className="cardContainer rounded-xl overflow-hidden">
         <figure className="imageContainer">
           <Link to={to}>
-            <img
-              src={image}
-              alt={title}
-            />
+            <picture>
+              <img src={image} alt={title} loading="lazy" decoding="async"/>
+            </picture>
           </Link>
         </figure>
         <div className="flex flex-col justify-between textContainer">
@@ -49,7 +46,11 @@ const International = ({ to, title, location, price, duration, image }) => {
             <h2 className="text-[28px] font-semibold text-dark-accent mb-2 font-arimo text-wrap">
               {location}
             </h2>
-            <p className={`${isDarkMode ? '' : 'text-black1'} mb-2 ml-0 font-ligh2 text-[20px]`}>
+            <p
+              className={`${
+                isDarkMode ? "" : "text-black1"
+              } mb-2 ml-0 font-ligh2 text-[20px]`}
+            >
               {title}
             </p>
             <div className="flex space-x-2 mb-4">
@@ -65,18 +66,22 @@ const International = ({ to, title, location, price, duration, image }) => {
             </div>
           </div>
           <div className="text-[13px] flex flex-row text-center font-bold items-center">
-                <img
-                  src={percent}
-                  width={20}
-                  height={10}
-                  alt="Star"
-                  loading="lazy"
-                  color="text-main-brand"
-                />
-                <p className={`text-center w-1/3 text-xs rounded-xl discount text-nowrap ${isDarkMode ? '' : 'text-green-800'} text-[13px] md:text-[20px] font-light`}>
-                  Special Monsoon Deal
-                </p>
-              </div>
+            <img
+              src={percent}
+              width={20}
+              height={10}
+              alt="Star"
+              loading="lazy"
+              color="text-main-brand"
+            />
+            <p
+              className={`text-center w-1/3 text-xs rounded-xl discount text-nowrap ${
+                isDarkMode ? "" : "text-green-800"
+              } text-[13px] md:text-[20px] font-light`}
+            >
+              Special Monsoon Deal
+            </p>
+          </div>
           <div className="flex flex-row justify-between mt-2">
             <div className="flex flex-row justify-between items-center">
               <h4 className="text-base text-main-brand font-bold font-light2 flex">
