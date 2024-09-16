@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import tag from "../../assets/tag.webp";
 import "../../styles/Card.css";
@@ -68,7 +68,7 @@ const Card = ({
   }, []);
 
   return (
-    <>
+    <Suspense fallback={<p>loading...</p>}>
         <div className="lg:w-1/3 md:1/2 w-full carousel-item flex flex-col relative rounded-2xl mb-12">
           <div
             className="relative text-center"
@@ -180,7 +180,7 @@ const Card = ({
           onClose={() => setShowContactForm(false)}
         />
       )}
-    </>
+    </Suspense>
   );
 };
 

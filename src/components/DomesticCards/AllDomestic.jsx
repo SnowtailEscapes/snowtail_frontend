@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import "../../styles/International.css";
 import Domestic from "../InternationalCards/International";
 import Navbar from "../Navbar";
@@ -249,7 +249,7 @@ export default function AllDomestic() {
       <Navbar />
       {
         screenSize === "large" && (
-          <>
+          <Suspense fallback={<p>loading...</p>}>
             <div className="flex justify-center ">
               <div className="mt-20 md:mt-28 md:p-5 items-center">
                 <h1 className="text-center text-[26px] md:text-3xl font-lora font-semibold mb-4 mt-4">
@@ -293,12 +293,12 @@ export default function AllDomestic() {
                 ))}
               </div>
             </div>
-          </>
+          </Suspense>
         )
       }
       {
         screenSize === "tablet" && (
-          <>
+          <Suspense fallback={<p>loading...</p>}>
             <div className="flex justify-center ">
               <div className="mt-20 md:mt-28 md:p-5 items-center">
                 <h1 className="text-center text-[26px] md:text-3xl font-lora font-semibold mb-4 mt-4">
@@ -342,12 +342,12 @@ export default function AllDomestic() {
                 ))}
               </div>
             </div>
-          </>
+          </Suspense>
         )
       }
       {
         screenSize === "mobile" && (
-          <>
+          <Suspense fallback={<p>loading...</p>}>
           <div className="flex justify-center mt-20 md:mt-28 md:p-5 p-5 ">
               <div className="w-full md:w-3/4">
                 <h1 className="text-center text-[26px] md:text-3xl font-lora font-semibold mb-4 mt-4">
@@ -391,7 +391,7 @@ export default function AllDomestic() {
                 ))}
               </div>
             </div>
-          </>
+          </Suspense>
         )
       }
 

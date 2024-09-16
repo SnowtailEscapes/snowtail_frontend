@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "../styles/Home.css";
 
 import Navbar from "./Navbar";
@@ -14,36 +14,42 @@ import { useSelector } from "react-redux";
 import ItineraryImage from "../Itinerary/components/Common/ItineraryImage";
 
 export default function TopSection() {
-
   const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
 
   return (
     <>
-      <div className={`home ${isDarkMode ? 'bg-none' : ''}`}>
+      <div className={`home ${isDarkMode ? "bg-none" : ""}`}>
         <Navbar />
-        <div className={`home-image-container ${isDarkMode ? 'dark-image' : ''}`}>
-          <ItineraryImage small={home} large={home}/> 
-          {
-            !isDarkMode && <div className="overlay"></div>
-          }
-          {
-            isDarkMode && <div className="overlay2"></div>
-          }
+        <div
+          className={`home-image-container ${isDarkMode ? "dark-image" : ""}`}
+        >
+          <ItineraryImage small={home} large={home} />
+          {!isDarkMode && <div className="overlay"></div>}
+          {isDarkMode && <div className="overlay2"></div>}
         </div>
         <SearchBox />
       </div>
-
       <InfiniteScrolling />
       <div className="flex flex-col gap-10 ">
-        <International />
+        <Suspense fallback={<p>loading...</p>}>
+          <International />
+        </Suspense>
 
-        <Domestic />
+        <Suspense fallback={<p>loading...</p>}>
+          <Domestic />
+        </Suspense>
 
-        <Escapes />
+        <Suspense fallback={<p>loading...</p>}>
+          <Escapes />
+        </Suspense>
 
-        <Budget />
+        <Suspense fallback={<p>loading...</p>}>
+          <Budget />
+        </Suspense>
 
-        <VisaFree />
+        <Suspense fallback={<p>loading...</p>}>
+          <VisaFree />
+        </Suspense>
       </div>
     </>
   );
