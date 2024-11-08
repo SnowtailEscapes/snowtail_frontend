@@ -73,6 +73,7 @@ function App() {
   useEffect(() => {
     initializeGA();
     initializeClarity();
+    
   }, []);
   const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
 
