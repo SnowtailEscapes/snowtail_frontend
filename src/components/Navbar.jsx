@@ -20,6 +20,7 @@ const Navbar = () => {
   const isHomePage = location.pathname === "/";
   const isInternational = location.pathname === "/International";
   const isDomestic = location.pathname === "/Domestic";
+  const isCountry = location.pathname === "/country";
   const isSearch = location.pathname === "/search-results";
 
   const [width, setWidth] = useState(window.innerWidth);
@@ -153,6 +154,11 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/country" className="text-[19px]">
+                  Countries
+                </Link>
+              </li>
+              <li>
                 <Link onClick={handleClick} className="text-[19px]">
                   Exclusive
                 </Link>
@@ -207,6 +213,16 @@ const Navbar = () => {
                 }`}
               >
                 Domestic
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/country"
+                className={`text-[19px] ${
+                  isCountry ? "underline" : "hover:underline"
+                }`}
+              >
+                Countries
               </Link>
             </li>
             <li onClick={handleClick}>

@@ -3,7 +3,7 @@ import Glider from "glider-js";
 import "glider-js/glider.min.css";
 import MobileCard from "./cardMobile";
 
-export default function GliderCarousel({ uniqueId, cards }) {
+export default function GliderCarousel({ uniqueId, cards, children }) {
   const gliderRef = useRef(null);
 
   // Initialize Glider.js
@@ -21,13 +21,18 @@ export default function GliderCarousel({ uniqueId, cards }) {
     <>
       <div className="glider-container">
         <div className="glider flex flex-col" ref={gliderRef}>
-          {cards.map((card, index) => (
-            <MobileCard key={index} {...card} />
-          ))}
+          {children ? (
+            children
+          ) : (
+            <>
+              {cards.map((card, index) => (
+                <MobileCard key={index} {...card} />
+              ))}
+            </>
+          )}
         </div>
         <div id={`dots-${uniqueId}`} className="glider-dots mt-8 text-center"></div>
       </div>
     </>
-
   );
 }

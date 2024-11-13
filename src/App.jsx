@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./Pages/Home";
 import About from "./components/About";
@@ -67,13 +67,13 @@ import Lonavala3n4d from "./Domestic/Lonavala3n4d.jsx";
 import Lonavala4n5d from "./Domestic/Lonavala4n5d.jsx";
 import Dharamshala from "./Domestic/Dharamshala.jsx";
 import Spiti from "./Domestic/Spiti.jsx";
+import CountryPage from "./Pages/Country/index.jsx";
 
 
 function App() {
   useEffect(() => {
     initializeGA();
     initializeClarity();
-    
   }, []);
   const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
 
@@ -206,6 +206,8 @@ function App() {
 
             {/* Philipenes */}
             <Route path="/Philipenes" element={<Philipenes/>}/>
+            <Route path="/country" element={<CountryPage />} />
+            <Route path="/country/:countryName" element={<CountryPage />} />
           </Routes>
         </Router>
       
