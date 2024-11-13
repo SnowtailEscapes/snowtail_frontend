@@ -26,4 +26,4 @@ jobs:
 
     - name: Install dependencies and restart PM2
       run: |
-        ssh -o StrictHostKeyChecking=no root@${{ secrets.82.112.235.224 }} "cd /root/frontend/snowtail_frontend && git reset --hard && git pull && npm install && npm run build && pm2 restart 3"
+        ssh -o StrictHostKeyChecking=no root@${{ secrets.SNOWTAIL_IP }} "cd /root/frontend/snowtail_frontend && git reset --hard && git pull && npm install && npm run build && pm2 restart 3"
