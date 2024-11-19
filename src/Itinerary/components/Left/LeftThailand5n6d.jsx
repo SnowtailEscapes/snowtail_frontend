@@ -12,7 +12,7 @@ import "aos/dist/aos.css";
 import ThailandAccordion from "../Accordions/AccordionsThailand6d5n.jsx";
 import Common from "../Common/Top.jsx";
 import Map from "../Common/Map.jsx";
-import Inclusion from "../Common/Inclusion.jsx";
+import ThailandInclusion from "../Inclusion/Thailand5n6d.jsx";
 import KnowBeforeYouGo from "../Common/Know_Before_you_go";
 
 
@@ -68,7 +68,7 @@ export default function Left() {
 
         <ThailandAccordion />
 
-        <Inclusion />
+        <ThailandInclusion />
 
         <Map link="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15873184.119188394!2d95.72919870811018!3d13.761432089506735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304d8df747424db1%3A0x9ed72c880757e802!2sThailand!5e0!3m2!1sen!2sin!4v1717781350838!5m2!1sen!2sin" />
         <KnowBeforeYouGo/>

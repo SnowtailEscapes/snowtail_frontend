@@ -21,15 +21,16 @@ function CountryPage() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col gap-10 mt-20">
-        <CountriesView />
-      </div>
+      
       {filteredCountry?.length > 0 && (
-        <div className="md:pl-20 md:pr-20 pl-4 pt-10">
+        <div className="md:px-20 px-5 pt-10 mt-20">
           <h2 className="font-lora md:mb-3  font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">List of Packages</h2>
           <PackagesView data={filteredCountry} />
         </div>
       )}
+      <div className="flex flex-col gap-10 mt-20">
+        <CountriesView />
+      </div>
       <Footer />
     </>
   );

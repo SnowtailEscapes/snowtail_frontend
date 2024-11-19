@@ -14,6 +14,7 @@ import { useSelector } from 'react-redux';
 import SearchResults from "./getApi/SearchResults.jsx";
 import Success from "./components/Success.jsx";
 import TermsAndConditions from "./components/TermsAndCondition.jsx";
+import CancellationPolicy from "./components/CancellationPolicy.jsx";
 
 // International
 import Thailand5d4n from "./International/Thailand5d4n";
@@ -87,6 +88,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-conditions" element={<TermsAndConditions />} />
+            <Route path="/cancellation-policy" element={<CancellationPolicy />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/search-results" element={<SearchResults />} />
             <Route path="/contact" element={<Contact/>}/>

@@ -27,7 +27,27 @@ function CountriesView() {
       {isLargeScreen && (
         <div className="md:pl-20 md:pr-20 pl-4 pt-10">
           <h2 className="font-lora md:mb-3  font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">Explore Countries</h2>
-          <GliderCarousel uniqueId="international" gliderResponsiveOptions={[]}>
+          <GliderCarousel uniqueId="international" gliderResponsiveOptions={[{
+            breakpoint: 0,       // For smaller screens
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 600,     // For medium screens
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 1024,    // For larger screens
+            settings: {
+              slidesToShow: 3,   // Show 3 cards
+              slidesToScroll: 3,
+            },
+          },]}>
             {countriesList.map((card, index) => (
               <div
                 className="w-full carousel-item flex flex-col relative rounded-2xl mx-2"
@@ -45,7 +65,7 @@ function CountriesView() {
           <h2 className="font-lora md:mb-3  font-extrabold lg:text-[2.5rem] md:text-[2rem] text-[1.5rem]">Explore Countries</h2>
           <Mcard uniqueId="international">
             {countriesList.map((card, index) => (
-              <div key={index} onClick={()=>scrollRef.current?.scrollIntoView({ behavior: "smooth"})}>
+              <div key={index} onClick={() => scrollRef.current?.scrollIntoView({ behavior: "smooth" })}>
                 <CardMobile {...card} />
               </div>
             ))}

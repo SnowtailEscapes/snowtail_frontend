@@ -42,7 +42,7 @@ export default function Footer() {
               <Link>
                 <li className=" text-[16px] text-white1 hover:underline">We are Hiring</li>
               </Link>
-              <Link>
+              <Link to="/cancellation-policy">
                 <li className=" text-[16px] text-white1 hover:underline">Cancellation Policy</li>
               </Link>
             </ul>

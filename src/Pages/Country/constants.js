@@ -81,13 +81,13 @@ export const countriesList = [
         },
         {
           id: 2,
-          "title": "Experience Jewels of Thailand",
+          "title": "Experience Best of Southern Thailand: Phuket and Krabi",
           "Name": "Thailand",
           "duration": "6 Days & 5 Nights",
           "rating": "4.8/5",
-          "cut_price": 36999,
+          "cut_price": 41999,
           "curr_price": 29999,
-          "save": 7000,
+          "save": 12000,
           "direct": "/Thailand6d5n",
           "image": "https://snowtailescapes.com/images/card/thailand5n6ds.webp"
         },

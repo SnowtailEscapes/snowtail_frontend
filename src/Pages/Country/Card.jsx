@@ -59,7 +59,7 @@ const Card = ({
         <>
           <div
             className="relative text-center"
-            style={{ width: "100%", paddingBottom: "25%" }} // 5:3 aspect ratio
+            style={{ width: "100%", paddingBottom: "70%" }} // 5:3 aspect ratio
           >
             <Link to={direct}>
               <img
