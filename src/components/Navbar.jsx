@@ -224,11 +224,11 @@ const Navbar = () => {
               >
                 Countries
               </Link>
-            </li>
+            </li>{/*
             <li onClick={handleClick}>
               <Link className={` text-[19px] hover:underline`}>Exclusive</Link>
             </li>
-            {/*<li onClick={handleClick}>
+            <li onClick={handleClick}>
               <Link className={` text-[19px] hover:underline`}>
                 Group Tours
               </Link>
