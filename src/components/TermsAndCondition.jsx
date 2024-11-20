@@ -350,6 +350,7 @@ export default function TermsAndConditions() {
             For more details, please contact us at: Snowtail Escapes
             <br /> Triveni Nagar, Jaipur, Rajasthan 302018 <br />
             E-mail: info@snowtailescapes.com
+            Call at: +91 9256207712
           </p>
         </div>
       </div>

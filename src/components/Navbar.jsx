@@ -158,11 +158,11 @@ const Navbar = () => {
                   Countries
                 </Link>
               </li>
-              <li>
+              {/*<li>
                 <Link onClick={handleClick} className="text-[19px]">
                   Exclusive
                 </Link>
-              </li>
+            </li> 
               <li>
                 <Link onClick={handleClick} className="text-[19px]">
                   Group Tours
@@ -175,7 +175,7 @@ const Navbar = () => {
                 >
                   Destination Weddings
                 </Link>
-              </li>
+            </li>*/}
               <li className="items-center">
                 <DarkModeToggle />
               </li>
@@ -228,7 +228,7 @@ const Navbar = () => {
             <li onClick={handleClick}>
               <Link className={` text-[19px] hover:underline`}>Exclusive</Link>
             </li>
-            <li onClick={handleClick}>
+            {/*<li onClick={handleClick}>
               <Link className={` text-[19px] hover:underline`}>
                 Group Tours
               </Link>
@@ -237,7 +237,7 @@ const Navbar = () => {
               <Link className={` text-[19px] hover:underline`}>
                 Destination Weddings
               </Link>
-            </li>
+              </li>*/}
             <DarkModeToggle />
           </ul>
         </div>
