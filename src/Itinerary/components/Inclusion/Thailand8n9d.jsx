@@ -29,9 +29,6 @@ export default function Inclusion() {
               <img src={dot} width={5} alt="dot" /> Meals : Breakfast from Day 2 to Day 9 and lunch on Phi Phi, Krabi 4 & Coral Island tour.
             </li>
             <li>
-              <img src={dot} width={5} alt="dot" />Flights: 03 internal flights.
-            </li>
-            <li>
               <img src={dot} width={5} alt="dot" />Sightseeing : Phi Phi island tour, Krabi 4 island tour, Safari World Tour, Bangkok City Tour & Coral Island Tour.
             </li>
             <li>
