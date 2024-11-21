@@ -46,11 +46,6 @@ export default function CancellationPolicy() {
                 If a rescheduling date request comes prior to 30 days, it can be
                 done without any cancellation charges in the case of domestic trips.
               </li>
-              <li className="list-disc">
-                Flights: No refund will be provided for flights unless booked under
-                specific cancellation or rescheduling conditions than concerned POC
-                will update the charges before confirming the booking.
-              </li>
             </ul>
           </p>
         </div>
