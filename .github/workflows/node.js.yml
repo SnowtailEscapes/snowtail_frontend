@@ -27,6 +27,7 @@ jobs:
       run: |
         ssh -v -q -o StrictHostKeyChecking=no root@${{ secrets.SNOWTAIL_IP }} << 'EOF'
           set -e
+          export PATH=$PATH:/root/.nvm/versions/node/v20.16.0/bin
           cd ./frontend/snowtail_frontend
           echo "Frontend working directory:"
           pwd
