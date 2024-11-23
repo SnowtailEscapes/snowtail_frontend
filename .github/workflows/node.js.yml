@@ -25,12 +25,13 @@ jobs:
 
     - name: Install dependencies and restart frontend
       run: |
-        ssh -v -q -o StrictHostKeyChecking=no root@${{ secrets.SNOWTAIL_IP }} << 'EOF'
+        ssh -q -o StrictHostKeyChecking=no root@${{ secrets.SNOWTAIL_IP }} << 'EOF'
           set -e
+          export NVM_DIR="$HOME/.nvm"
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+          [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
           export PATH=$PATH:/root/.nvm/versions/node/v20.16.0/bin
-          cd ./frontend/snowtail_frontend
-          echo "Frontend working directory:"
-          pwd
+          cd ~/frontend/snowtail_frontend
           git reset --hard
           git pull
           npm install
