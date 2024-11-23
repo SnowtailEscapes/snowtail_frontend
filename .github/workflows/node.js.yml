@@ -28,8 +28,4 @@ jobs:
         ssh -q -o StrictHostKeyChecking=no root@${{ secrets.SNOWTAIL_IP }} << 'EOF'
           set -e
           cd ~/frontend/snowtail_frontend
-          git reset --hard
-          git pull
-          npm install
-          npm run build
         EOF
