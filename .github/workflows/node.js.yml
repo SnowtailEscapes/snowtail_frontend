@@ -23,7 +23,13 @@ jobs:
       with:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-
-    - name: Install dependencies and restart PM2
+    - name: Install dependencies and restart frontend
       run: |
-        ssh -o StrictHostKeyChecking=no root@${{ secrets.SNOWTAIL_IP }} "cd /root/frontend/snowtail_frontend && git reset --hard && git pull && npm install && npm run build && pm2 restart 3"
+        ssh -q -o StrictHostKeyChecking=no root@${{ secrets.SNOWTAIL_IP }} << 'EOF'
+          set -e
+          cd ~/frontend/snowtail_frontend
+          git reset --hard
+          git pull
+          npm install
+          npm run build
+        EOF
