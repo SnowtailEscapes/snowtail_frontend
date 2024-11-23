@@ -27,7 +27,7 @@ jobs:
       run: |
         ssh -v -q -o StrictHostKeyChecking=no root@${{ secrets.SNOWTAIL_IP }} << 'EOF'
           set -e
-          cd /frontend/snowtail_frontend
+          cd ./frontend/snowtail_frontend
           echo "Frontend working directory:"
           pwd
           git reset --hard
