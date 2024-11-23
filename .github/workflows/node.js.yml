@@ -27,9 +27,9 @@ jobs:
       run: |
         ssh -v -q -o StrictHostKeyChecking=no root@${{ secrets.SNOWTAIL_IP }} << 'EOF'
           set -e
-          echo "Current working directory:"
+          cd /frontend/snowtail_frontend
+          echo "Frontend working directory:"
           pwd
-          cd root/frontend/snowtail_frontend
           git reset --hard
           git pull
           npm install
