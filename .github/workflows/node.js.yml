@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - master  
+  pull_request:
+    branches:
+      - main  
+    types:
+      - closed  
 
 jobs:
   deploy:
@@ -12,9 +17,6 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-
-    - name: Debug SSH Key (Optional, for Debugging)
-      run: echo "${{ secrets.SSH_PRIVATE_KEY }}"
 
     - name: Set up SSH
       uses: webfactory/ssh-agent@v0.5.3
@@ -25,7 +27,9 @@ jobs:
       run: |
         ssh -v -q -o StrictHostKeyChecking=no root@${{ secrets.SNOWTAIL_IP }} << 'EOF'
           set -e
-          cd ~/frontend/snowtail_frontend
+          echo "Current working directory:"
+          pwd
+          cd root/frontend/snowtail_frontend
           git reset --hard
           git pull
           npm install
