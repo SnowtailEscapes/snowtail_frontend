@@ -44,16 +44,8 @@ const International = ({ to, title, location, price, duration, image }) => {
               </li>
             </ul>
             <div>
-              <h2 className="text-[28px] font-semibold text-dark-accent mb-2 font-arimo text-wrap">
-                {location}
-              </h2>
-              <p
-                className={`${
-                  isDarkMode ? "" : "text-black1"
-                } mb-2 ml-0 font-ligh2 text-[20px]`}
-              >
-                {title}
-              </p>
+              <h2 className="text-[28px] font-semibold text-dark-accent mb-2 font-arimo text-wrap">{location}</h2>
+              <p className={`${isDarkMode ? "" : "text-black1"} mb-2 ml-0 font-ligh2 text-[20px]`}>{title}</p>
               <div className="flex space-x-2 mb-4">
                 <span className="text-[16px] px-3 rounded-md font-light  bg-ligh-accent shadow-sm shadow-black1 text-green-900">
                   All meals
@@ -67,14 +59,7 @@ const International = ({ to, title, location, price, duration, image }) => {
               </div>
             </div>
             <div className="text-[13px] flex flex-row text-center font-bold items-center">
-              <img
-                src={percent}
-                width={20}
-                height={10}
-                alt="Star"
-                loading="lazy"
-                color="text-main-brand"
-              />
+              <img src={percent} width={20} height={10} alt="Star" loading="lazy" color="text-main-brand" />
               <p
                 className={`text-center w-1/3 text-xs rounded-xl discount text-nowrap ${
                   isDarkMode ? "" : "text-green-800"
@@ -87,9 +72,7 @@ const International = ({ to, title, location, price, duration, image }) => {
               <div className="flex flex-row justify-between items-center">
                 <h4 className="text-base text-main-brand font-bold font-light2 flex">
                   {/* <CurrencyConverter price={Number(curr_price)} /> */}
-                  <span className="text-base font-arimo text-main-brand text-bold line-through">
-                    INR.{cut}/person
-                  </span>
+                  <span className="text-base font-arimo text-main-brand text-bold line-through">INR.{cut}/person</span>
                 </h4>
               </div>
               <div className="flex flex-row justify-between items-center">
@@ -100,21 +83,13 @@ const International = ({ to, title, location, price, duration, image }) => {
               </div>
             </div>
             <div className="flex flex-row mb-0">
-              <button
-                className="btn bg-main-brand rounded-md text-[15px] font-bold request w-full"
-                onClick={toggleContactForm}
-              >
+              <button className="btn bg-main-brand rounded-md text-[15px] font-bold request w-full" onClick={toggleContactForm}>
                 Request Callback
               </button>
             </div>
           </div>
         </div>
-        {showContactForm && (
-          <Contact
-            isVisible={showContactForm}
-            onClose={() => setShowContactForm(false)}
-          />
-        )}
+        {showContactForm && <Contact isVisible={showContactForm} onClose={() => setShowContactForm(false)} />}
       </div>
     </Suspense>
   );

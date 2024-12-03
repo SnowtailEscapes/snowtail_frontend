@@ -1,6 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import GliderCarousel from "./gliderComponent";
 import Mcard from "./gliderMobile";
+import { internationalPackages } from "../../constants/packages";
 
 export default function International() {
 
@@ -43,69 +44,13 @@ export default function International() {
       });
     }
   };
-
-  const freeCards = [
-    {
-      id: 0,
-      "title": "Wonders of Nepal: The Heart of the Himalayas",
-      "Name": "Nepal",
-      "duration": "4 Days & 3 Nights",
-      "rating": "4.8/5",
-      "cut_price": 39500,
-      "curr_price": 33999,
-      "save": 5501,
-      "direct": "/Nepal",
-      "image": "https://snowtailescapes.com/images/card/nepal.webp"
-    },
-    {
-      id: 1,
-      "title": "Malaysian Marvels - Kuala Lumpur, Penang & Langkawi Escape",
-      "Name": "Malaysia",
-      "duration": "7 Days & 6 Nights",
-      "rating": "4.8/5",
-      "cut_price": 39500,
-      "curr_price": 33999,
-      "save": 5501,
-      "direct": "/Malaysia",
-      "image": "https://snowtailescapes.com/images/card/Malaysia.webp"
-    },
-    {
-      id: 2,
-      "title": "Experience Jewels of Thailand",
-      "Name": "Thailand",
-      "duration": "6 Days & 5 Nights",
-      "rating": "4.8/5",
-      "cut_price": 36999,
-      "curr_price": 29999,
-      "save": 7000,
-      "direct": "/Thailand6d5n",
-      "image": "https://snowtailescapes.com/images/card/thailand5n6ds.webp"
-    },
-    {
-      id: 3,
-      "title": "Almaty: A Fusion of History, Culture, and Natural Splendor",
-      "Name": "Almaty",
-      "duration": "6 Days & 5 Nights",
-      "rating": "4.8/5",
-      "cut_price": 41699,
-      "curr_price": 34699,
-      "save": 7000,
-      "direct": "/Almaty",
-      "image": "https://snowtailescapes.com/images/card/almaty.webp"
-    },
-    {
-      id: 4,
-      "title": "Jewel Of Indian Ocean",
-      "Name": "Sri Lanka",
-      "duration": "7 Days & 6 Nights",
-      "rating": "4.8/5",
-      "cut_price": 44500,
-      "curr_price": 38699,
-      "save": 5801,
-      "direct": "/SriLanka6n7d",
-      "image": "https://snowtailescapes.com/images/card/lanka.webp"
+  const freeCards = useMemo(()=>{
+    const filtered = internationalPackages.filter((el)=>el.freeVisa)
+    if(filtered.length){
+      return filtered.sort((a,b)=> a.freeVisa - b.freeVisa )
     }
-  ]
+    return []
+  })
 
   return (
     <>

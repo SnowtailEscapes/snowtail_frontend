@@ -6,20 +6,9 @@ import percent from "../../assets/percent.png";
 import phone from "../../assets/phone.webp";
 import { Link } from "react-router-dom";
 import Contact from "../Contact";
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux";
 
-
-const Card = ({
-  title,
-  duration,
-  rating,
-  cut_price,
-  curr_price,
-  save,
-  direct,
-  image,
-  Name,
-}) => {
+const Card = ({ title, duration, rating, cut_price, curr_price, save, direct, image, Name }) => {
   const [showContactForm, setShowContactForm] = useState(false);
   const [hover, setHover] = useState(false);
   const toggleContactForm = () => {
@@ -30,7 +19,6 @@ const Card = ({
     setHover(!hover);
   };
   const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);
-
 
   return (
     <>
@@ -52,36 +40,21 @@ const Card = ({
             />
           </Link>
         </div>
-        <div
-          className={`${hover && "scale-105"
-            } top-5 bg-main-brand absolute flex flex-row md:gap-1 p-1`}
-        >
+        <div className={`${hover && "scale-105"} top-5 bg-main-brand absolute flex flex-row md:gap-1 p-1`}>
           <p className="save flex">Save INR.{save}</p>
         </div>
         <div className="flex flex-col pt-2 gap-y-1">
           <Link to={direct}>
             <div className="flex flex-row justify-between">
-              <p className="text-[13px] text-main-brand font-bold">
-                {duration}
-              </p>
+              <p className="text-[13px] text-main-brand font-bold">{duration}</p>
               <p className="text-main-brand text-[13px] flex flex-row font-bold">
-                <img
-                  src={star}
-                  width={20}
-                  alt="Star"
-                  loading="lazy"
-                  color="text-main-brand"
-                />
+                <img src={star} width={20} alt="Star" loading="lazy" color="text-main-brand" />
                 <span>{rating}</span>
               </p>
             </div>
             <div className="flex flex-col text-left">
-              <h2 className="text-[1.5rem] bold text-dark-accent font-bold font-arimo">
-                {Name}
-              </h2>
-              <h3 className="text-base boston  font-semibold">
-                {title}
-              </h3>
+              <h2 className="text-[1.5rem] bold text-dark-accent font-bold font-arimo">{Name}</h2>
+              <h3 className="text-base boston  font-semibold">{title}</h3>
             </div>
             <div className="flex flex-row justify-between items-center">
               {cut_price && (
@@ -100,24 +73,18 @@ const Card = ({
               </h4>
             </div>
             <div className="text-[13px] flex flex-row font-bold">
-              <img
-                src={percent}
-                width={20}
-                alt="Star"
-                loading="lazy"
-                color="text-main-brand"
-              />
-              <p className={`text-center w-1/3 text-xs rounded-xl discount text-nowrap text-[13px] font-light ${isDarkMode ? '' : 'text-green-800'}`}>
+              <img src={percent} width={20} alt="Star" loading="lazy" color="text-main-brand" />
+              <p
+                className={`text-center w-1/3 text-xs rounded-xl discount text-nowrap text-[13px] font-light ${
+                  isDarkMode ? "" : "text-green-800"
+                }`}
+              >
                 Special Monsoon Deal
               </p>
             </div>
           </Link>
           <div className="flex flex-row gap-3">
-            <button
-              className="btn btn-outline border-main-brand border-2"
-              style={{ width: "18%" }}
-              onClick={toggleContactForm}
-            >
+            <button className="btn btn-outline border-main-brand border-2" style={{ width: "18%" }} onClick={toggleContactForm}>
               <img src={phone} width={40} alt="Phone" loading="lazy" />
             </button>
             <button
@@ -129,14 +96,8 @@ const Card = ({
             </button>
           </div>
         </div>
-        {showContactForm && (
-          <Contact
-            isVisible={showContactForm}
-            onClose={() => setShowContactForm(false)}
-          />
-        )}
+        {showContactForm && <Contact isVisible={showContactForm} onClose={() => setShowContactForm(false)} />}
       </div>
-
     </>
   );
 };
