@@ -6,7 +6,6 @@ import CountriesView from "./CountriesView";
 import PackagesView from "./PackagesView";
 import Footer from "../../components/Footer";
 import { useParams } from "react-router-dom";
-import { packagesData } from "./constants";
 import { domesticPackages, internationalPackages } from "../../constants/packages";
 
 function CountryPage() {
@@ -15,7 +14,7 @@ function CountryPage() {
 
   const filteredCountry = useMemo(() => {
     if (countryName == "india") {
-      return domesticPackages;
+      return domesticPackages.filter((ele)=>ele.country === "india");
     } else if (countryName) {
       return internationalPackages.filter((elem) => elem.country == countryName) ?? [];
     }

@@ -2,41 +2,22 @@ import philipenes from "/images/card/philipenes.webp";
 import japan2 from "/images/card/japan2.webp";
 import japan from "/images/card/japan1.webp";
 import australia from "/images/card/australia.webp";
-import almaty from "/images/card/almaty.webp";
 import bali from "/images/card/bali2.webp";
-import bali2 from "/images/card/Bali7n8ds.webp";
 import dubai from "/images/card/Dubai3n4dS.webp";
-import dubai2 from "/images/card/Dubai5n6dS.webp";
 import france from "/images/card/France.webp";
-import greece from "/images/card/greece.webp";
-import lanka from "/images/card/lanka.webp";
-import malaysia from "/images/card/Malaysia.webp";
-import nepal from "/images/card/nepal.webp";
+import greece from "/images/card/greece.webp";;
 import singapore from "/images/card/singapore4n5ds.webp";
 import singapore2 from "/images/card/SMs.webp";
-import singapore3 from "/images/card/singapore6n7ds.webp";
 import swit from "/images/card/swit.webp";
-import thailand1 from "/images/card/thailand4n5dS.webp";
-import thailand2 from "/images/card/thailand5n6ds.webp";
-import thailand3 from "/images/card/thailand8n9ds.webp";
 import vietnam from "/images/card/vietnam4n5ds.webp";
 import vietnam2 from "/images/card/vietnam6n7ds.webp";
 import vietnam3 from "/images/card/vietnam9n10ds.webp";
 import rj1 from "/images/card/rj1.webp";
 import rj2 from "/images/card/rj2.webp";
 import rj3 from "/images/card/rj3.webp";
-import gujarat from "/images/card/gujarat1.webp";
 import gujarat2 from "/images/card/gujarat2.webp";
-import kashmir1 from "/images/card/kashmir1.webp";
-import kashmir2 from "/images/card/kashmir2.webp";
-import kasol from "/images/card/kasol.webp";
-import ladakh from "/images/card/ladakh.webp";
-import manali from "/images/card/manali.webp";
-import masoorie from "/images/card/masoorie.webp";
 import meghalaya from "/images/card/meghalaya.webp";
-import shimla1 from "/images/card/shimla5n6d.webp";
 import shimla2 from "/images/card/shimla9n10d.webp";
-import sikkim from "/images/card/sikkim.webp";
 import kerala from "/images/card/kerala.webp";
 import andaman from "/images/card/andaman.webp";
 
@@ -173,6 +154,7 @@ export const internationalPackages = [
     direct: "/Malaysia",
     image: "https://snowtailescapes.com/images/card/Malaysia.webp",
     freeVisa: 2,
+    country: "malaysia",
   },
   {
     direct: "/Switzerland5n6d",
@@ -210,6 +192,7 @@ export const internationalPackages = [
     direct: "/SriLanka6n7d",
     image: "https://snowtailescapes.com/images/card/lanka.webp",
     freeVisa: 5,
+    country:"sri-lanka",
   },
   {
     direct: "/Dubai3n4d",
@@ -231,6 +214,7 @@ export const internationalPackages = [
     save: 10601,
     direct: "/Dubai5n6d",
     image: "https://snowtailescapes.com/images/card/Dubai5n6dS.webp",
+    country: "uae",
   },
   {
     title: "Wonders of Nepal: The Heart of the Himalayas",
@@ -245,14 +229,17 @@ export const internationalPackages = [
     direct: "/Nepal",
     image: "https://snowtailescapes.com/images/card/nepal.webp",
     freeVisa: 1,
+    country: "nepal",
   },
   {
     direct: "/Australia7d6n",
     title: "Best of Australia",
+    Name: "Sydney",
     curr_price: 88980,
     location: "SYDNEY",
     duration: "7 nights 6 days tour",
     image: australia,
+    country:"australia",
   },
   {
     direct: "/Japan",
@@ -293,6 +280,7 @@ export const internationalPackages = [
     direct: "/Almaty",
     image: "https://snowtailescapes.com/images/card/almaty.webp",
     freeVisa: 4,
+    country: "kazakhstan"
   },
   {
     title: "Experience Jewels of Thailand",
@@ -346,6 +334,7 @@ export const domesticPackages = [
     direct: "/Gujarat3n4d",
     image: "https://snowtailescapes.com/images/card/gujarat1.webp",
     budget: 4,
+     country:"india"
   },
   {
     direct: "/Gujarat4n5d",
@@ -367,6 +356,7 @@ export const domesticPackages = [
     save: 2000,
     direct: "/Kashmir5n6d",
     image: "https://snowtailescapes.com/images/card/kashmir1.webp",
+    country:"india"
   },
   {
     home: 2,
@@ -380,6 +370,7 @@ export const domesticPackages = [
     save: 7401,
     direct: "/Kashmir3n4d",
     image: "https://snowtailescapes.com/images/card/kashmir2.webp",
+     country:"india"
   },
   {
     home: 3,
@@ -393,6 +384,7 @@ export const domesticPackages = [
     save: 12000,
     direct: "/Ladakh5n6d",
     image: "https://snowtailescapes.com/images/card/ladakh.webp",
+     country:"india"
   },
   {
     home: 4,
@@ -406,6 +398,7 @@ export const domesticPackages = [
     save: 14400,
     direct: "/Sikkim5n6d",
     image: "https://snowtailescapes.com/images/card/sikkim.webp",
+     country:"india"
   },
   {
     direct: "/Meghalaya5n6d",
@@ -435,6 +428,7 @@ export const domesticPackages = [
     direct: "/Manali3n4d",
     image: "https://snowtailescapes.com/images/card/manali.webp",
     budget: 3,
+     country:"india"
   },
   {
     home: 5,
@@ -449,6 +443,7 @@ export const domesticPackages = [
     save: 2000,
     direct: "/Shimla5n6d",
     image: "https://snowtailescapes.com/images/card/shimla5n6d.webp",
+     country:"india"
   },
   {
     direct: "/Shimla9n10d",
@@ -470,6 +465,7 @@ export const domesticPackages = [
     direct: "/Kasol2n3d",
     image: "https://snowtailescapes.com/images/card/kasol.webp",
     budget: 1,
+     country:"india"
   },
   {
     id: 1,
@@ -484,6 +480,7 @@ export const domesticPackages = [
     direct: "/Uttrakhand",
     image: "https://snowtailescapes.com/images/card/masoorie.webp",
     budget: 2,
+     country:"india"
   },
   {
     home: 6,
@@ -497,6 +494,7 @@ export const domesticPackages = [
     save: 12811,
     direct: "/Andaman",
     image: "https://snowtailescapes.com/images/card/andaman.webp",
+     country:"india"
   },
   {
     direct: "/lonavala3n4d",
