@@ -1,0 +1,130 @@
+@media only screen and (min-width: 767px) {
+  .tour_right {
+    padding-right: 2rem;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+
+.right1 {
+  font-size: 16px;
+  line-height: 25.5px;
+  margin-top: 30px;
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.08) -4px -5px 14px 0px,
+    rgba(0, 0, 0, 0.08) 5px 8px 16px 0px;
+  border-radius: 10px;
+}
+.right1 > .top {
+  padding: 20px;
+  border-radius: 10px;
+}
+.valid_date_area {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+.tour_details_right_box_heading {
+  font-size: 25px;
+  line-height: 28.8px;
+  font-weight:700;
+  border-bottom: 0.916031px solid #F68C1F;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  width: fit-content;
+}
+
+
+.valid_date_area_one {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.tour_package_details_bar_list > ul > li {
+  font-size: 16px;
+  font-weight: 600;
+  list-style-type: none;
+  display: flex;
+  
+  gap:.6rem;
+  margin-top: .7rem;
+}
+.tour_package_details_bar_list > ul > li > img {
+  margin-right: 0.3rem;
+  width: 4% !important;
+}
+.tour_package_details_bar_price {
+  font-size: 16px;
+  line-height: 25.5px;
+  height: fit-content;
+  list-style-type: disc;
+  padding-top: 1rem;
+}
+  
+.tour_package_bar_price {
+  display: flex;
+  gap: 2rem;
+  font-weight: 600;
+  line-height: 25.5px;
+  height: 41.3931px;
+  padding-top: 15px;
+  margin: 0;
+  padding: 15px 0 0;
+  
+}
+.tour_package_bar_price > h6  {
+  text-decoration: line-through;
+
+}
+.tour_package_bar_price > h3 {
+  text-decoration: none;
+  color: #F68C1F;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 20px;
+  
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+  .tour_package_details_bar_price {
+    font-size: 16px;
+    line-height: 25.5px;
+    height: fit-content;
+    list-style-type: disc;
+    padding-top:0.6rem;
+  }
+    
+
+  .tour_package_details_bar_list > ul > li > img {
+    margin-right: 0.3rem;
+    width: 10% !important;
+  }
+
+  .tour_right {
+    display: flex;
+    margin: 1rem;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .tour_package_details_bar_price>h5{
+    font-size: 25px;
+    border-bottom: 0.916031px solid #F68C1F !important;
+    width: fit-content;
+    font-weight: 600;
+  }
+  .tour_package_details_bar_list > ul > li {
+    font-size: 15px;
+    font-weight: 600;
+    list-style-type: none;
+    display: flex;
+    gap:.6rem;
+    margin-top: .7rem;
+    
+  } 
+  
+}

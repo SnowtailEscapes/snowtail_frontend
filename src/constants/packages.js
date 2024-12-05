@@ -299,7 +299,7 @@ export const internationalPackages = [
 
 export const domesticPackages = [
   {
-    direct: "/Rajasthan",
+    direct: "/tour/Rajasthan",
     title: "The Incredible Gateway Rajasthan",
     location: "RAJASTHAN",
     curr_price: 34399,
@@ -307,7 +307,7 @@ export const domesticPackages = [
     duration: "7 Nights and 8 Days tour",
   },
   {
-    direct: "/Rajasthan4n5d",
+    direct: "/tour/Rajasthan4n5d",
     title: "Journey Of majesty",
     location: "RAJASTHAN",
     duration: "4 Nights and 5 Days tour",

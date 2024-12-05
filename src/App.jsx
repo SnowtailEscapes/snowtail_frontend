@@ -69,6 +69,7 @@ import Lonavala4n5d from "./Domestic/Lonavala4n5d.jsx";
 import Dharamshala from "./Domestic/Dharamshala.jsx";
 import Spiti from "./Domestic/Spiti.jsx";
 import CountryPage from "./Pages/Country/index.jsx";
+import PackageDetails from "./Pages/Details";
 
 
 function App() {
@@ -89,7 +90,6 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-conditions" element={<TermsAndConditions />} />
             <Route path="/cancellation-policy" element={<CancellationPolicy />} />
-            <Route path="*" element={<NotFound />} />
             <Route path="/search-results" element={<SearchResults />} />
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/success" element={<Success/>}/>
@@ -210,6 +210,8 @@ function App() {
             <Route path="/Philipenes" element={<Philipenes/>}/>
             <Route path="/country" element={<CountryPage />} />
             <Route path="/country/:countryName" element={<CountryPage />} />
+            <Route path="/tour/:packageName" element={<PackageDetails />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
       
