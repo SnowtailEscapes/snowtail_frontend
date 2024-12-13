@@ -5,6 +5,7 @@ import "../../styles/International.css";
 import Contact from "../Contact";
 import percent from "../../assets/percent.png";
 import { useSelector } from "react-redux";
+import { whatsappNumber } from "../../constants/data";
 
 const International = ({ to, title, location, price, duration, image }) => {
   const loc = useLocation();
@@ -83,7 +84,10 @@ const International = ({ to, title, location, price, duration, image }) => {
               </div>
             </div>
             <div className="flex flex-row mb-0">
-              <button className="btn bg-main-brand rounded-md text-[15px] font-bold request w-full" onClick={toggleContactForm}>
+              <button
+                className="btn bg-main-brand rounded-md text-[15px] font-bold request w-full"
+                onClick={() => window.open(`https://wa.me/${whatsappNumber}`, "_blank")}
+              >
                 Request Callback
               </button>
             </div>

@@ -7,6 +7,7 @@ import phone from "../../assets/phone.webp";
 import { Link } from "react-router-dom";
 import Contact from "../Contact";
 import { useSelector } from "react-redux";
+import { whatsappNumber } from "../../constants/data";
 
 const Card = ({ title, duration, rating, cut_price, curr_price, save, direct, image, Name }) => {
   const [showContactForm, setShowContactForm] = useState(false);
@@ -89,7 +90,7 @@ const Card = ({ title, duration, rating, cut_price, curr_price, save, direct, im
             </button>
             <button
               className="btn bg-main-brand rounded-md text-white text-[15px] font-bold"
-              onClick={toggleContactForm}
+              onClick={() => window.open(`https://wa.me/${whatsappNumber}`, "_blank")}
               style={{ width: "77%" }}
             >
               Request Callback
