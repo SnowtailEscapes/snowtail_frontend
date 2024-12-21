@@ -8,6 +8,7 @@ import phone from "../../assets/phone.webp";
 import { Link } from "react-router-dom";
 import Contact from "../Contact";
 import { useSelector } from "react-redux";
+import { whatsappNumber } from "../../constants/data";
 // import CurrencyConverter from "../../getApi/CurrencyConverter";
 // import { useDispatch } from "react-redux";
 // import { fetchCurrencyRates } from "../../redux/slice/currencySlice";
@@ -156,7 +157,7 @@ const Card = ({
               </button>
               <button
                 className="btn bg-main-brand rounded-md text-[15px] font-bold"
-                onClick={toggleContactForm}
+                onClick={() => window.open(`https://wa.me/${whatsappNumber}`, "_blank")}
                 style={{ width: "77%" }}
               >
                 Request Callback
@@ -256,7 +257,7 @@ const Card = ({
               </button>
               <button
                 className="btn bg-main-brand rounded-md  text-[15px] font-bold"
-                onClick={toggleContactForm}
+                onClick={() => window.open(`https://wa.me/${whatsappNumber}`, "_blank")}
                 style={{ width: "77%" }}
               >
                 Request Callback
@@ -357,7 +358,7 @@ const Card = ({
               </button>
               <button
                 className="btn bg-main-brand rounded-md text-white text-[15px] font-bold"
-                onClick={toggleContactForm}
+                onClick={() => window.open(`https://wa.me/${whatsappNumber}`, "_blank")}
                 style={{ width: "77%" }}
               >
                 Request Callback

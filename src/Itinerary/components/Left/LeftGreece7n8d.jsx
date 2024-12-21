@@ -40,11 +40,7 @@ export default function Left() {
         <div className={a.left4} data-aos="slide-right">
           <h3>Overview</h3>
           <p>
-            Embark on an unforgettable journey through the ancient wonders and
-            picturesque landscapes of Greece. From the iconic Acropolis in
-            Athens to the breathtaking sunsets of Santorini, immerse yourself in
-            the rich history and natural beauty of this Mediterranean gem. Join
-            us on this escapade and discover the jewels of Greece
+          Embark on an unforgettable journey through the ancient wonders and picturesque landscapes of Greece. From the iconic Acropolis in Athens to the breathtaking sunsets of Santorini, immerse yourself in the rich history and natural beauty of this Mediterranean gem. Join us on this escapade and discover the jewels of Greece.
           </p>
           <div>
             <ul>

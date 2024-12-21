@@ -5,6 +5,7 @@ import "../../styles/International.css";
 import Contact from "../Contact";
 import percent from "../../assets/percent.png";
 import { useSelector } from "react-redux";
+import { whatsappNumber } from "../../constants/data";
 
 const International = ({ to, title, location, price, duration, image }) => {
   const loc = useLocation();
@@ -61,11 +62,11 @@ const International = ({ to, title, location, price, duration, image }) => {
             <div className="text-[13px] flex flex-row text-center font-bold items-center">
               <img src={percent} width={20} height={10} alt="Star" loading="lazy" color="text-main-brand" />
               <p
-                className={`text-center w-1/3 text-xs rounded-xl discount text-nowrap ${
+                className={`text-left w-1/3 text-xs rounded-xl discount text-nowrap ${
                   isDarkMode ? "" : "text-green-800"
                 } text-[13px] md:text-[20px] font-light`}
               >
-                Special Monsoon Deal
+                Winter Offer
               </p>
             </div>
             <div className="flex flex-row justify-between mt-2">
@@ -83,7 +84,10 @@ const International = ({ to, title, location, price, duration, image }) => {
               </div>
             </div>
             <div className="flex flex-row mb-0">
-              <button className="btn bg-main-brand rounded-md text-[15px] font-bold request w-full" onClick={toggleContactForm}>
+              <button
+                className="btn bg-main-brand rounded-md text-[15px] font-bold request w-full"
+                onClick={() => window.open(`https://wa.me/${whatsappNumber}`, "_blank")}
+              >
                 Request Callback
               </button>
             </div>

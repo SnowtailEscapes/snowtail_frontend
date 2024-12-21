@@ -1,0 +1,1 @@
+export const whatsappNumber = "+918698508822"

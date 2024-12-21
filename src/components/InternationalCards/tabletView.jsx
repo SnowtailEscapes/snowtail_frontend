@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import "../../styles/International.css";
 import Contact from "../Contact";
 import percent from "../../assets/percent.png";
+import { whatsappNumber } from "../../constants/data";
 
 const International = ({ to, title, location, price, duration, image }) => {
   const loc = useLocation();
@@ -87,7 +88,7 @@ const International = ({ to, title, location, price, duration, image }) => {
           <div className="flex flex-row gap-3">
             <button
               className="btn bg-main-brand rounded-md text-white text-[15px] font-bold request w-full"
-              onClick={toggleContactForm}
+              onClick={() => window.open(`https://wa.me/${whatsappNumber}`, "_blank")}
             >
               Request Callback
             </button>
