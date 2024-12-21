@@ -26,10 +26,10 @@ export default function Left() {
     <>
       <div className={a.tour_left}>
         <Common
-          place="Phuket & Krabi"
+          place="BANGKOK & PATTAYA"
           title="Explore Bangkok & Pattaya: A Vibrant Thai Adventure"
           location1="Thailand"
-          time="5N/6D"
+          time="5N/4D"
           rating={4.8}
           reviews={405}
         />
