@@ -25,6 +25,7 @@ const Navbar = () => {
 
   const [width, setWidth] = useState(window.innerWidth);
   const [scrolled, setScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
@@ -123,6 +124,7 @@ const Navbar = () => {
             <button
               className="btn btn-ghost flex items-center justify-center"
               aria-label="Menu"
+              onClick={() => setIsOpen(!isOpen)}
             >
               <img
                 src={hamburger2}
@@ -132,54 +134,56 @@ const Navbar = () => {
                 alt="logo"
               />
             </button>
-            <ul
-              className={`menu menu-sm dropdown-content mt-3  shadow  rounded-box dropdown-left`}
-            >
-              <li>
-                <Link to="/" className="text-[19px]">
-                  <img src={home2} width={20} />
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/International" className="text-[19px]">
-                  <img src={international2} width={20} />
-                  International
-                </Link>
-              </li>
-              <li>
-                <Link to="/Domestic" className="text-[19px]">
-                  <img src={domestic2} width={20} />
-                  Domestic
-                </Link>
-              </li>
-              <li>
-                <Link to="/country" className="text-[19px]">
-                  Countries
-                </Link>
-              </li>
-              {/*<li>
-                <Link onClick={handleClick} className="text-[19px]">
-                  Exclusive
-                </Link>
-            </li> 
-              <li>
-                <Link onClick={handleClick} className="text-[19px]">
-                  Group Tours
-                </Link>
-              </li>
-              <li>
-                <Link
-                  onClick={handleClick}
-                  className="text-[19px] items-center"
-                >
-                  Destination Weddings
-                </Link>
-            </li>*/}
-              <li className="items-center">
-                <DarkModeToggle />
-              </li>
-            </ul>
+            {isOpen && (
+              <ul
+                className={`menu menu-sm dropdown-content mt-3  shadow  rounded-box dropdown-left`}
+              >
+                <li>
+                  <Link to="/" className="text-[19px]">
+                    <img src={home2} width={20} />
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/International" className="text-[19px]">
+                    <img src={international2} width={20} />
+                    International
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/Domestic" className="text-[19px]">
+                    <img src={domestic2} width={20} />
+                    Domestic
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/country" className="text-[19px]">
+                    Countries
+                  </Link>
+                </li>
+                {/*<li>
+                  <Link onClick={handleClick} className="text-[19px]">
+                    Exclusive
+                  </Link>
+              </li> 
+                <li>
+                  <Link onClick={handleClick} className="text-[19px]">
+                    Group Tours
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    onClick={handleClick}
+                    className="text-[19px] items-center"
+                  >
+                    Destination Weddings
+                  </Link>
+              </li>*/}
+                <li className="items-center">
+                  <DarkModeToggle />
+                </li>
+              </ul>
+            )}
           </div>
         </div>
 
