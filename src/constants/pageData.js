@@ -1,6 +1,11 @@
 import newlogo4 from "../../public/NewLogos/4.svg";
 import rajasthan from "../Itinerary/assets/rajasthan.png";
-
+import himachal from "../assets/Banner/Himachal_banner.webp";
+import shimla from "../assets/Banner/shimla_banner.webp";
+import gujarat from "../assets/Banner/Gujarat_banner.webp";
+import sikkim from "../assets/Banner/sikkim_banner.webp";
+import ladakh from "../assets/Banner/ladakh_banner.webp";
+import meghalaya from "../assets/Banner/meghalaya_banner.webp";
 import { itinerary, overview } from "./htmlData";
 
 export const ToursData = [
@@ -120,6 +125,952 @@ export const ToursData = [
     },
   },
   {
+    id: "Shimla5n6d",
+    helmet: {
+      title: "Himachal Pradesh Tour",
+      description:
+        "Explore the scenic beauty of Himachal Pradesh with our exclusive tours. Visit the charming hill stations of Shimla and Manali, the tranquil valleys of Kullu, the spiritual sites of Dharamshala, and the picturesque landscapes of Dalhousie. Book your Himachal Pradesh tour now for an unforgettable adventure!",
+      icon: newlogo4,
+    },
+    itineraryImage: {
+      small: "https://res.cloudinary.com/dxfact9vg/image/upload/v1739189711/shimla5n6d_cuo6sw.webp",
+      large: "https://res.cloudinary.com/dxfact9vg/image/upload/v1739189857/himachal_kjvyup.webp",
+    },
+    tourData: {
+      leftSide: {
+        overview: {
+          place: "Shimla & Manali",
+          title: "Sleep in Nature's Lap",
+          location: "Shimla & Manali",
+          time: "5N/6D",
+          rating: 4.8,
+          reviews: 405,
+          image: shimla,
+          description: overview["Shimla5n6d"],
+        },
+        itinerary: itinerary["Shimla5n6d"],
+        inclusions: [
+          "Transfers: Pvt Shimla Bus Stand Pick up and Manali bus stand drop as per your Bus timings & Comfortable and hygienic vehicle for sightseeing on all days as per the itinerary.",
+          "Accommodation: 2N Shimla + 3N Manali",
+          "Meals: 05 Breakfast at selected hotels.",
+          "Chauffer: Experienced driver to help you explore this beautiful hill stations.",
+          `Sightseeing & Activities:- (without ticket)\n
+          Shimla:- Christ Church, Jakhoo Temple, Kalibari Temple, Lakkar Bazaar, Kufri, Green Valley, Mini Zoo, Chini Bungalow, Bhimakali Temple. 
+          Manali:- Kasol, Manikaran, Hadimba Devi Temple, Club House, Mall Road and Beas river, Vashisht Village & Hot Spring, Jogni Falls, Naggar Castel.`,
+        ],
+        exclusions: [
+          "Cost of Emergency, Covid Report, Insurance And Other Covid Related Expenses",
+          "Any Personal expenses.",
+          "GST & (TCS - Claimable after the tour)",
+          "Any Airfare/Railway Tickets",
+          "Lunch / Any transfer / Meals that are not mentioned in the itinerary",
+          "Anything not mentioned in the inclusions list above",
+        ],
+        mapLink:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54674.093992469905!2d77.11782146622062!3d31.078286363733977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390578e3e35d6e67%3A0x1f7e7ff6ff9f54b7!2sShimla%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1739196564009!5m2!1sen!2sin",
+        beforeYouGo: [
+          "ID Proof: Valid ID proof is mandatory for each guest at booking and upon arrival. Note that PAN cards are not accepted as valid address proof.",
+          "Hotel Availability: Accommodation is subject to availability. If your preferred hotel is unavailable, you will be accommodated in a property of similar standard.",
+          "Environment: Please help keep our destinations beautiful by not littering and maintaining cleanliness.",
+          "Damage Policy: Any breakage or damage to items in the resort will be charged at actual costs.",
+          "Trip Alterations: If you choose to leave the trip midway, all subsequent expenses will be your responsibility. SNOWTAIL ESCAPES will not be liable for such decisions or any refunds.",
+        ],
+        confirmation: [
+          "50% Advance at the time of booking.",
+          "Remaining 50% before 10 days of the travel date for Domestic Tours & 50% before 15 days of the travel date for International Tours.",
+          "Modification charges at the time of modification.",
+          "For FLIGHTS, 100% payment at the time of booking.",
+        ],
+        cancellation: [
+          "If cancellations are made 30 days before the start date of the trip, 50% of the trip cost will be charged as cancellation fees.If cancellations are made 15-30 days before the start date of the trip, 75% of the trip cost will be charged as cancellation fees.",
+          "If cancellations are made within 0-15 days before the start date of the trip, 100% of the trip cost will be charged as cancellation fees.",
+          "In the case of unforeseen weather conditions or government restrictions, certain activities may be canceled. In such cases, the operator will try his best to provide an alternate feasible activity. However, no refund will be provided for the same.",
+          "If a rescheduling date request comes within 30 days from the trip date, the booking amount can neither be adjusted to your next date nor refunded.",
+          "If a rescheduling date request comes prior to 30 days, it can be done without any cancellation charges in the case of domestic trips.",
+          "Flights: No refund will be provided for flights unless booked under specific cancellation or rescheduling conditions than concerned POC will update the charges before confirming the booking.",
+        ],
+      },
+      rightSide: {
+        packages: {
+          "Standard Package": {
+            from: "15 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "3 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 28700,
+            currentPrice: 26700,
+          },
+          "Deluxe Package": {
+            from: "15 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "4 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 37300,
+            currentPrice: 34500,
+          },
+          "Super Deluxe Package": {
+            from: "15 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "5 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 55999,
+            currentPrice: 39999,
+          },
+        },
+        whyChooseUs: [
+          "Expertly crafted itinerary blending cultural immersion with adventure",
+          "Luxurious accommodations and comfortable transportation throughout",
+          "Experienced guides providing insights into Thailand's history and heritage",
+          "Seamless travel arrangements, ensuring a stress-free and memorable journey",
+        ],
+      },
+    },
+  },
+  {
+    id: "Shimla9n10d",
+    helmet: {
+      title: "Himachal Pradesh Tour",
+      description:
+        "Explore the scenic beauty of Himachal Pradesh with our exclusive tours. Visit the charming hill stations of Shimla and Manali, the tranquil valleys of Kullu, the spiritual sites of Dharamshala, and the picturesque landscapes of Dalhousie. Book your Himachal Pradesh tour now for an unforgettable adventure!",
+      icon: newlogo4,
+    },
+    itineraryImage: {
+      small: "https://res.cloudinary.com/dxfact9vg/image/upload/v1739189711/shimla9n10d_tcel2z.webp",
+      large: "https://res.cloudinary.com/dxfact9vg/image/upload/v1739189857/himachal_kjvyup.webp",
+    },
+    tourData: {
+      leftSide: {
+        overview: {
+          place: "Shimla/Manali/Dharamshala/Dalhousie",
+          title: "Sleep in Nature's Lap",
+          location: "Himachal Pradesh",
+          time: "9N/10D",
+          rating: 4.8,
+          reviews: 405,
+          image: himachal,
+          description: overview["Shimla9n10d"],
+        },
+        itinerary: itinerary["Shimla9n10d"],
+        inclusions: [
+          "Transfers: Pvt Chandigarh pick up and drop as per your bus/train/flight  timings & comfortable and hygienic vehicle for sightseeing on all days as per the itinerary.",
+          "Accommodation: 2N Shimla + 3N Manali + 2N Dharmshala + 2N Dalhousie",
+          "Meals: 09 Breakfast at selected hotels",
+          "Chauffer: Experienced driver to help you explore this beautiful hill stations.",
+          `Sightseeing & Activities:- \nShimla:- Christ Church, Jakhoo Temple, Kalibari Temple, Lakkar Bazaar, Kufri, Green Valley, Mini Zoo, Chini Bungalow. 
+          \nManali:- Kasol, Manikaran, Hadimba Devi Temple, Club House, Mall Road and Beas river, Vashisht Village & Hot Spring, Jogni Falls, Naggar Castel. 
+          \nDharmshala:- Dalai Lama Temple, St. John Church, Bhagsunath Temple,  Bhagsu Waterfall.
+          \nDalhousie:- Panchpula, Mall Road, Khajjiar (Switzerland Of India).`,
+        ],
+        exclusions: [
+          "Cost of Emergency, Covid Report, Insurance And Other Covid Related Expenses",
+          "Any Personal expenses.",
+          "GST & (TCS - Claimable after the tour)",
+          "Any Airfare/Railway Tickets",
+          "Lunch / Any transfer / Meals that are not mentioned in the itinerary",
+          "Anything not mentioned in the inclusions list above",
+        ],
+        mapLink:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1735916.521194426!2d75.98230380843341!3d31.8124105227038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390453c367f901f7%3A0x7cfe04c5564b7725!2sHimachal%20Pradesh!5e0!3m2!1sen!2sin!4v1739206810579!5m2!1sen!2sin",
+        beforeYouGo: [
+          "ID Proof: Valid ID proof is mandatory for each guest at booking and upon arrival. Note that PAN cards are not accepted as valid address proof.",
+          "Hotel Availability: Accommodation is subject to availability. If your preferred hotel is unavailable, you will be accommodated in a property of similar standard.",
+          "Environment: Please help keep our destinations beautiful by not littering and maintaining cleanliness.",
+          "Damage Policy: Any breakage or damage to items in the resort will be charged at actual costs.",
+          "Trip Alterations: If you choose to leave the trip midway, all subsequent expenses will be your responsibility. SNOWTAIL ESCAPES will not be liable for such decisions or any refunds.",
+        ],
+        confirmation: [
+          "50% Advance at the time of booking.",
+          "Remaining 50% before 10 days of the travel date for Domestic Tours & 50% before 15 days of the travel date for International Tours.",
+          "Modification charges at the time of modification.",
+          "For FLIGHTS, 100% payment at the time of booking.",
+        ],
+        cancellation: [
+          "If cancellations are made 30 days before the start date of the trip, 50% of the trip cost will be charged as cancellation fees.If cancellations are made 15-30 days before the start date of the trip, 75% of the trip cost will be charged as cancellation fees.",
+          "If cancellations are made within 0-15 days before the start date of the trip, 100% of the trip cost will be charged as cancellation fees.",
+          "In the case of unforeseen weather conditions or government restrictions, certain activities may be canceled. In such cases, the operator will try his best to provide an alternate feasible activity. However, no refund will be provided for the same.",
+          "If a rescheduling date request comes within 30 days from the trip date, the booking amount can neither be adjusted to your next date nor refunded.",
+          "If a rescheduling date request comes prior to 30 days, it can be done without any cancellation charges in the case of domestic trips.",
+          "Flights: No refund will be provided for flights unless booked under specific cancellation or rescheduling conditions than concerned POC will update the charges before confirming the booking.",
+        ],
+      },
+      rightSide: {
+        packages: {
+          "Standard Package": {
+            from: "15 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "3 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 64399,
+            currentPrice: 45999,
+          },
+          "Deluxe Package": {
+            from: "15 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "4 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 83999,
+            currentPrice: 58999,
+          },
+          "Super Deluxe Package": {
+            from: "15 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "5 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 111999,
+            currentPrice: 78999,
+          },
+        },
+        whyChooseUs: [
+          "Expertly crafted itinerary blending cultural immersion with adventure",
+          "Luxurious accommodations and comfortable transportation throughout",
+          "Experienced guides providing insights into Thailand's history and heritage",
+          "Seamless travel arrangements, ensuring a stress-free and memorable journey",
+        ],
+      },
+    },
+  },
+  {
+    id: "Kasol2n3d",
+    helmet: {
+      title: "Himachal Pradesh Tour",
+      description:
+        "Explore the scenic beauty of Himachal Pradesh with our exclusive tours. Visit the charming hill stations of Shimla and Manali, the tranquil valleys of Kullu, the spiritual sites of Dharamshala, and the picturesque landscapes of Dalhousie. Book your Himachal Pradesh tour now for an unforgettable adventure!",
+      icon: newlogo4,
+    },
+    itineraryImage: {
+      small: "https://res.cloudinary.com/dxfact9vg/image/upload/v1739189712/kasol_njbjwz.webp",
+      large: "https://res.cloudinary.com/dxfact9vg/image/upload/v1739189857/himachal_kjvyup.webp",
+    },
+    tourData: {
+      leftSide: {
+        overview: {
+          place: "Kasol",
+          title: "Land of Creamy Flavours",
+          location: "Kasol",
+          time: "2N/3D",
+          rating: 4.8,
+          reviews: 405,
+          image: himachal,
+          description: overview["Kasol2n3d"],
+        },
+        itinerary: itinerary["Kasol2n3d"],
+        inclusions: [
+          "Transfers: Pvt Chandigarh pick up and drop as per your bus/train/flight  timings & comfortable and hygienic vehicle for sightseeing on all days as per the itinerary.",
+          "Accommodation: 2N Kasol",
+          "Meals: 02 Breakfast at selected hotels",
+          "Chauffer: Experienced driver to help you explore this beautiful hill station.",
+          `Sightseeing & Activities:- (without ticket)\n
+          Kasol:- Chalal village, Kheerganga Trek, Manikaran, kasol Market`,
+        ],
+        exclusions: [
+          "Cost of Emergency, Covid Report, Insurance And Other Covid Related Expenses",
+          "Any Personal expenses.",
+          "GST & (TCS - Claimable after the tour)",
+          "Any Airfare/Railway Tickets",
+          "Lunch / Any transfer / Meals that are not mentioned in the itinerary",
+          "Anything not mentioned in the inclusions list above",
+        ],
+        mapLink:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1393473.3753513275!2d76.24048984614898!3d32.17750515410025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39045c4474aa31e9%3A0xf112d2e32b47949d!2sKasol%2C%20Himachal%20Pradesh%20175105!5e0!3m2!1sen!2sin!4v1739207664048!5m2!1sen!2sin",
+        beforeYouGo: [
+          "ID Proof: Valid ID proof is mandatory for each guest at booking and upon arrival. Note that PAN cards are not accepted as valid address proof.",
+          "Hotel Availability: Accommodation is subject to availability. If your preferred hotel is unavailable, you will be accommodated in a property of similar standard.",
+          "Environment: Please help keep our destinations beautiful by not littering and maintaining cleanliness.",
+          "Damage Policy: Any breakage or damage to items in the resort will be charged at actual costs.",
+          "Trip Alterations: If you choose to leave the trip midway, all subsequent expenses will be your responsibility. SNOWTAIL ESCAPES will not be liable for such decisions or any refunds.",
+        ],
+        confirmation: [
+          "50% Advance at the time of booking.",
+          "Remaining 50% before 10 days of the travel date for Domestic Tours & 50% before 15 days of the travel date for International Tours.",
+          "Modification charges at the time of modification.",
+          "For FLIGHTS, 100% payment at the time of booking.",
+        ],
+        cancellation: [
+          "If cancellations are made 30 days before the start date of the trip, 50% of the trip cost will be charged as cancellation fees.If cancellations are made 15-30 days before the start date of the trip, 75% of the trip cost will be charged as cancellation fees.",
+          "If cancellations are made within 0-15 days before the start date of the trip, 100% of the trip cost will be charged as cancellation fees.",
+          "In the case of unforeseen weather conditions or government restrictions, certain activities may be canceled. In such cases, the operator will try his best to provide an alternate feasible activity. However, no refund will be provided for the same.",
+          "If a rescheduling date request comes within 30 days from the trip date, the booking amount can neither be adjusted to your next date nor refunded.",
+          "If a rescheduling date request comes prior to 30 days, it can be done without any cancellation charges in the case of domestic trips.",
+          "Flights: No refund will be provided for flights unless booked under specific cancellation or rescheduling conditions than concerned POC will update the charges before confirming the booking.",
+        ],
+      },
+      rightSide: {
+        packages: {
+          "Standard Package": {
+            from: "15 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "3 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 15399,
+            currentPrice: 10999,
+          },
+          "Deluxe Package": {
+            from: "15 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "4 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 20999,
+            currentPrice: 14999,
+          },
+          "Super Deluxe Package": {
+            from: "15 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "5 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 29399,
+            currentPrice: 20899,
+          },
+        },
+        whyChooseUs: [
+          "Expertly crafted itinerary blending cultural immersion with adventure",
+          "Luxurious accommodations and comfortable transportation throughout",
+          "Experienced guides providing insights into Thailand's history and heritage",
+          "Seamless travel arrangements, ensuring a stress-free and memorable journey",
+        ],
+      },
+    },
+  },
+  {
+    id: "Gujarat3n4d",
+    helmet: {
+      title: "Gujarat Tour",
+      description:
+        "Experience the diverse beauty of Gujarat with our exclusive tours. Explore the historic sites of Ahmedabad, the white desert of Kutch, the temples of Somnath, the wildlife of Gir National Park, the beaches of Diu, and the heritage of Vadodara. Book your Gujarat tour now for an unforgettable adventure!",
+      icon: newlogo4,
+    },
+    itineraryImage: {
+      small: "https://res.cloudinary.com/dxfact9vg/image/upload/v1739189713/gujarat1_ydv9or.webp",
+      large: "https://res.cloudinary.com/dxfact9vg/image/upload/v1739189858/gujarat_nufp7n.webp",
+    },
+    tourData: {
+      leftSide: {
+        overview: {
+          place: "Kevadia & Ahmedabad",
+          title: "Monument of pride",
+          location: "GUJARAT",
+          time: "3N/4D",
+          rating: 4.8,
+          reviews: 405,
+          image: gujarat,
+          description: overview["Gujarat3n4d"],
+        },
+        itinerary: itinerary["Gujarat3n4d"],
+        inclusions: [
+          "Transfers: Pvt Airport/Railway Station Pick up and drop as per your flight/trin timings & Comfortable and hygienic vehicle for sightseeing on all days as per the itinerary.",
+          "Accommodation: 2N Kevadia, 1N Ahmedabad",
+          "Meals: 03 Breakfast at selected hotels",
+          "Chauffer: Experienced driver to help you explore this beautiful city.",
+          `Sightseeing & Activities:- (without ticket)\n
+          Kevadia:- Statue of Unity and Viewing gallery, Valley of Flowers, Sardar Sarovar Dam, Selfie Point, Safari Park & Butterfly Garden. 
+          \nAhmedabad:- Sabarmati Ashram & Riverfront, Akshar Dham Temple, Science City.`,
+        ],
+        exclusions: [
+          "Cost of Emergency, Covid Report, Insurance And Other Covid Related Expenses",
+          "Any Personal expenses.",
+          "GST & (TCS - Claimable after the tour)",
+          "Any Airfare/Railway Tickets",
+          "Lunch / Any transfer / Meals that are not mentioned in the itinerary",
+          "Anything not mentioned in the inclusions list above",
+        ],
+        mapLink:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7570240.527340336!2d61.194537791708065!3d22.11047143936511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959051f5f0ef795%3A0x861bd887ed54522e!2sGujarat!5e0!3m2!1sen!2sin!4v1739247939448!5m2!1sen!2sin",
+        beforeYouGo: [
+          "ID Proof: Valid ID proof is mandatory for each guest at booking and upon arrival. Note that PAN cards are not accepted as valid address proof.",
+          "Hotel Availability: Accommodation is subject to availability. If your preferred hotel is unavailable, you will be accommodated in a property of similar standard.",
+          "Environment: Please help keep our destinations beautiful by not littering and maintaining cleanliness.",
+          "Damage Policy: Any breakage or damage to items in the resort will be charged at actual costs.",
+          "Trip Alterations: If you choose to leave the trip midway, all subsequent expenses will be your responsibility. SNOWTAIL ESCAPES will not be liable for such decisions or any refunds.",
+        ],
+        confirmation: [
+          "50% Advance at the time of booking.",
+          "Remaining 50% before 10 days of the travel date for Domestic Tours & 50% before 15 days of the travel date for International Tours.",
+          "Modification charges at the time of modification.",
+          "For FLIGHTS, 100% payment at the time of booking.",
+        ],
+        cancellation: [
+          "If cancellations are made 30 days before the start date of the trip, 50% of the trip cost will be charged as cancellation fees.If cancellations are made 15-30 days before the start date of the trip, 75% of the trip cost will be charged as cancellation fees.",
+          "If cancellations are made within 0-15 days before the start date of the trip, 100% of the trip cost will be charged as cancellation fees.",
+          "In the case of unforeseen weather conditions or government restrictions, certain activities may be canceled. In such cases, the operator will try his best to provide an alternate feasible activity. However, no refund will be provided for the same.",
+          "If a rescheduling date request comes within 30 days from the trip date, the booking amount can neither be adjusted to your next date nor refunded.",
+          "If a rescheduling date request comes prior to 30 days, it can be done without any cancellation charges in the case of domestic trips.",
+          "Flights: No refund will be provided for flights unless booked under specific cancellation or rescheduling conditions than concerned POC will update the charges before confirming the booking.",
+        ],
+      },
+      rightSide: {
+        packages: {
+          "Standard Package": {
+            from: "15 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "3 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 23199,
+            currentPrice: 16499,
+          },
+          "Deluxe Package": {
+            from: "15 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "4 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 28000,
+            currentPrice: 19999,
+          },
+          "Super Deluxe Package": {
+            from: "15 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "5 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 40200,
+            currentPrice: 28699,
+          },
+        },
+        whyChooseUs: [
+          "Expertly crafted itinerary blending cultural immersion with adventure",
+          "Luxurious accommodations and comfortable transportation throughout",
+          "Experienced guides providing insights into Thailand's history and heritage",
+          "Seamless travel arrangements, ensuring a stress-free and memorable journey",
+        ],
+      },
+    },
+  },
+  {
+    id: "Gujarat4n5d",
+    helmet: {
+      title: "Gujarat Tour",
+      description:
+        "Experience the diverse beauty of Gujarat with our exclusive tours. Explore the historic sites of Ahmedabad, the white desert of Kutch, the temples of Somnath, the wildlife of Gir National Park, the beaches of Diu, and the heritage of Vadodara. Book your Gujarat tour now for an unforgettable adventure!",
+      icon: newlogo4,
+    },
+    itineraryImage: {
+      small: "https://res.cloudinary.com/dxfact9vg/image/upload/v1739189713/gujarat1_ydv9or.webp",
+      large: "https://res.cloudinary.com/dxfact9vg/image/upload/v1739189858/gujarat_nufp7n.webp",
+    },
+    tourData: {
+      leftSide: {
+        overview: {
+          place: "Ahmedabad, Gir, Diu, Somnath",
+          title: "Gujarat Costal Charms & Wildlife Wonders",
+          location: "GUJARAT",
+          time: "4N/5D",
+          rating: 4.8,
+          reviews: 405,
+          image: gujarat,
+          description: overview["Gujarat4n5d"],
+        },
+        itinerary: itinerary["Gujarat4n5d"],
+        inclusions: [
+          "Transfers: Pvt Airport/Railway Station Pick up and drop as per your flight/trin timings & Comfortable and hygienic vehicle for sightseeing on all days as per the itinerary.",
+          "Accommodation: 2N Diu, 1N Ahmedabad, 1N Sasan Gir",
+          "Meals: 04 Breakfast at selected hotels",
+          "Chauffer: Experienced driver to help you explore this beautiful city.",
+          `Sightseeing & Activities:- \n
+          Diu:- Diu Fort, St. Paul's Church, Gangeshwar Mahadev Temple, Goghla Beach, INS Khukri Model.
+          \nAhmedabad:- Sabarmati Ashram & Riverfront, Akshar Dham Temple.
+          \nSasan Gir:- Jungle Safari for Asiatic Lion
+          \nSomnath:- Somnath Temple`,
+        ],
+        exclusions: [
+          "Cost of Emergency, Covid Report, Insurance And Other Covid Related Expenses",
+          "Any Personal expenses.",
+          "GST & (TCS - Claimable after the tour)",
+          "Any Airfare/Railway Tickets",
+          "Lunch / Any transfer / Meals that are not mentioned in the itinerary",
+          "Anything not mentioned in the inclusions list above",
+        ],
+        mapLink:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7570240.527340336!2d61.194537791708065!3d22.11047143936511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959051f5f0ef795%3A0x861bd887ed54522e!2sGujarat!5e0!3m2!1sen!2sin!4v1739247939448!5m2!1sen!2sin",
+        beforeYouGo: [
+          "ID Proof: Valid ID proof is mandatory for each guest at booking and upon arrival. Note that PAN cards are not accepted as valid address proof.",
+          "Hotel Availability: Accommodation is subject to availability. If your preferred hotel is unavailable, you will be accommodated in a property of similar standard.",
+          "Environment: Please help keep our destinations beautiful by not littering and maintaining cleanliness.",
+          "Damage Policy: Any breakage or damage to items in the resort will be charged at actual costs.",
+          "Trip Alterations: If you choose to leave the trip midway, all subsequent expenses will be your responsibility. SNOWTAIL ESCAPES will not be liable for such decisions or any refunds.",
+        ],
+        confirmation: [
+          "50% Advance at the time of booking.",
+          "Remaining 50% before 10 days of the travel date for Domestic Tours & 50% before 15 days of the travel date for International Tours.",
+          "Modification charges at the time of modification.",
+          "For FLIGHTS, 100% payment at the time of booking.",
+        ],
+        cancellation: [
+          "If cancellations are made 30 days before the start date of the trip, 50% of the trip cost will be charged as cancellation fees.If cancellations are made 15-30 days before the start date of the trip, 75% of the trip cost will be charged as cancellation fees.",
+          "If cancellations are made within 0-15 days before the start date of the trip, 100% of the trip cost will be charged as cancellation fees.",
+          "In the case of unforeseen weather conditions or government restrictions, certain activities may be canceled. In such cases, the operator will try his best to provide an alternate feasible activity. However, no refund will be provided for the same.",
+          "If a rescheduling date request comes within 30 days from the trip date, the booking amount can neither be adjusted to your next date nor refunded.",
+          "If a rescheduling date request comes prior to 30 days, it can be done without any cancellation charges in the case of domestic trips.",
+          "Flights: No refund will be provided for flights unless booked under specific cancellation or rescheduling conditions than concerned POC will update the charges before confirming the booking.",
+        ],
+      },
+      rightSide: {
+        packages: {
+          "Standard Package": {
+            from: "15 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "3 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 29400,
+            currentPrice: 20999,
+          },
+          "Deluxe Package": {
+            from: "15 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "4 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 35000,
+            currentPrice: 24999,
+          },
+          "Super Deluxe Package": {
+            from: "15 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "5 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 45000,
+            currentPrice: 31999,
+          },
+        },
+        whyChooseUs: [
+          "Expertly crafted itinerary blending cultural immersion with adventure",
+          "Luxurious accommodations and comfortable transportation throughout",
+          "Experienced guides providing insights into Thailand's history and heritage",
+          "Seamless travel arrangements, ensuring a stress-free and memorable journey",
+        ],
+      },
+    },
+  },
+  {
+    id: "Sikkim5n6d",
+    helmet: {
+      title: "Sikkim Tour",
+      description:
+        "Discover the pristine beauty of Sikkim with our exclusive tours. Explore the vibrant capital Gangtok, the serene Tsomgo Lake, the stunning landscapes of Pelling, and the spiritual charm of Rumtek Monastery. Book your Sikkim tour now for an unforgettable experience!",
+      icon: newlogo4,
+    },
+    itineraryImage: {
+      small: "https://res.cloudinary.com/dxfact9vg/image/upload/v1739189711/sikkim_sywogh.webp",
+      large: "https://res.cloudinary.com/dxfact9vg/image/upload/v1739189856/sikkim_o6hxsn.webp",
+    },
+    tourData: {
+      leftSide: {
+        overview: {
+          place: "Darjeeling, Namchi, Pelling, Gangtok",
+          title: "Gangtok & Darjeeling The Abode of Clouds",
+          location: "SIKKIM",
+          time: "5N/6D",
+          rating: 4.8,
+          reviews: 405,
+          image: sikkim,
+          description: overview["Sikkim5n6d"],
+        },
+        itinerary: itinerary["Sikkim5n6d"],
+        inclusions: [
+          "Transfers: Pvt Airport/Railway station Pick up and drop as per your flight/train timings & Comfortable and hygienic vehicle for sightseeing on all days as per the itinerary.",
+          "Accommodation: 2N Darjeeling, 1N Pelling, 2N Gangtok",
+          "Meals: 05 Breakfast at selected hotels",
+          "Chauffer: Experienced driver to help you explore this beautiful city.",
+          `Sightseeing & Activities:- \n
+          Darjeeling:- Tiger Hill, The Himalayan Mountaineering Institute, PNZ Zoological Park (closed on Thursday), Tenzing Rock, Tibetans Refugee Centre (closed on Sunday), Tea Garden (outer view), Japanese Temple, Ghoom Monastery or Batasia Loop
+          \nPelling:- Rimbi Waterfalls, Khecheopalri Wishing Lake, Sky Walk Glass Bridge. 
+          \nNamchi:- Samdruptse and Chardham Temple
+          \nGangtok:- Tsangu Lake, Baba Mandir, MG Road, Hanuman Tok, Ganesh Tok, Tashi View Point, Flower Exhibition.`,
+        ],
+        exclusions: [
+          "Cost of Emergency, Covid Report, Insurance And Other Covid Related Expenses",
+          "Any Personal expenses.",
+          "GST & (TCS - Claimable after the tour)",
+          "Any Airfare/Railway Tickets",
+          "Lunch / Any transfer / Meals that are not mentioned in the itinerary",
+          "Nathula Permit and Taxi",
+          "Anything not mentioned in the inclusions list above",
+        ],
+        mapLink:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d905180.2901034369!2d87.80575771383313!3d27.597853974348446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e6a56a5805eafb%3A0xa4c4b857c39b5a04!2sSikkim!5e0!3m2!1sen!2sin!4v1739636943284!5m2!1sen!2sin",
+        beforeYouGo: [
+          "ID Proof: Valid ID proof is mandatory for each guest at booking and upon arrival. Note that PAN cards are not accepted as valid address proof.",
+          "Hotel Availability: Accommodation is subject to availability. If your preferred hotel is unavailable, you will be accommodated in a property of similar standard.",
+          "Environment: Please help keep our destinations beautiful by not littering and maintaining cleanliness.",
+          "Damage Policy: Any breakage or damage to items in the resort will be charged at actual costs.",
+          "Trip Alterations: If you choose to leave the trip midway, all subsequent expenses will be your responsibility. SNOWTAIL ESCAPES will not be liable for such decisions or any refunds.",
+        ],
+        confirmation: [
+          "50% Advance at the time of booking.",
+          "Remaining 50% before 10 days of the travel date for Domestic Tours & 50% before 15 days of the travel date for International Tours.",
+          "Modification charges at the time of modification.",
+          "For FLIGHTS, 100% payment at the time of booking.",
+        ],
+        cancellation: [
+          "If cancellations are made 30 days before the start date of the trip, 50% of the trip cost will be charged as cancellation fees.If cancellations are made 15-30 days before the start date of the trip, 75% of the trip cost will be charged as cancellation fees.",
+          "If cancellations are made within 0-15 days before the start date of the trip, 100% of the trip cost will be charged as cancellation fees.",
+          "In the case of unforeseen weather conditions or government restrictions, certain activities may be canceled. In such cases, the operator will try his best to provide an alternate feasible activity. However, no refund will be provided for the same.",
+          "If a rescheduling date request comes within 30 days from the trip date, the booking amount can neither be adjusted to your next date nor refunded.",
+          "If a rescheduling date request comes prior to 30 days, it can be done without any cancellation charges in the case of domestic trips.",
+          "Flights: No refund will be provided for flights unless booked under specific cancellation or rescheduling conditions than concerned POC will update the charges before confirming the booking.",
+        ],
+      },
+      rightSide: {
+        packages: {
+          "Standard Package": {
+            from: "15 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "3 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 50199,
+            currentPrice: 35799,
+          },
+          "Deluxe Package": {
+            from: "15 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "4 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 57999,
+            currentPrice: 41299,
+          },
+          "Super Deluxe Package": {
+            from: "15 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "5 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 64399,
+            currentPrice: 45999,
+          },
+        },
+        whyChooseUs: [
+          "Expertly crafted itinerary blending cultural immersion with adventure",
+          "Luxurious accommodations and comfortable transportation throughout",
+          "Experienced guides providing insights into Thailand's history and heritage",
+          "Seamless travel arrangements, ensuring a stress-free and memorable journey",
+        ],
+      },
+    },
+  },
+  {
+    id: "Ladakh5n6d",
+    helmet: {
+      title: "Ladakh Tour",
+      description:
+        "Explore the breathtaking landscapes of Ladakh with our exclusive tours. Discover the serene Pangong Lake, the stunning Nubra Valley, the ancient monasteries of Hemis and Thiksey, and the vibrant culture of Leh. Book your Ladakh tour now for an unforgettable adventure in the Himalayas!",
+      icon: newlogo4,
+    },
+    itineraryImage: {
+      small: "https://res.cloudinary.com/dxfact9vg/image/upload/v1727295479/Snowtail%20Escapes/v3y5klvwvixxplfpq1dn.webp",
+      large: "https://res.cloudinary.com/dxfact9vg/image/upload/v1739189857/ladakh_fswoos.webp",
+    },
+    tourData: {
+      leftSide: {
+        overview: {
+          place: "Leh, Nubra Valley, Pangong Tso",
+          title: "Thrilling Leh Ladakh",
+          location: "LADAKH",
+          time: "5N/6D",
+          rating: 4.8,
+          reviews: 405,
+          image: ladakh,
+          description: overview["Ladakh5n6d"],
+        },
+        itinerary: itinerary["Ladakh5n6d"],
+        inclusions: [
+          "Transfers: Pvt Airport Pick up and drop as per your flight timings & Comfortable and hygienic vehicle for sightseeing on all days as per the itinerary.",
+          "Accommodation: 3N Leh, 1N Nubra, 1N Pangong Tso",
+          "Meals: 05 Breakfast at selected hotels",
+          "Chauffer: Experienced driver to help you explore this beautiful city.",
+          `Sightseeing & Activities:- \n
+          Leh:- Shey, Thiksey monasteries, Sindhu Ghat, Druk Padma Karpo, Shanti Stupa & Leh market for shopping.
+          \nKhaedungla Pass:- 
+          \nNubra & Hundar Sand Dunes:- 
+          \nChangla Pass & Pangong Tso Lake`,
+        ],
+        exclusions: [
+          "Cost of Emergency, Covid Report, Insurance And Other Covid Related Expenses",
+          "Any Personal expenses.",
+          "GST & (TCS - Claimable after the tour)",
+          "Any Airfare/Railway Tickets",
+          "Lunch / Any transfer / Meals that are not mentioned in the itinerary",
+          "Anything not mentioned in the inclusions list above",
+        ],
+        mapLink:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3387861.7726143734!2d74.79791207067204!3d33.98074832068185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38fd86bce37d7139%3A0xc6c2990fdad28ac7!2sLadakh!5e0!3m2!1sen!2sin!4v1739644504708!5m2!1sen!2sin",
+        beforeYouGo: [
+          "ID Proof: Valid ID proof is mandatory for each guest at booking and upon arrival. Note that PAN cards are not accepted as valid address proof.",
+          "Hotel Availability: Accommodation is subject to availability. If your preferred hotel is unavailable, you will be accommodated in a property of similar standard.",
+          "Environment: Please help keep our destinations beautiful by not littering and maintaining cleanliness.",
+          "Damage Policy: Any breakage or damage to items in the resort will be charged at actual costs.",
+          "Trip Alterations: If you choose to leave the trip midway, all subsequent expenses will be your responsibility. SNOWTAIL ESCAPES will not be liable for such decisions or any refunds.",
+          "Only Postpaid Sim's of Airtel & BSNL are reliable mobile networks in Leh&Ladakh.",
+        ],
+        confirmation: [
+          "50% Advance at the time of booking.",
+          "Remaining 50% before 10 days of the travel date for Domestic Tours & 50% before 15 days of the travel date for International Tours.",
+          "Modification charges at the time of modification.",
+          "For FLIGHTS, 100% payment at the time of booking.",
+        ],
+        cancellation: [
+          "If cancellations are made 30 days before the start date of the trip, 50% of the trip cost will be charged as cancellation fees.If cancellations are made 15-30 days before the start date of the trip, 75% of the trip cost will be charged as cancellation fees.",
+          "If cancellations are made within 0-15 days before the start date of the trip, 100% of the trip cost will be charged as cancellation fees.",
+          "In the case of unforeseen weather conditions or government restrictions, certain activities may be canceled. In such cases, the operator will try his best to provide an alternate feasible activity. However, no refund will be provided for the same.",
+          "If a rescheduling date request comes within 30 days from the trip date, the booking amount can neither be adjusted to your next date nor refunded.",
+          "If a rescheduling date request comes prior to 30 days, it can be done without any cancellation charges in the case of domestic trips.",
+          "Flights: No refund will be provided for flights unless booked under specific cancellation or rescheduling conditions than concerned POC will update the charges before confirming the booking.",
+        ],
+      },
+      rightSide: {
+        packages: {
+          "Standard Package": {
+            from: "01 Mar 2025",
+            till: "30 Sept 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "3 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 42000,
+            currentPrice: 29999,
+          },
+          "Deluxe Package": {
+            from: "01 Mar 2025",
+            till: "30 Sept 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "4 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 50300,
+            currentPrice: 35899,
+          },
+          "Super Deluxe Package": {
+            from: "01 Mar 2025",
+            till: "30 Sept 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "5 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 65500,
+            currentPrice: 46799,
+          },
+        },
+        whyChooseUs: [
+          "Expertly crafted itinerary blending cultural immersion with adventure",
+          "Luxurious accommodations and comfortable transportation throughout",
+          "Experienced guides providing insights into Thailand's history and heritage",
+          "Seamless travel arrangements, ensuring a stress-free and memorable journey",
+        ],
+      },
+    },
+  },
+  {
+    id: "Meghalaya5n6d",
+    helmet: {
+      title: "Meghalaya Tour",
+      description:
+        "Discover the natural wonders of Meghalaya with our exclusive tours. Explore the living root bridges of Cherrapunji, the crystal-clear waters of Dawki, the scenic beauty of Shillong, and the lush green valleys of Mawsynram. Book your Meghalaya tour now for an unforgettable experience in the Abode of Clouds!",
+      icon: newlogo4,
+    },
+    itineraryImage: {
+      small: "https://res.cloudinary.com/dxfact9vg/image/upload/v1727295442/Snowtail%20Escapes/bymhicfcatt5zqdkhljy.webp",
+      large: "https://res.cloudinary.com/dxfact9vg/image/upload/v1739189857/meghalaya_cur7gz.webp",
+    },
+    tourData: {
+      leftSide: {
+        overview: {
+          place: "Meghalaya",
+          title: "Meghalaya - Discover The Magic",
+          location: "Meghalaya",
+          time: "5N/6D",
+          rating: 4.8,
+          reviews: 405,
+          image: meghalaya,
+          description: overview["Meghalaya5n6d"],
+        },
+        itinerary: itinerary["Meghalaya5n6d"],
+        inclusions: [
+          "Transfers: Pvt Airport/Railway Station Pick up and drop as per your flight timings & Comfortable and hygienic vehicle for sightseeing on all days as per the itinerary.",
+          "Accommodation: 2N Shillong,  2N Cherrapunji & 1N Camp.",
+          "Meals: 5 Breakfast at selected hotels",
+          "Chauffer: Experienced driver to help you explore this beautiful city.",
+          `Sightseeing & Activities:- (without ticket)\n
+          Shillong :- Krang Suri Waterfall & Cleanest River Umngot.
+          \nCherrapunji :- Mawkdok Valley, Nohkalikai Falls & Wei Sawdong Waterfall
+          \nGuwahati :- Don Bosco Museum or Wards Lake & Local Market.
+          \nOther :- Single Decker Living Root Bridge, Double Decker Root Bridge, Dwaki River, Cleanest Village Mawlynnong & Mawsmai Caves.`,
+        ],
+        exclusions: [
+          "Cost of Emergency, Covid Report, Insurance And Other Covid Related Expenses",
+          "Any Personal expenses.",
+          "GST & (TCS - Claimable after the tour)",
+          "Any Airfare/Railway Tickets",
+          "Lunch / Any transfer / Meals that are not mentioned in the itinerary",
+          "Anything not mentioned in the inclusions list above",
+        ],
+        mapLink:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687787.365727141!2d86.29584444774851!3d25.4932094951981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37507e8f34bd207f%3A0xf5ef6117f496d6e!2sMeghalaya!5e0!3m2!1sen!2sin!4v1739647532477!5m2!1sen!2sin",
+        beforeYouGo: [
+          "ID Proof: Valid ID proof is mandatory for each guest at booking and upon arrival. Note that PAN cards are not accepted as valid address proof.",
+          "Hotel Availability: Accommodation is subject to availability. If your preferred hotel is unavailable, you will be accommodated in a property of similar standard.",
+          "Environment: Please help keep our destinations beautiful by not littering and maintaining cleanliness.",
+          "Damage Policy: Any breakage or damage to items in the resort will be charged at actual costs.",
+          "Trip Alterations: If you choose to leave the trip midway, all subsequent expenses will be your responsibility. SNOWTAIL ESCAPES will not be liable for such decisions or any refunds.",
+        ],
+        confirmation: [
+          "50% Advance at the time of booking.",
+          "Remaining 50% before 10 days of the travel date for Domestic Tours & 50% before 15 days of the travel date for International Tours.",
+          "Modification charges at the time of modification.",
+          "For FLIGHTS, 100% payment at the time of booking.",
+        ],
+        cancellation: [
+          "If cancellations are made 30 days before the start date of the trip, 50% of the trip cost will be charged as cancellation fees.If cancellations are made 15-30 days before the start date of the trip, 75% of the trip cost will be charged as cancellation fees.",
+          "If cancellations are made within 0-15 days before the start date of the trip, 100% of the trip cost will be charged as cancellation fees.",
+          "In the case of unforeseen weather conditions or government restrictions, certain activities may be canceled. In such cases, the operator will try his best to provide an alternate feasible activity. However, no refund will be provided for the same.",
+          "If a rescheduling date request comes within 30 days from the trip date, the booking amount can neither be adjusted to your next date nor refunded.",
+          "If a rescheduling date request comes prior to 30 days, it can be done without any cancellation charges in the case of domestic trips.",
+          "Flights: No refund will be provided for flights unless booked under specific cancellation or rescheduling conditions than concerned POC will update the charges before confirming the booking.",
+        ],
+      },
+      rightSide: {
+        packages: {
+          "Standard Package": {
+            from: "01 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "3 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 45999,
+            currentPrice: 32799,
+          },
+          "Deluxe Package": {
+            from: "01 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "4 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 54399,
+            currentPrice: 38999,
+          },
+          "Super Deluxe Package": {
+            from: "01 Nov 2024",
+            till: "20 Feb 2025",
+            details: [
+              "Buffet breakfast as per the Itinerary",
+              "5 star hygienic accommodations",
+              "Sightseeing as mentioned",
+              "All Transfers as mentioned",
+              "Inclusions & Exclusions as mentioned",
+            ],
+            cutPrice: 65799,
+            currentPrice: 46999,
+          },
+        },
+        whyChooseUs: [
+          "Expertly crafted itinerary blending cultural immersion with adventure",
+          "Luxurious accommodations and comfortable transportation throughout",
+          "Experienced guides providing insights into Thailand's history and heritage",
+          "Seamless travel arrangements, ensuring a stress-free and memorable journey",
+        ],
+      },
+    },
+  },
+  {
     id: "Rajasthan4n5d",
     helmet: {
       title: "Rajasthan Tour",
@@ -151,7 +1102,7 @@ export const ToursData = [
           "Chauffer: Experienced driver to help you explore this beautiful city.",
           `Sightseeing & Activities:- (without ticket)
           Jaipur Sightseeing:- Amber Fort, Jal Mahal, Jantar Mantar, Hawa Mahal
-          Chittorgarh Sightseeing:- Chittorgarh Fort"
+          Chittorgarh Sightseeing:- Chittorgarh Fort
           Udaipur Sightseeing:- Lake Pichola, Fateh Sagar Lake, Maharana Pratap Memorial, Sehelion-KI-Bari, City Palace.
           Kumbhalgarh:- Kumbhalgarh Fort`,
         ],

@@ -20,19 +20,25 @@ export default function Inclusion() {
           <ul>
             <h4>Inclusions</h4>
             <li>
-              <img src={dot} width={5} alt="dot" /> Return Transfers in Cab.
+              <img src={dot} width={5} alt="dot" /> Transfers: Pvt Shimla Bus Stand Pick up and Manali bus stand drop as per your Bus timings & Comfortable and hygienic vehicle for sightseeing on all days as per the itinerary.
             </li>
             <li>
-              <img src={dot} width={5} alt="dot" /> Stay- 5N/6D
+              <img src={dot} width={5} alt="dot" /> Accommodation: 2N Shimla + 3N Manali
             </li>
             <li>
-              <img src={dot} width={5} alt="dot" /> Meals (5 Breakfast) & Dinner at day 5.
+              <img src={dot} width={5} alt="dot" /> Meals: 05 Breakfast at selected hotels
             </li>
             <li> 
-            <img src={dot} width={5} alt="dot" />Local Sightseeing as per itinerary
+            <img src={dot} width={5} alt="dot" />Chauffer: Experienced driver to help you explore this beautiful hill stations.
             </li>
             <li>
-              <img src={dot} width={5} alt="dot" /> Driver charges, toll tax, parking charges
+              <img src={dot} width={5} alt="dot" /> Sightseeing & Activities:-
+              <li>
+              Shimla:- Christ Church, Jakhoo Temple, Kalibari Temple, Lakkar Bazaar, Kufri, Green Valley, Mini Zoo, Chini Bungalow, Bhimakali Temple.
+              </li>
+              <li>
+              Manali:- Kasol, Manikaran, Hadimba Devi Temple, Club House, Mall Road and Beas river, Vashisht Village & Hot Spring, Jogni Falls, Naggar Castel. 
+              </li>
             </li>
           </ul>
           <ul>

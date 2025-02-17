@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./components/About";
 import PrivacyPolicy from "./components/PrivacyPolicy";
-import initializeGA from "./utils/initializeGA";
+//import initializeGA from "./utils/initializeGA";
 import RouteChangeTracker from "./utils/RouteChangeTracker";
 import initializeClarity from "./utils/initializeClarity";
 import NotFound from "./components/NotFound.jsx";
@@ -73,7 +73,7 @@ import { whatsappNumber } from "./constants/data.js";
 
 function App() {
   useEffect(() => {
-    initializeGA();
+  //  initializeGA();
     initializeClarity();
   }, []);
   const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);

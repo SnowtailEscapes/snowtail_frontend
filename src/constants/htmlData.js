@@ -50,6 +50,140 @@ export const overview = {
       </ul>
     </div>
   `,
+  Kasol2n3d: `
+    <h3>Overview</h3>
+    <p>
+    Kasol is a hamlet in the Kullu district of the Indian state of Himachal Pradesh. It is situated in Parvati Valley, on the banks of the Parvati River between Bhuntar and Manikaran. It is located 30 km from Bhuntar, 3.5 km from Manikaran and 36 km from Kullu town, the district headquarters.
+    </p>
+    <div>
+      <ul>
+      <li>Pick up -  Chandigarh</li>
+      <li>Drop - Chandigarh</li>
+      <li>StateE - Himachal Pradesh</li>
+      <li>Duration -  2N/3D</li>
+      <li>Best Season -  March to August or October to February</li>
+      <li>Destination for- Couples/Friends/Family</li>
+      <li>Mode of transportation- Car/traveller</li>
+      </ul>
+    </div>
+  `,
+  Shimla5n6d: `
+    <h3>Overview</h3>
+    <p>
+    Manali is a high-altitude Himalayan resort town in India’s northern Himachal Pradesh state. It has a reputation as a backpacking center and honeymoon destination. Set on the Beas River, it’s a gateway for skiing in the Solang Valley and trekking in Parvati Valley. It's also a jumping-off point for paragliding, rafting and mountaineering in the Pir Panjal mountains, home to 4,000m-high Rohtang Pass.
+    </p>
+    <div>
+      <ul>
+      <li>Pick up -  Shimla Bus Stand</li>
+      <li>Drop - Manali Bus Stand</li>
+      <li>StateE - Himachal Pradesh</li>
+      <li>Duration -  5N/6D</li>
+      <li>Best Season -  April to August or October to February</li>
+      <li>Destination for- Couples/Friends/ Family</li>
+      <li>Mode of transportation- Car/traveller</li>
+      </ul>
+    </div>
+  `,
+  Shimla9n10d: `
+    <h3>Overview</h3>
+    <p>
+    Himachal Pradesh is a northern Indian state in the Himalayas. It's home to scenic mountain towns and resorts such as Dalhousie. Host to the Dalai Lama, Himachal Pradesh has a strong Tibetan presence. This is reflected in its Buddhist temples and monasteries, as well as its vibrant Tibetan New Year celebrations. The region is also well known for its trekking, climbing and skiing areas.
+    </p>
+    <div>
+      <ul>
+      <li>Pick up - Chandigarh</li>
+      <li>Drop - Chandigarh</li>
+      <li>State - Himachal Pradesh</li>
+      <li>Duration -  9N/10D</li>
+      <li>Best Season -  March to August</li>
+      <li>Destination for- Couples/Friends/Family</li>
+      <li>Mode of transportation- Car/traveller</li>
+      </ul>
+    </div>
+  `,
+  Gujarat3n4d: `
+    <h3>Overview</h3>
+    <p>
+    Vadodara is a census town in Narmada district in the Indian state of Gujarat. The town is best known as the location of the Statue of Unity, the tallest statue in the world. The town is also home to the Ekta Nagar railway station.
+    </p>
+    <div>
+      <ul>
+      <li>Pickup - Ahmedabad/Vadodra</li>
+      <li>Drop - Ahmedabad</li>
+      <li>State - Gujarat</li>
+      <li>Duration -  3N/4D</li>
+      <li>Destination for- Couples/Friends/Family</li>
+      <li>Mode of transportation- Car/traveller</li>
+      </ul>
+    </div>
+  `,
+  Gujarat4n5d: `
+    <h3>Overview</h3>
+    <p>
+    Vadodara is a census town in Narmada district in the Indian state of Gujarat. The town is best known as the location of the Statue of Unity, the tallest statue in the world. The town is also home to the Ekta Nagar railway station.
+    </p>
+    <div>
+      <ul>
+      <li>Pickup - Ahmedabad</li>
+      <li>Drop - Ahmedabad</li>
+      <li>State - Gujarat</li>
+      <li>Duration -  4N/5D</li>
+      <li>Destination for- Couples/Friends/Family</li>
+      <li>Mode of transportation- Car/traveller</li>
+      </ul>
+    </div>
+  `,
+  Sikkim5n6d: `
+    <h3>Overview</h3>
+    <p>
+    Gangtok is the capital of the mountainous northern Indian state of Sikkim. Established as a Buddhist pilgrimage site in the 1840s, the city became capital of an independent monarchy after British rule ended, but joined India in 1975. Today, it remains a Tibetan Buddhist center and a base for hikers organising permits and transport for treks through Sikkim’s Himalayan mountain ranges. Darjeeling is a town in India's West Bengal state, in the Himalayan foothills. Once a summer resort for the British Raj elite, it remains the terminus of the narrow-gauge Darjeeling Himalayan Railway, or “Toy Train,” completed in 1881. It's famed for the distinctive black tea grown on plantations that dot its surrounding slopes. Its backdrop is Mt. Kanchenjunga, among the world’s highest peaks.
+    </p>
+    <div>
+      <ul>
+      <li>Pick up - New Jalpaiguri(NJP) / Bagdogra Airport(IXB)</li>
+      <li>Drop - New Jalpaiguri(NJP) / Bagdogra Airport(IXB)</li>
+      <li>STATE - Sikkim</li>
+      <li>Duration - 5N/6D</li>
+      <li>Best Season - March to June and October to December</li>
+      <li>Destination for- Couples/Friends/ Family</li>
+      <li>Mode of transportation- Car/traveller</li>
+      </ul>
+    </div>
+  `,
+  Ladakh5n6d: `
+    <h3>Overview</h3>
+    <p>
+    Snow Capped peaks, clear blue skies, barren mountains with meandering rivers, Ladakh is picturesque! It's not only known for its scenic beauty but also for some of the most difficult treks.Ladakh is home to exotic wildlife including snow leopards, Himalayan brown bears, etc. Hemis National Park, Changthang Cold Desert Wildlife Sanctuary, Karakoram Wildlife Sanctuary are protected wildlife areas of Ladakh.
+    </p>
+    <div>
+      <ul>
+      <li>Pick up - Leh airport(IXL)</li>
+      <li>Drop - Leh airport(IXL)</li>
+      <li>UT - Ladakh</li>
+      <li>Duration - 5N/6D</li>
+      <li>Best Season - March to July</li>
+      <li>Destination for- Couples/Friends/ Family</li>
+      <li>Mode of transportation- Car/traveller</li>
+      </ul>
+    </div>
+  `,
+  Meghalaya5n6d: `
+    <h3>Overview</h3>
+    <p>
+    Meghalaya (Abode of Clouds in Sanskrit) is one of the seven North-Eastern states of India. Famous for its high rainfall, subtropical forests and biodiversity, it is abutted by Assam in the north and east and by Bangladesh in the south. The River Brahmaputra (or Luit as called locally) forms the border in the west.
+    </p>
+    <div>
+      <ul>
+      <li>Pick up - Guwahati Railway Station / Guwahati Airport(GAU)</li>
+      <li>Drop - Guwahati Railway Station / Guwahati Airport(GAU)</li>
+      <li>STATE - Meghalaya</li>
+      <li>Duration - 5N/6D</li>
+      <li>Best Season - October to April</li>
+      <li>Destination for- Couples/Friends/ Family</li>
+      <li>Mode of transportation- Car/traveller</li>
+      </ul>
+    </div>
+  `,
   Thailand4n5d: `
     <h3>Overview</h3>
     <p>
@@ -523,6 +657,498 @@ export const itinerary = {
       `,
     },
   ],
+  Gujarat3n4d: [
+    {
+      title: "Pickup from Ahmedabad/Vadodara. Transfer to Kevadia",
+      html: `
+          <ul>
+            <li>
+            Kevadia Meet our representative at Ahmedabad/Vadodara. Departure towards Kevadia.
+            </li>
+            <li>
+            Transfer to hotel upon arrival. 
+            </li>
+            <li>
+            Later half day for Sightseeing. 
+            </li>
+            <li>
+            Visit:- 
+            <ul>
+              <li>- Statue of Unity & Viewing Gallery</li><li>- Valley of Flowers</li> <li>- Sardar Sarovar Dam & Selfie Point. 
+            </li>
+            </ul>
+          </ul>
+      `,
+    },
+    {
+      title: "Kevadia",
+      html: `
+          <ul>
+            <li>
+            After Breakfast, head out to Visit:- Safari Park & Butterfly Garden.
+            </li>
+            <li>
+            Back hotel and over stay.
+            </li>
+          </ul>
+      `,
+    },
+    {
+      title: "Kevadia - Ahmedabad",
+      html: `
+          <ul>
+            <li>After breakfast check out hotel. Departure for Ahmedabad.
+            </li>
+            <li>
+            Transfer to hotel upon arrival.
+            </li>
+            <li>
+            Halfday for Sightseeing:- 
+            <ul><li>Visit:- Sabarmati Aashram & Riverfront</li><li>Akshardham in Evening.</li></ul>
+            </li>
+            <li>
+            Back hotel overnight stay.
+            </li>
+          </ul>
+      `,
+    },
+    {
+      title: "Departure",
+      html: `
+        <ul>
+          <li>
+          After breakfast checkout hotel
+          </li>
+          <li>
+          Visit Science City if time permits.
+          </li>
+          <li>
+          Drop at airport/Railway Station according to departure timmings.
+          </li>
+        </ul>
+      `,
+    },
+  ],
+  Gujarat4n5d: [
+    {
+      title: "Arrival at Ahmedabad airport.",
+      html: `
+          <ul>
+            <li>
+            Ahmedabad Meet our representative at Ahmedabad airport/railway station.
+            </li>
+            <li>
+            Transfer to hotel upon arrival.
+            </li>
+            <li>
+            Later half day for Sightseeing.
+            </li>
+            <li>
+            Visit:- Gandhi ashram & Sabarmati Riverfront, Akshardham Temple.
+            </li>
+            <li>
+            Back hotel overnight stay.
+            </li>
+          </ul>
+      `,
+    },
+    {
+      title: "AHMEDABAD - SASAN GIR (340 Kms)",
+      html: `
+          <ul>
+            <li>
+            After breakfast, check out the hotel. Meet our representative outside the hotel, board your vehicle and head towards Sasan Gir.
+            </li>
+            <li>
+            Transfer to hotel upon arrival, check-in hotel. Evening at leisure. Overnight stay at the hotel.
+            </li>
+          </ul>
+      `,
+    },
+    {
+      title: "SASAN GIR - DIU ISLAND (100 Kms)",
+      html: `
+          <ul>
+            <li>
+            After breakfast, check out the hotel. Jeep Safari at Gir National Park. After the visit, depart for Diu via Somnath ji Temple (1st Jyotirlinga).
+            </li>
+            <li>
+            After darshan, Depart for Diu, Transfer to the hotel upon arrival. Overnight stay at the hotel.
+            </li>
+          </ul>
+      `,
+    },
+    {
+      title: "DIU Sightseeing",
+      html: `
+        <ul>
+          <li>
+          After breakfast, a full day for local sightseeing. Visit: Diu Fort, St.Paul's Church, Gangeshwar Mahadev Temple, Gogla Beach (Water Sports).
+          </li>
+          <li>
+          After the visit back to the hotel. Overnight stay at the hotel.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Diu - Ahmedabad (8hrs Journey)",
+      html: `
+        <ul>
+          <li>
+          After early breakfast checkout hotel. Depart towards Ahmedabad. 
+          </li>
+          <li>
+          Drop at airport/Railway Station in evening hours after 7:00 PM.
+          </li>
+        </ul>
+      `,
+    },
+  ],
+  Kasol2n3d: [
+    {
+      title: "Kasol - Chalal - Kasol",
+      html: `
+        <ul>
+          <li>
+          Meet our Representative at Chandigarh. Later start your journey towards Kasol. Reach in evening hours.
+          </li>
+          <li>
+          Reach Kasol & Check into the Camp. Enjoy the Welcome drink. Freshen up, self-exploration of Kasol, Riverside walk.
+          </li>
+          <li>
+          Go and explore Chalal village crossing the famous Kasol bridge to see the beauty in Parvati Valle.
+          </li>
+          <li>
+          Camping under stars followed by dinner and sleep in camps alongside Parvati river.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Kasol - Barshaini - Kheerganga",
+      html: `
+        <ul>
+          <li>
+          Wake up early in the morning. After having breakfast, depart for Barshaini. Arrive at Barshaini, start your trek to Kheerganga.
+          </li>
+          <li>
+          Enjoy your walk in the heart of beautiful Parvati Valley. Camping under stars followed by dinner and sleep.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Kheerganga - Barshaini - Manikaran - Kasol - Chandigarh",
+      html: `
+        <ul>
+          <li>
+          Wake up early in the morning and have breakfast. Trek back to Barshaini and visit Manikaran Gurudwara Sahib.
+          </li>
+          <li>
+          You can explore the Kasol market before we start our journey back home, with beautiful lifetime memories.
+          </li>
+        </ul>
+      `,
+    },
+  ],
+  Shimla5n6d: [
+    {
+      title: "Shimla Arrival | Local Sightseeing",
+      html: `
+        <ul>
+          <li>
+          Arrival in Shimla, transfer to hotel upon arrival.
+          </li>
+          <li>
+          Check-in at the hotel and freshen up.
+          </li>
+          <li>
+          Get ready to Visit: Christ Church, Jakhoo Temple, Kalibari Temple, Lakkar Bazaar and Local Market.
+          </li>
+          <li>
+          Back at the hotel by night.
+          </li>
+          <li>
+          Overnight stay at Shimla.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Full Day Trip to Kufri - Jakhoo Hills",
+      html: `
+        <ul>
+          <li>
+          Wake-up in the morning and get mesmerised by the breathtaking sunrise.
+          </li>
+          <li>
+          Post Break-fast Visit: Kufri, Green Valley, Mini Zoo, Chini Bungalow, White Flower Hall, Bhimakali Temple, Indira Gandhi Tourist Park.
+          </li>
+          <li>
+          Evening free to stroll in the famous shopping place of Shimla town.
+          </li>
+          <li>
+          Overnight at Shimla.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Shimla to Manali",
+      html: `
+        <ul>
+          <li>
+          Wake up in the morning and have breakfast.
+          </li>
+          <li>
+          Check out from the hotel and start your journey towards Manali.
+          </li>
+          <li>
+          Enroute via Kullu and you can try adventure activities.
+          </li>
+          <li>
+          En route, Visit: Kasol Manikaran.
+          </li>
+          <li>
+          Arrive at Manali by evening and check-in at the hotel.
+          </li>
+          <li>
+          Evening free for leisure.
+          </li>
+          <li>
+          Overnight at Manali.</li>
+        </ul>
+      `,
+    },
+    {
+      title: "Manali Local Sightseeing",
+      html: `
+        <ul>
+          <li>
+          In the morning, have a delicious breakfast and energise yourself to see the beautiful Manali.
+          </li>
+          <li>
+          Enjoy the full-day excursion to Local Manali. 
+          </li>
+          <li>
+          Local Manali sightseeing Visit - Hadimba Temple, Vashisht Village, etc.
+          </li>
+          <li>
+          Back at the hotel by evening.
+          </li>
+          <li>
+          Dinner and overnight stay in Manali.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Solang Valley and Sissu (Via Atal Tunnel)",
+      html: `
+        <ul>
+          <li>
+          After breakfast, check out the hotel half day for Solang Valley & Sissu via Atal Tunnel (usually in the month of March we find heavy snow around Gulabo).
+          </li>
+          <li>
+          Later back to the hotel.
+          </li>
+          <li>
+          Overnight stay in Manali.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Departure",
+      html: `
+        <ul>
+          <li>
+          In the morning, have a delicious breakfast and prepare to check out from the hotel.
+          </li>
+          <li>
+          Depart for home.
+          </li>
+        </ul>
+      `,
+    },
+  ],
+  Shimla9n10d: [
+    {
+      title: "Shimla Arrival | Local Sightseeing",
+      html: `
+        <ul>
+          <li>
+          Leave Chandigarh in morning hours. Reach Shimla by afternoon. Check-in at the hotel and freshen up.
+          </li>
+          <li>
+          Get ready to visit Christ Church, Jakhoo Temple, Kalibari Temple, Lakkar Bazaar, and the local market.
+          </li>
+          <li>
+          Back at the hotel by night.
+          </li>
+          <li>
+          Overnight stay at Shimla.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Full Day Trip to Kufri - Jakhoo Hills",
+      html: `
+        <ul>
+          <li>
+          Wake-up in the morning and get mesmerised by the breathtaking sunrise.
+          </li>
+          <li>
+          Post Break-fast Visit: Kufri, Green Valley, Mini Zoo, Chini Bungalow, Bhimakali Temple.
+          </li>
+          <li>
+          Evening free to stroll in the famous shopping place of Shimla town.
+          </li>
+          <li>
+          Overnight at Shimla.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Shimla to Manali",
+      html: `
+        <ul>
+          <li>
+          Wake up in the morning and have breakfast.
+          </li>
+          <li>
+          Check out from the hotel and start your journey towards Manali.
+          </li>
+          <li>
+          Arrive at Manali by evening and check-in at the hotel.
+          </li>
+          <li>
+          Evening free for leisure.
+          </li>
+          <li>
+          Overnight at Manali.</li>
+        </ul>
+      `,
+    },
+    {
+      title: "Manali Local Sightseeing",
+      html: `
+        <ul>
+          <li>
+          In the morning, have a delicious breakfast and energise yourself to see the beautiful Manali.
+          </li>
+          <li>
+          Enjoy the full-day excursion to Local Manali. 
+          </li>
+          <li>
+          Local Manali sightseeing Visit - Hadimba Temple, Vashisht Village, etc.
+          </li>
+          <li>
+          Back at the hotel by evening.
+          </li>
+          <li>
+          Dinner and overnight stay in Manali.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Solang Valley and Sissu (Via Atal Tunnel)",
+      html: `
+        <ul>
+          <li>
+          After breakfast, check out the hotel half day for Solang Valley & Sissu via Atal Tunnel.
+          </li>
+          <li>
+          Later back to the hotel.
+          </li>
+          <li>
+          Overnight stay in Manali.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Manali to Dharamshala",
+      html: `
+        <ul>
+          <li>
+          After breakfast, check out the hotel.
+          </li>
+          <li>
+          Drive to Dharamshala. Reach Dharamshala in the evening.
+          </li>
+          <li>
+          On arrival, check in to the hotel for overnight stay.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Dharamshala Local Sightseeing",
+      html: `
+        <ul>
+          <li>
+          After breakfast, today drive for local sightseeing.
+          </li>
+          <li>
+          Visit Dalai Lama in Mcleodganj, St. John Church, Monasteries & Bhagsunath Temple, the oldest temple in Dharamshala & Waterfalls.
+          </li>
+          <li>
+          Also, visit Dal Lake and Naddi View Point for an outstanding view of the snow-covered Himalayas.
+          </li>
+          <li>
+          Overnight stay at the hotel.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Dharamshala to Dalhousie",
+      html: `
+        <ul>
+          <li>
+          After breakfast, check out from the hotel and drive to Dalhousie (130 Kilometres).
+          </li>
+          <li>
+          Dalhousie is a popular hill station situated at 2040 meters in the outer slope of the Dhauladhar range of Himachal Pradesh.
+          </li>
+          <li>
+          On arrival, check in to the hotel. Overnight stay at the hotel.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Dalhousie – Khajjiar – Dalhousie",
+      html: `
+        <ul>
+          <li>
+          Post Breakfast, Visit: Panchpula, Khajjiar (Switzerland Of India). Dalhousie has tremendous forest trails overlooking vistas of wooded hills and waterfalls.
+          </li>
+          <li>
+          The spectacular snow-covered Dhauladhar Mountains are also visible from this enchanting town. Overnight stay in Dalhousie.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Departure",
+      html: `
+        <ul>
+          <li>
+          Today after breakfast check out from the hotel and drive to Chandigarh by cab. Reach Chandigarh in the evening.
+          </li>
+          <li>
+          Depart for home.
+          </li>
+        </ul>
+      `,
+    },
+  ],
   Rajasthan4n5d: [
     {
       title: "Arrival in Jaipur",
@@ -588,7 +1214,249 @@ export const itinerary = {
         </ul>
       `,
     },
-
+  ],
+  Sikkim5n6d: [
+    {
+      title: "Arrival in DARJEELING | Welcome to The Queen of Hills",
+      html: `
+        <ul>
+          <li>
+          Arrival at NJP Railway Station / Bagdogra Airport. Transfer to Darjeeling (7100 ft / 110 kms / 03 hrs). Arrive & Check in Hotel. Evening free for leisure.
+          </li>
+          <li>
+          Overnight stay at Hotel.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "DARJEELING Sightseeing",
+      html: `
+        <ul>
+          <li>
+          Early Morning at 0400 AM visit Tiger Hill, famous for sunrise over Mt. Kanchendzonga. On the way back, visit and return to the hotel. After breakfast, proceed for local sightseeing.
+          </li>
+          <li>
+          PLACES TO VISIT: The Himalayan Mountaineering Institute, PNZ Zoological Park (closed on Thursday), Tenzing Rock, Tibetans Refugee Centre (closed on Sunday), Tea Garden (outer view), Japanese Temple, Ghoom Monastery or Batasia Loop.
+          </li>
+          <li>
+          Overnight stay at the hotel.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "DARJEELING to PELLING",
+      html: `
+        <ul>
+          <li>After breakfast, transfer to Pelling (6000 ft / 118 kms / 04 hrs). In the afternoon, proceed for a half-day local tour.</li>
+          <li>PLACES TO VISIT: Rimbi Waterfalls, Khecheopalri Wishing Lake, and Sky Walk Glass Bridge.</li>
+          <li>Overnight stay at the hotel.</li>
+        </ul>
+      `,
+    },
+    {
+      title: "PELLING to GANGTOK VIA NAMCHI AND CHARDHAM",
+      html: `
+        <ul>
+          <li>After breakfast, transfer to Gangtok (5500 ft / 132 kms / 05 hrs) via Namchi.</li>
+          <li>Visit:- Samdruptse, and Chardham Temple. Gangtok, the capital of Sikkim, is a beautiful and clean town.</li>
+          <li>Arrive at the hotel and check-in. Evening free at leisure.</li>
+          <li>Overnight at the Hotel.</li>
+        </ul>
+      `,
+    },
+    {
+      title: "TSANGU LAKE & BABA MANDIR",
+      html: `
+        <ul>
+          <li>A day excursion to Tsangu Lake (departure at 0700 to 0730 AM hrs) - situated at a height of 3,780 Mts. with an average depth of 50 ft & Baba Mandir - The shrine maid in memory of sepoy Harbahajan Singh.</li>
+          <li>Back to Gangtok, Evening for MG Road ( Mall Road ).</li>
+        </ul>
+      `,
+    },
+    {
+      title: "DEPARTURE from GANGTOK to NJP RAILWAY STATION / IXB AIRPORT",
+      html: `
+        <ul>
+          <li>After breakfast, checkk out hotel. Visit:- Hanuman Tok, Ganesh Tok, Tashi View Point, Flower Exhibition.</li>
+          <li>Later transfer to NJP Railway Station / IXB Airport (125 kms / 05 Hrs) for your onward Journey.</li>
+        </ul>
+      `,
+    },
+  ],
+  Ladakh5n6d: [
+    {
+      title: "Arrival in LEH | Welcome to the Land of Lamas",
+      html: `
+        <ul>
+          <li>
+          Arrive at Leh. Transfer to hotel upon arrival. The place is at an altitude of 14000m above sea level, so an entire day is required to just acclimatize to the weather and steady your heads.
+          </li>
+          <li>
+          Spend the night visiting some local shops nearby the city of Leh or just relax in your hotel rooms.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "LEH Sightseeing",
+      html: `
+        <ul>
+          <li>
+          After breakfast, head out to the city of Leh for some sightseeing at places in close vicinity.
+          </li>
+          <li>
+          PLACES TO VISIT: Shey, Thiksey monasteries, Sindhu Ghat, Druk Padma Karpo, Shanti Stupa & Leh market for shopping.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "LEH - NUBRA VALLEY",
+      html: `
+        <ul>
+          <li>After breakfast, check out the hotel. Head to Nubra Valley from Leh, which is a tough yet majestic five-hour journey through the Khardung-La, one the highest motorable roads in the world.</li>
+          <li>Overnight stay at Camps.</li>
+        </ul>
+      `,
+    },
+    {
+      title: "Nubra - Pangong Tso (7 Hrs Journey)",
+      html: `
+        <ul>
+          <li
+          After spending the night in Nubra Valley, head towards Pangong Tso.
+          </li>
+          <li>
+          En route, visit the Diskit Monastery and the barren expanse of Hunder Sand Dunes for yet another camel safari if you wish. 
+          </li>
+          <li>
+          Reach Pangong Tso in the evening.
+          </li>
+          <li>
+          Transfer to camps and spend some at leisure.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Pangong Tso - Leh (6 Hrs Journey)",
+      html: `
+        <ul>
+          <li>
+          After breakfast transfer to Leh City.
+          </li>
+          <li>
+          Again drive through 2nd highest motorable pass Changla Pass.
+          </li>
+          <li>
+          Transfer to hotel upon arrival. Overnight stay in Leh.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Departure",
+      html: `
+        <ul>
+          <li>
+          After breakfas, check out hotel.
+          </li>
+          <li>
+          Say bye to the heaven on Earth and take a load of memories.
+          </li>
+          <li>
+          Transfer to airport according to flight timings.
+          </li>
+        </ul>
+      `,
+    },
+  ],
+  Meghalaya5n6d: [
+    {
+      title: "Arrival in North East | Guwahati to Shillong (4 hrs drive)",
+      html: `
+        <ul>
+          <li>
+          Arrival at Guwahati Station / Guwahati Airport. Head towards Shillong. Transfer to hotel upon arrival. Overnight Stay in Shillong.
+          </li>
+          <li>
+          Umiam Lake & Police Bazaar.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Shillong to Cherrapunji. (3 hours)",
+      html: `
+        <ul>
+          <li>
+          After breakfast, Transfer to Cherrapunji. Transfer to hotel upon arrival. Stay in Cherrapunji.
+          </li>
+          <li>
+          PLACES TO VISIT: Mawkdok Valley, Nohkalikai Falls & Wei Sawdong Waterfall.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Cherrapunji to Double Decker Bridge (1 hour drive)* or Hike Duration - 6-7 hours",
+      html: `
+        <ul>
+          <li>After breakfast, head out to visit Cherrapunji (Forest visit). Stay in Cherrapunji.</li>
+          <li>Places to visit : Single Decker Living Root Bridge, Double Decker Root Bridge & Mawsmai Caves</li>
+          <p style="color: #FB923C;">OR</p>
+          <li>Cherrapunji local excursion After breakfast, visit local sightseeing in Cherrapunji. Overnight stay in Cherrapunj</li>
+          <li>Places to visit : Mawsmai caves Arwah caves Garden of caves Wakhaba Waterfall Seven sister Waterfall</li>
+        </ul>
+      `,
+    },
+    {
+      title: "Cherrapunji to Dawki (3 hours Drive)",
+      html: `
+        <ul>
+          <li>
+          After breakfast, check out the hotel. Board your vehicle and head towards Dawki. Riverside Camping. (Near Dawki)
+          </li>
+          <li>
+          Places to visit : Cleanest Village Mawlynnong & Dawki River.
+          </li>
+          <li style="color: #FB923C;">
+          Note: ALPINE TENTS OR DOME TENTS AS PER AVAILABILITY
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Dawki To Shillong (4 hours Drive)",
+      html: `
+        <ul>
+          <li>
+          After breakfast, transfer to Shillong. Transfer to hotel upon arrival. Overnight Stay in Shillong.
+          </li>
+          <li>
+          Places to visit : Krang Suri Waterfall & Cleanest River Umngot.
+          </li>
+        </ul>
+      `,
+    },
+    {
+      title: "Shillong - Guwahati. (4 hours)",
+      html: `
+        <ul>
+          <li>
+          After breakfast, check out the hotel. Transfer to hotel upon arrival. Evening for Shopping at Police Bazar. Evening Drop at Guwahati Airport/Railway station.
+          </li>
+          <li>
+          Places to visit : Don Bosco Museum or Wards Lake
+          </li>
+          <li style="color: #FB923C;">
+          Note: Book evening flights/Train Tickets.
+          </li>
+        </ul>
+      `,
+    },
   ],
   Thailand4n5d: [
     {
