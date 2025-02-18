@@ -16,7 +16,6 @@ import rj1 from "/images/card/rj1.webp";
 import rj2 from "/images/card/rj2.webp";
 import rj3 from "/images/card/rj3.webp";
 import gujarat2 from "/images/card/gujarat2.webp";
-import meghalaya from "https://res.cloudinary.com/dxfact9vg/image/upload/v1727295442/Snowtail%20Escapes/bymhicfcatt5zqdkhljy.webp";
 import shimla2 from "/images/card/shimla9n10d.webp";
 import kerala from "/images/card/kerala.webp";
 import andaman from "/images/card/andaman.webp";
@@ -431,7 +430,7 @@ export const domesticPackages = [
     duration: "5 nights and 6 days tour",
     location: "MEGHALAYA",
     curr_price: 32799,
-    image: meghalaya,
+    image: "https://res.cloudinary.com/dxfact9vg/image/upload/v1727295442/Snowtail%20Escapes/bymhicfcatt5zqdkhljy.webp",
   },
   {
     direct: "/Kerala5n6d",
