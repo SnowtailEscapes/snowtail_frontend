@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/Infinite.css";
 import google from "../assets/google.webp";
 import star from "../assets/star.webp";

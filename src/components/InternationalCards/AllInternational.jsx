@@ -71,10 +71,10 @@ export default function AllInternational() {
 
               {filteredTours.map((tour) => (
                 <Mview
-                  key={tour.to}
-                  to={tour.to}
+                  key={tour.direct}
+                  to={tour.direct}
                   title={tour.title}
-                  price={tour.price}
+                  price={tour.curr_price}
                   location={tour.location}
                   duration={tour.duration}
                   image={tour.image}
@@ -152,10 +152,10 @@ export default function AllInternational() {
               <div className="grid grid-cols-1 gap-1 md:grid-cols-2">
                 {filteredTours.map((tour) => (
                   <InternationalTablet
-                    key={tour.to}
-                    to={tour.to}
+                    key={tour.direct}
+                    to={tour.direct}
                     title={tour.title}
-                    price={tour.price}
+                    price={tour.curr_price}
                     location={tour.location}
                     duration={tour.duration}
                     image={tour.image}

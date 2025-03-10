@@ -33,7 +33,7 @@ export default function AllDomestic() {
   }, []);
 
   const handleSearch = (event) => {
-    setSearchTerm(event?.target?.value)
+    setSearchTerm(event?.target?.value);
   };
 
   useEffect(() => {
@@ -103,10 +103,10 @@ export default function AllDomestic() {
               {filteredTours.map((tour, index) => (
                 <Tablet
                   key={index}
-                  to={tour.to}
+                  to={tour.direct}
                   title={tour.title}
                   location={tour.location}
-                  price={tour.price}
+                  price={tour.curr_price}
                   image={tour.image}
                   duration={tour.duration}
                 />
@@ -136,10 +136,10 @@ export default function AllDomestic() {
               {filteredTours.map((tour, index) => (
                 <Mview
                   key={index}
-                  to={tour.to}
+                  to={tour.direct}
                   title={tour.title}
                   location={tour.location}
-                  price={tour.price}
+                  price={tour.curr_price}
                   image={tour.image}
                   duration={tour.duration}
                 />

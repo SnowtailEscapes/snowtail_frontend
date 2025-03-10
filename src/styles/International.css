@@ -50,7 +50,6 @@
     display: flex;
     flex-direction: column; /* Stack items vertically */
     border-radius: 20px;
-    height: 200px ;
   }
 
   .imageContainer {
